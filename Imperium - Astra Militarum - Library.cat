@@ -2816,7 +2816,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Hellhammer" hidden="false" id="8277-6399-5d74-760d">
+    <selectionEntry type="model" import="true" name="Hellhammer 2" hidden="false" id="8277-6399-5d74-760d">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="450"/>
       </costs>
