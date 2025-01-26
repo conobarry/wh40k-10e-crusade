@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="91" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="92" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -859,7 +859,7 @@
         </profile>
         <profile name="Officer" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="21e5-4e9-7904-8d96">
           <characteristics>
-            <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This OFFICER can issue 1 Order to REGIMENT units.</characteristic>
+            <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This OFFICER can issue up to 2 Orders to REGIMENT units.</characteristic>
           </characteristics>
         </profile>
         <profile name="Senior Officer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a7f5-adb8-d1c9-2a2d">
@@ -7703,7 +7703,7 @@
         </profile>
         <profile name="Tank Commander" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="d520-92fd-8c74-ec6e">
           <characteristics>
-            <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This Officer can issue 1 Order to Squadron units.</characteristic>
+            <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This Officer can issue up to 2 Orders to Squadron units.</characteristic>
           </characteristics>
         </profile>
         <profile name="Death Befitting An Officer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c082-8d5a-82a8-68dc">
@@ -9053,7 +9053,7 @@
         <profile name="Demolisher Battle Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fd6a-5adb-ecdf-e20d">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
@@ -10125,7 +10125,7 @@
       <profiles>
         <profile name="Death Korps of Krieg Medi-pack" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a80d-78ab-5508-a9f">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, if the bearer’s unit is below its Starting Strength, you can return up to D3 destroyed Death Korps Troopers to this unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, if the bearer’s unit is below its Starting Strength, you can return up to D3 destroyed Death Korps Troopers to this unit (if this unit contains two models equipped with a Death Korps Medi-pack, return up to D3+1 destroyed Death Korps Troopers to this unit instead).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10228,7 +10228,7 @@
         <profile name="Bullgryn Maul" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="624f-c23-b517-6b4b">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
@@ -20360,7 +20360,7 @@ While this model is joined to a unit, it can embark within any Transport that un
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Combined Regiment" hidden="false" id="67ce-ebd5-b428-e4f7">
+        <selectionEntry type="upgrade" import="true" name="Combined Arms" hidden="false" id="67ce-ebd5-b428-e4f7">
           <profiles>
             <profile name="Born Soldiers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dca5-9eb0-b65f-d1c1">
               <characteristics>
@@ -20393,6 +20393,24 @@ Each time a model in a SQUADRON unit from your army makes a ranged attack that t
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Recon Element" hidden="false" id="2f24-9116-6351-2502">
+          <profiles>
+            <profile name="Masters of Camouflage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6048-acc4-683a-e294">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ASTRA MILITARUM WALKER and REGIMENT models from your army have the Benefit of Cover. While such a model has the Benefit of Cover for any other reason (e.g. because it is wholly within a RUIN), improve the Save characteristic of that model by 1 (to a maximum of 3+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hammer of the Emperor" hidden="false" id="3120-15e4-9eca-6619">
+          <profiles>
+            <profile name="Iron Tread" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="20fe-fdfe-8f40-f09d">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a SQUADRON unit from your army Advances, do not make an Advance roll for it; until the end of the phase, add 6&quot; to the Move characteristic of models in that unit, and when making that Advance move, that unit can move within Engagement Range of enemy models but cannot end that move within Engagement Range of enemy models.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Astra Militarum Vehicle Armoury" hidden="false" id="d52-fe64-241f-95a">
@@ -20407,7 +20425,7 @@ Each time a model in a SQUADRON unit from your army makes a ranged attack that t
     </selectionEntryGroup>
     <selectionEntryGroup name="Enhancements" hidden="false" id="33fd-bb93-1bf4-f1c">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Combined Regiment Enhancements" hidden="false" id="d572-4471-c9b8-dea5">
+        <selectionEntryGroup name="Combined Arms Enhancements" hidden="false" id="d572-4471-c9b8-dea5">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -20491,37 +20509,6 @@ Each time a model in a SQUADRON unit from your army makes a ranged attack that t
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Kurov&apos;s Aquila" hidden="false" id="8002-5863-16-cb86">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="67ce-ebd5-b428-e4f7" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cf-8e72-a370-caee"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2f41-e4de-2caa-9002" includeChildSelections="true" includeChildForces="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Lord of Deceit (Aura)" id="dd9e-a241-f629-6143" hidden="false" type="profile" targetId="8332-466b-a51f-63ab"/>
-              </infoLinks>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Grand Strategist" hidden="false" id="c637-e130-e2f9-ba98">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -20545,7 +20532,7 @@ Each time a model in a SQUADRON unit from your army makes a ranged attack that t
               <profiles>
                 <profile name="Grand Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b894-37c2-6a55-d57b">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">OFFICER model only. In your Command phase, the bearer can issue one additional Order in each battle round.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">OFFICER model only. In your Command phase, the bearer can issue one additional Order.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -20555,6 +20542,45 @@ Each time a model in a SQUADRON unit from your army makes a ranged attack that t
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reactive Command" hidden="false" id="ee44-8e1b-40aa-fa67">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="67ce-ebd5-b428-e4f7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Reactive Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca9f-f884-f6bb-769a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">OFFICER model only. Each time an enemy unit is set up within 9&quot; of the bearer&apos;s unit, the bearer can issue one Order. This is not counted towards the number of Orders the bearer can issue in a battle round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="480d-874d-1a0c-8a6b"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dbcb-a338-370f-d8b8" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -20567,6 +20593,7 @@ Each time a model in a SQUADRON unit from your army makes a ranged attack that t
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="7afb-a0f6-b95d-e791" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -20738,6 +20765,366 @@ Each time a model in a SQUADRON unit from your army makes a ranged attack that t
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a14e-0010-6dbf-9b4c"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Recon Element Enhancements" hidden="false" id="adbf-99e0-4ea0-6c89">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="2f24-9116-6351-2502" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scare Gas Grenades" hidden="false" id="47a5-e9b8-f679-5ee2">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="2f24-9116-6351-2502" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Scare Gas Grenades" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a50e-2633-3849-a9c9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ASTRA MILITARUM INFANTRY model only. Once per battle, as the start of any phase, the bearer can use this Enhancement. If it does, select one enemy unit within 8&quot; of the bearer&apos;s unit (excluding MONSTER and VEHICLE units); that unit must take a Battle-shock test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0daf-c1f9-6884-547f"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="00b7-425e-c713-88af" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Survival Gear" hidden="false" id="6915-4f04-33db-f44e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="2f24-9116-6351-2502" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Survival Gear" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="28d0-9e01-e0e3-6411">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ASTRA MILITARUM INFANTRY model only. The bearer has the Scouts 6&quot; ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cdf-2c37-b8ff-ca18"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="020c-abf9-3ede-91f8" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Guerrilla Honours" hidden="false" id="48f8-1944-e1fc-840f">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="2f24-9116-6351-2502" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Guerrilla Honours" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9262-c84e-670c-dc99">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">INFANTRY OFFICER MODEL only. After both players have deployed their armies, if the bearer is on the battlefield, select up to three other ASTRA MILITARUM INFANTRY units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2aa6-1c8c-51e2-da87"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1676-32a0-aa86-1839" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tripwires" hidden="false" id="757e-8d76-d2cc-1591">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="2f24-9116-6351-2502" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Tripwires" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1cc6-04d4-7df4-3c3c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ASTRA MILITARUM INFANTRY model only. Each time an enemy INFANTRY or MOUNTED unit ends a Normal, Advance, Charge or Fall Back move within 9&quot; of the bearer&apos;s unit, roll one D6: on a 4+, until the start of your next turn, that enemy unit is stunned. While a unit is stunned, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d2b-89c1-dd9a-17ff"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2fec-634f-2f5c-e701" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9c8-02af-bf59-7109"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Hammer of the Emperor Enhancements" hidden="false" id="a1ca-369b-de5c-6d1e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="3120-15e4-9eca-6619" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Indomitable Steed" hidden="false" id="f23f-1b59-9cb0-a973">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3120-15e4-9eca-6619" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Indomitable Steed" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7632-7ae8-1650-9689">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">VEHICLE OFFICER model only. The bearer has the Feel No Pain 6+ ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc5a-86d4-a863-a509"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d16f-2f04-4fd5-804b" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Feel No Pain 6+" id="f599-18df-47dc-6692" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Regimental Banner" hidden="false" id="300a-95f3-c9a5-4a90">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3120-15e4-9eca-6619" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Regimental Banner" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6bd0-432c-477a-da4f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">VEHICLE OFFICER model only. Add 3 to the bearer&apos;s Objective Control characteristic.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f549-e2d4-fc1d-3762"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a13e-396b-9a82-011c" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Calm Under Fire" hidden="false" id="17c5-61c4-87ed-3f65">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3120-15e4-9eca-6619" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Calm Under Fire" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="84d6-648a-5161-b061">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">VEHICLE OFFICER model only. Once per turn, after the bearer issues an Order to a SQUADRON unit from your army, it can issue the same Order to another SQUADRON unit from your army.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef7d-0ed3-94e9-1087"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="20c6-841b-6076-554e" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Veteran Crew" hidden="false" id="078c-fcb9-f083-79bc">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3120-15e4-9eca-6619" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Veteran Crew" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5fb6-549e-8fe8-cd2e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">VEHICLE OFFICER model only. Each time a model in the bearer&apos;s unit makes a ranged attack, re-roll a Hit roll of 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0fe-067a-657d-49da"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ee01-6a2f-267e-692a" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4810-dc86-df49-4edd"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -21600,9 +21987,15 @@ Each time a model in a SQUADRON unit from your army makes a ranged attack that t
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Voice Of Command" hidden="false" id="53c9-34f6-2443-a95e">
-      <description>If your Army Faction is ASTRA MILITARUM, OFFICER models with this ability can issue Orders. Each OFFICER&apos;s datasheet will specify how many Orders it can issue and which units are eligible to receive those Orders. Each time an OFFICER model issues an Order, select one of the Orders below, then select one eligible friendly unit within 6&quot; of that OFFICER model to issue it to. OFFICER models can issue Orders in your Command phase and at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield.
+      <description>If your Army Faction is ASTRA MILITARUM, OFFICER models with this ability can issue Orders. Each OFFICER&apos;s datasheet will specify how many Orders it can issue and which units are eligible to receive those Orders. Each time an OFFICER model issues an Order, select one of the Orders below, then select one eligible friendly unit within 6&quot; of that OFFICER model to issue it to.
+
+
+OFFICER models can issue Orders in your Command phase and at the end of a phase in which they disembarked from a TRANSPORT or were set up on the battlefield.
 
 Until the start of your next Command phase, the unit you selected is affected by that Order. Unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.
+
+
+Only ASTRA MILITARUM models gain the benefit of an Order issued to their unit
 
 MOVE! MOVE! MOVE!
 Add 3&quot; to the Move characteristic of models in this unit.
