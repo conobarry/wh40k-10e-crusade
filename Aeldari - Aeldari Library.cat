@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="61" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="99ea-c83f-a217-912b" name="Aeldari - Aeldari Library" revision="62" battleScribeVersion="2.03" library="true" gameSystemId="0ec3-9279-433a-3f91" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="442c-a37c-3908-d701" name="Index: Aeldari" shortName="I:Aeldari" publisher="Index: Aeldari" publicationDate="6/15/2023"/>
     <publication id="1427-7c5c-863f-ac94" name="Index: Drukhari" shortName="I:Drukhari" publisher="Index: Drukhari" publicationDate="6/15/2023"/>
@@ -109,7 +109,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -120,7 +120,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -131,7 +131,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -139,7 +139,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -175,7 +175,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -186,7 +186,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -197,7 +197,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -205,7 +205,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3668,7 +3668,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6970,7 +6970,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10032,7 +10032,7 @@ become separate units, with their original Starting Strengths.</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -12428,7 +12428,7 @@ You can attach this unit to the above unit, even if one other Leader unit (excl
           <modifiers>
             <modifier type="set" value="1" field="b6d5-a715-656e-4108">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f1-47f9-a3a4-9bfb" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e262-a1d8-b589-5cf3" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -23407,8 +23407,8 @@ charge in a turn in which it Advanced</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="34a5-8c7e-f468-82d1" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f1-47f9-a3a4-9bfb" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="a2ff-d394-3251-5b6b" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="e262-a1d8-b589-5cf3" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23615,8 +23615,8 @@ charge in a turn in which it Advanced</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="34a5-8c7e-f468-82d1" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f1-47f9-a3a4-9bfb" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="a2ff-d394-3251-5b6b" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="e262-a1d8-b589-5cf3" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23632,7 +23632,7 @@ charge in a turn in which it Advanced</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -23656,7 +23656,7 @@ Pain tokens.</description>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -23674,7 +23674,7 @@ Each time a Drukhari or Harlequins model from your army makes an attack, if th
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -23685,8 +23685,8 @@ Each time a Drukhari or Harlequins model from your army makes an attack, if th
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="34a5-8c7e-f468-82d1" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="1f1-47f9-a3a4-9bfb" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="a2ff-d394-3251-5b6b" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="e262-a1d8-b589-5cf3" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23928,7 +23928,7 @@ Each time a Drukhari or Harlequins model from your army makes an attack, if th
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="a27b-ac32-f0fd-8111" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="77aa-6492-a785-e1b9" shared="true" includeChildSelections="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="34a5-8c7e-f468-82d1" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="a2ff-d394-3251-5b6b" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -24074,14 +24074,14 @@ At the start of any phase, you can expend one or more Pain tokens from your Pai
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true" id="48e8-7037-a822-6674"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="65c0-6a92-88da-543d" shared="true" id="48e8-7037-a822-6674"/>
           </conditions>
         </modifier>
       </modifiers>
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Unaligned Forces" id="c17a-dd67-8900-8c6" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Unaligned Forces" id="c17a-dd67-8900-8c6" targetId="1dd3-259e-1700-099f" importRootEntries="true"/>
   </catalogueLinks>
   <sharedProfiles>
     <profile name="Corsair Skyreaver Band" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a2e7-33f9-5d08-558a">

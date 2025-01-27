@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b39e-4401-8f3e-fdf7" name="Imperium - Adepta Sororitas" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="53" battleScribeVersion="2.03" authorName="CrusherJoe" type="catalogue" authorContact="@CrusherJoe on Discord" authorUrl="Sometimes GitHub blows">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f096-0ddb-2079-5c7e" name="Imperium - Adepta Sororitas" gameSystemId="0ec3-9279-433a-3f91" gameSystemRevision="1" revision="54" battleScribeVersion="2.03" authorName="CrusherJoe" type="catalogue" authorContact="@CrusherJoe on Discord" authorUrl="Sometimes GitHub blows">
   <categoryEntries>
     <categoryEntry name="Aestred Thurga and Agathae Dolan" hidden="false" id="c8ba-2b2d-e47f-d7a6"/>
     <categoryEntry name="Arco-flagellants" hidden="false" id="63f8-3a5d-ef9c-d86e"/>
@@ -7110,7 +7110,7 @@ Celestian Sacresants and Paragon Warsuits models in that unit by 1.</descriptio
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="f82d-fbeb-8ed2-4284" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="40ad-450d-52f8-cdb7" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="40ad-450d-52f8-cdb7" targetId="cc22-58b1-3d03-21aa" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Titans" id="3d9-6f43-e1de-ae2b" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
   </catalogueLinks>
   <readme>GW can go fuck yourself with these points</readme>
