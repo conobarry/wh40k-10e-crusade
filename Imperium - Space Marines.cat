@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1844-3794-61d4-b9a3" name="Imperium - Space Marines" revision="92" battleScribeVersion="2.03" library="false" gameSystemId="0ec3-9279-433a-3f91" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Space Marines" revision="91" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="539-7da4-d962-1a64" name="Primaris" hidden="false"/>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
@@ -1113,7 +1113,7 @@
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2812,7 +2812,7 @@ this unit, add 1 to any armour saving throw made against that attack.</character
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e618-5809-023d-73b1" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3853,7 +3853,7 @@ Strategic Reserves.</characteristic>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3907,7 +3907,7 @@ Strategic Reserves.</characteristic>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4523,7 +4523,7 @@ Strategic Reserves.</characteristic>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5242,7 +5242,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
@@ -5479,7 +5479,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
@@ -5799,7 +5799,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
@@ -6529,7 +6529,7 @@ by 1.</characteristic>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6812,7 +6812,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6993,7 +6993,7 @@ by 1.</characteristic>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7210,7 +7210,7 @@ by 1.</characteristic>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7364,7 +7364,7 @@ by 1.</characteristic>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8013,7 +8013,7 @@ by 1.</characteristic>
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8113,7 +8113,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
@@ -8259,7 +8259,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8537,7 +8537,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8762,7 +8762,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
@@ -9121,7 +9121,7 @@ by 1.</characteristic>
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9239,7 +9239,7 @@ by 1.</characteristic>
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9353,7 +9353,7 @@ by 1.</characteristic>
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9433,7 +9433,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9516,7 +9516,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9589,7 +9589,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10257,7 +10257,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e618-5809-023d-73b1" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11435,7 +11435,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11569,7 +11569,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11684,7 +11684,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11871,7 +11871,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11961,7 +11961,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12071,7 +12071,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12221,12 +12221,12 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12386,12 +12386,12 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12725,7 +12725,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12916,7 +12916,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -13024,7 +13024,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -13142,7 +13142,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -13299,7 +13299,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -13598,7 +13598,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14082,7 +14082,7 @@ You can attach this model to a unit it can lead units even if one Captain or Ch
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14216,7 +14216,7 @@ model is within 12&quot;.</characteristic>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14304,12 +14304,12 @@ model is within 12&quot;.</characteristic>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14408,7 +14408,7 @@ model is within 12&quot;.</characteristic>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14598,7 +14598,7 @@ model is within 12&quot;.</characteristic>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -14679,7 +14679,7 @@ weapons equipped by models in this model’s unit have the [DEVASTATING WOUNDS]
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15373,7 +15373,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e618-5809-023d-73b1" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15469,7 +15469,7 @@ You can attach this model to one of the above units even if one Captain or Chap
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e618-5809-023d-73b1" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15681,7 +15681,7 @@ You can attach this model to the above unit even if one Captain, Chapter Master
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15878,7 +15878,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -16872,7 +16872,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <modifiers>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -17253,7 +17253,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -17680,7 +17680,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -17795,7 +17795,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -18036,7 +18036,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -18327,7 +18327,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -18919,7 +18919,7 @@ You can attach this model to one of the above units even if one Character model
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19422,7 +19422,7 @@ You can attach this model to one of the above units even if one Character model
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19604,7 +19604,7 @@ You can attach this model to one of the above units even if one Character model
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19688,7 +19688,7 @@ You can attach this model to one of the above units even if one Character model
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19917,7 +19917,7 @@ Attacks characteristic of 7.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -20012,12 +20012,12 @@ Attacks characteristic of 7.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -20131,7 +20131,7 @@ Attacks characteristic of 7.</characteristic>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -20861,7 +20861,7 @@ In your Command phase, select one Adeptus Astartes unit from your army; until th
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -20870,7 +20870,7 @@ In your Command phase, select one Adeptus Astartes unit from your army; until th
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -20905,7 +20905,7 @@ For the purposes of determining which models can embark within a TRANSPORT model
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -20942,7 +20942,7 @@ have the [ANTI-PSYKER 4+] ability.</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="e618-5809-023d-73b1" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -20990,7 +20990,7 @@ At the end of each player’s turn, you can select one of the Sagas listed below
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c5f9-8663-9065-9848" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21053,7 +21053,7 @@ At the end of each player’s turn, you can select one of the Sagas listed below
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21086,7 +21086,7 @@ to the Wound roll.’</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21103,7 +21103,7 @@ ADEPTUS ASTARTES MOUNTED units from your army are eligible to shoot and declare 
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c5f9-8663-9065-9848" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21134,7 +21134,7 @@ Once you have made your selections, remove those units from the battlefield and 
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c5f9-8663-9065-9848" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21143,7 +21143,7 @@ Once you have made your selections, remove those units from the battlefield and 
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b198-0fec-ee4d-f05d" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21187,7 +21187,7 @@ Each time a model in this unit makes an attack, you can ignore any or all modi
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21196,7 +21196,7 @@ Each time a model in this unit makes an attack, you can ignore any or all modi
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21225,7 +21225,7 @@ Models in this unit have a 5+ invulnerable save against ranged attacks</charact
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="e618-5809-023d-73b1" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21245,7 +21245,7 @@ While Adeptus Astartes Terminator units from your army are not Battle‑shocked
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c5f9-8663-9065-9848" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ef9-15ce-e3e6-36de" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21441,7 +21441,7 @@ Their Appointed Hour: You can re‑roll Advance and Charge rolls made for this
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="4d18-436e-360c-a380" shared="true" id="51a8-8918-ce5b-348" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -21458,7 +21458,7 @@ Their Appointed Hour: You can re‑roll Advance and Charge rolls made for this
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="e618-5809-023d-73b1" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="7047-73a6-28e-c859" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
@@ -23041,7 +23041,7 @@ your army</characteristic>
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="1242-7b3f-a47e-503a" shared="true" id="11e1-f89d-8dbc-fb5b" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="f193-158b-013c-8383" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23262,7 +23262,7 @@ those tests.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="e618-5809-023d-73b1" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="afb4-59c7-fa93-55f6" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
@@ -23374,10 +23374,10 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="c047-b43d-ba0f-5f32" targetId="cc22-58b1-3d03-21aa" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Library - Titans" id="896f-5094-b2f2-8aa8" targetId="27ad-64c2-faeb-acba" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="e24b-8767-615b-7565" targetId="f366-ebae-5165-8f32" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="9e7d-2e90-7a2c-3130" targetId="1d9d-8feb-86d4-d9c2" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="c047-b43d-ba0f-5f32" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Titans" id="896f-5094-b2f2-8aa8" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="e24b-8767-615b-7565" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="9e7d-2e90-7a2c-3130" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
   </catalogueLinks>
   <profileTypes>
     <profileType name="Deeds Worthy of Saga" hidden="false" id="cc48-131-6c21-72f1">

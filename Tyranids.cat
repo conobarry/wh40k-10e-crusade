@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9f18-0521-a9da-17ea" name="Xenos - Tyranids" revision="73" battleScribeVersion="2.03" library="false" gameSystemId="0ec3-9279-433a-3f91" gameSystemRevision="1" type="catalogue" authorName="FitalShell" authorContact="fitalshell">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b984-7317-81cc-20f" name="Xenos - Tyranids" revision="72" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="FitalShell" authorContact="fitalshell">
   <categoryEntries>
     <categoryEntry name="Synapse" hidden="false" id="4129-a453-686a-d38a"/>
     <categoryEntry id="4f10-fe01-4b80-8d6b" name="Winged Hive Tyrant" hidden="false"/>
@@ -436,7 +436,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="9f18-0521-a9da-17ea" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b984-7317-81cc-20f" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8073,7 +8073,7 @@ Each time a Tyranids model with this Hyper-adaptation makes an attack that targe
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Unaligned Forces" id="e1d1-13ae-8bc4-4330" targetId="1dd3-259e-1700-099f" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Unaligned Forces" id="e1d1-13ae-8bc4-4330" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
   </catalogueLinks>
   <sharedRules>
     <rule id="395b-a159-b293-27aa" name="Shadow in the Warp" hidden="false">
@@ -8081,7 +8081,7 @@ Each time a Tyranids model with this Hyper-adaptation makes an attack that targe
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="9f18-0521-a9da-17ea" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b984-7317-81cc-20f" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="623e-d8c5-903a-de94" name="Imperium - Adeptus Mechanicus" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="0ec3-9279-433a-3f91" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -79,7 +79,7 @@
     <entryLink id="8560-45df-99ff-57d4" name="Skorpius Disintegrator" hidden="false" collective="false" import="true" targetId="3fcc-b6a1-399b-1a29" type="selectionEntry"/>
     <entryLink id="b14b-a1bf-b27f-5c18" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="2b9c-3982-701d-f8fd" type="selectionEntry"/>
     <entryLink id="a548-ba7d-175a-e8b2" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="6424-ed86-9e15-3e14" type="selectionEntry"/>
-    <entryLink id="c0d0-119d-f647-49dc" name="Sydonian Dragoons with taser lances" hidden="false" collective="false" import="true" targetId="3053-c0c1-aedd-b211" type="selectionEntry"/>
+    <entryLink id="c0d0-119d-f647-49dc" name="Sydonian Dragoons (Taser Lance &amp; phosphor serpenta)" hidden="false" collective="false" import="true" targetId="3053-c0c1-aedd-b211" type="selectionEntry"/>
     <entryLink id="875c-2e6-3e7d-76dd" name="Tech-Priest Enginseer" hidden="false" collective="false" import="true" targetId="c0e0-4d86-96d2-ec86" type="selectionEntry"/>
     <entryLink id="6bf3-dd34-975d-d8f1" name="Tech-Priest Manipulus" hidden="false" collective="false" import="true" targetId="2d9b-610a-dc4d-15ae" type="selectionEntry"/>
     <entryLink id="9027-13fe-73de-3c82" name="Technoarcheologist" hidden="false" collective="false" import="true" targetId="fa82-61cc-aa85-e94c" type="selectionEntry"/>
@@ -98,7 +98,7 @@
         <entryLink import="true" name="Show Titans" hidden="false" type="selectionEntry" id="d6cf-3f1f-46e1-43e2" targetId="f26b-79db-80e0-3a3b"/>
       </entryLinks>
     </entryLink>
-    <entryLink import="true" name="Sydonian Dragoons with radium jezzails" hidden="false" type="selectionEntry" id="155b-e47a-255b-2877" targetId="d99a-6563-8c08-23c"/>
+    <entryLink import="true" name="Sydonian Dragoons (Radium jezzail &amp; phosphor serpenta)" hidden="false" type="selectionEntry" id="155b-e47a-255b-2877" targetId="d99a-6563-8c08-23c"/>
     <entryLink import="true" name="Sydonian Skatros" hidden="false" type="selectionEntry" id="71e5-42c0-9a4a-f97c" targetId="52e7-9347-3f16-9eec"/>
     <entryLink import="true" name="Servitors [Legends]" hidden="false" id="e247-5e94-9767-87b" type="selectionEntry" targetId="2183-5b38-1726-2a11"/>
     <entryLink import="true" name="X-101 [Legends]" hidden="false" id="2794-3a4e-88d9-1aa7" type="selectionEntry" targetId="a896-3e21-1319-c86"/>
@@ -7509,7 +7509,7 @@ CONQUEROR IMPERATIVE
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="ed86-1992-812a-8d08" name="Imperium - Imperial Knights - Library" targetId="1b6d-dc06-5db9-c7d1" type="catalogue" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="53-4e2c-daf4-3493" targetId="cc22-58b1-3d03-21aa" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="53-4e2c-daf4-3493" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Titans" id="7f89-dacb-7dc6-5b33" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

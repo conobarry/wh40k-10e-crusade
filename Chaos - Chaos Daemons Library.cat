@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="a3b3-b3fb-185d-b341" name="Chaos - Daemons Library" revision="39" battleScribeVersion="2.03" library="true" gameSystemId="0ec3-9279-433a-3f91" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b45c-af22-788a-dfd6" name="Chaos - Daemons Library" revision="38" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="e3ec-7a32-ae62-8727" name="Index - Chaos Daemons"/>
   </publications>
@@ -128,7 +128,7 @@
       <modifiers>
         <modifier type="set" value="0" field="4823-dbb2-d0bc-a79c">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="1" field="4823-dbb2-d0bc-a79c">
@@ -136,7 +136,7 @@
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="7318-1560-cbf-6cab" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -151,7 +151,7 @@
       <modifiers>
         <modifier type="set" value="0" field="c494-86fd-91f7-7938">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="1" field="c494-86fd-91f7-7938">
@@ -159,7 +159,7 @@
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="3676-165c-4a2e-8194" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -171,7 +171,7 @@
       <modifiers>
         <modifier type="set" value="0" field="b1ab-5382-1802-48bd">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="1" field="b1ab-5382-1802-48bd">
@@ -179,7 +179,7 @@
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="303b-4e68-2760-909f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -191,7 +191,7 @@
       <modifiers>
         <modifier type="set" value="0" field="8d20-33a-d775-dbd7">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="1" field="8d20-33a-d775-dbd7">
@@ -199,7 +199,7 @@
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="a83e-ba41-7d03-5b2d" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -214,9 +214,9 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="5b1b-7fe5-8494-2240" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e765-40b4-8cfa-c878" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="09eb-2296-24a7-0a36" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="5108-f98-63c2-53cb" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1069-10ff-3ba9-873b" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="df9a-59b2-f464-59ad" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -365,7 +365,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4770-cb41-c487-3d7c" type="notInstanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d265-877b-e03d-30ca" type="notInstanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -512,7 +512,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -698,7 +698,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -799,7 +799,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -873,7 +873,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -948,7 +948,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1094,7 +1094,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1194,7 +1194,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1273,7 +1273,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1350,7 +1350,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1443,7 +1443,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1710,7 +1710,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1769,7 +1769,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1941,7 +1941,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2024,7 +2024,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2106,7 +2106,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2190,7 +2190,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2274,12 +2274,12 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2434,7 +2434,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <modifiers>
                 <modifier type="set" field="52d1-e6ce-959a-42fa" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09eb-2296-24a7-0a36" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df9a-59b2-f464-59ad" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2453,7 +2453,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <modifiers>
                 <modifier type="set" field="9cb9-bd0-7284-cece" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b1b-7fe5-8494-2240" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5108-f98-63c2-53cb" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2494,7 +2494,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <modifiers>
                 <modifier type="set" field="3ff6-8e13-dc2-c622" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e765-40b4-8cfa-c878" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1069-10ff-3ba9-873b" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2534,7 +2534,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2690,7 +2690,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <modifiers>
                 <modifier type="set" field="1cc6-1250-4792-b477" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09eb-2296-24a7-0a36" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df9a-59b2-f464-59ad" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2709,7 +2709,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <modifiers>
                 <modifier type="set" field="1628-e3f8-3da0-6e0" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b1b-7fe5-8494-2240" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5108-f98-63c2-53cb" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2750,7 +2750,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <modifiers>
                 <modifier type="set" field="e177-badf-5479-d908" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e765-40b4-8cfa-c878" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1069-10ff-3ba9-873b" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2790,7 +2790,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2935,7 +2935,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3122,7 +3122,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3260,7 +3260,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3364,7 +3364,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3442,7 +3442,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3559,7 +3559,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3636,7 +3636,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3828,7 +3828,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4000,7 +4000,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4023,7 +4023,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4226,7 +4226,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4248,7 +4248,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4444,7 +4444,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4622,7 +4622,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4840,7 +4840,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4946,7 +4946,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5072,7 +5072,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5172,7 +5172,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5272,7 +5272,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5398,7 +5398,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5497,7 +5497,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5521,7 +5521,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5706,7 +5706,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5725,7 +5725,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5916,7 +5916,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6117,7 +6117,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6347,7 +6347,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6484,7 +6484,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6583,7 +6583,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6759,7 +6759,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6885,7 +6885,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7033,7 +7033,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7135,7 +7135,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7226,7 +7226,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7253,7 +7253,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7355,7 +7355,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7646,7 +7646,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7793,7 +7793,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7929,7 +7929,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8014,7 +8014,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="52d1-e6ce-959a-42fa" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09eb-2296-24a7-0a36" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df9a-59b2-f464-59ad" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8033,7 +8033,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="9cb9-bd0-7284-cece" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b1b-7fe5-8494-2240" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5108-f98-63c2-53cb" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8074,7 +8074,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="3ff6-8e13-dc2-c622" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e765-40b4-8cfa-c878" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1069-10ff-3ba9-873b" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8161,7 +8161,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8240,7 +8240,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="52d1-e6ce-959a-42fa" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09eb-2296-24a7-0a36" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df9a-59b2-f464-59ad" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8259,7 +8259,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="9cb9-bd0-7284-cece" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b1b-7fe5-8494-2240" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5108-f98-63c2-53cb" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8300,7 +8300,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="3ff6-8e13-dc2-c622" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e765-40b4-8cfa-c878" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1069-10ff-3ba9-873b" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8374,7 +8374,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8518,7 +8518,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8635,7 +8635,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8762,7 +8762,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8920,7 +8920,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9058,7 +9058,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9213,7 +9213,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9342,7 +9342,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9437,7 +9437,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
         </modifier>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="4770-cb41-c487-3d7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d265-877b-e03d-30ca" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9457,7 +9457,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="52d1-e6ce-959a-42fa" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09eb-2296-24a7-0a36" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df9a-59b2-f464-59ad" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9476,7 +9476,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="9cb9-bd0-7284-cece" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b1b-7fe5-8494-2240" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5108-f98-63c2-53cb" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9517,7 +9517,7 @@ Designer’s Note: While this unit contains one or more PINK HORRORS models, the
               <modifiers>
                 <modifier type="set" field="3ff6-8e13-dc2-c622" value="1">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e765-40b4-8cfa-c878" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1069-10ff-3ba9-873b" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10620,6 +10620,6 @@ While an enemy unit is within your army’s Shadow of Chaos and/or it is within 
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Unaligned Forces" id="861b-e3be-7a6c-4a6" targetId="1dd3-259e-1700-099f" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Unaligned Forces" id="861b-e3be-7a6c-4a6" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cc22-58b1-3d03-21aa" name="Imperium - Agents of the Imperium" gameSystemId="0ec3-9279-433a-3f91" gameSystemRevision="1" revision="58" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="57" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Vindicare Assassin" hidden="false" id="efa3-2cf5-dcfb-b976">
       <categoryLinks>
@@ -171,7 +171,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -179,7 +179,7 @@
         </modifier>
         <modifier type="increment" value="15" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -335,7 +335,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -486,7 +486,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -495,7 +495,7 @@
         </modifier>
         <modifier type="increment" value="10" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -633,7 +633,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -916,7 +916,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -924,7 +924,7 @@
         </modifier>
         <modifier type="increment" value="30" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -949,7 +949,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -957,7 +957,7 @@
         </modifier>
         <modifier type="increment" value="20" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -987,7 +987,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1645,7 +1645,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -1722,7 +1722,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -1730,7 +1730,7 @@
         </modifier>
         <modifier type="increment" value="15" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1797,7 +1797,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -2398,7 +2398,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -2552,7 +2552,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -2560,7 +2560,7 @@
         </modifier>
         <modifier type="increment" value="20" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2708,7 +2708,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -2716,7 +2716,7 @@
         </modifier>
         <modifier type="increment" value="20" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2853,7 +2853,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -2962,7 +2962,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -3169,7 +3169,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -3322,7 +3322,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -3785,7 +3785,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -3868,7 +3868,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -4009,7 +4009,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -4081,7 +4081,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -4192,7 +4192,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -4553,7 +4553,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
@@ -4681,7 +4681,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -5025,7 +5025,7 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -5034,7 +5034,7 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
         </modifier>
         <modifier type="increment" value="15" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5244,7 +5244,7 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5565,7 +5565,7 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -5573,7 +5573,7 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
         </modifier>
         <modifier type="increment" value="10" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="10" field="51b2-306e-1021-d207">
@@ -5581,7 +5581,7 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="7" field="selections" scope="4469-7239-717e-9abd" childId="model" shared="true" includeChildSelections="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5827,14 +5827,14 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
       <modifiers>
         <modifier type="increment" value="20" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -6061,7 +6061,7 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -6223,7 +6223,7 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -6694,14 +6694,14 @@ When mustering your army, each OFFICIO ASSASSINORUM unit from your army has the 
       <modifiers>
         <modifier type="increment" value="15" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -6930,14 +6930,14 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
       <modifiers>
         <modifier type="increment" value="15" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -7081,7 +7081,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -7215,7 +7215,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -7487,7 +7487,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="7646-989b-ea89-bb13" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="7646-989b-ea89-bb13" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7910,7 +7910,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="03d2-c7fa-06c8-7826" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="03d2-c7fa-06c8-7826" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8039,7 +8039,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="f369-961c-3f34-400d" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="f369-961c-3f34-400d" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8071,7 +8071,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="5616-cc5f-5c75-3229" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="5616-cc5f-5c75-3229" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8601,7 +8601,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="5832-f996-3882-0700" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="5832-f996-3882-0700" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10109,7 +10109,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="33c2-886a-180b-20d5" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="33c2-886a-180b-20d5" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10137,7 +10137,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="eb62-bc35-f978-4733" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="eb62-bc35-f978-4733" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10768,7 +10768,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="e8c0-baa4-3326-1348" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="e8c0-baa4-3326-1348" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10883,7 +10883,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="6c88-a276-548f-b074" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="6c88-a276-548f-b074" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10979,7 +10979,7 @@ At the start of the Declare Battle Formations step, you can select one SISTERS O
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true" id="302e-d6d4-5ad0-ffba" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true" id="302e-d6d4-5ad0-ffba" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11833,7 +11833,7 @@ Note that you can include AGENTS OF THE IMPERIUM DEDICATED TRANSPORT units in su
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true" includeChildSelections="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11854,7 +11854,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11867,7 +11867,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11880,7 +11880,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11893,7 +11893,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11906,7 +11906,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11919,7 +11919,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11932,7 +11932,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11945,7 +11945,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11958,7 +11958,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11971,7 +11971,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11984,7 +11984,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -11997,7 +11997,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12010,7 +12010,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12023,7 +12023,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12036,7 +12036,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12049,7 +12049,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12062,7 +12062,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12075,7 +12075,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12088,7 +12088,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12101,7 +12101,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12114,7 +12114,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12127,7 +12127,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12140,7 +12140,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12163,7 +12163,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12176,7 +12176,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12185,7 +12185,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12202,7 +12202,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12215,7 +12215,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="d074-7a54-bf4f-768c" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12227,7 +12227,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12239,7 +12239,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12252,7 +12252,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="d074-7a54-bf4f-768c" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12264,7 +12264,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12277,7 +12277,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12289,7 +12289,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12306,7 +12306,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12320,13 +12320,13 @@ For the purposes of interacting with terrain features, all models in units with 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bcb0-e79c-dc89-9515" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12342,7 +12342,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12358,7 +12358,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12375,7 +12375,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12390,7 +12390,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12412,7 +12412,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12421,7 +12421,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12443,7 +12443,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12452,7 +12452,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12474,7 +12474,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12483,7 +12483,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12505,7 +12505,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12514,7 +12514,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12535,7 +12535,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12544,7 +12544,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12566,7 +12566,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12575,7 +12575,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12592,7 +12592,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="1eb4-fcfc-7e90-1ea0" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12605,7 +12605,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12618,7 +12618,7 @@ For the purposes of interacting with terrain features, all models in units with 
             <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
           </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -12627,7 +12627,7 @@ For the purposes of interacting with terrain features, all models in units with 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="cc22-58b1-3d03-21aa" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="e08b-2448-5606-fefb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
@@ -12763,9 +12763,9 @@ For the purposes of interacting with terrain features, all models in units with 
     </infoGroup>
   </sharedInfoGroups>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Unaligned Forces" id="86e9-bde3-3f93-f02a" targetId="1dd3-259e-1700-099f" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Library - Titans" id="b875-c145-319b-e7a0" targetId="27ad-64c2-faeb-acba" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="a989-d962-d348-900a" targetId="f366-ebae-5165-8f32" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Unaligned Forces" id="86e9-bde3-3f93-f02a" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Library - Titans" id="b875-c145-319b-e7a0" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="a989-d962-d348-900a" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Enhancements" id="c3c8-4ca0-ec6e-6686" hidden="false">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7834-023a-494e-ace4" name="Xenos - Genestealer Cults" gameSystemId="0ec3-9279-433a-3f91" gameSystemRevision="1" revision="62" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="3bdf-a114-5035-c6ac" name="Xenos - Genestealer Cults" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="61" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="Detachment" hidden="false" id="b96c-3fb6-1ee9-15ae">
       <constraints>
@@ -4939,7 +4939,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Hellhammer 2" hidden="false" type="selectionEntry" id="4b14-165e-b687-1078" targetId="8277-6399-5d74-760d">
+    <entryLink import="true" name="Hellhammer" hidden="false" type="selectionEntry" id="4b14-165e-b687-1078" targetId="8277-6399-5d74-760d">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -5205,7 +5205,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Leman Russ Commander" hidden="false" type="selectionEntry" id="3b7d-b60f-4c12-3ab0" targetId="5430-18e-d7b0-1d54">
+    <entryLink import="true" name="Tank Commander" hidden="false" type="selectionEntry" id="3b7d-b60f-4c12-3ab0" targetId="5430-18e-d7b0-1d54">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -6136,7 +6136,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Astra Militarum - Library" id="1931-3c9a-ba46-7c7b" targetId="5a44-f048-114b-e3ff"/>
     <catalogueLink type="catalogue" name="Unaligned Forces" id="4b53-81a-1d51-b85c" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Xenos - Tyranids" id="280e-0f30-94a8-e99a" targetId="9f18-0521-a9da-17ea"/>
+    <catalogueLink type="catalogue" name="Xenos - Tyranids" id="280e-0f30-94a8-e99a" targetId="b984-7317-81cc-20f"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Enhancements" hidden="false" id="fb5-9606-c45e-bcdb">
