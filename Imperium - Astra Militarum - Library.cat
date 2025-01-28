@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="99" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="100" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -1266,6 +1266,10 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="9663-135b-b831-b3ee" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="1944-fe5b-d927-b5c3" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cadian Shock Troops" hidden="false" id="a2aa-7688-dcb1-4132">
       <modifiers>
@@ -1811,6 +1815,8 @@
         <entryLink import="true" name="Chainsword Option" hidden="false" type="selectionEntryGroup" id="1145-952d-1c94-54d9" targetId="affb-48e8-1e07-fe4b"/>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="9135-5f9b-ecbd-57ec" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="7b8-f243-91a2-2b52" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="2351-cf04-1d40-143e" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="d804-f16a-82cc-8de9" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Bolt Pistol Option" hidden="false" id="2a00-5667-abe-8b4f" defaultSelectionEntryId="ad3-2167-f34c-2e14">
@@ -5453,6 +5459,10 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="3116-12de-9691-1879" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="9085-2b2a-d034-91c7" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ogryn Squad" hidden="false" id="c9eb-2007-af01-a853">
       <costs>
@@ -5974,6 +5984,8 @@
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ed9b-bf53-3395-5277" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="c4a2-c608-0add-817a" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="93ef-7e60-d611-5a6d" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="fef7-85de-4860-b1b4" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
       <profiles>
         <profile name="Malign Wardings(Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="90b9-635e-d3e3-7701">
@@ -6489,6 +6501,8 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ddd4-4fa6-5da-fffe" targetId="ea3f-b52b-8dc7-d365"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="6269-5b8f-2884-c4d3" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="c8e3-2272-499f-266c" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -6720,6 +6734,8 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="bc2f-d624-ec2f-e268" targetId="ea3f-b52b-8dc7-d365"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="0e8c-ecd1-2dee-d2a2" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="4460-fa0a-4c56-f36e" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -10710,6 +10726,8 @@
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="7ffc-e47c-e0d8-d2e4" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="bd67-ab5d-a400-6049" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="1a13-70e3-8896-c7e2" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="2b63-141d-cd91-5421" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Invulnerable Save 5+" hidden="false" type="profile" id="ae01-6c7d-3306-196a" targetId="3a3d-9e14-64a6-c032"/>
@@ -11027,6 +11045,8 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ba3-8617-c4ec-3601" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="d9cb-d00e-bd39-d1b9" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="1e6b-5a93-7bd1-dda0" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="6b22-91fe-e4a3-4985" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -16260,6 +16280,8 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="905e-550a-9166-83e5" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="66f5-2e7b-deaa-b01f" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="9d3a-edba-6fa3-18de" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="1e29-4296-6d76-e548" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sentinel Powerlifter [Legends]" hidden="false" id="8cc1-8512-710f-f15f">
@@ -18862,6 +18884,10 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
           </profiles>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="1f92-4550-1e8d-8c65" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="1da4-4626-4e09-7279" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krieg Combat Engineers" hidden="false" id="7193-fac8-23e8-b2f2">
       <costs>
@@ -19026,8 +19052,7 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
                   <profiles>
                     <profile name="Remote mine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="742a-526d-10bc-0d2c">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of your Shooting phase, you can select one enemy unit within 12&quot; of the bearer and roll one D6: on a 3+, that enemy unit suffers D6 mortal wounds, or D3+3 mortal wounds instead if it is a VEHICLE or FORTIFICATIONS unit.
-</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of your Shooting phase, you can select one enemy unit within 12&quot; of the bearer and roll one D6: on a 3+, that enemy unit suffers D6 mortal wounds, or D3+3 mortal wounds instead if it is a VEHICLE or FORTIFICATIONS unit.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -19635,6 +19660,8 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f0a-e226-b0de-492c"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0162-4aac-5d6d-24c1" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="b7d8-5a13-c50f-b73e" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-6 Wounds Remaining" hidden="false" type="profile" id="5792-49ba-5810-7d4b" targetId="30d1-9e89-5aa2-6bde"/>
@@ -20358,7 +20385,7 @@ Onslaught: 4 units</characteristic>
         <entryLink import="true" name="Vanquisher Battle Cannon" hidden="false" type="selectionEntry" id="9e6b-37ca-905b-e32d" targetId="2e39-f725-75aa-d68c"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Enhancements" hidden="false" id="33fd-bb93-1bf4-f1c">
+    <selectionEntryGroup name="Enhancements" hidden="false" id="33fd-bb93-1bf4-f1c" collapsible="true">
       <selectionEntryGroups>
         <selectionEntryGroup name="Combined Arms Enhancements" hidden="false" id="d572-4471-c9b8-dea5">
           <modifiers>

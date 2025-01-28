@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="32" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="33" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -524,6 +524,7 @@
   </forceEntries>
   <entryLinks>
     <entryLink id="7380-3e40-6ed6-b7cc" name="Battle Size" hidden="false" collective="false" import="true" targetId="564e-fbc6-5266-3ea4" type="selectionEntry"/>
+    <entryLink import="true" name="Crusade Options" hidden="false" id="17e1-4c58-4770-ba71" type="selectionEntry" targetId="2e43-860a-3614-6ec4"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="564e-fbc6-5266-3ea4" name="Battle Size" hidden="false" collective="false" import="true" type="upgrade">
@@ -683,15 +684,59 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Crusade Options" hidden="false" id="2e43-860a-3614-6ec4">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="82dc-c3a1-c4e2-c030" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e78f-9f32-23ad-6b50" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7560-a04e-e585-8b3b" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
+        <modifier type="set" value="0" field="e78f-9f32-23ad-6b50"/>
+        <modifier type="set-primary" value="4ac9-fd30-1e3d-b249" field="category"/>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Show Pariah Nexus Crusade" hidden="false" id="62af-c6ca-3e51-6bd4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3640-6b96-c7e4-e153" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a8b-463b-1f78-aedc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4575-44f8-6733-f298"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="3640-6b96-c7e4-e153"/>
+            <modifier type="set" value="0" field="3a8b-463b-1f78-aedc"/>
+            <modifier type="set" value="Pariah Nexus" field="name"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show Tyrannic War Crusade" hidden="false" id="ec7c-3a18-03da-4912">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="68c8-4407-bcdf-32ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee9a-1f75-94da-f788"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e4e-8140-7485-183a"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="68c8-4407-bcdf-32ca"/>
+            <modifier type="set" value="0" field="ee9a-1f75-94da-f788"/>
+            <modifier type="set" value="Tyrannic War" field="name"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show Cities of Ruin Crusade" hidden="false" id="65d2-1210-4961-69d8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d6cc-d3d2-972f-a23c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca7c-1de4-6b51-c47d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5453-f6be-6190-d3a7"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="d6cc-d3d2-972f-a23c"/>
+            <modifier type="set" value="0" field="ca7c-1de4-6b51-c47d"/>
+            <modifier type="set" value="Cities of Ruin" field="name"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="4acd-f39c-235c-b464" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -1168,12 +1213,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Cityfight" hidden="false" id="0ca4-20a7-e3ea-b718" type="selectionEntryGroup" targetId="e1f3-4908-29da-b3eb"/>
+        <entryLink import="true" name="Cities of Ruin" hidden="false" id="0ca4-20a7-e3ea-b718" type="selectionEntryGroup" targetId="e1f3-4908-29da-b3eb" collapsible="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Cities of Ruin" id="e1f3-4908-29da-b3eb" hidden="false">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Honours" id="b4a3-1ebb-06c1-2d32" hidden="false">
+        <selectionEntryGroup name="Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Cityfight Veteran" hidden="false" id="ccaf-32ee-b7e4-82f1">
               <costs>
@@ -1215,7 +1260,45 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Crusade Relics" id="6397-d12d-4ea8-c9f2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rust-Red Residue" hidden="false" id="e1d3-2e32-698b-a9e6">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dea6-f154-6998-84c2"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bf91-cd5a-ea21-49ef" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Rust-Red Residue" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d9d0-4f1f-1d15-4587">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn in the Command Phase, select one Ruins terrain feature or all Obstacles within 3”. If you select a Ruins feature, it is Damaged at the end of your turn and Destroyed at the end of your next Command Phase. If you select Obstacles, they are removed from the battlefield at the end of your turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="65d2-1210-4961-69d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedInfoGroups>
