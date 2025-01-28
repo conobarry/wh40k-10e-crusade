@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b0ae-12a5-c84-ea45" name="Imperium - Astra Militarum" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="17" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b0ae-12a5-c84-ea45" name="Imperium - Astra Militarum" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="18" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="true" name="‘Iron Hand’ Straken" hidden="false" type="selectionEntry" id="f38c-6b5-d8d3-32db" targetId="913f-3cb6-fb80-7f6a"/>
     <entryLink import="true" name="Aegis Defence Line" hidden="false" type="selectionEntry" id="2c5d-9f8f-b19d-53be" targetId="cb99-456-f100-40ed">
@@ -919,6 +919,7 @@
     <entryLink import="true" name="Ratlings" hidden="false" type="selectionEntry" id="75d6-a5e8-b8f8-9091" targetId="8293-a070-2c87-de30"/>
     <entryLink import="true" name="Order of Battle" hidden="false" id="798a-4601-4437-61e7" type="selectionEntry" targetId="eda7-8b4b-3719-af36"/>
     <entryLink import="true" name="Rogal Dorn Commander" hidden="false" id="22eb-19b1-6c0c-0f26" type="selectionEntry" targetId="d8e6-5e8c-ac81-a00d"/>
+    <entryLink import="true" name="Krieg Combat Engineers" hidden="false" id="93ea-7527-bfba-2876" type="selectionEntry" targetId="7193-fac8-23e8-b2f2"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink id="e373-3c0a-1185-467a" name="Imperium - Astra Militarum - Library" targetId="5a44-f048-114b-e3ff" type="catalogue" importRootEntries="false"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="98" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="99" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -2825,7 +2825,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Hellhammer 2" hidden="false" id="8277-6399-5d74-760d">
+    <selectionEntry type="model" import="true" name="Hellhammer" hidden="false" id="8277-6399-5d74-760d">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="450"/>
       </costs>
@@ -2869,7 +2869,7 @@
         </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Hellhammer 2" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9907-8b8a-4aff-2779">
+        <profile name="Hellhammer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9907-8b8a-4aff-2779">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">13</characteristic>
