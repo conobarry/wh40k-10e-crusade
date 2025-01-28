@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="30" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="31" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1153,6 +1153,55 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
           <constraints>
             <constraint type="max" value="3" field="selections" scope="self" shared="true" id="9825-f20a-66cc-7147" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Cityfight" hidden="false" id="0ca4-20a7-e3ea-b718" type="selectionEntryGroup" targetId="e1f3-4908-29da-b3eb"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Cityfight" id="e1f3-4908-29da-b3eb" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Battle Honours" id="b4a3-1ebb-06c1-2d32" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cityfight Veteran" hidden="false" id="ccaf-32ee-b7e4-82f1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e89-e07b-ddb7-ab38"/>
+              </constraints>
+              <profiles>
+                <profile name="Cityfight Veteran" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d7dc-d616-a8ee-8073">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is a CITYFIGHT VETERAN.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Siege Armour" hidden="false" id="13eb-8ae7-ae28-9db7">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8030-9525-55d0-ec62"/>
+              </constraints>
+              <profiles>
+                <profile name="Siege Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d236-2483-1f8d-d282">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged attacks targeting this unit never benefit from the Plunging Fire rule. In addition, if this unit is a VEHICLE it halves any damage taken from moving into a ruin, and if it is a MONSTER or VEHICLE it does not take any damage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
