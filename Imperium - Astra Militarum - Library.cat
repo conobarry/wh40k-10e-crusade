@@ -18938,8 +18938,18 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Krieg Combat Engineer w/ Autopistol and Trench Club" hidden="false" id="6040-02c9-bf83-f9b2">
               <entryLinks>
-                <entryLink import="true" name="Autopistol" hidden="false" id="05a6-002d-bfd6-fabb" type="selectionEntry" targetId="335b-72ef-e1e9-2323"/>
-                <entryLink import="true" name="Trench Club" hidden="false" id="bdbc-1778-63b4-a8c8" type="selectionEntry" targetId="eab9-8e27-d75b-7557"/>
+                <entryLink import="true" name="Autopistol" hidden="false" id="05a6-002d-bfd6-fabb" type="selectionEntry" targetId="335b-72ef-e1e9-2323">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4968-3a17-d6c3-cee2"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="735a-f133-af94-0580"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Trench Club" hidden="false" id="bdbc-1778-63b4-a8c8" type="selectionEntry" targetId="eab9-8e27-d75b-7557">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5486-b41e-8763-fb7d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf30-1096-be71-a1fc"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Krieg Combat Engineer" id="0b45-d957-3bc1-917c" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
@@ -18947,8 +18957,18 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Krieg Combat Engineer w/ Combat Shotgun and Close Combat Weapon" hidden="false" id="75fb-5ae4-f952-5a74">
               <entryLinks>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="a54b-4650-5068-a12d" type="selectionEntry" targetId="f61b-a631-1446-4453"/>
-                <entryLink import="true" name="Combat Shotgun" hidden="false" id="4c93-8218-42af-faab" type="selectionEntry" targetId="3a1e-908a-a67f-97d4"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="a54b-4650-5068-a12d" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef95-aef7-6790-06a6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d48-8525-7a70-80dc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Combat Shotgun" hidden="false" id="4c93-8218-42af-faab" type="selectionEntry" targetId="3a1e-908a-a67f-97d4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40f2-9e70-3ec2-83b3"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c695-f1dd-06fd-c283"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Krieg Combat Engineer" id="ad29-656d-e847-c6cb" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
@@ -18956,8 +18976,18 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Krieg Combat Engineer w/ Flamer" hidden="false" id="756c-5322-6423-942d">
               <entryLinks>
-                <entryLink import="true" name="Flamer" hidden="false" id="fa2b-d206-5480-d113" type="selectionEntry" targetId="5779-e27a-e226-5a66"/>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="bdeb-94e2-a6b3-0e12" type="selectionEntry" targetId="f61b-a631-1446-4453"/>
+                <entryLink import="true" name="Flamer" hidden="false" id="fa2b-d206-5480-d113" type="selectionEntry" targetId="5779-e27a-e226-5a66">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0007-5542-3e4a-02e5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfca-9cf8-4cba-ef3b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="bdeb-94e2-a6b3-0e12" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4eea-589b-0471-bcd6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15dd-eec9-7181-cb8b"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Krieg Combat Engineer" id="e598-3c4f-a9ff-4eaa" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
@@ -18968,8 +18998,18 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Krieg Combat Engineer w/ Remote Mine and Autopistol" hidden="false" id="f44e-7663-52ca-a0d5">
               <entryLinks>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="5f12-2336-4298-5903" type="selectionEntry" targetId="f61b-a631-1446-4453"/>
-                <entryLink import="true" name="Autopistol" hidden="false" id="5b1a-ee5f-3ead-dd6e" type="selectionEntry" targetId="335b-72ef-e1e9-2323"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="5f12-2336-4298-5903" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82a5-393b-c99f-bf74"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b28-2905-5aa7-4f07"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="5b1a-ee5f-3ead-dd6e" type="selectionEntry" targetId="335b-72ef-e1e9-2323">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8093-df75-58a7-5c1a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8ce-f393-450b-f171"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Krieg Combat Engineer" id="dcfd-5989-3f65-6f08" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
@@ -18981,7 +19021,7 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
                 <selectionEntry type="upgrade" import="true" name="Remote Mine" hidden="false" id="8708-f4cf-aeac-ff76">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b36-be39-ec03-7ca6"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e98-e65c-906a-c66e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6be9-c32e-e00a-46de"/>
                   </constraints>
                   <profiles>
                     <profile name="Remote mine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="742a-526d-10bc-0d2c">
