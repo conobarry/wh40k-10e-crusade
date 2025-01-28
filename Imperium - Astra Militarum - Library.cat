@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="97" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="98" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -8771,6 +8771,7 @@
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4d28-f2a7-67c1-eb2e" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aa9f-f137-1638-0369" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="679b-f37f-2388-748" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7193-fac8-23e8-b2f2" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9248,6 +9249,7 @@
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fbc0-10db-204-9142" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="38f1-6b2f-837e-96d2" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aa9f-f137-1638-0369" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7193-fac8-23e8-b2f2" shared="true"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="and">
@@ -18870,22 +18872,18 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="54e3-5045-251e-8453" id="8507-6c57-766a-a7ad" primary="false" name="Kasrkin"/>
         <categoryLink targetId="fa45-57e-930e-602b" id="4f3d-1c77-d0cf-8e13" primary="false" name="Faction: Astra Militarum"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="0335-0042-0cef-78d1" primary="false" name="Imperium"/>
         <categoryLink targetId="c8a1-fef-5569-61c9" id="92c1-3f78-eb25-4292" primary="false" name="Regiment"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="32e0-a41b-a757-b8a1" primary="false" name="Grenades"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="9537-f3cd-b6f6-8bfc" primary="true" name="Infantry"/>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="cf4c-e79e-18e3-5bef" primary="false" name="Smoke"/>
+        <categoryLink name="Krieg Combat Engineers" hidden="false" id="6eea-6d37-a272-bbaa" targetId="998d-8454-a430-c5d9" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e623-9b7c-fcfc-82b0" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="95" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="5" field="selections" scope="7193-fac8-23e8-b2f2" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
@@ -18893,325 +18891,114 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Kasrkin Sergeant" hidden="false" id="4d31-ce25-b114-ebba">
+        <selectionEntry type="model" import="true" name="Krieg Engineer Watchmaster" hidden="false" id="4d31-ce25-b114-ebba">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5faa-b34a-fa5f-014d"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="470a-a9be-e945-1cfb"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Kasrkin" hidden="false" type="profile" id="aded-b061-471a-7f54" targetId="6ed4-694c-ad3b-4b05"/>
+            <infoLink name="Krieg Combat Engineer" id="6802-9127-35a9-4fcf" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
           </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Chainsword Option" hidden="false" type="selectionEntryGroup" id="2092-90cd-7d07-e5d1" targetId="affb-48e8-1e07-fe4b"/>
-          </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Hot-shot laspistol Option" hidden="false" id="4949-53e2-8dc9-c84f" defaultSelectionEntryId="ae26-a7a0-9bc8-48eb">
+            <selectionEntryGroup name="Autopistol Option" id="6944-7a44-48f3-da8e" hidden="false" defaultSelectionEntryId="47ef-1274-ed9d-adec">
+              <entryLinks>
+                <entryLink import="true" name="Autopistol" hidden="false" id="47ef-1274-ed9d-adec" type="selectionEntry" targetId="335b-72ef-e1e9-2323"/>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="eee9-0a6e-05ae-da2d" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="999d-6d94-070b-5786" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="4d99-8e57-5663-345d" type="selectionEntry" targetId="4c45-96c1-aa2e-3e47"/>
+              </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="291a-af02-3326-e08c"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2ff-429e-9140-aac6"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5214-bad7-dde6-9907"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b80-1690-c8a4-c393"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Trench Club Option" id="14aa-7076-ab51-9704" hidden="false" defaultSelectionEntryId="cf7f-285a-a91f-1c65">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="653d-4a88-622d-e44c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6c5-12c7-0af9-4d8c"/>
               </constraints>
               <entryLinks>
-                <entryLink targetId="56ad-b03d-517e-124a" id="f29b-e86d-be1a-2a6c" type="selectionEntry" name="Hot-shot Laspistol" hidden="false"/>
-                <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="ef68-1815-33df-e48a" targetId="abf2-656d-322e-3c7e"/>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="90d6-3d6a-de71-9cbe" targetId="edce-b2da-b8c3-7c8b"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="e403-b7b4-623d-7dba" type="selectionEntry" targetId="7934-5223-153f-104e"/>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="cfcd-5d16-4e38-cc13" type="selectionEntry" targetId="600b-6aef-1737-a654"/>
+                <entryLink import="true" name="Trench Club" hidden="false" id="cf7f-285a-a91f-1c65" type="selectionEntry" targetId="eab9-8e27-d75b-7557"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Warrior Elite" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="05e5-92eb-4856-fe61">
+        <profile name="Grenadiers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="05e5-92eb-4856-fe61">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one Order to affect this unit until the start of your next Command phase, in addition to any other Orders issued to this unit by an Officer model this turn.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, you can target this unit with the Grenade Stratagem for 0CP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Kasrkin Troopers" hidden="false" id="b6ee-7bf0-4203-13f0" defaultSelectionEntryId="ecee-e0cc-22ab-d898">
+        <selectionEntryGroup name="4-9 Krieg Combat Engineers" hidden="false" id="b6ee-7bf0-4203-13f0" defaultSelectionEntryId="ecee-e0cc-22ab-d898">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Kasrkin Trooper" hidden="false" id="37aa-6167-8b7e-7cd5">
-              <infoLinks>
-                <infoLink name="Kasrkin" hidden="false" type="profile" id="417f-5b87-e796-57a2" targetId="6ed4-694c-ad3b-4b05"/>
-              </infoLinks>
+            <selectionEntry type="upgrade" import="true" name="Krieg Combat Engineer w/ Autopistol and Trench Club" hidden="false" id="6040-02c9-bf83-f9b2">
               <entryLinks>
-                <entryLink targetId="6536-7b98-3b50-d68a" id="5e7d-2cee-55cf-2853" type="selectionEntry" name="Hot-shot Lasgun" hidden="false" collective="true"/>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="68c2-fc00-d82e-a469" targetId="f61b-a631-1446-4453">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="224a-a1ef-a27d-f7d0"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d90-18b0-eae3-60ce"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="05a6-002d-bfd6-fabb" type="selectionEntry" targetId="335b-72ef-e1e9-2323"/>
+                <entryLink import="true" name="Trench Club" hidden="false" id="bdbc-1778-63b4-a8c8" type="selectionEntry" targetId="eab9-8e27-d75b-7557"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Krieg Combat Engineer" id="0b45-d957-3bc1-917c" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
+              </infoLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Hot-shot Marksman Rifle" hidden="false" id="f076-a161-ed32-0811">
-              <infoLinks>
-                <infoLink name="Kasrkin" hidden="false" type="profile" id="8d6a-aa6f-e425-cb69" targetId="6ed4-694c-ad3b-4b05"/>
-              </infoLinks>
+            <selectionEntry type="upgrade" import="true" name="Krieg Combat Engineer w/ Combat Shotgun and Close Combat Weapon" hidden="false" id="75fb-5ae4-f952-5a74">
               <entryLinks>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="fe86-5beb-074d-4601" targetId="f61b-a631-1446-4453">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1695-b1f8-e07a-d319"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d181-7f72-41ee-37fa"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="a54b-4650-5068-a12d" type="selectionEntry" targetId="f61b-a631-1446-4453"/>
+                <entryLink import="true" name="Combat Shotgun" hidden="false" id="4c93-8218-42af-faab" type="selectionEntry" targetId="3a1e-908a-a67f-97d4"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Krieg Combat Engineer" id="ad29-656d-e847-c6cb" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Krieg Combat Engineer w/ Flamer" hidden="false" id="756c-5322-6423-942d">
+              <entryLinks>
+                <entryLink import="true" name="Flamer" hidden="false" id="fa2b-d206-5480-d113" type="selectionEntry" targetId="5779-e27a-e226-5a66"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="bdeb-94e2-a6b3-0e12" type="selectionEntry" targetId="f61b-a631-1446-4453"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Krieg Combat Engineer" id="e598-3c4f-a9ff-4eaa" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59d9-0cdd-96ae-991e"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Krieg Combat Engineer w/ Remote Mine and Autopistol" hidden="false" id="f44e-7663-52ca-a0d5">
+              <entryLinks>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="5f12-2336-4298-5903" type="selectionEntry" targetId="f61b-a631-1446-4453"/>
+                <entryLink import="true" name="Autopistol" hidden="false" id="5b1a-ee5f-3ead-dd6e" type="selectionEntry" targetId="335b-72ef-e1e9-2323"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Krieg Combat Engineer" id="dcfd-5989-3f65-6f08" hidden="false" type="profile" targetId="4a99-a5af-d85f-7134"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd60-2203-e9fc-192e"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hot-shot Marksman Rifle" hidden="false" id="0cde-c87e-e921-da30" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Remote Mine" hidden="false" id="8708-f4cf-aeac-ff76">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b36-be39-ec03-7ca6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e98-e65c-906a-c66e"/>
+                  </constraints>
                   <profiles>
-                    <profile name="Hot-shot Marksmen Rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1abe-6db7-589d-5632">
+                    <profile name="Remote mine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="742a-526d-10bc-0d2c">
                       <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Precision</characteristic>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of your Shooting phase, you can select one enemy unit within 12&quot; of the bearer and roll one D6: on a 3+, that enemy unit suffers D6 mortal wounds, or D3+3 mortal wounds instead if it is a VEHICLE or FORTIFICATIONS unit.
+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2b1-a4a2-26c5-7432"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="738a-83bc-2872-4585"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Heavy" hidden="false" type="rule" id="eeba-0f8e-b518-4662" targetId="1202-10a8-78e9-4c67"/>
-                    <infoLink name="Precision" hidden="false" type="rule" id="d38d-d1f6-83dc-ccf6" targetId="9143-31ae-e0a6-6007"/>
-                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e28-a77c-697a-ede5"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Hot-shot Laspistol and Meltamine" hidden="false" id="0afc-460e-2186-0be8">
-              <infoLinks>
-                <infoLink name="Kasrkin" hidden="false" type="profile" id="a859-3bba-6234-3454" targetId="6ed4-694c-ad3b-4b05"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="11c5-f655-d91f-182b" targetId="f61b-a631-1446-4453">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d97-006b-fb6d-3533"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a904-2ca9-4182-ec19"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Hot-shot Laspistol" hidden="false" type="selectionEntry" id="62d2-db5d-ba87-e75c" targetId="56ad-b03d-517e-124a">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4a6-8e4c-2249-5fc7"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a43e-156e-e2c9-5c96"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Melta mine" hidden="false" id="d5f2-1289-4c7d-f39a">
-                  <profiles>
-                    <profile name="Melta mine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1aa9-fa13-44d4-c59a">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, you can select one enemy unit within 3&quot; of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a Vehicle unit.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="729f-27f4-851b-87c8"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b30-4733-6519-c443"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f048-369a-31fe-1137"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Vox-caster" hidden="false" id="1b31-7e57-b34e-6349">
-              <infoLinks>
-                <infoLink name="Kasrkin" hidden="false" type="profile" id="cc44-f93e-fefe-449f" targetId="6ed4-694c-ad3b-4b05"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="556c-ed33-3079-3da4" targetId="f61b-a631-1446-4453">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="acd5-e533-c4fc-1bc3"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2741-42f7-c718-f43c"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Vox-caster" hidden="false" type="selectionEntry" id="9e4e-5de5-767b-0874" targetId="6bfd-18be-90d3-2398"/>
-              </entryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Hot-shot lasgun" hidden="false" id="ab23-ad44-0717-c110" collective="true">
-                  <profiles>
-                    <profile name="Hot-shot lasgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a40a-d6e7-8b9f-989b">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8b5-cb4a-2c97-ba98"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f7e-af75-e62c-3327"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Rapid Fire" hidden="false" type="rule" id="cd4e-5a9a-7c35-f2e7" targetId="c5c8-8b58-b8b6-7786">
-                      <modifiers>
-                        <modifier type="append" value="1" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ff7-c370-15cd-cef1"/>
-              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="1b98-6449-25b0-69f9"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="fcfb-5671-6499-1470"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1663-2ad9-ae54-6622"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="bf86-d698-1f2d-a1dd"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Kasrkin Trooper w/ Special Weapon" hidden="false" id="38fe-3a61-6690-f1da">
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Flamer" hidden="false" id="731c-b729-6fa1-05d3">
-                  <infoLinks>
-                    <infoLink name="Kasrkin" hidden="false" type="profile" id="ffcb-7091-4cbf-9a08" targetId="6ed4-694c-ad3b-4b05"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="d933-30b0-a67a-8566" targetId="f61b-a631-1446-4453">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8474-0cb3-8154-dfb5"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1fb-79b1-f09d-4439"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Flamer" hidden="false" type="selectionEntry" id="b45d-b893-75b2-e86f" targetId="ddae-e6-79d8-3f66">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45fe-839c-42cc-d01b"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7840-3f8d-945f-9d71"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="7193-fac8-23e8-b2f2" shared="true" id="816f-147b-35a9-107c" includeChildSelections="true"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Plasma Gun" hidden="false" id="1bf9-e6d4-d019-6114">
-                  <infoLinks>
-                    <infoLink name="Kasrkin" hidden="false" type="profile" id="fd8a-cbd2-50d3-5f70" targetId="6ed4-694c-ad3b-4b05"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="c33d-1814-2fbf-470c" targetId="f61b-a631-1446-4453">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3de-5706-2bee-5445"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8fc-5a29-f3aa-42ec"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Gun" hidden="false" type="selectionEntry" id="a68c-18de-ef48-eb9c" targetId="280a-959f-4c4f-aa28">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="538f-0bdd-1d78-5676"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4511-06cf-ba5c-960d"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="7193-fac8-23e8-b2f2" shared="true" id="d4f2-f264-d050-fde7"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Hot-shot Volley Gun" hidden="false" id="78e9-990b-2896-ec59">
-                  <infoLinks>
-                    <infoLink name="Kasrkin" hidden="false" type="profile" id="af30-9277-0555-4171" targetId="6ed4-694c-ad3b-4b05"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="f912-a817-cb19-f83d" targetId="f61b-a631-1446-4453">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eebe-5906-2ff7-e65e"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0b8-ebc7-8bad-5293"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="7193-fac8-23e8-b2f2" shared="true" id="b26d-511c-be37-599d"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Hot-shot Volley Gun" hidden="false" id="bbc9-3f25-30bc-8886" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69ec-eb1c-26a2-2a82"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c19c-fa1c-8e41-51b3"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink name="Rapid Fire" hidden="false" type="rule" id="d61d-4adc-ecab-3418" targetId="c5c8-8b58-b8b6-7786">
-                          <modifiers>
-                            <modifier type="append" value="2" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Hot-shot Volley Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5d3a-014c-81a3-1e6d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Meltagun" hidden="false" id="db03-f57d-54dd-ee45">
-                  <infoLinks>
-                    <infoLink name="Kasrkin" hidden="false" type="profile" id="9b54-f36a-dae4-8817" targetId="6ed4-694c-ad3b-4b05"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="93f5-f9d8-e43b-47ca" targetId="f61b-a631-1446-4453">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bf4-6c79-262e-9a3e"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ecc-d4a1-3906-916b"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Meltagun" hidden="false" type="selectionEntry" id="427c-dadc-edc6-5e2b" targetId="5953-e173-bc8b-1109">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b3f-9de9-ecfb-9a67"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="007e-cd22-da9c-be26"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="7193-fac8-23e8-b2f2" shared="true" id="b257-8dca-aa2f-94d9"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Kasrkin Trooper w/ Grenade Launcher" hidden="false" id="1847-07ef-f87e-0c85">
-                  <infoLinks>
-                    <infoLink name="Kasrkin" hidden="false" type="profile" id="cd24-3716-5913-50ac" targetId="6ed4-694c-ad3b-4b05"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Close Combat Weapon" hidden="false" type="selectionEntry" id="228d-ed40-aa42-f8de" targetId="f61b-a631-1446-4453">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a51-ad55-05f2-cceb"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4be6-3dff-fc6e-2d79"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Grenade Launcher" hidden="false" type="selectionEntry" id="f4d8-2935-754e-bc97" targetId="4e85-9167-68ce-8738">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a54-a1bc-32d9-716d"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5059-c308-d594-9d86"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="7193-fac8-23e8-b2f2" shared="true" id="ac2b-1393-741b-7f41"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="37a4-f306-8e88-e3e8"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -19221,17 +19008,6 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
           </modifiers>
         </infoLink>
       </infoLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="1" field="e623-9b7c-fcfc-82b0">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krieg Command Squad" hidden="false" id="bcc4-d661-2948-ecc4">
       <categoryLinks>
@@ -20019,6 +19795,77 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="335b-72ef-e1e9-2323">
+      <profiles>
+        <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ff66-c12a-a4f2-9b13">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="fcd6-70cd-b6f0-763c" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hand Flamer" hidden="false" id="4c45-96c1-aa2e-3e47">
+      <profiles>
+        <profile name="Hand Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3753-e701-8623-8210">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Pistol, Torrent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" id="768a-0775-a091-caad" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Torrent" id="f041-6203-dcb5-3b43" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+        <infoLink name="Pistol" id="2580-4b24-700d-df22" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trench Club" hidden="false" id="eab9-8e27-d75b-7557">
+      <profiles>
+        <profile name="Trench Club" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="979c-b907-2298-1098">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combat Shotgun" hidden="false" id="3a1e-908a-a67f-97d4">
+      <profiles>
+        <profile name="Combat Shotgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7fc2-45d4-cc97-4bbb">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault" id="246c-a07d-ca86-0259" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Aegis Defence Line" hidden="false" id="a56a-23f-9ea1-d8ee"/>
@@ -20153,6 +20000,7 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
     <categoryEntry name="Ratling" hidden="false" id="d55f-8f19-a600-778"/>
     <categoryEntry name="Tempestus Aquilons" id="41da-27b9-e58c-7bb2" hidden="false"/>
     <categoryEntry name="Ratlings" hidden="false" id="2810-9f9e-082d-8df5"/>
+    <categoryEntry name="Krieg Combat Engineers" id="998d-8454-a430-c5d9" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Invulnerable Save 5+" hidden="false" id="3a3d-9e14-64a6-c032" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -20346,6 +20194,16 @@ While this model is joined to a unit, it can embark within any Transport that un
     <profile name="Unit Composition" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b592-33bc-a25d-b3a9">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can have up to two Leader units attached to it, provided no more than one of those units is a Command Squad unit. If it does, and this Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Krieg Combat Engineer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4a99-a5af-d85f-7134">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="31" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="32" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -15,7 +15,7 @@
         </modifier>
       </modifiers>
     </costType>
-    <costType name="Crusade: Battle Honours" id="75bb-ded1-c86d-bdf0" defaultCostLimit="-1" hidden="false">
+    <costType name="Battle Honours" id="75bb-ded1-c86d-bdf0" defaultCostLimit="-1" hidden="false">
       <comment>Tracking number for Crusade</comment>
       <modifiers>
         <modifier type="set" value="false" field="hidden" scope="roster">
@@ -681,6 +681,18 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Crusade Options" hidden="false" id="2e43-860a-3614-6ec4">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="82dc-c3a1-c4e2-c030" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="8bf7-8812-923d-29e4" name="Pistol" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
@@ -1159,7 +1171,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         <entryLink import="true" name="Cityfight" hidden="false" id="0ca4-20a7-e3ea-b718" type="selectionEntryGroup" targetId="e1f3-4908-29da-b3eb"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Cityfight" id="e1f3-4908-29da-b3eb" hidden="false">
+    <selectionEntryGroup name="Cities of Ruin" id="e1f3-4908-29da-b3eb" hidden="false">
       <selectionEntryGroups>
         <selectionEntryGroup name="Battle Honours" id="b4a3-1ebb-06c1-2d32" hidden="false">
           <selectionEntries>
