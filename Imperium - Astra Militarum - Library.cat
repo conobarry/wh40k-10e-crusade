@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="107" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="108" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -1846,6 +1846,7 @@
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Voice Of Command" hidden="false" type="rule" id="5f7-4b6e-8a8e-2505" targetId="53c9-34f6-2443-a95e"/>
+        <infoLink name="Commissar Orders" id="e6f1-7ec6-b332-8c26" hidden="false" type="infoGroup" targetId="d267-cec3-2bca-8c95"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -23179,4 +23180,20 @@ Improve the Leadership and Objective Control characteristics of models in this u
       </modifiers>
     </rule>
   </sharedRules>
+  <sharedInfoGroups>
+    <infoGroup name="Commissar Orders" id="d267-cec3-2bca-8c95" hidden="false">
+      <profiles>
+        <profile name="Fix Bayonets!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e7bc-12d6-7808-4cb1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Duty and Honour!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6640-32e6-162c-c65a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Leadership and Objective Control characteristics of models in this unit by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+  </sharedInfoGroups>
 </catalogue>
