@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="34" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="35" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1021,7 +1021,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         <constraint type="min" value="0" field="selections" scope="self" shared="true" id="2a14-db5e-c5ad-5ae9"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Crusade" id="a877-78a7-06f2-f04d" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Crusade" id="a877-78a7-06f2-f04d" hidden="false" collapsible="true" flatten="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Experience Points" hidden="false" id="2dbf-4d49-5d74-85c9">
           <constraints>
@@ -1212,91 +1212,105 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Cities of Ruin" hidden="false" id="0ca4-20a7-e3ea-b718" type="selectionEntryGroup" targetId="e1f3-4908-29da-b3eb" collapsible="true"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Cities of Ruin" id="e1f3-4908-29da-b3eb" hidden="false">
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Cityfight Veteran" hidden="false" id="ccaf-32ee-b7e4-82f1">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e89-e07b-ddb7-ab38"/>
-              </constraints>
-              <profiles>
-                <profile name="Cityfight Veteran" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d7dc-d616-a8ee-8073">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is a CITYFIGHT VETERAN.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Siege Armour" hidden="false" id="13eb-8ae7-ae28-9db7">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8030-9525-55d0-ec62"/>
-              </constraints>
-              <profiles>
-                <profile name="Siege Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d236-2483-1f8d-d282">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged attacks targeting this unit never benefit from the Plunging Fire rule. In addition, if this unit is a VEHICLE it halves any damage taken from moving into a ruin, and if it is a MONSTER or VEHICLE it does not take any damage.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Crusade Relics" id="6397-d12d-4ea8-c9f2" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Rust-Red Residue" hidden="false" id="e1d3-2e32-698b-a9e6">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dea6-f154-6998-84c2"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bf91-cd5a-ea21-49ef" includeChildSelections="true" includeChildForces="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Rust-Red Residue" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d9d0-4f1f-1d15-4587">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn in the Command Phase, select one Ruins terrain feature or all Obstacles within 3”. If you select a Ruins feature, it is Damaged at the end of your turn and Destroyed at the end of your next Command Phase. If you select Obstacles, they are removed from the battlefield at the end of your turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="65d2-1210-4961-69d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Cities of Ruin Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cityfight Veteran" hidden="false" id="ccaf-32ee-b7e4-82f1">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e89-e07b-ddb7-ab38"/>
+          </constraints>
+          <profiles>
+            <profile name="Cityfight Veteran" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d7dc-d616-a8ee-8073">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is a CITYFIGHT VETERAN.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Siege Armour" hidden="false" id="13eb-8ae7-ae28-9db7">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8030-9525-55d0-ec62"/>
+          </constraints>
+          <profiles>
+            <profile name="Siege Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d236-2483-1f8d-d282">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged attacks targeting this unit never benefit from the Plunging Fire rule. In addition, if this unit is a VEHICLE it halves any damage taken from moving into a ruin, and if it is a MONSTER or VEHICLE it does not take any damage.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="65d2-1210-4961-69d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Cities of Ruin Crusade Relics" id="6397-d12d-4ea8-c9f2" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rust-Red Residue" hidden="false" id="e1d3-2e32-698b-a9e6">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dea6-f154-6998-84c2"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bf91-cd5a-ea21-49ef" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Rust-Red Residue" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d9d0-4f1f-1d15-4587">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn in the Command Phase, select one Ruins terrain feature or all Obstacles within 3”. If you select a Ruins feature, it is Damaged at the end of your turn and Destroyed at the end of your next Command Phase. If you select Obstacles, they are removed from the battlefield at the end of your turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="65d2-1210-4961-69d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
