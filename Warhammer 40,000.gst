@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="35" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="36" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1023,7 +1023,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
     </selectionEntryGroup>
     <selectionEntryGroup name="Crusade" id="a877-78a7-06f2-f04d" hidden="false" collapsible="true" flatten="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Experience Points" hidden="false" id="2dbf-4d49-5d74-85c9">
+        <selectionEntry type="upgrade" import="true" name="Experience Points" hidden="false" id="2dbf-4d49-5d74-85c9" sortIndex="1">
           <constraints>
             <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="466f-ffd6-0947-139b" includeChildSelections="false"/>
           </constraints>
@@ -1046,7 +1046,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Legendary Veterans" hidden="false" id="1511-18fe-f51e-7b9d">
+        <selectionEntry type="upgrade" import="true" name="Legendary Veterans" hidden="false" id="1511-18fe-f51e-7b9d" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ae8-a0c8-eb1c-8318" includeChildSelections="false"/>
           </constraints>
@@ -1058,7 +1058,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Weapon Modifications" hidden="false" id="d1a5-4297-168b-11cd">
+        <selectionEntry type="upgrade" import="true" name="Weapon Modifications" hidden="false" id="d1a5-4297-168b-11cd" sortIndex="3">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4a83-fc07-f67a-f3ab" includeChildSelections="false"/>
           </constraints>
@@ -1096,7 +1096,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Scars" id="1576-e816-033f-828d" hidden="false">
+        <selectionEntryGroup name="Battle Scars" id="1576-e816-033f-828d" hidden="false" sortIndex="4">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Fatigued" hidden="false" id="9d70-a94e-3f89-5eed">
               <constraints>

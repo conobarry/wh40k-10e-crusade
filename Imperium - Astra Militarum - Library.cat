@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="102" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="103" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -185,6 +185,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="1a7c-f024-28a6-f5fc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Attilan Rough Riders" hidden="false" id="2299-bed9-3e-2b60">
       <selectionEntries>
@@ -382,6 +385,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="528c-01c4-7c9c-95ff" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Baneblade" hidden="false" id="a6a1-1612-f982-31">
       <categoryLinks>
@@ -425,6 +431,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Loadout" hidden="false" type="selectionEntryGroup" id="cda9-3936-dd20-6fd3" targetId="8573-3d26-c8be-45fb"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="8a23-353b-b149-0fb8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Baneblade Cannon" hidden="false" id="691f-b175-b914-c47a">
@@ -526,6 +533,7 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Loadout" hidden="false" type="selectionEntryGroup" id="98f8-c860-fb88-90ef" targetId="8573-3d26-c8be-45fb"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="b063-496f-4b00-2777" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Tremor Cannon" hidden="false" id="c129-8d55-11c6-2bc5">
@@ -593,6 +601,7 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Loadout" hidden="false" type="selectionEntryGroup" id="956a-9e4b-338d-a700" targetId="8573-3d26-c8be-45fb"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="aeba-4de4-bf16-9ae8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Quake Cannon" hidden="false" id="d288-8ac8-ba1-e9d7">
@@ -704,6 +713,7 @@
         </entryLink>
         <entryLink import="true" name="Heavy Bolter Option" hidden="false" type="selectionEntryGroup" id="8808-96fd-7fd3-8234" targetId="7208-248b-e265-8092"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="d990-575-bc6f-47ea" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ddf9-4fe4-821e-b1cc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bullgryn Squad" hidden="false" id="37ad-63e5-1786-87cf">
@@ -806,6 +816,7 @@
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Close Combat Weapon" hidden="false" id="d6d2-2add-6785-76bb" type="selectionEntry" targetId="3cb-d255-67fb-4a7b"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="4ec3-bfb6-c675-babd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cadian Castellan" hidden="false" id="2b49-4d03-aaf5-3532">
@@ -1266,8 +1277,8 @@
         </modifierGroup>
       </modifierGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="9663-135b-b831-b3ee" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="1944-fe5b-d927-b5c3" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="8ef1-c9f7-b494-0d35" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cadian Shock Troops" hidden="false" id="a2aa-7688-dcb1-4132">
@@ -1450,6 +1461,7 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Battle Honours" hidden="false" id="cfde-237d-d446-652b" type="selectionEntryGroup" targetId="a8bc-1f53-a6ed-5822"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="2ea8-613f-53fa-93a3" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Catachan Jungle Fighters" hidden="false" id="fe5a-764e-37ed-7cef">
@@ -1565,6 +1577,9 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="85f9-0668-98e5-6b51" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chimera" hidden="false" id="cf23-58db-8ba4-9ec8">
       <categoryLinks>
@@ -1637,6 +1652,7 @@
         </entryLink>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="b1a8-a90e-b7-e0ce" targetId="5ba9-b266-8524-54f5"/>
         <entryLink import="true" name="Pintle Mounted option" hidden="false" type="selectionEntryGroup" id="32ea-1b37-e395-2e14" targetId="164e-b04-edf-f354"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="05dd-6073-7cd1-a0f9" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Chimera Multi-laser Options" hidden="false" id="c6fc-3d11-f250-d59f" defaultSelectionEntryId="cbee-a34e-1b6-e54f">
@@ -1813,8 +1829,8 @@
       <entryLinks>
         <entryLink import="true" name="Chainsword Option" hidden="false" type="selectionEntryGroup" id="1145-952d-1c94-54d9" targetId="affb-48e8-1e07-fe4b"/>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="9135-5f9b-ecbd-57ec" targetId="ea3f-b52b-8dc7-d365"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="2351-cf04-1d40-143e" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="d804-f16a-82cc-8de9" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="1321-538b-81bc-b900" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Bolt Pistol Option" hidden="false" id="2a00-5667-abe-8b4f" defaultSelectionEntryId="ad3-2167-f34c-2e14">
@@ -1974,6 +1990,9 @@
       <infoLinks>
         <infoLink name="Unit Composition" hidden="false" id="a3f7-2a09-1f80-583f" type="profile" targetId="b592-33bc-a25d-b3a9"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="cb10-1bf6-4600-7065" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Deathstrike" hidden="false" id="e19f-b9b8-75d5-8520">
       <categoryLinks>
@@ -2067,6 +2086,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="b3a1-563f-ed24-b89a" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="fbd6-13c5-dea1-b485" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Doomhammer" hidden="false" id="8342-57dd-69d3-e698">
@@ -2102,6 +2122,7 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Loadout" hidden="false" type="selectionEntryGroup" id="817e-3b94-5a0a-44f8" targetId="8573-3d26-c8be-45fb"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="cc8a-c3a5-0a02-e2ae" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Magma Cannon" hidden="false" id="8cfb-c9b2-90cf-5ac4">
@@ -2310,6 +2331,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="945e-b0ba-9e75-35ab" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gaunt’s Ghosts" hidden="false" id="653d-80-d715-7d55">
       <categoryLinks>
@@ -2828,6 +2852,9 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="bd7f-8057-cfa5-242a" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hellhammer" hidden="false" id="8277-6399-5d74-760d">
       <costs>
@@ -2871,6 +2898,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d10-8cd5-df06-5759"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="8e19-89ea-e042-18dd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Hellhammer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9907-8b8a-4aff-2779">
@@ -3063,6 +3091,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="88df-e86a-cdff-8ec9" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="e084-6d38-47d0-b94e" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hydra" hidden="false" id="4967-19b6-1e2a-a300">
@@ -3120,6 +3149,7 @@
         <entryLink import="true" name="Heavy Bolter Option" hidden="false" type="selectionEntryGroup" id="1d5d-8c96-ac02-a7ca" targetId="7208-248b-e265-8092"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="257d-2580-b564-4400" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="6753-7ddb-fcba-2249" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="820f-7f3a-8ab9-fe6d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Hydra Autocannon" hidden="false" id="765-e58f-7093-d635">
@@ -3475,6 +3505,9 @@
       <infoLinks>
         <infoLink name="Unit Composition" hidden="false" id="a7bc-5e9a-c3f4-f9f6" type="profile" targetId="b592-33bc-a25d-b3a9"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="c7e6-23c9-179e-c898" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="‘Iron Hand’ Straken" hidden="false" id="913f-3cb6-fb80-7f6a">
       <categoryLinks>
@@ -4005,6 +4038,9 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="a279-7eb1-b23d-b132" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Leman Russ Battle Tank" hidden="false" id="c581-3ab5-49a0-9ec0">
       <costs>
@@ -4047,6 +4083,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8106-8bee-e3f1-358a"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="7b85-58d0-6663-ff99" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink targetId="3f52-eab3-befb-8dcb" id="6586-78d8-8d44-c70e" type="profile" name="Leman Russ Battle Tank" hidden="false"/>
@@ -4101,6 +4138,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Leman Russ Options" hidden="false" type="selectionEntryGroup" id="5e81-4372-7927-5f3a" targetId="e6cc-557c-e152-4863"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="b280-c5f0-16e3-f5e9" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Line-breaker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7bca-e35e-69d1-1135">
@@ -4153,6 +4191,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d6f-d412-6cec-482c"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="7a39-7fcb-96f1-bd5e" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Urban Warfare" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a950-ab59-3c2d-a39b">
@@ -4201,6 +4240,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1377-ce10-cd3-2b6f"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="3aa2-d837-b41f-96f8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Gung-ho Executioners" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d68-5238-1410-fed4">
@@ -4253,6 +4293,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2658-ef7-dbd-e17d"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="56da-0653-653a-d737" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Withering Hail" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8344-2f14-e790-be5e">
@@ -4301,6 +4342,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84bd-996b-7f07-acae"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0f0d-06e0-7251-b8d4" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Mow Down the Enemy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d329-6d10-6e7e-e959">
@@ -4349,6 +4391,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d7d-1b07-6079-3956"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="a8cb-eee5-fe68-183a" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Tank-killer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc47-c40a-1c64-73e7">
@@ -4576,6 +4619,7 @@
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="e477-1138-2342-4a66" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Heavy Bolter Option" hidden="false" type="selectionEntryGroup" id="fca0-4289-e0ee-21b8" targetId="7208-248b-e265-8092"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="5c39-bab5-f3b0-8da5" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="2aff-4a0d-f9d2-97f6" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Manticore" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="23f8-2a9c-dcaa-14a9">
@@ -4974,6 +5018,9 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="29de-bff1-cf98-2121" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Munitorum Servitors" hidden="false" id="5c5f-8f23-7f13-2af6">
       <categoryLinks>
@@ -5115,6 +5162,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="fd3d-36fa-f445-ebe8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Nork Deddog" hidden="false" id="bcda-f4bb-e726-9bfe">
       <costs>
@@ -5458,8 +5508,8 @@
         </modifierGroup>
       </modifierGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="3116-12de-9691-1879" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="9085-2b2a-d034-91c7" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="5d51-d7ab-f384-c470" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ogryn Squad" hidden="false" id="c9eb-2007-af01-a853">
@@ -5551,6 +5601,9 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="a3c4-551e-2338-b4d3" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Platoon Command Squad" hidden="false" id="4683-67ac-7744-d5e3">
       <categoryLinks>
@@ -5930,6 +5983,9 @@
           </profiles>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="1dcc-8da3-22e8-3d1f" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Primaris Psyker" hidden="false" id="4ad0-e988-a513-9530">
       <categoryLinks>
@@ -5981,9 +6037,8 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ed9b-bf53-3395-5277" targetId="ea3f-b52b-8dc7-d365"/>
-        <entryLink import="true" name="Enhancements" hidden="false" id="c4a2-c608-0add-817a" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="93ef-7e60-d611-5a6d" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="fef7-85de-4860-b1b4" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="9aba-97b3-2ff0-ad8a" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Malign Wardings(Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="90b9-635e-d3e3-7701">
@@ -6196,6 +6251,9 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="63e3-990c-3011-2b4f" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Regimental Attachés" hidden="false" id="5da1-9869-294e-8187">
       <categoryLinks>
@@ -6499,8 +6557,8 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ddd4-4fa6-5da-fffe" targetId="ea3f-b52b-8dc7-d365"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="6269-5b8f-2884-c4d3" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="c8e3-2272-499f-266c" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="5481-f969-32f4-54a0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -6732,8 +6790,8 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="bc2f-d624-ec2f-e268" targetId="ea3f-b52b-8dc7-d365"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="0e8c-ecd1-2dee-d2a2" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="4460-fa0a-4c56-f36e" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="a0cd-3abb-98e4-42b6" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -6815,6 +6873,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2449-4ab3-c5e0-8aec"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="04b8-f42c-a7b0-3ba1" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-6 Wounds Remaining" hidden="false" type="profile" id="458c-a7b0-5f21-814a" targetId="30d1-9e89-5aa2-6bde"/>
@@ -7144,6 +7203,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="4fe4-c536-73d6-07b2" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sergeant Harker" hidden="false" id="a8d5-81f9-96a0-fd12">
       <categoryLinks>
@@ -7336,6 +7398,7 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Loadout" hidden="false" type="selectionEntryGroup" id="5ddc-6ea1-97c0-dad2" targetId="8573-3d26-c8be-45fb"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="fdcc-cfee-5eb9-f5dd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Volcano Cannon" hidden="false" id="c341-7e80-e7f6-4f75">
@@ -7550,6 +7613,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9830-ed6a-f031-28a2"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="f265-d251-99bd-de97" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Firing Deck" hidden="false" type="rule" id="9114-e7c0-af2a-cec4" targetId="13b2-6518-dab3-7ea1">
@@ -7651,6 +7715,7 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Loadout" hidden="false" type="selectionEntryGroup" id="d947-73da-42ea-ab63" targetId="8573-3d26-c8be-45fb"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="e2f0-ea2a-2b3c-0ccf" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Stormsword Siege Cannon" hidden="false" id="7ed2-e35a-a22d-9f6b">
@@ -7878,7 +7943,7 @@
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="db0f-b319-104d-c3ed" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="453b-f0c4-ea34-d50c" targetId="33fd-bb93-1bf4-f1c"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="999c-9958-f4c9-5d9a" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="1201-b711-58ec-8968" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Taurox" hidden="false" id="11e5-d4ab-d140-ac38">
@@ -7946,6 +8011,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78c7-3b76-7b16-eb0f"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0d91-b73e-b3fb-4d83" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Taurox Prime" hidden="false" id="4b67-f814-358e-f776">
@@ -7973,6 +8039,7 @@
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="3aea-7bde-734-3027" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="3b75-8fda-ea59-1f7b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="8027-8baa-54fe-54f4" targetId="b68a-5ded-65ac-98c">
@@ -8385,6 +8452,9 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="a017-42fb-35ab-881e" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ursula Creed" hidden="false" id="b6b2-9971-ec0c-349e">
       <categoryLinks>
@@ -8641,6 +8711,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="6fa9-9ff4-f0bc-ccaf" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Wyvern" hidden="false" id="d11b-c49d-41bf-1f36">
       <categoryLinks>
@@ -8704,6 +8777,7 @@
         <entryLink import="true" name="Heavy Bolter Option" hidden="false" type="selectionEntryGroup" id="1f69-22ee-3814-948d" targetId="7208-248b-e265-8092"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="4709-e83b-f103-810" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="8a1-9387-fb4e-bd4b" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="f874-29d3-ac18-21fa" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Wyvern" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1788-9295-de1d-e6d">
@@ -9730,6 +9804,93 @@
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
           </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Armour Piercing</comment>
+              <modifiers>
+                <modifier type="append" value="Armour Piercing" field="annotation" join=", ">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="d181-a615-5566-8e5a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d181-a615-5566-8e5a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <comment>Brutal</comment>
+              <modifiers>
+                <modifier type="append" value="Brutal" field="annotation" join=", ">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="d92a-5d2e-0b38-ea01" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="2229-f494-25db-c5d3">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d92a-5d2e-0b38-ea01" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <comment>Finely Balanced</comment>
+              <modifiers>
+                <modifier type="append" value="Finely Balanced" field="annotation" join=", ">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="13b7-d8d5-72c2-1f72" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="13b7-d8d5-72c2-1f72" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <comment>Heirloom</comment>
+              <modifiers>
+                <modifier type="append" value="Heirloom" field="annotation" join=", ">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="09c4-6313-8cd5-d77a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="3bb-c35f-f54-fb08">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="09c4-6313-8cd5-d77a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <comment>Master-worked</comment>
+              <modifiers>
+                <modifier type="append" value="Master-worked" field="annotation" join=", ">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="4b25-c6e7-3350-9c1c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4b25-c6e7-3350-9c1c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <comment>Precise</comment>
+              <modifiers>
+                <modifier type="append" value="Precise" field="7f1b-8591-2fcf-d01c" join=", ">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="658a-396c-f9a0-d15f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -9740,6 +9901,9 @@
         </infoLink>
       </infoLinks>
       <comment>Collective</comment>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="366a-0f3e-2a30-2fdb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="f61b-a631-1446-4453" collective="true">
       <profiles>
@@ -10723,9 +10887,8 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="7ffc-e47c-e0d8-d2e4" targetId="ea3f-b52b-8dc7-d365"/>
-        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="bd67-ab5d-a400-6049" targetId="33fd-bb93-1bf4-f1c"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="1a13-70e3-8896-c7e2" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="2b63-141d-cd91-5421" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ab2b-7d46-1d0a-c8df" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Invulnerable Save 5+" hidden="false" type="profile" id="ae01-6c7d-3306-196a" targetId="3a3d-9e14-64a6-c032"/>
@@ -10923,6 +11086,9 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="af71-47fb-bf2b-451f" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="b9e5-7737-0460-4882" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Death Rider Squadron Commander" hidden="false" id="cbb7-7f52-35e1-c6fb">
       <costs>
@@ -11042,9 +11208,8 @@
       </infoGroups>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ba3-8617-c4ec-3601" targetId="ea3f-b52b-8dc7-d365"/>
-        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="d9cb-d00e-bd39-d1b9" targetId="33fd-bb93-1bf4-f1c"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="1e6b-5a93-7bd1-dda0" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="6b22-91fe-e4a3-4985" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="525e-9dca-0f2d-5cb6" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -11097,6 +11262,7 @@
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="ef76-bb3b-cd8b-dc6c" targetId="e635-5c9b-194c-44f2"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="be2e-577b-f01f-b4b2" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="2ac1-db40-e7e6-e83d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Main weapon" hidden="false" id="9041-a55d-68dc-fefe" defaultSelectionEntryId="c705-9c20-93bf-da0">
@@ -11326,6 +11492,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="2cc1-cd16-9d44-00b4" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Malcador" hidden="false" id="f706-c35a-a325-38bf">
       <costs>
@@ -11359,6 +11528,7 @@
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="853d-c9a6-5440-e6ce" targetId="e635-5c9b-194c-44f2"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="fb2a-464a-aecf-8f84" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="d3db-a888-af5c-e65f" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="70f-4935-4220-1f3a" targetId="b68a-5ded-65ac-98c">
@@ -11511,6 +11681,7 @@
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="4a3e-d821-9192-6701" targetId="e635-5c9b-194c-44f2"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="374a-96f1-bf85-bf38" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="930d-5003-1136-d8f2" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="f564-f972-9c5-19d6" targetId="b68a-5ded-65ac-98c">
@@ -11661,6 +11832,7 @@
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="945e-91ad-33c5-49bc"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="4745-6e1e-a98b-7689" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="13e9-aae3-5d78-32a3" targetId="b68a-5ded-65ac-98c">
@@ -11783,6 +11955,7 @@
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="842e-612-e805-2b4b" targetId="e635-5c9b-194c-44f2"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="64aa-89a0-169-29cd" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="7a2f-aadf-63aa-2728" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="fe3-ff13-3d4f-3952" targetId="b68a-5ded-65ac-98c">
@@ -11970,6 +12143,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="f684-d83a-1fe2-e5d3" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Earthshaker Carriage Battery" hidden="false" id="efc7-ac4c-1fcd-5b39">
       <costs>
@@ -12056,6 +12232,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="c827-63d9-6457-949b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Stormblade" hidden="false" id="a93c-9d4b-8fd9-15b4">
       <costs>
@@ -12232,6 +12411,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="964e-68a5-3118-0cf1" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Macharius" hidden="false" id="d7a-7abb-831b-1c67">
       <constraints>
@@ -12296,6 +12478,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="869a-5e67-83d7-090d-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="6bad-6f04-0590-2247" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="b00f-39e-6262-6caf">
@@ -12428,6 +12611,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2144-6455-d828-0fc8-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="e255-fdda-35c1-1c1d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="e26-28aa-c405-6f0f">
@@ -12559,6 +12743,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="576a-6dff-71c2-803e-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="75aa-d38d-b72f-9a4c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="6b5c-a20e-6dfa-ac7e">
@@ -12730,6 +12915,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f208-ad9c-505c-e174"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="981e-e1e2-c9eb-222e" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="830c-37dd-188d-21ed">
@@ -12801,6 +12987,7 @@
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ec93-2845-cee2-24e9"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="4ffa-a540-18f0-be72" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="414e-f1f6-e300-3e8e">
@@ -12878,6 +13065,7 @@
       <entryLinks>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="a0a2-4cc7-d0b2-37e7" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="2101-f720-3cae-a1c4" targetId="e635-5c9b-194c-44f2"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="fed4-ac5c-dd41-a474" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Colossus siege mortar" hidden="false" id="1bd7-a985-449d-e6af">
@@ -12934,6 +13122,7 @@
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="cd55-5a9d-5517-afa4" targetId="6883-d690-ca12-d222"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="427e-38b7-f958-86db" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="95e9-991c-0044-c15a" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Valdor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="aa69-5ac-72f7-a1db">
@@ -13061,6 +13250,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="66a-a1d1-9de6-8eec" targetId="12c3-780a-dd47-36d1"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="cfc3-9ae9-a8c2-80c0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Avenger bolt cannon" hidden="false" id="596c-522f-3252-9584">
@@ -13130,6 +13320,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a29c-3540-b676-501c"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0646-9119-2c87-662e" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="4f86-5b6b-2198-2ce1" targetId="ac02-24ee-d928-9f4"/>
@@ -13203,6 +13394,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a29c-3540-b676-501c"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="d234-f881-0f98-07fd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="e342-efcc-6fac-b5c9" targetId="ac02-24ee-d928-9f4"/>
@@ -13344,6 +13536,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ea-6d82-94d7-20af"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="3513-ffe8-601b-7b59" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" hidden="false" id="4eb6-7b58-f051-992f" defaultSelectionEntryId="e466-913e-6cec-7718">
@@ -13487,6 +13680,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bfe9-9ead-a208-ed1"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="7959-5310-72ca-99a9" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Bombs" hidden="false" id="8fec-d411-bf45-d291" defaultSelectionEntryId="7677-cdc7-9473-49e6">
@@ -13570,6 +13764,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bfe9-9ead-a208-ed1"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="ae9d-4801-0ef8-f967" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Assault cannon" hidden="false" id="a08-fa8f-11c6-33e8">
@@ -13771,6 +13966,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="c4d0-4094-6740-f35d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rapier Laser Destroyer Battery" hidden="false" id="31ec-a804-92ad-97">
       <categoryLinks>
@@ -13860,6 +14058,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="189f-5c54-2ea1-f9dd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hades Breaching Drill" hidden="false" id="ed8d-9053-9d33-61da">
       <costs>
@@ -13922,6 +14123,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="8800-dc5d-25b7-1b3c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trojan Support Vehicle" hidden="false" id="fbaf-15f6-37d8-c5b">
       <costs>
@@ -13955,6 +14159,7 @@
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="487f-c163-7eb3-1cd1" targetId="5ba9-b266-8524-54f5"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="456-47f6-9b93-e1e6" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="d37e-5e78-98ea-7150" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="d585-947c-5978-d82a" targetId="b68a-5ded-65ac-98c">
@@ -14035,6 +14240,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Armoured Hull" hidden="false" type="selectionEntry" id="d48a-dd71-b005-4f0" targetId="b8fe-2f71-50b8-cf0b"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="1603-2699-dc57-7fd6" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Hellstrike Missile Option" hidden="false" id="f93e-ec72-6da0-eb9c" defaultSelectionEntryId="5a9a-67d9-65b4-3079">
@@ -14143,6 +14349,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Armoured Hull" hidden="false" type="selectionEntry" id="4f18-91d0-89b9-76f3" targetId="b8fe-2f71-50b8-cf0b"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="a4ba-0c1e-bfdc-3f6b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="8512-d4f2-aa50-cd02" primary="true" name="Vehicle"/>
@@ -14219,6 +14426,7 @@
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="db56-f29d-8fa5-95b8" targetId="5ba9-b266-8524-54f5"/>
         <entryLink import="true" name="Pintle Mounted option" hidden="false" type="selectionEntryGroup" id="d4e9-5637-d960-dd4" targetId="164e-b04-edf-f354"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="2dff-289d-723d-83a7" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ec7c-1920-3055-42e2" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="2b48-90d1-bbb8-42b7" targetId="b68a-5ded-65ac-98c">
@@ -14422,6 +14630,7 @@
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8153-ab0f-25e4-dbf3" includeChildSelections="true"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="101c-4ef6-8991-c557" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-7 Wounds Remaining" hidden="false" type="profile" id="af89-3a24-285a-e91a" targetId="4ca9-3652-f045-85ba"/>
@@ -14695,6 +14904,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="192d-a166-c252-de54" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Centaur Light Carrier [Legends]" hidden="false" id="81d4-2ed9-b0a4-6bdd">
       <costs>
@@ -14721,6 +14933,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="31e-5220-c9fc-f844" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="bc3d-2774-73fb-79d0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Centaur Light Carrier" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d764-30b1-8be4-78e7">
@@ -14805,6 +15018,7 @@
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="4477-6717-ba90-1ee2" targetId="5ba9-b266-8524-54f5"/>
         <entryLink import="true" name="Pintle Mounted option" hidden="false" type="selectionEntryGroup" id="4682-741d-dc86-2c00" targetId="164e-b04-edf-f354"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="1719-454e-dd9c-767a" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="27e9-456b-e727-abb2" primary="true" name="Vehicle"/>
@@ -14921,6 +15135,7 @@
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="eaa9-2f1a-35f0-4a6d" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Pintle Mounted option" hidden="false" type="selectionEntryGroup" id="d23b-7411-f2bc-c56f" targetId="164e-b04-edf-f354"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="18fb-b59e-37d6-9d05" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ac9c-eb5b-2e7e-6efe" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Stygies Laser Destroyer" hidden="false" id="ebd7-468a-1fce-2f34">
@@ -15286,6 +15501,9 @@
         <categoryLink targetId="2dc3-7145-1a88-1190" id="da8a-cdbc-6586-424b" primary="false" name="Quartermaster Cadre Squad"/>
         <categoryLink targetId="fa45-57e-930e-602b" id="469d-3c5d-d683-e8cd" primary="false" name="Faction: Astra Militarum"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="30fa-8cfa-1e69-9703" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Atlas Recovery Vehicle [Legends]" hidden="false" id="9673-7eaa-8ed9-bc7c">
       <costs>
@@ -15312,6 +15530,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="2d27-f9ee-c457-f268" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="3765-13da-5572-7038" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="1c9c-2c58-9faa-3316" targetId="b68a-5ded-65ac-98c">
@@ -15440,6 +15659,9 @@
         <categoryLink targetId="fa45-57e-930e-602b" id="c771-c904-8dbe-9407" primary="false" name="Faction: Astra Militarum"/>
         <categoryLink targetId="ebd4-1b78-a46-6eb4" id="f1b3-3873-a15c-7e9d" primary="false" name="Sabre Weapons Battery"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="0f4e-518a-d6ac-e2da" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Elysian Drop Sentinel [Legends]" hidden="false" id="badd-6133-a469-613c">
       <costs>
@@ -15476,6 +15698,7 @@
       <entryLinks>
         <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="a8c2-1dd5-879f-7f2c" targetId="51a8-ffe2-928f-3f50"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="f67e-d4a1-da4f-622e" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="d7d9-c0ef-a63a-28a6" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="1f51-1d4f-a43d-b4d6">
@@ -15613,6 +15836,9 @@
         <categoryLink targetId="8eb3-419e-8cee-3fa1" id="11ab-cde0-2d3e-5a40" primary="false" name="Elysian Sniper Squad"/>
         <categoryLink targetId="fa45-57e-930e-602b" id="d0fe-1a72-1d40-92b8" primary="false" name="Faction: Astra Militarum"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="77f3-9c56-85fd-07ce" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy Mortar Team [Legends]" hidden="false" id="e184-bfe9-ea12-a5e3">
       <costs>
@@ -15620,6 +15846,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Close Combat Weapons" hidden="false" type="selectionEntry" id="1bf5-b6dd-c544-6400" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="b137-fbf5-ddc9-abfe" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Heavy Mortar" hidden="false" id="5e46-c214-d826-2fca">
@@ -15743,6 +15970,7 @@
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="4a07-cfe1-4bd9-d1db" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="56eb-c03c-9762-9d0a" targetId="5ba9-b266-8524-54f5"/>
         <entryLink import="true" name="Pintle Mounted option" hidden="false" type="selectionEntryGroup" id="84a7-93bc-ad16-43e5" targetId="164e-b04-edf-f354"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="6d40-e730-aeef-5064" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Heavy Bolter Option" hidden="false" id="d135-f249-76fd-76e" defaultSelectionEntryId="c441-5d20-47bf-42b7">
@@ -15836,6 +16064,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Close Combat Weapons" hidden="false" type="selectionEntry" id="8355-7cc6-107e-6932" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="0e3b-1eb5-150a-0994" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -15930,6 +16159,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="9ef3-b3aa-5df8-307d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vendetta Gunship [Legends]" hidden="false" id="4946-40d2-ee8b-a71c">
       <costs>
@@ -16013,6 +16245,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e818-cfcb-cbe3-2b2d"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="d9a4-d920-4e36-254b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armoured Hull" hidden="false" id="1686-bcbd-320c-b348">
@@ -16121,6 +16354,7 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="34da-b9ca-4e05-d41c" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="8a36-a1ad-c13f-1f28" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -16277,9 +16511,8 @@
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="905e-550a-9166-83e5" targetId="ea3f-b52b-8dc7-d365"/>
-        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="66f5-2e7b-deaa-b01f" targetId="33fd-bb93-1bf4-f1c"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="9d3a-edba-6fa3-18de" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="1e29-4296-6d76-e548" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="c2d0-07e1-f0b2-c058" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sentinel Powerlifter [Legends]" hidden="false" id="8cc1-8512-710f-f15f">
@@ -16356,6 +16589,9 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3d0b-eecd-1012-6c35" includeChildForces="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="285f-8cbf-fbff-6cbd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Manticore Platform [Legends]" hidden="false" id="adbb-4624-738f-61ec">
       <costs>
@@ -16405,6 +16641,7 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Close Combat Weapons" hidden="false" type="selectionEntry" id="6ceb-d49-baf7-146c" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="8223-57ad-1419-4c13" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Storm Eagle Rockets" hidden="false" id="ce5-270d-2f2d-c333">
@@ -16516,6 +16753,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Close Combat Weapons" hidden="false" type="selectionEntry" id="9ceb-a6d2-bee0-6044" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="0a6a-a5ec-7995-76d0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="d21-95c4-2464-1ca4" id="dab5-f31e-39e-8198" primary="false" name="Hydra Platform"/>
@@ -16581,6 +16819,7 @@
         <entryLink import="true" name="Heavy Bolter Option" hidden="false" type="selectionEntryGroup" id="3aee-d202-d74b-de89" targetId="7208-248b-e265-8092"/>
         <entryLink import="true" name="Pintle Mounted option" hidden="false" type="selectionEntryGroup" id="ab08-4fea-f5fe-c38a" targetId="164e-b04-edf-f354"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="6534-443-60dc-434f" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="46c6-5f2b-1d12-a462" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Griffon Heavy Mortar" hidden="false" id="cd39-d629-3c50-a0de">
@@ -16653,6 +16892,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Close Combat Weapons" hidden="false" type="selectionEntry" id="db1b-3054-ae1e-72f9" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="68cf-e93a-fb56-b431" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Earthshaker Rounds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2aeb-af4e-d625-7282">
@@ -16845,6 +17085,9 @@
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="5950-c1c7-df4a-5f38" primary="false" name="Grenades"/>
         <categoryLink targetId="c8a1-fef-5569-61c9" id="e22e-7b65-4569-10b1" primary="false" name="Regiment"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="6350-b3d6-9622-ff64" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Salamander Scout Vehicle [Legends]" hidden="false" id="73b2-edbf-eec3-563d">
       <costs>
@@ -16915,6 +17158,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="e466-91cc-ae47-6cb0" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ce2c-ec8f-2571-bc73" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d710-1ecc-49f7-df7a"/>
@@ -17021,6 +17265,7 @@
       <entryLinks>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="82a1-efe7-4b3b-19f2" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured Frame" hidden="false" type="selectionEntry" id="e705-3c1-b23a-a776" targetId="bd41-7c1b-c091-7413"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="98f7-1c19-1ec6-fc29" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tauros Venator [Legends]" hidden="false" id="a95f-9dd6-de66-fa59">
@@ -17074,6 +17319,7 @@
       <entryLinks>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="e05-792-daed-567d" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured Frame" hidden="false" type="selectionEntry" id="b75-9ab1-fef0-5f63" targetId="bd41-7c1b-c091-7413"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="5635-f365-6ceb-8013" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Twin Multi-laser Option" hidden="false" id="59e0-de5e-7498-cdd7" defaultSelectionEntryId="6b7c-511c-123e-618c">
@@ -17171,6 +17417,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="603d-a84b-2b9f-78c9" targetId="5ba9-b266-8524-54f5"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="674e-e13a-5d69-d539" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Arkurian Stormhammer [Legends]" hidden="false" id="59c4-e4de-fe70-b221">
@@ -17272,6 +17519,7 @@
         <entryLink import="true" name="Pintle Mounted option" hidden="false" type="selectionEntryGroup" id="24ba-8d17-1881-dec1" targetId="164e-b04-edf-f354"/>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" type="selectionEntry" id="c871-bfc3-ca61-86f8" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured Tracks" hidden="false" type="selectionEntry" id="bcf9-a164-a2f1-e1c2" targetId="6883-d690-ca12-d222"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="236b-988b-8c80-2f89" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Twin Battle Cannon" hidden="false" id="ad2e-577d-c893-63b5">
@@ -17647,6 +17895,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47ff-b82d-ddcf-9630-max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="f227-fdba-1490-21ab" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Heavy Bolter Option" hidden="false" id="9525-78ab-8280-7d05" defaultSelectionEntryId="dc22-dd38-93e0-3a55">
@@ -18227,6 +18476,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="face-4881-24f0-b62d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-shot lascarbine" hidden="false" id="a210-87ac-255e-7b8a" collective="true">
       <profiles>
@@ -18462,6 +18714,9 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="bfc9-8ca8-53f3-2180" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sniper rifle" hidden="false" id="0b70-2702-788f-b739" collective="true">
       <profiles>
@@ -18499,6 +18754,9 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
         <categoryLink targetId="c8a1-fef-5569-61c9" id="3821-a08c-8df9-ad87" primary="false" name="Regiment"/>
         <categoryLink targetId="fa45-57e-930e-602b" id="6209-b968-4a61-f7ae" primary="false" name="Faction: Astra Militarum"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="1df4-4db2-32d0-a19c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Catachan Command Squad" hidden="false" id="60fd-bdae-32d0-645f">
       <categoryLinks>
@@ -18883,8 +19141,8 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
         </infoGroup>
       </infoGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="1f92-4550-1e8d-8c65" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="1da4-4626-4e09-7279" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="0644-eebb-a782-c8f3" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krieg Combat Engineers" hidden="false" id="7193-fac8-23e8-b2f2">
@@ -19071,6 +19329,9 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="e4b9-6679-0b72-4947" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krieg Command Squad" hidden="false" id="bcc4-d661-2948-ecc4">
       <categoryLinks>
@@ -19454,6 +19715,9 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
           </profiles>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="7f4f-2a8d-11ae-8e3c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lord Marshal Dreir" hidden="false" id="e56d-da78-4095-0525">
       <categoryLinks>
@@ -19658,8 +19922,8 @@ Designer’s Note: Place a Ratling Battlemutt token next to the unit, removing i
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f0a-e226-b0de-492c"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Crusade" hidden="false" id="0162-4aac-5d6d-24c1" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="b7d8-5a13-c50f-b73e" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="d937-3d6f-77b2-e0bb" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-6 Wounds Remaining" hidden="false" type="profile" id="5792-49ba-5810-7d4b" targetId="30d1-9e89-5aa2-6bde"/>
@@ -22326,16 +22590,16 @@ Onslaught: 4 units</characteristic>
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="335f-5583-df3e-059f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" flatten="true"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="335f-5583-df3e-059f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" flatten="true" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Traits" id="c308-98fb-0b6d-08e5" hidden="false">
+        <selectionEntryGroup name="Battle Traits" id="c308-98fb-0b6d-08e5" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="3704-804a-633c-bd09" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32"/>
             <entryLink import="true" name="Codex Battle Traits" hidden="false" id="526b-ec82-6e8b-e144" type="selectionEntryGroup" targetId="abe7-cbcb-0027-17f1"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Crusade Relics" id="cfad-fe5f-cdd3-ccd0" hidden="false">
+        <selectionEntryGroup name="Crusade Relics" id="cfad-fe5f-cdd3-ccd0" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Cities of Ruin Crusade Relics" hidden="false" id="9679-5940-e228-49c6" type="selectionEntryGroup" targetId="6397-d12d-4ea8-c9f2"/>
             <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="fded-de7e-3128-0081" type="selectionEntryGroup" targetId="354c-db23-16dc-b83d"/>
