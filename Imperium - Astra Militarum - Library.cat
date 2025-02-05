@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="105" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="106" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -20644,12 +20644,11 @@ While this model is joined to a unit, it can embark within any Transport that un
     </profileType>
     <profileType name="Stratagems" id="e027-bbee-bc9b-54f1" hidden="false">
       <characteristicTypes>
-        <characteristicType name="Name" id="83d5-1d9b-7ca9-fd34"/>
-        <characteristicType name="Cost" id="4d5f-a4a1-7de6-cc15"/>
-        <characteristicType name="When" id="bd11-0254-4738-83f7"/>
-        <characteristicType name="Target" id="2476-4c56-bcc5-1cf2"/>
-        <characteristicType name="Effect" id="6543-9322-5a6d-22dc"/>
-        <characteristicType name="Type" id="6b4f-67b6-fc7e-66f2"/>
+        <characteristicType name="Type" id="6543-9322-5a6d-22dc"/>
+        <characteristicType name="Cost" id="f663-4988-9b0e-23f2"/>
+        <characteristicType name="When" id="a8b8-1bbc-8d3d-80de"/>
+        <characteristicType name="Target" id="6b6c-d39e-01ea-f8ce"/>
+        <characteristicType name="Effect" id="718f-fcc4-bd12-16b8"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -20672,26 +20671,19 @@ While this model is joined to a unit, it can embark within any Transport that un
 Each time a model in a SQUADRON unit from your army makes a ranged attack that targets a visible MONSTER or VEHICLE unit, that attack has the [LETHAL HITS] ability.</characteristic>
               </characteristics>
             </profile>
+            <profile name="Final Hour" typeId="e027-bbee-bc9b-54f1" typeName="Stratagems" hidden="false" id="4357-338f-52f3-2727">
+              <characteristics>
+                <characteristic name="Type" typeId="6543-9322-5a6d-22dc">Battle Tactic</characteristic>
+                <characteristic name="Cost" typeId="f663-4988-9b0e-23f2">1CP</characteristic>
+                <characteristic name="When" typeId="a8b8-1bbc-8d3d-80de">Start of any phase</characteristic>
+                <characteristic name="Target" typeId="6b6c-d39e-01ea-f8ce">One REGIMENT unit from your army and one SQUADRON unit from your army within 6&quot; of and visible to that REGIMENT unit.</characteristic>
+                <characteristic name="Effect" typeId="718f-fcc4-bd12-16b8">Until the end of the phase, Orders affecting one of your units affect the other, and vice-versa</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Lethal Hits" hidden="false" type="rule" id="dac0-f686-9164-51ca" targetId="d1d1-611e-5191-1095"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Stratagems" id="4afb-6d8e-4629-b014" hidden="false">
-              <profiles>
-                <profile name="Final Hour" typeId="e027-bbee-bc9b-54f1" typeName="Stratagems" hidden="false" id="4357-338f-52f3-2727">
-                  <characteristics>
-                    <characteristic name="Name" typeId="83d5-1d9b-7ca9-fd34">Final Hour</characteristic>
-                    <characteristic name="Cost" typeId="4d5f-a4a1-7de6-cc15">1CP</characteristic>
-                    <characteristic name="When" typeId="bd11-0254-4738-83f7">Your Command Phase</characteristic>
-                    <characteristic name="Target" typeId="2476-4c56-bcc5-1cf2">Target</characteristic>
-                    <characteristic name="Effect" typeId="6543-9322-5a6d-22dc">Effect</characteristic>
-                    <characteristic name="Type" typeId="6b4f-67b6-fc7e-66f2">Epic Deed Stratagem</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Bridgehead Strike" hidden="false" id="7afb-a0f6-b95d-e791">
           <profiles>
