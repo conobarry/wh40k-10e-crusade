@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="36" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="37" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -884,7 +884,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapon Modifications" id="f9da-852a-d7f0-92e9" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Brutal (S+1)" hidden="false" id="d92a-5d2e-0b38-ea01">
+        <selectionEntry type="upgrade" import="true" name="Brutal (S+1)" hidden="false" id="d92a-5d2e-0b38-ea01" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75f5-1a3b-0da5-91b0" includeChildSelections="false"/>
           </constraints>
@@ -895,7 +895,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Armour Piercing (AP+1)" hidden="false" id="d181-a615-5566-8e5a">
+        <selectionEntry type="upgrade" import="true" name="Armour Piercing (AP+1)" hidden="false" id="d181-a615-5566-8e5a" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3018-0ec7-e3e5-de6a" includeChildSelections="false"/>
           </constraints>
@@ -906,7 +906,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Precise" hidden="false" id="658a-396c-f9a0-d15f">
+        <selectionEntry type="upgrade" import="true" name="Precise" hidden="false" id="658a-396c-f9a0-d15f" sortIndex="6">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6002-d56b-06a2-194a" includeChildSelections="false"/>
           </constraints>
@@ -927,7 +927,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Master-worked (D+1)" hidden="false" id="4b25-c6e7-3350-9c1c">
+        <selectionEntry type="upgrade" import="true" name="Master-worked (D+1)" hidden="false" id="4b25-c6e7-3350-9c1c" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f492-ff46-c01c-fa7f" includeChildSelections="false"/>
           </constraints>
@@ -938,7 +938,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Heirloom (A+1)" hidden="false" id="09c4-6313-8cd5-d77a">
+        <selectionEntry type="upgrade" import="true" name="Heirloom (A+1)" hidden="false" id="09c4-6313-8cd5-d77a" sortIndex="5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9712-b244-1f9c-e8c2" includeChildSelections="false"/>
           </constraints>
@@ -949,7 +949,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Finely Balanced (BS/WS+1)" hidden="false" id="13b7-d8d5-72c2-1f72">
+        <selectionEntry type="upgrade" import="true" name="Finely Balanced (BS/WS+1)" hidden="false" id="13b7-d8d5-72c2-1f72" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26be-21c9-e43a-04c0" includeChildSelections="false"/>
           </constraints>
