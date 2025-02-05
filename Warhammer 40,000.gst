@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="33" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="34" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -25,7 +25,7 @@
         </modifier>
       </modifiers>
     </costType>
-    <costType name="Crusade: Experience" id="a623-fe74-1d33-cddf" defaultCostLimit="-1" hidden="false">
+    <costType name="XP" id="a623-fe74-1d33-cddf" defaultCostLimit="-1" hidden="false">
       <comment>Tracking number for Crusade</comment>
       <modifiers>
         <modifier type="set" value="false" field="hidden" scope="roster">
@@ -35,7 +35,7 @@
         </modifier>
       </modifiers>
     </costType>
-    <costType name="Crusade: Weapon Modifications" id="716d-91b7-d55a-1022" defaultCostLimit="-1" hidden="false">
+    <costType name="Weapon Modifications" id="716d-91b7-d55a-1022" defaultCostLimit="-1" hidden="false">
       <comment>Tracking number for Crusade</comment>
       <modifiers>
         <modifier type="set" value="false" field="hidden" scope="roster">
