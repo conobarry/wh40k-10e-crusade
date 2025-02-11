@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="37" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="38" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1280,7 +1280,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
     </selectionEntryGroup>
     <selectionEntryGroup name="Cities of Ruin Crusade Relics" id="6397-d12d-4ea8-c9f2" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Rust-Red Residue" hidden="false" id="e1d3-2e32-698b-a9e6">
+        <selectionEntry type="upgrade" import="true" name="Rust-Red Residue" hidden="false" id="e1d3-2e32-698b-a9e6" sortIndex="6">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
@@ -1296,6 +1296,278 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <profile name="Rust-Red Residue" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d9d0-4f1f-1d15-4587">
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn in the Command Phase, select one Ruins terrain feature or all Obstacles within 3”. If you select a Ruins feature, it is Damaged at the end of your turn and Destroyed at the end of your next Command Phase. If you select Obstacles, they are removed from the battlefield at the end of your turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lambent Stone" hidden="false" id="3312-5737-97f9-7f57" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b30-4fbd-034c-c973"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8db0-9763-a57a-f75c" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Lambent Stone" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9edc-b007-8800-0ee0">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per game when this unit is selected to shoot or fight, the bearer may empower their weaponry with this relic. If they do so, the targeted enemy unit immediately suffers the effects of the Grenades Stratagem and the bearer&apos;s unit makes a Hazardous Test. Until The end of the Phase, all attacks made by the bearer gain the DEVASTATING WOUNDS and PSYCHIC keywords.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Liminal Beacon" hidden="false" id="0770-3649-2679-bfc2" sortIndex="2">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="125a-f39a-d952-175f"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4f29-cad5-be04-b4f5" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Liminal Beacon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1223-d1c7-0797-8982">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If the bearer’s unit is within 3” of a Sewer Marker in your Command Phase, it may enter the Sewers. Remove it from the battlefield and roll 1d6. On a 5+ it may be set up as per the Sewer Rats stratagem in the reinforcements step of the subsequent Movement Phase. Otherwise, the unit enters Strategic Reserves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Jagged Teeth" hidden="false" id="8665-defc-243d-a692" sortIndex="3">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="720b-c98b-1055-c8d4"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8897-27a0-119d-9112" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Jagged Teeth" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d727-8689-9b5b-8170">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Pick one of the bearer&apos;s melee weapons. It becomes a Crusade Relic. If any wounds caused by attacks made with that weapon are allocated to an enemy unit, that unit suffers 1 mortal wound at the end of each turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Oath-Stone of the Martyrs" hidden="false" id="291e-94ae-493b-774b" sortIndex="4">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d08-8e58-703b-e64c"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4e3b-b537-0908-671a" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Oath-Stone of the Martyrs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aede-5d85-54f3-c308">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You may select one additional Crusade Blessing each battle if the bearer is your Warlord.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Totem of Dissolution" hidden="false" id="5a91-1817-4540-d047" sortIndex="5">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86a4-00c6-f754-eea9"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1f57-b304-429b-d1a5" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Totem of Dissolution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a209-f2f9-a93b-56fe">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle you may place a token adjacent to the bearer. This token reduces the OC of all enemy units within 6” by 1 (to a minimum of 1), and affected units must reroll any successful Battleshock tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cable Lash" hidden="false" id="613b-89c9-dbf1-eddc" sortIndex="8">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07c0-4a50-dd8a-33b3"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8d35-bce2-8e60-4a52" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Cable Lash" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1b7d-5f85-2c4e-b3f7">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select one of the bearer’s Melee Weapons. That weapon may be used in the Shooting Phase as if it were a ranged weapon with the ASSAULT and PISTOL keywords. When doing so, the weapon is treated as having a BS one worse than its normal WS and a range of 3”.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Razor-Wire Crown" hidden="false" id="a2bf-8879-7502-fe7a" sortIndex="7">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="364c-5143-bce7-1585"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f8cb-d351-bb78-3f05" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Razor-Wire Crown" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aaaf-7e57-0992-1fc8">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Whenever you spend one or more Command Points, you may roll 1d6. On a 4+ you recover the Command Point. On a 1 or 2 the bearer suffers a Mortal Wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tremor Field" hidden="false" id="f062-1de9-205a-a56b" sortIndex="9">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec52-e54b-39dd-531a"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="94de-de67-228d-e8bd" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Tremor Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4479-e030-2d93-1618">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle in your command phase, you may use this relic. If you do so, units within Engagement Range of the bearer are immediately treated as having Disembarked a Destroyed Transport, with the bearer’s unit being treated as that transport for all rules purposes. If an affected unit with a Wounds characteristic of 4 or more would be destroyed due to not having sufficient space, it is not removed but suffers D3 Mortal Wounds instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Localised Void Emitter" hidden="false" id="4602-170f-5c3c-34fa" sortIndex="10">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4937-e240-9f46-7a86"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="db8b-7fb8-cb47-4a82" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Localised Void Emitter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="842d-263b-5a69-c7d2">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ignore the first 3 wounds allocated to the bearer each phase. Should any additional damage be suffered, the bearer suffers D3 mortal wounds and this ability is deactivated until the end of the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rustbound Mantle" hidden="false" id="1baf-a4fe-c232-4092" sortIndex="11">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04bf-cda3-4c16-5c41"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3a43-86a5-e5d8-d523" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Rustbound Mantle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a27-c356-d12a-e5d5">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When an enemy unit selects the bearer&apos;s unit as the target of an attack, they must take a Battle-Shock Test. If failed, all of the weapons used in the attack have their Attacks characteristic reduced by 1 until the end of the game (to a minimum of 1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Verminous Hive" hidden="false" id="b588-0ed5-ba49-a8d6" sortIndex="12">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="755f-135f-5e40-a715"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6808-9fa5-74d8-6326" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Verminous Hive" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6736-3d23-58d9-79b4">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer gains the following attack:
+
+Swarm of Rodents (Torrent, Blast, Pistol, One-Shot, Devastating Wounds, Hazardous)
+Range   A        S    D
+12”        4d6    1     1
+
+This attack does not benefit from any abilities the user may have which modify attacks in any way. The bearer takes -1 to the Hazardous test for every 13 Attacks. If the Hazardous test is failed, the bearer is automatically
+destroyed and counts as having failed an Out of Action test, and their unit takes D6 Mortal Wounds. If used in Engagement Range of one or more enemy units then the Hazardous test always counts as failed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Swarm of Rodents" hidden="false" id="965c-4ccf-bf83-6913">
+              <profiles>
+                <profile name="Swarm of Rodents" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3bd7-86ca-5581-3f50">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">4D6</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">1</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds, Hazardous, One-Shot, Pistol, Torrent, </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Torrent" id="86cc-e548-7376-57c5" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                <infoLink name="Blast" id="4f70-71ca-cb7f-5e19" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                <infoLink name="Pistol" id="8651-b4b7-6516-606b" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                <infoLink name="One Shot" id="56ec-089b-c4b8-e855" hidden="false" type="rule" targetId="cd26-1611-860a-91e4"/>
+                <infoLink name="Devastating Wounds" id="d752-2472-4f5c-c86a" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                <infoLink name="Hazardous" id="0768-ad31-0f0c-c852" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vault of Capricious Fates" hidden="false" id="3d9d-4a0a-2b26-b97c" sortIndex="13">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="230d-7aee-cd1c-c2db"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="db0c-4435-1b3e-55f7" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Vault of Capricious Fates" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48cc-703c-d18f-2eae">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the beginning of the battle, roll 2d6 twice. For each result rolled, the bearer gains the relic corresponding to the result on this table even if you already own it on this or a different model. These additional relics do not count towards the total Battle Honours the bearer may possess, and are lost at the end of the battle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
