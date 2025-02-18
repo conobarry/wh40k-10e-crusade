@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="44" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="45" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -2231,10 +2231,27 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select one weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications table), then select one of the abilities below for that weapon to gain. That weapon is now a Crusade Relic; note this on the bearer’s Crusade card and give the weapon a suitable name.</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Lethal Hits" field="annotation" join=" " affects="profiles.Abilities">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cc84-cf52-d64e-30a4" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" value="Sustained Hits 1" field="annotation" join=" " affects="profiles.Abilities">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="543d-4025-3a69-3e22" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" value="Precision" field="annotation" join=" " affects="profiles.Abilities">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="4bed-706b-5c09-14e3" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Options" id="11f2-8482-87c9-9148" hidden="false" flatten="true">
+                <selectionEntryGroup name="Options" id="11f2-8482-87c9-9148" hidden="false" flatten="false">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Lethal Hits" hidden="false" id="cc84-cf52-d64e-30a4">
                       <infoLinks>
@@ -2257,23 +2274,6 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <modifiers>
-                <modifier type="append" value="(Lethal Hits)" field="name" join=" ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="cc84-cf52-d64e-30a4" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="(Sustained Hits 1)" field="name" join=" ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="543d-4025-3a69-3e22" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="(Precision)" field="name" join=" ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4bed-706b-5c09-14e3" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Armour of the Soulless Sentry" hidden="false" id="a388-5a2f-ef05-bd5c" sortIndex="4">
               <constraints>
