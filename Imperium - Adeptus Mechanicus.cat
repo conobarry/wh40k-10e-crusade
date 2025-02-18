@@ -3145,6 +3145,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
         <categoryLink id="f699-b432-8e86-889c" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5418-f86b-6e76-c5a" primary="false"/>
         <categoryLink id="61ee-1c15-b12e-976e" name="Skitarii" hidden="false" targetId="2a4e-9018-d675-74f1" primary="false"/>
         <categoryLink id="285-7491-96ae-7a8b" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="f85d-737c-c977-bcca" targetId="cf47-a0d7-7207-29dc" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8432-0e90-a33f-fb6f" name="Warlord" hidden="false" collective="false" import="true" targetId="0580-79ca-da98-77c3" type="selectionEntry">
@@ -5914,7 +5915,7 @@ At the start of your Command phase during the second, third, fourth and fifth ba
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Explorator Maniple" hidden="false" id="e01f-8783-4769-2eb6">
               <rules>
-                <rule name="Aquisition at any cost" hidden="false" id="1bc3-7b38-21d2-2d73">
+                <rule name="Acquisition at any cost" hidden="false" id="1bc3-7b38-21d2-2d73">
                   <description>At the start of your Command phase, select one objective marker. Until the start of your next Command phase, that objective marker is your Acquisition objective marker. Each time an ADEPTUS MECHANICUS model from your army makes an attack, if that model’s  unit is within range of your Acquisition objective marker, or if the target of that attack is within range of your Acquisition objective marker, re-roll a Wound roll of 1.</description>
                 </rule>
               </rules>
@@ -5922,14 +5923,14 @@ At the start of your Command phase during the second, third, fourth and fifth ba
             <selectionEntry type="upgrade" import="true" name="Data-psalm Conclave" hidden="false" id="e282-2b49-bd6a-679c">
               <rules>
                 <rule name="Benediction of the Omnissiah" hidden="false" id="650a-c3b2-3606-f927">
-                  <description>At the start of the first battle round,select one of the following Benedictions of the Omnissiah to be active for CULT MECHANICUS units from your army until the end of the battle:
+                  <description>At the start of the first battle round, select one of the following Benedictions of the Omnissiah to be active for CULT MECHANICUS units from your army until the end of the battle:
 
 Panegyric Procession:
 
 Each time a CULT MECHANICUS model from your army makes a ranged attack that targets a unit within half range, improve the Armour Penetration characteristic of that attack by 1.
 
-
 Citation in Savagery:
+
 Each time a CULT MECHANICUS unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Strength and Attacks characteristics of melee weapons equipped by models in that unit.</description>
                 </rule>
               </rules>
@@ -5944,31 +5945,23 @@ Each time a CULT MECHANICUS unit from your army is selected to fight, if that u
             <selectionEntry type="upgrade" import="true" name="Haloscreed Battleclade" hidden="false" id="ce65-6b89-4a0e-4f3b">
               <rules>
                 <rule name="Noospheric Transference" id="d8b4-a13d-c7da-cfb7" hidden="false">
-                  <description>In your Command phase, select one ormore units from your army (including units that are embarked within Transports). The maximum number of units you can select depends on the battle size, as follows:
+                  <description>In your Command phase, select one or more ADEPTUS MECHANICUS units from your army (including units that are embarked within TRANSPORTS). The maximum number of units you can select depends on the battle size, as follows:
 
 
 INCURSION: 1 UNIT
 STRIKE FORCE: 2 UNITS
 ONSLAUGHT: 3 UNITS
 
-
-Until the start of your next Command phase, those units gain the Halo Override
-keyword. Then, select one of the Override abilities below. Until the start of your next
-Command phase, units from your army with the Halo Override keyword have the
-selected Override ability:
-
+Until the start of your next Command phase, those units gain the HALO OVERRIDE keyword. Then, select one of the Override abilities below. Until the start of your next Command phase, units from your army with the HALO OVERRIDE keyword have the selected Override ability:
 
 Electromotive Energisation
-Add 2&quot; to the Move characteristic ofmodels in this unit.
-
+Add 2&quot; to the Move characteristic of models in this unit.
 
 Microactuator Bracing
 Add 1 to the Toughness characteristic of models in this unit.
 
-
 Predation Protocols
 This unit is eligible to declare a charge in a turn in which it Advanced.
-
 
 Muted Servomotors
 Models in this unit have the Stealth ability.</description>
@@ -6714,120 +6707,130 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
               </selectionEntries>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="43ea-36c0-fe33-8b16" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0253-9be1-6776-7c90" includeChildSelections="false"/>
               </constraints>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Servitor with heavy bolter" hidden="false" id="1ad8-e89d-acee-a9cf">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8f15-d189-4663-a780" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="1ef-5426-7288-cf4b" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1de-3180-7b3e-b9b5-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1de-3180-7b3e-b9b5-max" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Heavy bolter" hidden="false" id="a8db-9aea-3b48-50ca" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
-                      <characteristics>
-                        <characteristic name="Range" id="a2a6-2bde-ecd4-4141" hidden="false" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" id="945b-b1d2-e1fd-5760" hidden="false" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                        <characteristic name="BS" id="16bd-c824-14ec-49ac" hidden="false" typeId="94d-8a98-cf90-183e">6+</characteristic>
-                        <characteristic name="S" id="b977-b9-245b-e419" hidden="false" typeId="2229-f494-25db-c5d3">5</characteristic>
-                        <characteristic name="AP" id="aba4-51c5-c730-c1f1" hidden="false" typeId="9ead-8a10-520-de15">-1</characteristic>
-                        <characteristic name="D" id="f2be-7685-a682-1d2a" hidden="false" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" id="460c-67d0-b6-de1a" hidden="false" typeId="7f1b-8591-2fcf-d01c">Heavy, Sustained Hits 1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Heavy" id="ce80-2909-3be1-fdbc" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                    <infoLink name="Sustained Hits" id="603c-32c9-1e2f-e46d" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Servitor&apos;s tools" hidden="false" id="48e1-9152-1358-f024" type="selectionEntry" targetId="439f-e99f-d86b-da69"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Servitor with plasma cannon" hidden="false" id="2890-a47e-82a-1789">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8758-3563-2bf-fe51" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="d5d6-77a0-34c5-309" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="197a-fd42-c690-ff96-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="197a-fd42-c690-ff96-max" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="➤ Plasma cannon - Standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2528-614a-b32c-eb7e">
-                      <characteristics>
-                        <characteristic name="Range" id="1d0f-486f-9e81-c4cf" hidden="false" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" id="9658-b957-ab42-3715" hidden="false" typeId="3bb-c35f-f54-fb08">D3</characteristic>
-                        <characteristic name="BS" id="ad38-c975-3e98-687d" hidden="false" typeId="94d-8a98-cf90-183e">6+</characteristic>
-                        <characteristic name="S" id="36f4-9227-b9af-556b" hidden="false" typeId="2229-f494-25db-c5d3">7</characteristic>
-                        <characteristic name="AP" id="fa62-817e-46c3-b332" hidden="false" typeId="9ead-8a10-520-de15">-2</characteristic>
-                        <characteristic name="D" id="426f-3916-67d1-bb94" hidden="false" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" id="39fd-d462-ff7b-e514" hidden="false" typeId="7f1b-8591-2fcf-d01c">Heavy, Blast</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="➤ Plasma cannon - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d7c8-2785-19d-c945">
-                      <characteristics>
-                        <characteristic name="Range" id="7268-1bde-ff60-a3f7" hidden="false" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                        <characteristic name="A" id="f424-e9ad-bb31-1164" hidden="false" typeId="3bb-c35f-f54-fb08">D3</characteristic>
-                        <characteristic name="BS" id="e020-ff5a-26bc-1a76" hidden="false" typeId="94d-8a98-cf90-183e">6+</characteristic>
-                        <characteristic name="S" id="9e51-2d5a-544d-e1d8" hidden="false" typeId="2229-f494-25db-c5d3">8</characteristic>
-                        <characteristic name="AP" id="9d30-ab8e-86ca-2a3a" hidden="false" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" id="3cfc-1a9d-aef6-2375" hidden="false" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                        <characteristic name="Keywords" id="cee8-4817-99f6-dece" hidden="false" typeId="7f1b-8591-2fcf-d01c">Hazardous, Heavy, Blast</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Heavy" id="433e-dad-b6d3-208c" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                    <infoLink name="Blast" id="7218-df39-20a5-88f3" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                    <infoLink name="Hazardous" id="e941-cb20-62aa-e04b" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Servitor&apos;s tools" hidden="false" id="12ca-e85e-160a-3fb" type="selectionEntry" targetId="439f-e99f-d86b-da69"/>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Servitor with multi-melta" hidden="false" id="a64b-a641-c5a0-bd52">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d05b-40a-10e7-3cf3" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="8248-88ba-c781-731f" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e3f-65ae-5864-f4c2-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e3f-65ae-5864-f4c2-max" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Multi-melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a1c0-b16-ef3d-2db0">
-                      <characteristics>
-                        <characteristic name="Range" id="d63-abce-435-4144" hidden="false" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                        <characteristic name="A" id="3aa9-d3a3-7ac3-c253" hidden="false" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                        <characteristic name="BS" id="b2e9-4d10-adac-6a3d" hidden="false" typeId="94d-8a98-cf90-183e">6+</characteristic>
-                        <characteristic name="S" id="bd54-3813-f64-7a3e" hidden="false" typeId="2229-f494-25db-c5d3">9</characteristic>
-                        <characteristic name="AP" id="e6d7-189b-3a92-aa93" hidden="false" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" id="be2b-cc6a-e2a2-8de1" hidden="false" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                        <characteristic name="Keywords" id="87ab-4e4e-c31a-8853" hidden="false" typeId="7f1b-8591-2fcf-d01c">Heavy, Melta 2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Heavy" id="6e10-9b6d-ea31-3e4c" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                    <infoLink name="Melta" id="d651-35c1-880-57a2" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Servitor&apos;s tools" hidden="false" id="f800-8032-3443-21c" type="selectionEntry" targetId="439f-e99f-d86b-da69"/>
-              </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Max 2 weapon swaps" id="3d41-ff5a-a95e-48d2" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Servitor with heavy bolter" hidden="false" id="1ad8-e89d-acee-a9cf">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8f15-d189-4663-a780" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="1ef-5426-7288-cf4b" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1de-3180-7b3e-b9b5-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1de-3180-7b3e-b9b5-max" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Heavy bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a8db-9aea-3b48-50ca">
+                          <characteristics>
+                            <characteristic name="Range" id="a2a6-2bde-ecd4-4141" hidden="false" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" id="945b-b1d2-e1fd-5760" hidden="false" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                            <characteristic name="BS" id="16bd-c824-14ec-49ac" hidden="false" typeId="94d-8a98-cf90-183e">6+</characteristic>
+                            <characteristic name="S" id="b977-b9-245b-e419" hidden="false" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" id="aba4-51c5-c730-c1f1" hidden="false" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="D" id="f2be-7685-a682-1d2a" hidden="false" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                            <characteristic name="Keywords" id="460c-67d0-b6-de1a" hidden="false" typeId="7f1b-8591-2fcf-d01c">Heavy, Sustained Hits 1</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Heavy" id="ce80-2909-3be1-fdbc" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                        <infoLink name="Sustained Hits" id="603c-32c9-1e2f-e46d" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Servitor&apos;s tools" hidden="false" id="48e1-9152-1358-f024" type="selectionEntry" targetId="439f-e99f-d86b-da69"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Servitor with multi-melta" hidden="false" id="a64b-a641-c5a0-bd52">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d05b-40a-10e7-3cf3" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="8248-88ba-c781-731f" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e3f-65ae-5864-f4c2-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e3f-65ae-5864-f4c2-max" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Multi-melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a1c0-b16-ef3d-2db0">
+                          <characteristics>
+                            <characteristic name="Range" id="d63-abce-435-4144" hidden="false" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                            <characteristic name="A" id="3aa9-d3a3-7ac3-c253" hidden="false" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                            <characteristic name="BS" id="b2e9-4d10-adac-6a3d" hidden="false" typeId="94d-8a98-cf90-183e">6+</characteristic>
+                            <characteristic name="S" id="bd54-3813-f64-7a3e" hidden="false" typeId="2229-f494-25db-c5d3">9</characteristic>
+                            <characteristic name="AP" id="e6d7-189b-3a92-aa93" hidden="false" typeId="9ead-8a10-520-de15">-4</characteristic>
+                            <characteristic name="D" id="be2b-cc6a-e2a2-8de1" hidden="false" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                            <characteristic name="Keywords" id="87ab-4e4e-c31a-8853" hidden="false" typeId="7f1b-8591-2fcf-d01c">Heavy, Melta 2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Heavy" id="6e10-9b6d-ea31-3e4c" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                        <infoLink name="Melta" id="d651-35c1-880-57a2" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Servitor&apos;s tools" hidden="false" id="f800-8032-3443-21c" type="selectionEntry" targetId="439f-e99f-d86b-da69"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Servitor with plasma cannon" hidden="false" id="2890-a47e-82a-1789">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8758-3563-2bf-fe51" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="d5d6-77a0-34c5-309" collective="true">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="197a-fd42-c690-ff96-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="197a-fd42-c690-ff96-max" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="➤ Plasma cannon - Standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2528-614a-b32c-eb7e">
+                          <characteristics>
+                            <characteristic name="Range" id="1d0f-486f-9e81-c4cf" hidden="false" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" id="9658-b957-ab42-3715" hidden="false" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                            <characteristic name="BS" id="ad38-c975-3e98-687d" hidden="false" typeId="94d-8a98-cf90-183e">6+</characteristic>
+                            <characteristic name="S" id="36f4-9227-b9af-556b" hidden="false" typeId="2229-f494-25db-c5d3">7</characteristic>
+                            <characteristic name="AP" id="fa62-817e-46c3-b332" hidden="false" typeId="9ead-8a10-520-de15">-2</characteristic>
+                            <characteristic name="D" id="426f-3916-67d1-bb94" hidden="false" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" id="39fd-d462-ff7b-e514" hidden="false" typeId="7f1b-8591-2fcf-d01c">Heavy, Blast</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="➤ Plasma cannon - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d7c8-2785-19d-c945">
+                          <characteristics>
+                            <characteristic name="Range" id="7268-1bde-ff60-a3f7" hidden="false" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" id="f424-e9ad-bb31-1164" hidden="false" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                            <characteristic name="BS" id="e020-ff5a-26bc-1a76" hidden="false" typeId="94d-8a98-cf90-183e">6+</characteristic>
+                            <characteristic name="S" id="9e51-2d5a-544d-e1d8" hidden="false" typeId="2229-f494-25db-c5d3">8</characteristic>
+                            <characteristic name="AP" id="9d30-ab8e-86ca-2a3a" hidden="false" typeId="9ead-8a10-520-de15">-3</characteristic>
+                            <characteristic name="D" id="3cfc-1a9d-aef6-2375" hidden="false" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                            <characteristic name="Keywords" id="cee8-4817-99f6-dece" hidden="false" typeId="7f1b-8591-2fcf-d01c">Hazardous, Heavy, Blast</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Heavy" id="433e-dad-b6d3-208c" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                        <infoLink name="Blast" id="7218-df39-20a5-88f3" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                        <infoLink name="Hazardous" id="e941-cb20-62aa-e04b" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Servitor&apos;s tools" hidden="false" id="12ca-e85e-160a-3fb" type="selectionEntry" targetId="439f-e99f-d86b-da69"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="99ed-3a11-4db6-fcc5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
@@ -6851,6 +6854,11 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             <characteristic name="Description" id="ca20-52c2-1f38-ccd0" hidden="false" typeId="9b8f-694b-e5e-b573">While a TECH-PRIEST model is leading this unit, improve the Ballistic Skill and Weapon Skill characteristics of ranged and melee weapons equipped by SERVITOR models in this unit by 1.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Servitor Retinue" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="66a1-be14-f858-31de">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Declare Battle Formations step, this unit can join one other unit from your army that is being led by a TECH-PRIEST ENGINSEER model (a unit cannot have more than one SERVITORS unit joined to it). If it does, until the end of the battle, every model in this unit counts as being part of that Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased accordingly.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Doctrina Imperatives" id="758d-c930-c02c-8d1a" hidden="false" type="rule" targetId="7a21-a958-e47d-5c0d"/>
@@ -6858,6 +6866,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="8c75-cc59-17bf-74e3" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b73c-9665-0865-d653" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Servitor&apos;s tools" hidden="false" id="439f-e99f-d86b-da69" collective="true">
       <constraints>
@@ -6927,12 +6938,12 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           <profiles>
             <profile name="Cantic Thrallnet" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b839-307c-2c4c-2ba3">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle round, you can select one friendly Skitarii unit within 12&quot; of the bearer. Until the start of the next battle round, the Protector Imperative and the Conqueror Imperative are both active for that unit.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle round, you can select one friendly SKITARII unit within 12&quot; of the bearer. Until the start of the next battle round, the Protector Imperative and the Conqueror Imperative are both active for that unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7ab0-4dca-e6f0-44c3"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7ab0-4dca-e6f0-44c3" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Clandestine Infiltrator" hidden="false" id="c755-e8eb-d3ae-41f7">
@@ -6959,7 +6970,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6144-9cd8-5ee3-cb73"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6144-9cd8-5ee3-cb73" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Veiled Hunter" hidden="false" id="36f1-310e-5a40-f505">
@@ -6981,12 +6992,12 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           <profiles>
             <profile name="Veiled Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8eda-a918-5a4d-6d6e">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, you can select up to three Skitarii Infantry units from your army and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, you can select up to three SKITARII INFANTRY units from your army and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5943-657c-ddbb-c0d8"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5943-657c-ddbb-c0d8" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Battle-Sphere Uplink" hidden="false" id="6a11-7822-bd7f-dea1">
@@ -7013,7 +7024,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="baad-b265-63c3-3fba"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="baad-b265-63c3-3fba" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Radial Suffusion" hidden="false" id="cc1a-1fa6-1645-58b3">
@@ -7040,7 +7051,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cdec-1e5c-eccc-48f6"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cdec-1e5c-eccc-48f6" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Malphonic Susurrus" hidden="false" id="8414-b1fd-c858-fb16">
@@ -7067,7 +7078,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dcfc-96e4-9491-2f75"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dcfc-96e4-9491-2f75" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Peerless Eradicator" hidden="false" id="c7c3-118c-ad37-b8a8">
@@ -7094,7 +7105,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1173-c59e-6372-66b2"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1173-c59e-6372-66b2" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Autoclavic Denounciation" hidden="false" id="dd74-c8b2-bc67-489c">
@@ -7121,7 +7132,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6b89-bcc8-34df-2592"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6b89-bcc8-34df-2592" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Magos" hidden="false" id="cdc5-31e4-7850-1689">
@@ -7148,7 +7159,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a6d-5858-4a11-54a3"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a6d-5858-4a11-54a3" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Genetor" hidden="false" id="b06e-79be-ca64-2fcd">
@@ -7175,7 +7186,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9ed0-e286-3c79-1950"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9ed0-e286-3c79-1950" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Logis" hidden="false" id="b70a-bfe9-7803-66fc">
@@ -7202,7 +7213,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cb25-60b1-a835-fec6"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cb25-60b1-a835-fec6" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Artisan" hidden="false" id="3ad-5001-79ae-9e77">
@@ -7229,7 +7240,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3f1b-c3dc-c1a5-4ce2"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3f1b-c3dc-c1a5-4ce2" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mechanicus Locum" hidden="false" id="e628-5793-9afe-df20">
@@ -7251,12 +7262,12 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           <profiles>
             <profile name="Mechanicus Locum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7616-6b89-fd6-ed5a">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a Leadership characteristic of 6+ and, once per battle, at the start of any phase, you can select one friendly Cult Mechanicus unit that is Battle-shocked and within 12&quot; of the bearer. That unit is no longer Battle-shocked.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a Leadership characteristic of 6+ and, once per battle, at the start of any phase, you can select one friendly CULT MECHANICUS unit that is Battle-shocked and within 12&quot; of the bearer. That unit is no longer Battle-shocked.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7b52-a7f4-b439-9637"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7b52-a7f4-b439-9637" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mantle of the Gnosticarch" hidden="false" id="22a6-cb05-be30-185">
@@ -7283,7 +7294,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5ef2-1db7-0edb-dccd"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5ef2-1db7-0edb-dccd" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Data-blessed Autosermon" hidden="false" id="ce38-7111-75d1-f3">
@@ -7310,7 +7321,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5f9c-5b3a-6706-d382"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5f9c-5b3a-6706-d382" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Temporcopia" hidden="false" id="716a-c9e8-b478-6248">
@@ -7337,7 +7348,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a4d3-1699-41c8-692b"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a4d3-1699-41c8-692b" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Necromechanic" hidden="false" id="a886-5b5b-d3b2-cf38">
@@ -7359,12 +7370,12 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           <profiles>
             <profile name="Necromechanic" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b24d-f2a5-2be-8b59">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, when a saving throw made for a friendly Legio Cybernetica or Adeptus Mechanicus Vehicle model within 12&quot; of the bearer is failed, the bearer can use this Enhancement. If they do, change the Damage characteristic of that attack to 0.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, when a saving throw made for a friendly LEGIO CYBERNETICA or ADEPTUS MECHANICUS VEHICLE model within 12&quot; of the bearer is failed, the bearer can use this Enhancement. If they do, change the Damage characteristic of that attack to 0.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b1d9-9141-250c-f0e4"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b1d9-9141-250c-f0e4" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lord of Machines" hidden="false" id="5f0a-b46d-1ade-9d4e">
@@ -7391,7 +7402,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="74ab-2e57-2ef6-3ff3"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="74ab-2e57-2ef6-3ff3" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Emotionless Clarity" hidden="false" id="6a67-c129-8325-85c3">
@@ -7413,12 +7424,12 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           <profiles>
             <profile name="Emotionless Clarity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1e3c-c796-4b1e-9c4d">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when a friendly Legio Cybernetica or Adeptus Mechanicus Vehicle model with the Deadly Demise ability that is within 12&quot; of the bearer is destroyed, the bearer can use this Enhancement. If it does, do not roll to determine whether any mortal wounds are inflicted as a result of that model’s Deadly Demise ability. Instead, mortal wounds are automatically inflicted.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when a friendly LEGIO CYBERNETICA or ADEPTUS MECHANICUS VEHICLE model with the Deadly Demise ability that is within 12&quot; of the bearer is destroyed, the bearer can use this Enhancement. If it does, do not roll to determine whether any mortal wounds are inflicted as a result of that model’s Deadly Demise ability. Instead, mortal wounds are automatically inflicted.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad3a-bc05-6ca2-0bc0"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad3a-bc05-6ca2-0bc0" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Arch Negator" hidden="false" id="d5ab-b1f8-7963-ed08">
@@ -7445,7 +7456,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d9b7-9e0f-3465-3490"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d9b7-9e0f-3465-3490" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Transoracular Dyad Wafers" hidden="false" id="c672-929d-3d04-ace4">
@@ -7472,14 +7483,12 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           <profiles>
             <profile name="Transoracular Dyad Wafers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="96b7-429d-f947-3015">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Cybernetica Datasmith model only. When the bearer is attached to a Kastelan Robots unit, until
-the end of the battle, models in that unit have the Doctrina Imperatives ability and gain the Halo
-Override keyword. This unit cannot be selected when selecting units as part of the Noospheric Transference Detachment rule.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">CYBERNETICA DATASMITH model only. When the bearer is attached to a KASTELAN ROBOTS unit, until the end of the battle, models in that unit have the Doctrina Imperatives ability and gain the Halo Override keyword. This unit cannot be selected when selecting units as part of the Noospheric Transference Detachment rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cd43-e84e-357f-e4b4"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cd43-e84e-357f-e4b4" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Cognitive Reinforcement" hidden="false" id="6825-6a1a-1398-2e0d">
@@ -7506,13 +7515,12 @@ Override keyword. This unit cannot be selected when selecting units as part of 
           <profiles>
             <profile name="Cognitive Reinforcement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c166-36f2-3110-44ee">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Mechanicus model only (excluding Cybernetica Datasmith models). 
-The Conqueror Imperative and Protector Imperative are both active for the bearer’s unit.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS MECHANICUS model only (excluding CYBERNETICA DATASMITH models). The Conqueror Imperative and Protector Imperative are both active for the bearer’s unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cb08-95d5-7b7f-0b6b"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cb08-95d5-7b7f-0b6b" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sanctified Ordnance" hidden="false" id="f4be-4aee-8549-c961">
@@ -7538,13 +7546,12 @@ The Conqueror Imperative and Protector Imperative are both active for the bear
           <profiles>
             <profile name="Santified Ordnance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1bb0-0d70-be66-2ea9">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Mechanicus model only. 
-Add 6&quot; to the range characteristic of ranged weapons equipped by models in the bearer’s unit and, each time a Hazardous test is taken for that unit, you can re‑roll the result.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS MECHANICUS model only. Add 6&quot; to the range characteristic of ranged weapons equipped by models in the bearer’s unit and, each time a Hazardous test is taken for that unit, you can re‑roll the result.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7de3-8026-7575-06e2"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7de3-8026-7575-06e2" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Inloaded Lethality" hidden="false" id="d484-3dab-c879-c717">
@@ -7578,13 +7585,12 @@ Add 6&quot; to the range characteristic of ranged weapons equipped by models i
           <profiles>
             <profile name="Inloaded Lethality" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f97a-e9ae-d98c-d824">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Tech‑Priest Dominus or Tech‑Priest Manipulus model only. 
-Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 to the Damage characteristic of the bearer’s melee weapons.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">TECH-PRIEST DOMINUS or TECH-PRIEST MANIPULUS model only. Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 to the Damage characteristic of the bearer’s melee weapons.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6a75-bbbd-58e6-9be3"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6a75-bbbd-58e6-9be3" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>

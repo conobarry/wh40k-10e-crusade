@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1f19-6509-d906-ca10" name="Imperium - Adeptus Custodes" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1f19-6509-d906-ca10" name="Imperium - Adeptus Custodes" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a43a-4cf6-6443-f48e" name="Aleya" hidden="false"/>
     <categoryEntry id="5386-42fc-f4d0-7d64" name="Allarus Custodians" hidden="false"/>
@@ -167,34 +167,37 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c8b5-287d-6e18-4567" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="c8a6-a4c5-703e-b717" name="Allarus Custodians" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="51b2-306e-1021-d207" value="195">
           <conditions>
-            <condition field="selections" scope="c8a6-a4c5-703e-b717" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="equalTo"/>
+            <condition field="selections" scope="c8a6-a4c5-703e-b717" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="set" field="51b2-306e-1021-d207" value="325">
           <conditions>
-            <condition field="selections" scope="c8a6-a4c5-703e-b717" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="greaterThan"/>
+            <condition field="selections" scope="c8a6-a4c5-703e-b717" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="51b2-306e-1021-d207" value="390">
+        <modifier type="set" value="390" field="51b2-306e-1021-d207">
           <conditions>
-            <condition field="selections" scope="c8a6-a4c5-703e-b717" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="equalTo"/>
+            <condition type="atLeast" value="6" field="selections" scope="c8a6-a4c5-703e-b717" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
       <profiles>
         <profile id="d569-61db-406d-1d42" name="Slayers of Tyrants" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a CHARACTER, MONSTER or VEHICLE unit, you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a ^^Character, Monster^^ or ^^Vehicle^^ unit, you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="0a36-c494-baad-91db" name="From Golden Light" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the end of your opponent&apos;s turn, if this unit is not whithin Engagement Range of one or more enemy units, you can remove it from the battlefield. In the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the end of your opponent&apos;s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.</characteristic>
           </characteristics>
         </profile>
         <profile id="fe8b-58b8-b37c-39b6" name="Allarus Custodian" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -222,7 +225,7 @@
       <infoLinks>
         <infoLink id="616a-5f61-3ab2-f3fc" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="494b-8b14-611b-6790" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="cb53-fc36-2f3b-4714" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="cb53-fc36-2f3b-4714" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink name="Talons" id="6a9b-5441-565f-70fb" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
       <categoryLinks>
@@ -281,6 +284,9 @@
               <entryLinks>
                 <entryLink import="true" name="Balistus grenade launcher" hidden="false" type="selectionEntry" id="352e-5ba4-521-cb1b" targetId="4863-f443-2b45-e18b"/>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="79b1-2891-0497-1545" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="fab4-d437-6e07-eb33" name="Allarus Custodian (Castellan Axe)" hidden="false" collective="false" import="true" type="model">
               <costs>
@@ -324,6 +330,9 @@
               <entryLinks>
                 <entryLink import="true" name="Balistus grenade launcher" hidden="false" type="selectionEntry" id="4115-d26e-f72f-f727" targetId="4863-f443-2b45-e18b"/>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ea7f-69f7-63b8-040d" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="cea8-14c8-fb23-d286" name="Allarus Custodian (Vexilla &amp; Misericordia)" hidden="false" collective="false" import="true" type="model">
               <costs>
@@ -487,6 +496,9 @@
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="7d15-64d7-ef58-b489" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="48b7-e713-d5b1-f11c" name="Blade Champion" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -512,7 +524,7 @@
             <characteristic name="Description" id="2996-6d07-7497-d08a" hidden="false" typeId="9b8f-694b-e5e-b573">Once per battle, in your Charge phase, this model&apos;s unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
           </characteristics>
         </profile>
-        <profile id="31ef-fcd4-c165-a95d" name="Legacy of Combat" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile id="31ef-fcd4-c165-a95d" name="Swift Onslaught" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" id="c5e7-7748-57be-4f0f" hidden="false" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, you can re-roll Charge rolls made for that unit.</characteristic>
           </characteristics>
@@ -546,7 +558,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="500-59f6-5229-540e-max"/>
           </constraints>
           <profiles>
-            <profile id="7953-e1ea-8b27-b564" name="Vaultswords - Behemor" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+            <profile id="7953-e1ea-8b27-b564" name="➤ Vaultswords - Behemor" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
@@ -557,7 +569,7 @@
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision</characteristic>
               </characteristics>
             </profile>
-            <profile id="d09f-3496-dc55-e6b4" name="Vaultswords - Hurricanis" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+            <profile id="d09f-3496-dc55-e6b4" name="➤ Vaultswords - Hurricanis" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">9</characteristic>
@@ -568,7 +580,7 @@
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
               </characteristics>
             </profile>
-            <profile id="7ffc-b8d9-10a7-7e4e" name="Vaultswords - Victus" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+            <profile id="7ffc-b8d9-10a7-7e4e" name="➤ Vaultswords - Victus" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
@@ -614,7 +626,7 @@
       <infoLinks>
         <infoLink id="7b07-a545-c54e-3b07" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="7e24-d751-7717-6adb" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="32b4-2fdf-4cb7-0920" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="32b4-2fdf-4cb7-0920" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink name="Talons" id="2fdd-974f-19d7-52e1" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
       <categoryLinks>
@@ -865,7 +877,7 @@
         <infoLink id="9cee-efed-3e79-3469" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="c3b2-e38d-3d68-248a" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
         <infoLink id="d20c-53ed-92b7-2b1d" name="Feel No Pain" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule"/>
-        <infoLink id="37a5-e4a1-353c-f02a" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="37a5-e4a1-353c-f02a" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink name="Talons" id="5c64-4095-6e80-9852" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
       <categoryLinks>
@@ -1419,9 +1431,14 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="d3ee-47e1-4540-dfe5" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="6" field="7de5-153e-c496-a191">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d3ee-47e1-4540-dfe5" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="7de5-153e-c496-a191" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7de5-153e-c496-a191" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry id="b61c-b815-65c0-b1cc" name="Shield-Captain" hidden="false" collective="false" import="true" type="model">
@@ -1877,13 +1894,16 @@
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Twin-linked" id="5ce2-8fb2-ed91-09bf" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2041,6 +2061,9 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e79f-ec67-7b46-8f23" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="8103-2e01-5d6a-b761" name="Valerian" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -2133,6 +2156,9 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ab70-b1e7-de84-257e" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="188b-e48b-29f-1456" name="Venerable Contemptor Dreadnought" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -2306,7 +2332,7 @@
         </profile>
         <profile id="f402-e37c-947f-10e7" name="Transport" hidden="false" typeId="74f8-5443-9d6d-1f1e" typeName="Transport">
           <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a trnasport capacity of 6 ADEPTUS CUSTODES INFANTRY models.</characteristic>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 6 ADEPTUS CUSTODES INFANTRY models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2481,7 +2507,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="7d64-0475-cdc7-7ee2" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="e9e8-115a-1de0-7b85" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="e9e8-115a-1de0-7b85" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink name="Talons" id="ee95-2ea1-8425-6bac" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
       <categoryLinks>
@@ -2976,7 +3002,7 @@
       <infoLinks>
         <infoLink id="cb6d-fe82-c434-e02e" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="5a4d-3f5e-2d13-949e" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="fa27-ae9c-256d-dccd" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="fa27-ae9c-256d-dccd" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink name="Talons" id="8f3f-3355-e03e-cea3" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
       <categoryLinks>
@@ -3119,7 +3145,7 @@
       <infoLinks>
         <infoLink id="285f-e445-93f8-d728" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="6272-2265-f18d-63a9" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="bff3-3f4b-22e8-bb7f" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="bff3-3f4b-22e8-bb7f" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink name="Talons" id="4dca-76b6-7bf0-571b" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
       <categoryLinks>
@@ -3234,7 +3260,7 @@
       <infoLinks>
         <infoLink id="b8d6-fdfd-0449-d84c" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink id="73bf-64bb-f2bc-1a81" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="1ce3-2da0-f715-b9cd" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="1ce3-2da0-f715-b9cd" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink name="Talons" id="ef89-156c-c196-721b" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
       <categoryLinks>
@@ -3347,7 +3373,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="3736-8e74-fd9d-8148" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
-        <infoLink id="7aef-fed6-eb20-1d6a" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="7aef-fed6-eb20-1d6a" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink name="Talons" id="f320-6517-e673-e2b" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
       </infoLinks>
       <categoryLinks>
@@ -3545,7 +3571,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="5f5b-254d-0912-7cfa" name="Invulnerable Save" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink id="5f5b-254d-0912-7cfa" name="Invulnerable Save" hidden="false" targetId="0300-84b9-69cf-b64f" type="profile"/>
         <infoLink id="6d7c-4769-fc9e-ca8c" name="Martial Ka&apos;tah" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
         <infoLink id="445e-7b71-4ea1-c7d7" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink name="Talons" id="c9f7-8897-a6e1-1375" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
@@ -3846,6 +3872,9 @@
                 <infoLink name="Ignores Cover" hidden="false" type="rule" id="436e-44a3-22fd-9330" targetId="4640-43e7-30b-215a"/>
                 <infoLink name="Torrent" hidden="false" type="rule" id="389b-a75d-eaf0-6fa3" targetId="5edf-d619-23e0-9b56"/>
               </infoLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7900-929f-b469-4704" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="d9a6-8dbd-2c01-862b" name="Lastrum storm bolter" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -3867,6 +3896,9 @@
               <infoLinks>
                 <infoLink name="Rapid Fire" hidden="false" type="rule" id="903d-dd2d-7e56-841" targetId="c5c8-8b58-b8b6-7786"/>
               </infoLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="64cf-220c-a99d-7c34" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="89d9-93fa-1d9a-3407" name="Twin adrathic destructor" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -3888,6 +3920,9 @@
               <infoLinks>
                 <infoLink name="Twin-linked" hidden="false" type="rule" id="56c1-9c95-240-a27e" targetId="cf93-ad4d-2f08-a79d"/>
               </infoLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="de9f-6044-3eef-0f95" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3959,7 +3994,7 @@
         </profile>
         <profile id="7636-6089-5b7c-d80a" name="Merciless Hunter" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In yours sShooting phase, each time this model makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, each time this model makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Wound roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4075,9 +4110,9 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f07-ee65-491c-284d" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="28a6-d971-1c4d-6bf6" name="Twin Iliastus accelerator culverin" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="28a6-d971-1c4d-6bf6" name="Twin iliastus accelerator cannon" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="203c-c496-58fc-29b8" name="Twin Iliastus accelerator culverin" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                <profile id="203c-c496-58fc-29b8" name="Twin iliastus accelerator cannon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
@@ -4392,7 +4427,7 @@
         </profile>
         <profile id="a331-3792-d689-fd1b" name="Fire Support" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this TRANSPORT this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this ^^Transport^^ this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="d4ab-7165-234f-e7fc" name="Damaged: 1-5 wounds remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -4402,8 +4437,7 @@
         </profile>
         <profile name="Coronus Grav-carrier" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="7410-50f3-53c6-de60">
           <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 8 Adeptus Custodes
-Infantry models.</characteristic>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 8 ^^Adeptus Custodes Infantry^^ models.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4494,6 +4528,9 @@ Infantry models.</characteristic>
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b7c8-dbaf-50c6-ab84" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="9c1a-7efd-ed36-440e" name="Orion Assault Dropship" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -4532,6 +4569,7 @@ Infantry models.</characteristic>
           </modifiers>
         </infoLink>
         <infoLink name="Talons" id="2273-b1d-9d0-8686" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
+        <infoLink name="Hover" id="8905-49c8-0e7b-5fbe" hidden="false" type="rule" targetId="eec5-5f54-9c03-c305"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c943-399b-3ed9-6f1c" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="true"/>
@@ -4759,7 +4797,7 @@ Infantry models.</characteristic>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3ef3-dd34-f950-8cdd"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Detachment" hidden="false" id="3fba-26f0-8c24-6ab4">
+        <selectionEntryGroup name="Detachment" hidden="false" id="3fba-26f0-8c24-6ab4" defaultSelectionEntryId="none">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dd1-ec7c-d8f7-a86d"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6886-c34e-583a-55f8"/>
@@ -5021,7 +5059,7 @@ Aircraft or it is Battle‑shocked, add 2 to the Objective Control characterist
           <profiles>
             <profile id="4d4a-a2b5-f20e-d74b" name="Castellan&apos;s Mark" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, you can select up to two Adeptus Custodes units from your army (excluding Anathema Psykana units) and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how  any units are already in Strategic Reserves.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, you can select up to two ADEPTUS CUSTODES units from your army (excluding ANATHEMA PSYKANA units) and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how  any units are already in Strategic Reserves.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5407,7 +5445,7 @@ Aircraft or it is Battle‑shocked, add 2 to the Objective Control characterist
           <profiles>
             <profile name="Honoured Fallen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6f06-3ae3-ddd5-4968">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Custodes Vehicle model only. While a friendly Adeptus Custodes Infantry or Adeptus Custodes Mounted unit is within 6&quot; of the bearer, each time a model in that unit makes  an attack, re‑roll a Hit roll of 1.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS CUSTODES VEHICLE model only. While a friendly ADEPTUS CUSTODES INFANTRY or ADEPTUS CUSTODES MOUNTED unit is within 6&quot; of the bearer, each time a model in that unit makes  an attack, re‑roll a Hit roll of 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5436,7 +5474,7 @@ Aircraft or it is Battle‑shocked, add 2 to the Objective Control characterist
           <profiles>
             <profile name="Augury Uplink" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="965b-4958-ea90-342d">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Custodes model only. The bearer has the Feel No Pain 5+ ability.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS CUSTODES model only. The bearer has the Feel No Pain 5+ ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5464,7 +5502,7 @@ Aircraft or it is Battle‑shocked, add 2 to the Objective Control characterist
           <profiles>
             <profile name="Adamantine Talisman" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e674-bd35-3644-f7e0">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Custodes model only. Improve the Attacks, Strength and Damage characteristics of melee weapons equipped by the bearer by 1.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS CUSTODES model only. Improve the Attacks, Strength and Damage characteristics of melee weapons equipped by the bearer by 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5492,7 +5530,7 @@ Aircraft or it is Battle‑shocked, add 2 to the Objective Control characterist
           <profiles>
             <profile name="Veteran of the Kataphraktoi" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b084-fb47-cee0-d538">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Custodes Infantry or Adeptus Custodes Mounted model only. In your Movement phase, select one Adeptus Custodes Vehicle or Adeptus Custodes Mounted unit within 6&quot; of the bearer. Until the start of your next Command phase, that unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTUS CUSTODES INFANTRY or ADEPTUS CUSTODES MOUNTED model only. In your Command phase, select one ADEPTUS CUSTODES VEHICLE or ADEPTUS CUSTODES MOUNTED unit within 6&quot; of the bearer. Until the start of your next Command phase, that unit is eligible to shoot in a turn in which it Fell Back.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5539,13 +5577,13 @@ Melee weapons equipped by models in this unit have the [LETHAL HITS] ability.</d
     <profile id="e3cf-4870-44cf-74da" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <comment>5+</comment>
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 5+ invulnerable save.</characteristic>
       </characteristics>
     </profile>
     <profile id="4042-b2c1-d581-dbe7" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-      <comment>4+</comment>
+      <comment>Single model 4+</comment>
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4+</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
       </characteristics>
     </profile>
     <profile id="2184-10e8-fe1e-9731" name="Praesidium Shield" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -5562,6 +5600,12 @@ Melee weapons equipped by models in this unit have the [LETHAL HITS] ability.</d
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0300-84b9-69cf-b64f">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 4+ invulnerable save.</characteristic>
+      </characteristics>
+      <comment>Unit 4+</comment>
     </profile>
   </sharedProfiles>
   <catalogueLinks>

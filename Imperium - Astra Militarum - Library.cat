@@ -9816,7 +9816,11 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Feel No Pain" hidden="false" type="rule" id="9691-edbf-5543-d0e7" targetId="9bf4-280f-bbe2-6fbb"/>
+        <infoLink name="Feel No Pain" hidden="false" type="rule" id="9691-edbf-5543-d0e7" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Master Vox" hidden="false" id="1f75-a238-cc23-a70f">
