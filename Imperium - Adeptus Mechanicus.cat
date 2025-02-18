@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -79,7 +79,7 @@
     <entryLink id="8560-45df-99ff-57d4" name="Skorpius Disintegrator" hidden="false" collective="false" import="true" targetId="3fcc-b6a1-399b-1a29" type="selectionEntry"/>
     <entryLink id="b14b-a1bf-b27f-5c18" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="2b9c-3982-701d-f8fd" type="selectionEntry"/>
     <entryLink id="a548-ba7d-175a-e8b2" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" targetId="6424-ed86-9e15-3e14" type="selectionEntry"/>
-    <entryLink id="c0d0-119d-f647-49dc" name="Sydonian Dragoons (Taser Lance &amp; phosphor serpenta)" hidden="false" collective="false" import="true" targetId="3053-c0c1-aedd-b211" type="selectionEntry"/>
+    <entryLink id="c0d0-119d-f647-49dc" name="Sydonian Dragoons with taser lances" hidden="false" collective="false" import="true" targetId="3053-c0c1-aedd-b211" type="selectionEntry"/>
     <entryLink id="875c-2e6-3e7d-76dd" name="Tech-Priest Enginseer" hidden="false" collective="false" import="true" targetId="c0e0-4d86-96d2-ec86" type="selectionEntry"/>
     <entryLink id="6bf3-dd34-975d-d8f1" name="Tech-Priest Manipulus" hidden="false" collective="false" import="true" targetId="2d9b-610a-dc4d-15ae" type="selectionEntry"/>
     <entryLink id="9027-13fe-73de-3c82" name="Technoarcheologist" hidden="false" collective="false" import="true" targetId="fa82-61cc-aa85-e94c" type="selectionEntry"/>
@@ -98,7 +98,7 @@
         <entryLink import="true" name="Show Titans" hidden="false" type="selectionEntry" id="d6cf-3f1f-46e1-43e2" targetId="f26b-79db-80e0-3a3b"/>
       </entryLinks>
     </entryLink>
-    <entryLink import="true" name="Sydonian Dragoons (Radium jezzail &amp; phosphor serpenta)" hidden="false" type="selectionEntry" id="155b-e47a-255b-2877" targetId="d99a-6563-8c08-23c"/>
+    <entryLink import="true" name="Sydonian Dragoons with radium jezzails" hidden="false" type="selectionEntry" id="155b-e47a-255b-2877" targetId="d99a-6563-8c08-23c"/>
     <entryLink import="true" name="Sydonian Skatros" hidden="false" type="selectionEntry" id="71e5-42c0-9a4a-f97c" targetId="52e7-9347-3f16-9eec"/>
     <entryLink import="true" name="Servitors [Legends]" hidden="false" id="e247-5e94-9767-87b" type="selectionEntry" targetId="2183-5b38-1726-2a11"/>
     <entryLink import="true" name="X-101 [Legends]" hidden="false" id="2794-3a4e-88d9-1aa7" type="selectionEntry" targetId="a896-3e21-1319-c86"/>
@@ -180,6 +180,7 @@
       <entryLinks>
         <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="a34b-6a88-3768-3a37" targetId="eea3-949a-21d2-d33f"/>
         <entryLink import="true" name="Cognis heavy stubber array" hidden="false" type="selectionEntry" id="66b0-cc6a-fae-50c8" targetId="5e69-8258-9ee5-3b6b"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="98a5-cb46-03af-03d4" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9c76-a080-072e-ce84" includeChildSelections="true"/>
@@ -326,6 +327,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="c3fa-7553-d82e-bfa8" targetId="eea3-949a-21d2-d33f"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="14c4-ffb5-89c1-50d9" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e1cc-0302-eedc-92f3" includeChildSelections="true"/>
@@ -413,6 +415,7 @@
       <entryLinks>
         <entryLink import="true" name="Cognis heavy stubber array" hidden="false" type="selectionEntry" id="562b-78e8-ea0b-3ed3" targetId="5e69-8258-9ee5-3b6b"/>
         <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="1732-1849-97cf-d8f8" targetId="eea3-949a-21d2-d33f"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="c2f1-8b1d-86fc-67e1" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5674-7e6e-99b6-a33a" includeChildSelections="true"/>
@@ -676,6 +679,9 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="559b-0874-e28c-dbbc" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="17c2-c69f-fd1c-0248" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="841-f339-8086-efe2" name="Fulgurite Electro-Priests" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -764,6 +770,9 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9758-1452-5411-ca4c" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="7f6d-e0ed-76fa-4722" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="7efb-de37-79c4-cccb" name="Ironstrider Ballistarii" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -899,6 +908,9 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="24e2-d64b-9fdf-2b1e" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="f648-1336-9b53-75d2" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="bd6c-8683-8bc4-962d" name="Kastelan Robots" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1146,6 +1158,9 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="3302-b892-cc19-bd92" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="f0fd-812d-7fe5-c30f" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="a46f-848-b87d-4484" name="Kataphron Breachers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1252,6 +1267,9 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="94fc-943a-5663-a135" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="320b-db7a-f91e-3c7f" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="7bee-a476-2167-76e7" name="Kataphron Destroyers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1350,6 +1368,9 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="fba4-f5f3-d57e-a729" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="c11d-1b0f-bc44-3b66" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="ea05-4db7-9ee6-7a87" name="Onager Dunecrawler" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1649,6 +1670,9 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5b6f-ed1e-0aab-80f9" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="f601-c45f-387a-4ff4" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="b31e-5003-5b63-a305" name="Pteraxii Skystalkers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1823,6 +1847,9 @@ In either case, if it does, until the end of the turn, this unit is not eligible
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1381-606c-7843-6274" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="5754-8aa8-798a-f005" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="958-a256-360-8620" name="Pteraxii Sterylizors" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2015,6 +2042,9 @@ In either case, if it does, until the end of the turn, this unit is not eligible
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e890-3ba5-ef31-878c" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="2d66-17bf-cf7f-f7c4" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="5797-adb8-930-e832" name="Serberys Raiders" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2256,6 +2286,9 @@ In either case, if it does, until the end of the turn, this unit is not eligible
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f83a-9272-5e95-982d" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="74fc-7cbe-2e2e-fd7b" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="e775-4fe1-832b-95ca" name="Serberys Sulphurhounds" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2579,6 +2612,9 @@ In either case, if it does, until the end of the turn, this unit is not eligible
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="97fa-7706-61c2-8f46" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="b357-9640-e97b-f54f" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="9b4-26b2-9e6d-a62d" name="Sicarian Infiltrators" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2841,6 +2877,9 @@ In either case, if it does, until the end of the turn, this unit is not eligible
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4a69-027a-5708-20a7" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="1d27-d992-851b-0a8a" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="8863-9784-8377-aa7a" name="Sicarian Ruststalkers" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -3025,6 +3064,9 @@ In either case, if it does, until the end of the turn, this unit is not eligible
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2638-738e-b190-60a3" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="3282-e190-b5ec-5661" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="b897-e4c6-fcb6-6538" name="Skitarii Marshal" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -3085,6 +3127,7 @@ In either case, if it does, until the end of the turn, this unit is not eligible
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b06-134b-ae0f-fac4"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="1695-a2d9-84e6-0491" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
@@ -3504,6 +3547,9 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
       <constraints>
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="4a42-4de5-c54e-fbe6" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="8660-2a7a-32d7-4bc1" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="ba33-c21-bddc-ab0" name="Skitarii Vanguard" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -3905,6 +3951,9 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
       <constraints>
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="b927-203f-b50e-6162" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="82c9-7f62-3934-38ff" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="3fcc-b6a1-399b-1a29" name="Skorpius Disintegrator" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -4052,6 +4101,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="95ee-4601-8c92-b047" targetId="eea3-949a-21d2-d33f"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="b4a2-5caa-5926-4bd8" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="75f2-ff45-4dd3-f97d" includeChildSelections="true"/>
@@ -4114,6 +4164,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
       <entryLinks>
         <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="9cc2-72a4-c4-60aa" targetId="eea3-949a-21d2-d33f"/>
         <entryLink import="true" name="Cognis heavy stubber array" hidden="false" type="selectionEntry" id="4ed3-afa8-1416-9c20" targetId="5e69-8258-9ee5-3b6b"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="653e-77a1-8698-9106" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="31bf-b391-7a5f-17c7" includeChildSelections="true"/>
@@ -4235,6 +4286,9 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2451-aff7-e605-ca04" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="35af-a7e4-6632-c7b8" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="6424-ed86-9e15-3e14" name="Tech-Priest Dominus" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -4394,6 +4448,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
           </constraints>
         </entryLink>
         <entryLink id="7c7a-e18d-61ff-d869" name="Enhancements" hidden="false" collective="false" import="true" targetId="65bb-2001-cac8-2761" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="6e45-fb3f-9001-9734" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
@@ -4497,6 +4552,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd17-1cc0-3521-9c5f"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="6a76-b9dd-d513-fce6" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
@@ -4658,6 +4714,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
           </constraints>
         </entryLink>
         <entryLink id="993a-1c06-a910-d0ef" name="Enhancements" hidden="false" collective="false" import="true" targetId="65bb-2001-cac8-2761" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="e1af-c687-bd8f-a850" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
@@ -4755,6 +4812,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc8c-71b5-2393-6dbf"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0209-6940-0a56-80e5" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
@@ -4846,6 +4904,7 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48c7-305-f78e-ea8c"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="1db6-b189-5190-f9ee" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
@@ -5197,6 +5256,9 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c029-f7a0-e353-3824" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="507e-9732-e6ba-dde8" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="7774-a50b-cb1e-8372" name="Secutarii Peltasts [Legends]" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -5581,6 +5643,9 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="be0a-ee37-8cc6-c015" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="91fe-3061-fde2-5214" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="3639-75ba-cab2-c159" name="Terrax-Pattern Termite [Legends]" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -5780,6 +5845,9 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ff44-7bd9-e07f-c6b9" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="9593-b26d-4ace-41f9" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Detachment" hidden="false" id="c82f-1b42-946-9c9a">
       <constraints>
@@ -6418,6 +6486,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da88-26bc-2a1a-f934" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="a3cb-1f15-7501-3627" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83cc-c050-bf7c-dc0e" includeChildSelections="true"/>
@@ -6561,6 +6630,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="a7b7-95c3-9224-09a7" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Servitors [Legends]" hidden="false" id="2183-5b38-1726-2a11">
       <costs>
@@ -6752,6 +6824,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
       <infoLinks>
         <infoLink name="Doctrina Imperatives" id="758d-c930-c02c-8d1a" hidden="false" type="rule" targetId="7a21-a958-e47d-5c0d"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="8c75-cc59-17bf-74e3" type="selectionEntryGroup" targetId="e6d2-fac4-83ba-2566"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Servitor&apos;s tools" hidden="false" id="439f-e99f-d86b-da69" collective="true">
       <constraints>
@@ -7482,6 +7557,910 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Crusade" id="e6d2-fac4-83ba-2566" hidden="false" collapsible="true">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="9ec5-255d-a1f8-2eac" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" flatten="true" sortIndex="1"/>
+        <entryLink import="true" name="Archeotech" hidden="false" id="577c-d004-5074-22fa" type="selectionEntryGroup" targetId="bbba-39a5-3d18-e18d" sortIndex="4"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Battle Traits" id="8f12-8450-b29e-3232" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="25f5-c6fb-a5ee-cf2f" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32"/>
+            <entryLink import="true" name="Codex Battle Traits" hidden="false" id="2620-e565-871d-5aef" type="selectionEntryGroup" targetId="b59e-bcbc-9903-99e9"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Crusade Relics" id="7e46-15e4-43d6-f67c" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Cities of Ruin Crusade Relics" hidden="false" id="27f1-8d70-84d7-0a28" type="selectionEntryGroup" targetId="6397-d12d-4ea8-c9f2"/>
+            <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="ad97-bcab-94ba-e954" type="selectionEntryGroup" targetId="e4a7-bdee-ccda-3154"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Codex Crusade Relics" id="e4a7-bdee-ccda-3154" hidden="false" collapsible="true">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="5418-f86b-6e76-c5a" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Artificer Relics" id="68df-38d8-96fb-8ded" hidden="false" flatten="true" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Kardiocore Galvanus" hidden="false" id="f402-d46a-2b66-c639" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Kardiocore Galvanus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cab3-c4de-f9eb-d89e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, add 1 to Advance and Charge rolls made for that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8649-3742-8810-1697"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="30c1-ffe9-97e9-2376" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Multiplexed Neural Inducer" hidden="false" id="dcbe-cc33-8942-5e9e" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Multiplexed Neural Inducer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8367-64fd-ca4a-10a2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, while the bearer is leading a unit, you can target that unit with the Fire Overwatch Stratagem for 0CP and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d1a-316c-42a3-12a5"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cd80-b795-e1d6-a0e3" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Antiquity Relics" id="7cf6-9bb6-4cff-17e7" hidden="false" flatten="true" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Exemplar&apos;s Eternity" hidden="false" id="e15c-3cb8-52ae-44ba">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="2a4e-9018-d675-74f1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Exemplar&apos;s Eternity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c810-b2e5-5fee-9950">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">SKITARII model only. At the start of the battle, select one enemy unit. Each time a model in the bearer’s unit makes an attack that targets that enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ad7-32b0-cc79-c6ff"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7a30-1a8f-5e00-13a2" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Legendary Relics" id="7cef-da19-b1af-8951" hidden="false" flatten="true" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Autocaduceus of Arkhan Land" hidden="false" id="744f-cdc4-0bfb-ce70">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Autocaduceus of Arkhan Land" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7845-00e7-ab7a-3b4c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when a different friendly ADEPTUS MECHANICUS model within 6&quot; of the bearer is destroyed, you can roll one D6 at the end of the phase instead of triggering any rules that are triggered when a model is destroyed (e.g. Deadly Demise). On a 3+, set that model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with up to 6 wounds remaining (this cannot allow a model to return with more wounds than its Wounds characteristic).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3baa-f952-e47b-18d3"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="00f3-3967-4a20-6a48" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Codex Battle Traits" id="b59e-bcbc-9903-99e9" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tech-Priest Battle Traits" id="da78-5caa-0853-8e41" hidden="false" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="59a9-b5cc-7c11-aaad" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Machine Savant" hidden="false" id="9a43-785f-8e88-ab34" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Machine Savant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dcce-2b46-234a-b1b6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the battle, if this unit was part of your Crusade army and was not destroyed during the battle, you can ignore one failed Out of Action test taken for an ADEPTUS MECHANICUS VEHICLE unit from your Crusade army - that test is treated as having been passed.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Voltagheist Shock" hidden="false" id="53b1-04c8-5946-68d5" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Voltagheist Shock" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="43ec-2b89-8687-d07e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, in your opponent’s Charge phase, just after an enemy unit selects this unit as the target of a charge, roll one D6: on a 3+, that enemy unit suffers D3 mortal wounds and must take a Battle shock test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Holy Acquisitor" hidden="false" id="aaa0-ef35-bd99-6e86" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Holy Acquisitor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="88e2-f132-51f8-1711">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of a battle you won, if this unit was in your Crusade army, roll one D6: on a 6, your Crusade force gains 1 Archeotech Part.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Control Cortex" hidden="false" id="75be-6fe8-2d37-5912" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Control Cortex" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0eb3-5a18-9770-f1c3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, you can re-roll Battle-shock tests taken for that unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hexamathic Chorale" hidden="false" id="f9b4-18ae-1b5c-8207" sortIndex="5">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Hexamathic Chorale" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38d1-4bb0-d9da-cbd8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one ADEPTUS MECHANICUS SMOKE unit from your army that is within 12&quot; of this unit can be targeted with the Smokescreen Stratagem for 0CP, even if a different unit from your Crusade army has already been targeted with that Stratagem this phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Teleportation Node" hidden="false" id="71f9-7f8b-6718-20b9" sortIndex="6">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Teleportation Node" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ce53-aa80-d914-e830">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Movement phase, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves. If you do, until the end of your next turn, this unit has the Deep Strike ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Deep Strike" id="5052-d675-2864-8c11" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skitarii Character Battle Traits" id="0eff-b09a-fa50-614c" hidden="false" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="2a4e-9018-d675-74f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Integrated Refraction Emitters" hidden="false" id="d546-27c7-db7d-756d" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Integrated Refraction Emitters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c4c7-5ff4-70b5-d0df">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Battlefield Processing Cortex" hidden="false" id="5103-5556-cb95-d2af" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Battlefield Processing Cortex" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8ef9-cc13-4b67-a86f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you target this model’s unit with a Stratagem, roll one D6, adding 1 to the result if that unit is equipped with an enhanced data-tether: on a 5+, you gain 1CP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Secutor-Class Blade Implants" hidden="false" id="64a2-878f-038d-83d4" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Secutor-Class Blade Implants" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6392-a7b4-70b5-6b46">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, when an enemy unit ends a Charge move within Engagement Range of this unit, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Infantry and Mounted Battle Traits" id="2000-9100-cc09-3334" hidden="false" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Enhanced Bionics" hidden="false" id="57a2-3266-0c4d-6b9f" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Enhanced Bionics" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="88dd-981f-6f6f-4ff1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has a 4+ invulnerable save. If this unit is a BATTLELINE or KATAPHRON unit, it has a 5+ invulnerable save instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Killcode Gear Switches" hidden="false" id="13e5-fedb-1ff4-c3b4" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Killcode Gear Switches" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ba04-9db2-4d00-b22f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Strength characteristic of melee weapons equipped by models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fervent Locomotion" hidden="false" id="17e4-8264-0c7b-5d38" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Fervent Locomotion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3138-80b3-8e0a-3129">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Movement characteristic of models in this unit and add 1 to Advance rolls made for it.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="increment" value="1" field="e703-ecb6-5ce7-aec1" affects="profiles.Unit"/>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Vehicle Battle Traits" id="6dd9-a3c4-8d71-a208" hidden="false" flatten="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sanctified Engine" hidden="false" id="6072-e9ac-1bc6-9127" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Sanctified Engine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="06e4-a553-8882-5be5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6&quot; to the Move characteristic of models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hardened Machine Spirit" hidden="false" id="e7df-d1b2-ad5c-5a59" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Hardened Machine Spirit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9e5e-0bda-5414-498b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can ignore any or all modifiers to this unit’s characteristics and/or to any roll or test made for it (excluding modifiers to saving throws).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessed Spirit" hidden="false" id="b0a1-c02d-a618-0748" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Blessed Spirit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="adf8-7236-a30c-bdf9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Feel No Pain 6+ ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Feel No Pain" id="6015-7db1-749e-aff8" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Archeotech" id="bbba-39a5-3d18-e18d" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Archeotech Weapons" id="7a53-fadb-6046-d489" hidden="false" collapsible="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Electro-Fire Implants" hidden="false" id="dd11-0057-eab5-ef25" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Electro-Fire Implants" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2fe9-40c3-0b65-5e32">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Anti-Infantry 4+, Torrent</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault" id="9b28-64f8-21ee-693c" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                <infoLink name="Anti-" id="dc02-d95a-d04d-e2d5" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="Torrent" id="9e4e-9726-e074-77b3" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Neural Jammer" hidden="false" id="d330-3f41-417d-acd5" sortIndex="2">
+              <profiles>
+                <profile name="Neural Jammer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3788-c69e-efa5-c6c1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Pistol, Precision</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Devastating Wounds" id="0d89-1646-0e81-69c5" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                <infoLink name="Pistol" id="31d2-4c63-ad3b-bc80" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                <infoLink name="Precision" id="755d-57ab-3852-84a4" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nanoshard Projector" hidden="false" id="2d7f-9f8d-7794-dd5c" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Nanoshard Projector" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f88f-73c5-3e0d-fcd2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lethal Hits, Pistol</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal Hits" id="6fab-82ff-6125-3644" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+                <infoLink name="Pistol" id="b655-c1ed-ca56-c5e2" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Arc Annulus" hidden="false" id="59c5-f66e-f1c3-1d84" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Arc Annulus" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="463d-5ad8-066a-64e3">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 3+, Pistol</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-" id="7eb5-2553-33bf-cf5a" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="Pistol" id="bd32-f8c9-b79d-43ea" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Electro-Fused Vambraces" hidden="false" id="851e-64f7-a772-fd39" sortIndex="5">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Electro-Fused Vambraces" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5c17-7383-3695-b801">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Sustained Hits 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pistol" id="1624-f678-0b8c-b4d8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                <infoLink name="Sustained Hits" id="b364-f7fe-4ef5-f7c8" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Digital Cannon" hidden="false" id="effe-dbcc-fa46-b582" sortIndex="6">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Digital Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5916-d036-f3a1-e2bb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1659-8c6e-b324-d28d"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Force Field" id="0c12-804d-db3d-043b" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca6c-400c-ce8f-97d4"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Void Shell" hidden="false" id="5a9e-7061-70fa-8657" sortIndex="1">
+              <profiles>
+                <profile name="Void Shell" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e84d-b762-ee79-3af2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Arc Implants" hidden="false" id="4789-c0f4-0790-6e66" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Arc Implants" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1bfa-70ca-ef4f-bb11">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, in your opponent’s Charge phase, just after this model’s unit has been selected as a target of an enemy unit’s charge, this model can use this ability. If it does, until the end of the phase, subtract 2 from Charge rolls made for that enemy unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Time Sink" hidden="false" id="5d42-c44f-3ded-4839" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Time Sink" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a29a-dc5a-8389-860c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, select one enemy unit within Engagement Range of this model and roll one D6: on a 4+, until the end of the turn, reduce the Weapon Skill characteristic of melee weapons equipped by that enemy unit by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Conversion Eradicator" hidden="false" id="56a3-0779-4fa8-f925" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Conversion Eradicator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6d3a-279a-4863-73d5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Strength and Armour Penetration characteristics of ranged weapons equipped by this model by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Inverse Power Feeds" hidden="false" id="0f49-7296-52fd-55bd" sortIndex="5">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Inverse Power Feeds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df78-abb9-35d6-e055">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by this model have the DEVASTATING WOUNDS ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Devastating Wounds" id="7f37-dd75-e329-56ff" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Technodermis" hidden="false" id="5b29-c4c1-b6c7-0225" sortIndex="6">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Technodermis" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ff99-6ced-b523-2218">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Save and Wounds characteristics of this model by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Archeotech Techno-Arcana" id="d7b1-c33e-18e3-925f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hagioscope" hidden="false" id="8d48-c815-18ec-7235" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Hagioscope" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="40aa-4ece-83ab-1e4a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one enemy unit. Each time an ADEPTUS MECHANICUS unit from your Crusade army makes a ranged attack that targets that enemy unit, you can ignore any or all modifiers to the Hit roll, the Wound roll and the Ballistic Skill characteristic of that attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exo-Gauntlet" hidden="false" id="474c-3c14-3bfb-14cf" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Exo-Gauntlet" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8f74-ded3-4061-bd39">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one enemy unit. Each time an ADEPTUS MECHANICUS unit from your Crusade army makes a melee attack that targets that enemy unit, re-roll a Hit roll of 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ferrosanctic Orrery" hidden="false" id="72a1-cd3a-4b65-d900" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Ferrosanctic Orrery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c7f-e753-05f9-de85">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select up to two ADEPTUS MECHANICUS units from your Crusade army, then select one objective marker that is not in your deployment zone. While a unit you selected for this ability is within range of that objective marker, improve the Leadership and Objective Control characteristics of models in that unit by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Obscuroptikon" hidden="false" id="a8de-c253-b29a-c639" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Obscuroptikon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6da0-9f54-2f80-5686">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select up to two ADEPTUS MECHANICUS INFANTRY units from your Crusade army. Each time an enemy unit makes a ranged attack that targets one of those units, until the end of the phase, models in the targeted unit have a 5+ invulnerable save against ranged attacks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tri-Dimensional Covenant" hidden="false" id="ec44-333a-cb51-d03a" sortIndex="5">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Tri-Dimensional Covenant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6b66-4e29-d7d8-a68d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select up to two ADEPTUS MECHANICUS INFANTRY units from your Crusade army. Until the end of the battle, add 1 to Advance and Charge rolls made for those units.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hypercircuit" hidden="false" id="a860-a949-2cfd-5e33" sortIndex="6">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Hypercircuit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0df4-7924-7873-7cdc">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select up to two ADEPTUS MECHANICUS units [excluding VEHICLES) from your Crusade army. Once per battle per selected unit, you can target that unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e28f-6451-ba7b-3c34"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Legendary Archeotech" id="9218-f08d-cea6-0d1a" hidden="false" collapsible="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Doom of Thorantus" hidden="false" id="31d2-b584-7876-43b7" sortIndex="1">
+              <profiles>
+                <profile name="The Doom of Thorantus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2706-8b68-8fac-6300">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the end of your Movement phase, select one enemy VEHICLE unit within 18&quot; of and visible to the bearer. Until the start of your next Movement phase, subtract 2 from the Attacks characteristic of ranged weapons equipped by models in that unit, and each time that unit ends a Normal, Advance, Fall Back or Charge move, it suffers D6 mortal wounds.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Syntaxik Charger" hidden="false" id="7dab-d1ba-3e30-4556" sortIndex="2">
+              <profiles>
+                <profile name="Syntaxik Charger" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bbe4-9acf-f2ec-8ed3">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+, Devastating Wounds, One Shot, Sonic Devastation</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-" id="2fec-ba1b-404e-20be" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                <infoLink name="Devastating Wounds" id="27a6-3348-5c0e-4310" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                <infoLink name="One Shot" id="88fd-eb96-2115-8144" hidden="false" type="rule" targetId="cd26-1611-860a-91e4"/>
+              </infoLinks>
+              <rules>
+                <rule name="Sonic Devastation" id="de30-62f6-aa36-35e4" hidden="false">
+                  <description>In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with this weapon. Until the start of your next turn, worsen the Weapon Skill characteristic of melee weapons equipped by models in that unit by 1.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Augur of the First Reclamation" hidden="false" id="83b5-1a61-c624-f15b" sortIndex="3">
+              <profiles>
+                <profile name="Augur of the First Reclamation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="68bc-b61d-4961-0725">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2 to the bearer’s Objective Control characteristic, and at the end of your Command phase, if the bearer is within range of an objective marker that is not in your deployment zone, you gain 1CP. in addition, at the end of the battle, if the bearer was in your Crusade army and you won that battle, roll one D6: on a 4+, your Crusade force acquires one Archeotech Part.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="59a9-b5cc-7c11-aaad" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
