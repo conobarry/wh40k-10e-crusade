@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="114" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="115" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -22878,16 +22878,18 @@ Onslaught: 4 units</characteristic>
         <entryLink import="true" name="Crusade" hidden="false" id="335f-5583-df3e-059f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" flatten="true" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Traits" id="c308-98fb-0b6d-08e5" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Battle Traits" id="c308-98fb-0b6d-08e5" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="3704-804a-633c-bd09" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32"/>
             <entryLink import="true" name="Codex Battle Traits" hidden="false" id="526b-ec82-6e8b-e144" type="selectionEntryGroup" targetId="abe7-cbcb-0027-17f1"/>
+            <entryLink import="true" name="Pariah Nexus Battle Traits" hidden="false" id="37ff-11c4-7f39-e9fc" type="selectionEntryGroup" targetId="3efc-9164-92d8-9514"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Crusade Relics" id="cfad-fe5f-cdd3-ccd0" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Crusade Relics" id="cfad-fe5f-cdd3-ccd0" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Cities of Ruin Crusade Relics" hidden="false" id="9679-5940-e228-49c6" type="selectionEntryGroup" targetId="6397-d12d-4ea8-c9f2"/>
             <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="fded-de7e-3128-0081" type="selectionEntryGroup" targetId="354c-db23-16dc-b83d"/>
+            <entryLink import="true" name="Pariah Nexus Crusade Relics" hidden="false" id="910f-23cc-9216-110c" type="selectionEntryGroup" targetId="c390-a54d-0100-a7c8"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">

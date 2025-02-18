@@ -7608,16 +7608,18 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
         <entryLink import="true" name="Archeotech" hidden="false" id="577c-d004-5074-22fa" type="selectionEntryGroup" targetId="bbba-39a5-3d18-e18d" sortIndex="4"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Traits" id="8f12-8450-b29e-3232" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Battle Traits" id="8f12-8450-b29e-3232" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="25f5-c6fb-a5ee-cf2f" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32"/>
             <entryLink import="true" name="Codex Battle Traits" hidden="false" id="2620-e565-871d-5aef" type="selectionEntryGroup" targetId="b59e-bcbc-9903-99e9"/>
+            <entryLink import="true" name="Pariah Nexus Battle Traits" hidden="false" id="728b-b600-7eda-f50b" type="selectionEntryGroup" targetId="3efc-9164-92d8-9514"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Crusade Relics" id="7e46-15e4-43d6-f67c" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Crusade Relics" id="7e46-15e4-43d6-f67c" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Cities of Ruin Crusade Relics" hidden="false" id="27f1-8d70-84d7-0a28" type="selectionEntryGroup" targetId="6397-d12d-4ea8-c9f2"/>
             <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="ad97-bcab-94ba-e954" type="selectionEntryGroup" targetId="e4a7-bdee-ccda-3154"/>
+            <entryLink import="true" name="Pariah Nexus Crusade Relics" hidden="false" id="468f-580e-7c2c-a29b" type="selectionEntryGroup" targetId="c390-a54d-0100-a7c8"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
