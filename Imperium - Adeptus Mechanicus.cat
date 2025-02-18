@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -102,6 +102,37 @@
     <entryLink import="true" name="Sydonian Skatros" hidden="false" type="selectionEntry" id="71e5-42c0-9a4a-f97c" targetId="52e7-9347-3f16-9eec"/>
     <entryLink import="true" name="Servitors [Legends]" hidden="false" id="e247-5e94-9767-87b" type="selectionEntry" targetId="2183-5b38-1726-2a11"/>
     <entryLink import="true" name="X-101 [Legends]" hidden="false" id="2794-3a4e-88d9-1aa7" type="selectionEntry" targetId="a896-3e21-1319-c86"/>
+    <entryLink import="true" name="Order of Battle" hidden="false" id="7cfc-0c0d-cf42-1c21" type="selectionEntry" targetId="eda7-8b4b-3719-af36">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Archeotech Parts" id="6c6a-bc1f-28f6-6550" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power Sources" hidden="false" id="f9b0-4c6a-703d-f710" sortIndex="1"/>
+            <selectionEntry type="upgrade" import="true" name="Weapon Parts" hidden="false" id="3dd0-90cf-2b38-85a9" sortIndex="2"/>
+            <selectionEntry type="upgrade" import="true" name="Force Field Parts" hidden="false" id="94eb-135e-0a16-5743" sortIndex="3"/>
+            <selectionEntry type="upgrade" import="true" name="Techno-Arcana Parts" hidden="false" id="a268-4032-e8d1-da26" sortIndex="4"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Legendary Archeotech" id="c751-bbb1-9636-1e3a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Doom of Thorantus" hidden="false" id="bac5-6f52-9ff6-0b87" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="faa1-82ba-ce70-1584" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Syntaxik Charger" hidden="false" id="00df-b10e-1065-32d1" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d98e-a9bf-0fda-6288" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Augur of the First Reclamation" hidden="false" id="de3e-93e7-187b-f623" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8420-b2b4-9ba9-c723" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7662-5fde-16f1-5267" name="Archaeopter Fusilave" hidden="false" collective="false" import="true" type="model">
@@ -8423,57 +8454,6 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e28f-6451-ba7b-3c34"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Legendary Archeotech" id="9218-f08d-cea6-0d1a" hidden="false" collapsible="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="The Doom of Thorantus" hidden="false" id="31d2-b584-7876-43b7" sortIndex="1">
-              <profiles>
-                <profile name="The Doom of Thorantus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2706-8b68-8fac-6300">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the end of your Movement phase, select one enemy VEHICLE unit within 18&quot; of and visible to the bearer. Until the start of your next Movement phase, subtract 2 from the Attacks characteristic of ranged weapons equipped by models in that unit, and each time that unit ends a Normal, Advance, Fall Back or Charge move, it suffers D6 mortal wounds.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Syntaxik Charger" hidden="false" id="7dab-d1ba-3e30-4556" sortIndex="2">
-              <profiles>
-                <profile name="Syntaxik Charger" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bbe4-9acf-f2ec-8ed3">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+, Devastating Wounds, One Shot, Sonic Devastation</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Anti-" id="2fec-ba1b-404e-20be" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-                <infoLink name="Devastating Wounds" id="27a6-3348-5c0e-4310" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                <infoLink name="One Shot" id="88fd-eb96-2115-8144" hidden="false" type="rule" targetId="cd26-1611-860a-91e4"/>
-              </infoLinks>
-              <rules>
-                <rule name="Sonic Devastation" id="de30-62f6-aa36-35e4" hidden="false">
-                  <description>In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with this weapon. Until the start of your next turn, worsen the Weapon Skill characteristic of melee weapons equipped by models in that unit by 1.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Augur of the First Reclamation" hidden="false" id="83b5-1a61-c624-f15b" sortIndex="3">
-              <profiles>
-                <profile name="Augur of the First Reclamation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="68bc-b61d-4961-0725">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2 to the bearer’s Objective Control characteristic, and at the end of your Command phase, if the bearer is within range of an objective marker that is not in your deployment zone, you gain 1CP. in addition, at the end of the battle, if the bearer was in your Crusade army and you won that battle, roll one D6: on a 4+, your Crusade force acquires one Archeotech Part.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be14-5f77-2b5f-c15c"/>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7671-c23c-6c6e-cafa" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -8487,6 +8467,81 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Legendary Archeotech" hidden="false" id="378b-90b2-6034-0f6c" type="selectionEntryGroup" targetId="9218-f08d-cea6-0d1a"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Legendary Archeotech" id="9218-f08d-cea6-0d1a" hidden="false" collapsible="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Doom of Thorantus" hidden="false" id="31d2-b584-7876-43b7" sortIndex="1">
+          <profiles>
+            <profile name="The Doom of Thorantus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2706-8b68-8fac-6300">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the end of your Movement phase, select one enemy VEHICLE unit within 18&quot; of and visible to the bearer. Until the start of your next Movement phase, subtract 2 from the Attacks characteristic of ranged weapons equipped by models in that unit, and each time that unit ends a Normal, Advance, Fall Back or Charge move, it suffers D6 mortal wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="bac5-6f52-9ff6-0b87" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Syntaxik Charger" hidden="false" id="7dab-d1ba-3e30-4556" sortIndex="2">
+          <profiles>
+            <profile name="Syntaxik Charger" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bbe4-9acf-f2ec-8ed3">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+, Devastating Wounds, One Shot, Sonic Devastation</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-" id="2fec-ba1b-404e-20be" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+            <infoLink name="Devastating Wounds" id="27a6-3348-5c0e-4310" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+            <infoLink name="One Shot" id="88fd-eb96-2115-8144" hidden="false" type="rule" targetId="cd26-1611-860a-91e4"/>
+          </infoLinks>
+          <rules>
+            <rule name="Sonic Devastation" id="de30-62f6-aa36-35e4" hidden="false">
+              <description>In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with this weapon. Until the start of your next turn, worsen the Weapon Skill characteristic of melee weapons equipped by models in that unit by 1.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="00df-b10e-1065-32d1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Augur of the First Reclamation" hidden="false" id="83b5-1a61-c624-f15b" sortIndex="3">
+          <profiles>
+            <profile name="Augur of the First Reclamation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="68bc-b61d-4961-0725">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2 to the bearer’s Objective Control characteristic, and at the end of your Command phase, if the bearer is within range of an objective marker that is not in your deployment zone, you gain 1CP. in addition, at the end of the battle, if the bearer was in your Crusade army and you won that battle, roll one D6: on a 4+, your Crusade force acquires one Archeotech Part.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="de3e-93e7-187b-f623" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be14-5f77-2b5f-c15c"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7671-c23c-6c6e-cafa" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
