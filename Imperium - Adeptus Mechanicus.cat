@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="55" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -7734,6 +7734,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1de1-b115-8864-703e"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Voltagheist Shock" hidden="false" id="53b1-04c8-5946-68d5" sortIndex="2">
               <costs>
@@ -7750,6 +7753,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05dc-c328-73e8-63d2"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Holy Acquisitor" hidden="false" id="aaa0-ef35-bd99-6e86" sortIndex="3">
               <costs>
@@ -7766,6 +7772,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0f9-1597-50f2-dc47"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Control Cortex" hidden="false" id="75be-6fe8-2d37-5912" sortIndex="4">
               <costs>
@@ -7782,6 +7791,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e93-32b5-0ba3-392d"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hexamathic Chorale" hidden="false" id="f9b4-18ae-1b5c-8207" sortIndex="5">
               <costs>
@@ -7798,6 +7810,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8365-7f59-68da-431b"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Teleportation Node" hidden="false" id="71f9-7f8b-6718-20b9" sortIndex="6">
               <costs>
@@ -7817,6 +7832,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
               <infoLinks>
                 <infoLink name="Deep Strike" id="5052-d675-2864-8c11" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
               </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d4a-dc36-1af4-d0c0"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7849,6 +7867,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="900e-bff4-a757-729c"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Battlefield Processing Cortex" hidden="false" id="5103-5556-cb95-d2af" sortIndex="2">
               <costs>
@@ -7865,6 +7886,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f4-013a-e493-9727"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Secutor-Class Blade Implants" hidden="false" id="64a2-878f-038d-83d4" sortIndex="3">
               <costs>
@@ -7881,6 +7905,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92f8-7497-41c8-769e"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7920,6 +7947,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="301b-ef49-181a-626d"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Killcode Gear Switches" hidden="false" id="13e5-fedb-1ff4-c3b4" sortIndex="2">
               <costs>
@@ -7936,6 +7966,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f7c-f74e-a409-1fdc"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fervent Locomotion" hidden="false" id="17e4-8264-0c7b-5d38" sortIndex="3">
               <costs>
@@ -7953,8 +7986,11 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="increment" value="1" field="e703-ecb6-5ce7-aec1" affects="profiles.Unit"/>
+                <modifier type="increment" value="1" field="e703-ecb6-5ce7-aec1" scope="parent" affects="profiles.Unit"/>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f419-8447-ba8a-ab06"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7975,6 +8011,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3a6-39be-672a-b276"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hardened Machine Spirit" hidden="false" id="e7df-d1b2-ad5c-5a59" sortIndex="2">
               <costs>
@@ -7991,6 +8030,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87d9-172a-8817-cf4a"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Blessed Spirit" hidden="false" id="b0a1-c02d-a618-0748" sortIndex="3">
               <costs>
@@ -8010,6 +8052,9 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
               <infoLinks>
                 <infoLink name="Feel No Pain" id="6015-7db1-749e-aff8" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
               </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebe6-a2ec-39b2-0b42"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
@@ -8447,6 +8492,10 @@ Add 3 to the Attacks characteristic of the bearer’s melee weapons and add 1 t
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be14-5f77-2b5f-c15c"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7671-c23c-6c6e-cafa" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
