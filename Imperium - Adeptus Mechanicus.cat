@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="59" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -7790,6 +7790,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a335-d5c7-f3f8-79c7"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Holy Acquisitor" hidden="false" id="aaa0-ef35-bd99-6e86" sortIndex="3">
               <costs>
@@ -7806,6 +7809,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06b0-b4a3-3deb-64ea"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Control Cortex" hidden="false" id="75be-6fe8-2d37-5912" sortIndex="4">
               <costs>
@@ -7822,6 +7828,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bdb-271c-e8a4-7a39"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hexamathic Chorale" hidden="false" id="f9b4-18ae-1b5c-8207" sortIndex="5">
               <costs>
@@ -7838,6 +7847,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="517c-b5bf-f510-31e7"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Teleportation Node" hidden="false" id="71f9-7f8b-6718-20b9" sortIndex="6">
               <costs>
@@ -7857,6 +7869,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
               <infoLinks>
                 <infoLink name="Deep Strike" id="5052-d675-2864-8c11" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
               </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f884-e76c-8868-6572"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7890,7 +7905,7 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="900e-bff4-a757-729c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75a3-dcf1-3131-5ddf"/>
               </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Battlefield Processing Cortex" hidden="false" id="5103-5556-cb95-d2af" sortIndex="2">
@@ -8034,6 +8049,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8ff-bdd2-5987-ccef"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hardened Machine Spirit" hidden="false" id="e7df-d1b2-ad5c-5a59" sortIndex="2">
               <costs>
@@ -8050,6 +8068,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f894-b64b-8eff-b1dc"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Blessed Spirit" hidden="false" id="b0a1-c02d-a618-0748" sortIndex="3">
               <costs>
@@ -8069,6 +8090,9 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
               <infoLinks>
                 <infoLink name="Feel No Pain" id="6015-7db1-749e-aff8" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
               </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="025b-9960-21c9-af37"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
