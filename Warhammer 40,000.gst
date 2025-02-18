@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="38" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="39" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -970,9 +970,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="self" childId="any" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditionGroups>
@@ -1012,7 +1009,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         </modifier>
         <modifier type="set" value="2" field="2a14-db5e-c5ad-5ae9">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="self" childId="any" shared="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1537,7 +1534,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">1</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds, Hazardous, One-Shot, Pistol, Torrent, </characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds, Hazardous, One-Shot, Pistol, Torrent,</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
