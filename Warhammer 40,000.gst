@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="43" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="44" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -2039,7 +2039,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
               <modifiers>
-                <modifier type="append" value="2" field="e703-ecb6-5ce7-aec1" scope="parent" affects="profiles.Unit"/>
+                <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" scope="parent" affects="profiles.Unit"/>
                 <modifier type="append" value="Riders of Ruin" field="annotation" scope="parent" affects="profiles.Unit" join=","/>
               </modifiers>
               <constraints>
@@ -2235,13 +2235,6 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Options" id="11f2-8482-87c9-9148" hidden="false" flatten="true">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6813-47ca-3511-87e2" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Lethal Hits" hidden="false" id="cc84-cf52-d64e-30a4">
                       <infoLinks>
@@ -2260,8 +2253,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cd5-1628-8607-cdec-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd5-1628-8607-cdec-max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98ef-fcde-b812-6123"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2304,8 +2296,8 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </profiles>
               <modifiers>
                 <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="parent" affects="profiles.Unit"/>
-                <modifier type="increment" value="1" field="450-a17e-9d5e-29da" scope="parent" affects="profiles.Unit"/>
-                <modifier type="append" value="Armour of the Soulless Sentry" field="annotation" scope="parent" affects="profiles.Unit" join=","/>
+                <modifier type="decrement" value="1" field="450-a17e-9d5e-29da" scope="parent" affects="profiles.Unit"/>
+                <modifier type="append" value="Armour of the Soulless Sentry" field="annotation" scope="parent" affects="profiles.Unit" join=", "/>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
@@ -2429,10 +2421,10 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="parent" affects="profiles.Melee Weapons"/>
-                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="parent" affects="profiles.Melee Weapons"/>
-                <modifier type="increment" value="1" field="41a0-1301-112a-e2f2" scope="parent" affects="profiles.Melee Weapons"/>
-                <modifier type="append" value="Blade of the Dynast" field="annotation" scope="parent" affects="profiles.Melee Weapons" join=","/>
+                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="append" value="Blade of the Dynast" field="annotation" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Noctic Shield" hidden="false" id="04cc-17c4-bd6d-8e59" sortIndex="2">
@@ -2457,7 +2449,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               <modifiers>
                 <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="parent" affects="profiles.Unit"/>
                 <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" scope="parent" affects="profiles.Unit"/>
-                <modifier type="append" value="Noctic Shield" field="annotation" scope="parent" affects="profiles.Unit" join=","/>
+                <modifier type="append" value="Noctic Shield" field="annotation" scope="parent" affects="profiles.Unit" join=", "/>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Rod of the Omnissiah" hidden="false" id="e0bd-eee4-dac7-0a42" sortIndex="3">
