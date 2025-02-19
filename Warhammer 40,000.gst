@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="50" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="51" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -970,36 +970,28 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <conditionGroup type="or">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
-                <conditionGroup type="or">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="3" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
-                        <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="3" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </conditionGroup>
@@ -1213,7 +1205,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Cities of Ruin Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Cities of Ruin Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Cityfight Veteran" hidden="false" id="ccaf-32ee-b7e4-82f1">
           <costs>
@@ -1247,24 +1239,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="ccaf-32ee-b7e4-82f1" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9693-cf84-fe69-37a9" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9693-cf84-fe69-37a9" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Siege Armour" hidden="false" id="13eb-8ae7-ae28-9db7" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Siege Armour" hidden="false" id="13eb-8ae7-ae28-9db7">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
@@ -1282,140 +1267,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   </characteristics>
                 </profile>
               </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rapelling Lines" hidden="false" id="bc45-4b4b-8bc0-bc64" sortIndex="2">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7fb-614f-a622-5822"/>
-              </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="75e8-57c4-40e3-1817" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
-              <profiles>
-                <profile name="Rapelling Lines" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="75f0-fbae-a7ac-432e">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">TRANSPORT only. After this Transport has moved, a unit occupying this transport may be set up at any point along the transport&apos;s path outside of engagement range, including on top of terrain features.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Siege Shells" hidden="false" id="0615-a219-67ea-6dae" sortIndex="3">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ebe-4e0d-2221-4fc6"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Siege Shells" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bfd9-4cb2-a4cc-dabc">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Shooting Phase, you may target a visible ruin with a single attack from a ranged weapon equipped by the bearer&apos;s unit. If the Hit roll succeeds, roll D6 and add the Damage characteristic of the weapon, adding 4 if the ruin is Damaged. On a 6+, the ruin is Damaged. On a 10+, the ruin is Destroyed.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Wrecker" hidden="false" id="3634-b11c-0430-1ede" sortIndex="4">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed7-481f-21b6-9f71"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Wrecker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c15e-c606-2d9b-93f1">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Fight Phase, you may target a ruin within engagement range with a single attack from a melee weapon equipped by the bearer&apos;s unit. If the Hit roll succeeds, roll D6 and add the Damage characteristic of the weapon, adding 4 if the ruin is Damaged. On a 6+, the ruin is Damaged. On a 10+, the ruin is Destroyed.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Hull Down" hidden="false" id="2464-094d-3a1f-9642" sortIndex="5">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="476f-58ca-482e-6503"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Hull Down" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0d0a-9788-c7e1-ce17">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is an eligible target for the Go to Ground Stratagem. In addition, if it Remained Stationary then in the subsequent Shooting Phase all of its ranged weapons gain the HEAVY rule. If a weapon already was HEAVY then add 1 to the Wound Roll for attacks made with that weapon.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Heavy" id="95d7-6fa2-fc19-ec50" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mobile Fortress" hidden="false" id="9ab5-8b3f-1b50-e995" sortIndex="6">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba47-a1a3-2def-7f48"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="2464-094d-3a1f-9642" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Mobile Fortress" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48e5-64bf-fc5d-a644">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, a Key Building Blessing may be played on this unit as if it were a Ruins terrain feature. If you do so, this unit is an eligible target for that Blessing&apos;s effects, and you may share the effect with an additional unit within 6&quot; provided that unit would normally be a valid target.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1427,173 +1285,11 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9693-cf84-fe69-37a9" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="ccaf-32ee-b7e4-82f1" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Smoke Grenades" hidden="false" id="dad3-0c7a-33a5-8230" sortIndex="4">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3ed-b2f6-16ee-a82c"/>
-              </constraints>
-              <profiles>
-                <profile name="Smoke Grenades" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3146-4e00-8e48-86cb">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer&apos;s unit gains the SMOKE keyword and may fling Smoke Grenades instead of shooting when selected for the Overwatch stratagem. If they do so, the charging unit must re-roll the Charge Roll and does not count as having charged in the subsequent Fight phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="67f5-770d-60fc-a14f" shared="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="ef86-6215-dff7-77ec" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="add" value="6df-937-16bc-8c1a" field="category" scope="parent" affects="unit"/>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Master Snipers" hidden="false" id="cf5f-7fbf-32a6-7ef8" sortIndex="3">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f438-b83e-3ac4-cb0d"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="67f5-770d-60fc-a14f" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Master Snipers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="db75-9897-3d4b-bc2f">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Shooting Phase, Ranged Weapons equipped by the bearer&apos;s unit have the PRECISION and IGNORES COVER rules providing the bearer&apos;s unit Remained Stationary. In addition, providing the bearer&apos;s unit did not shoot this turn, then its Overwatch attacks hit on a 5+ rather than 6</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Precision" id="8d1e-8c7f-1f23-f127" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
-                <infoLink name="Ignores Cover" id="7752-e2c6-c616-3123" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Jammers" hidden="false" id="6e08-808b-ad3a-5692" sortIndex="5">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8604-c60d-ba2e-51d4"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="ef86-6215-dff7-77ec" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Jammers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6bf8-80d7-1ecc-3950">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units within 6&quot; or in the same terrain feature may not be affected by friendly aura abilities unless that ability originates from their own unit, and cannot be targeted by Stratagems. If an enemy unit within the area of effect also possesses this Honour then neither instance functions.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Citadel Guard" hidden="false" id="7329-b01e-5fd3-465e" sortIndex="6">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d2a-08df-a35f-f4d5"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="dad3-0c7a-33a5-8230" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Citadel Guard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d5ce-d76d-7d0f-8107">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When occupying a Key Building, the bearer&apos;s unit may benefit from the effect even if another unit has already been selected as the beneficiary this turn. In addition, the bearer&apos;s unit doubles the effects of the Plunging Fire rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Street Kings" hidden="false" id="67f5-770d-60fc-a14f" sortIndex="1">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e64-721c-2bb8-dd73"/>
-              </constraints>
-              <profiles>
-                <profile name="Street Kings" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a0a3-b961-26b7-3341">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer&apos;s unit may Charge targets that is cannot see. In addition, the bearer&apos;s unit may always move into terrain features as if it had the INFANTRY keyword.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Wire Cutters" hidden="false" id="ef86-6215-dff7-77ec" sortIndex="2">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f866-0f86-f564-3cb0"/>
-              </constraints>
-              <modifiers>
-                <modifier type="append" value="Wire Cutters" field="annotation" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
-                <modifier type="append" value="Anti-Vehicle 3+" field="893f-9000-ccf7-648e" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
-              </modifiers>
-              <profiles>
-                <profile name="Wire Cutters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5c92-9468-052a-7da0">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer&apos;s unit is immune to Razor Wire, and may remove it as part of a move. In addition, Melee attacks made by the Bearer&apos;s unit gain the Anti-Vehicle 3+ rule. Whenever the bearer&apos;s unit triggers a Booby Trap or Mine, it only detonates on a 5+ (rather than a 2+).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Anti-" id="0bc2-7b78-fc3c-3b75" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
