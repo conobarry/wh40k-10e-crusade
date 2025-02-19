@@ -4404,58 +4404,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Weapon Upgrade" hidden="true" id="0e1b-27cd-1314-b58d">
-          <associations>
-            <association min="1" max="1" scope="ddf2-228b-edd9-7e83" childId="upgrade" name="Weapon" id="29dc-00f0-bb20-cba0" includeChildForces="false" includeChildSelections="true"/>
-          </associations>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Upgrades" id="39f1-f538-d297-c8a4" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Shoot Better" hidden="false" id="a3b7-de9b-eab4-f569">
-                  <profiles>
-                    <profile name="Shoot Better" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="07f5-eef2-89fb-9afc">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Upgraded</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <modifiers>
-                    <modifier type="append" value="Shoot Better" field="annotation" affects="profiles.Ranged Weapons" join=", "/>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Stronger" hidden="false" id="0781-0a47-bada-b485">
-                  <profiles>
-                    <profile name="Stronger" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a09c-2c76-f2d3-f98f">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Upgraded</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <modifiers>
-                    <modifier type="append" value="Stronger" field="annotation" affects="profiles.Ranged Weapons" join=", "/>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Fire Faster" hidden="false" id="9417-62a7-806c-7eb1">
-                  <profiles>
-                    <profile name="Fire Faster" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2487-b01e-327e-358d">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Upgraded</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <modifiers>
-                    <modifier type="append" value="Fire Faster" field="annotation" affects="profiles.Ranged Weapons" join=", "/>
-                  </modifiers>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="515d-0e88-98a2-4c37"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lord Solar Leontus" hidden="false" id="a9d-55c1-3d24-fa25">
       <categoryLinks>
