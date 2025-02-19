@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="122" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="123" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -8900,6 +8900,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="3d9b-648b-c02e-3c3a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="edce-b2da-b8c3-7c8b">
       <profiles>
@@ -8991,6 +8994,9 @@
         <infoLink name="Ignores Cover" hidden="false" type="rule" id="4ba4-1e21-e666-d691" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Torrent" hidden="false" type="rule" id="9a71-3a7f-b926-8d27" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ac8b-1fb4-89ce-7fac" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="a2c9-3bb4-6675-5c79">
       <profiles>
@@ -9260,98 +9266,6 @@
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
           </characteristics>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <comment>Armour Piercing</comment>
-              <modifiers>
-                <modifier type="append" value="Armour Piercing" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="d181-a615-5566-8e5a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d181-a615-5566-8e5a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Brutal</comment>
-              <modifiers>
-                <modifier type="append" value="Brutal" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="d92a-5d2e-0b38-ea01" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2229-f494-25db-c5d3">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d92a-5d2e-0b38-ea01" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Finely Balanced</comment>
-              <modifiers>
-                <modifier type="append" value="Finely Balanced" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="13b7-d8d5-72c2-1f72" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="13b7-d8d5-72c2-1f72" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Heirloom</comment>
-              <modifiers>
-                <modifier type="append" value="Heirloom" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="09c4-6313-8cd5-d77a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="3bb-c35f-f54-fb08">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="09c4-6313-8cd5-d77a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Master-worked</comment>
-              <modifiers>
-                <modifier type="append" value="Master-worked" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="4b25-c6e7-3350-9c1c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="D6+7" field="a354-c1c8-a745-f9e3" arg="+6">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4b25-c6e7-3350-9c1c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Precise</comment>
-              <modifiers>
-                <modifier type="append" value="Precise" field="7f1b-8591-2fcf-d01c" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="658a-396c-f9a0-d15f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Precise" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="658a-396c-f9a0-d15f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -9491,6 +9405,9 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f058-1f4-396c-d41e"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ad34-719c-eef1-bc92" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy stubber" hidden="false" id="d20f-db4b-d083-7c0a">
       <profiles>
@@ -9513,6 +9430,9 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a09e-f6ab-fa73-c005" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy bolter" hidden="false" id="51a8-ffe2-928f-3f50">
       <profiles>
@@ -9535,6 +9455,9 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1f25-aafd-e079-d294" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="8cd3-2b20-a76b-93ac">
       <profiles>
@@ -9579,6 +9502,9 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="1de5-c3fe-2cc5-08fe" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Armoured Tracks" hidden="false" id="5ba9-b266-8524-54f5">
       <profiles>
@@ -10768,98 +10694,6 @@
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <comment>Armour Piercing</comment>
-              <modifiers>
-                <modifier type="append" value="Armour Piercing" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="d181-a615-5566-8e5a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d181-a615-5566-8e5a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Brutal</comment>
-              <modifiers>
-                <modifier type="append" value="Brutal" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="d92a-5d2e-0b38-ea01" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2229-f494-25db-c5d3">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d92a-5d2e-0b38-ea01" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Finely Balanced</comment>
-              <modifiers>
-                <modifier type="append" value="Finely Balanced" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="13b7-d8d5-72c2-1f72" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="13b7-d8d5-72c2-1f72" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Heirloom</comment>
-              <modifiers>
-                <modifier type="append" value="Heirloom" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="09c4-6313-8cd5-d77a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="3bb-c35f-f54-fb08">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="09c4-6313-8cd5-d77a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Master-worked</comment>
-              <modifiers>
-                <modifier type="append" value="Master-worked" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="4b25-c6e7-3350-9c1c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="D6+7" field="a354-c1c8-a745-f9e3" arg="+6">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4b25-c6e7-3350-9c1c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup type="and">
-              <comment>Precise</comment>
-              <modifiers>
-                <modifier type="append" value="Precise" field="7f1b-8591-2fcf-d01c" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="658a-396c-f9a0-d15f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Precise" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="658a-396c-f9a0-d15f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
         </profile>
       </profiles>
       <entryLinks>
@@ -10961,6 +10795,9 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faaa-f05-b4d3-265e"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5913-69fd-17da-4259"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="19ef-bfc6-841f-d123" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-shot Volley Gun" hidden="false" id="7cc0-e698-77e7-2f5e" collective="false">
       <profiles>
@@ -14545,6 +14382,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="43d5-34b7-6c6a-c54c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -17681,6 +17521,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="ee2e-cc0e-7598-82d2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -17750,6 +17593,9 @@
             <infoLink name="Twin-linked" hidden="false" type="rule" id="ce63-4d5d-cacf-9d4d" targetId="cf93-ad4d-2f08-a79d"/>
             <infoLink name="Blast" hidden="false" type="rule" id="905b-80ae-730b-ade4" targetId="6c1f-1cf7-ff25-c99e"/>
           </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="d706-7a7f-dbc3-9bb4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Stormhammer Cannon" hidden="false" id="d82b-dcae-41eb-3094">
           <constraints>
@@ -17772,6 +17618,9 @@
           <infoLinks>
             <infoLink name="Blast" hidden="false" type="rule" id="de98-f0d1-19fc-2fc1" targetId="6c1f-1cf7-ff25-c99e"/>
           </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="d02c-2aac-9d6b-1d15" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -17940,6 +17789,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="0fb3-fe2c-82ca-b177" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="c772-1b47-5ec7-4d06">
       <comment>Legends</comment>
