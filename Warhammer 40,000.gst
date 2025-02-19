@@ -1002,11 +1002,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <condition type="equalTo" value="1" field="selections" scope="self" childId="any" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="b96f-03f7-d8a1-92ce">
-          <conditions>
-            <condition type="greaterThan" value="1" field="716d-91b7-d55a-1022" scope="model-or-unit" childId="any" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="self" shared="true" id="b96f-03f7-d8a1-92ce" includeChildSelections="false"/>
@@ -1070,7 +1065,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="add" value="Too many Weapon Modifications selected" field="error">
+            <modifier type="add" value="Too many {this} selected" field="error">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditionGroups>
