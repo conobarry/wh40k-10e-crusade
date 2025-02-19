@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="52" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="53" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1002,6 +1002,11 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <condition type="equalTo" value="1" field="selections" scope="self" childId="any" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="b96f-03f7-d8a1-92ce">
+          <conditions>
+            <condition type="greaterThan" value="1" field="716d-91b7-d55a-1022" scope="model-or-unit" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="self" shared="true" id="b96f-03f7-d8a1-92ce" includeChildSelections="false"/>
@@ -1064,6 +1069,50 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
               </conditions>
+            </modifier>
+            <modifier type="add" value="Too many Weapon Modifications selected" field="error">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="d1a5-4297-168b-11cd" shared="true"/>
+                        <condition type="greaterThan" value="2" field="716d-91b7-d55a-1022" scope="parent" childId="any" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="2" field="selections" scope="parent" childId="d1a5-4297-168b-11cd" shared="true"/>
+                        <condition type="greaterThan" value="4" field="716d-91b7-d55a-1022" scope="parent" childId="any" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="3" field="selections" scope="parent" childId="d1a5-4297-168b-11cd" shared="true"/>
+                        <condition type="greaterThan" value="6" field="716d-91b7-d55a-1022" scope="parent" childId="any" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="4" field="selections" scope="parent" childId="d1a5-4297-168b-11cd" shared="true"/>
+                        <condition type="greaterThan" value="8" field="716d-91b7-d55a-1022" scope="parent" childId="any" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="5" field="selections" scope="parent" childId="d1a5-4297-168b-11cd" shared="true"/>
+                        <condition type="greaterThan" value="10" field="716d-91b7-d55a-1022" scope="parent" childId="any" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="6" field="selections" scope="parent" childId="d1a5-4297-168b-11cd" shared="true"/>
+                        <condition type="greaterThan" value="12" field="716d-91b7-d55a-1022" scope="parent" childId="any" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <costs>
