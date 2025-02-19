@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="48" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="49" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1295,7 +1295,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7fb-614f-a622-5822"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="0" field="b7fb-614f-a622-5822">
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="75e8-57c4-40e3-1817" shared="true"/>
@@ -1322,7 +1322,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ebe-4e0d-2221-4fc6"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="0" field="5ebe-4e0d-2221-4fc6">
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
                   </conditions>
@@ -1348,7 +1348,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed7-481f-21b6-9f71"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="0" field="9ed7-481f-21b6-9f71">
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
                   </conditions>
@@ -1374,7 +1374,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="476f-58ca-482e-6503"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="0" field="476f-58ca-482e-6503">
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
                   </conditions>
@@ -1403,7 +1403,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba47-a1a3-2def-7f48"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="0" field="ba47-a1a3-2def-7f48">
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="2464-094d-3a1f-9642" shared="true"/>
                   </conditions>
@@ -1446,12 +1446,25 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3ed-b2f6-16ee-a82c"/>
               </constraints>
               <profiles>
-                <profile name="Siege Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aae0-25cf-850c-9e04">
+                <profile name="Smoke Grenades" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3146-4e00-8e48-86cb">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged attacks targeting this unit never benefit from the Plunging Fire rule. In addition, if this unit is a VEHICLE it halves any damage taken from moving into a ruin, and if it is a MONSTER or VEHICLE it does not take any damage.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer&apos;s unit gains the SMOKE keyword and may fling Smoke Grenades instead of shooting when selected for the Overwatch stratagem. If they do so, the charging unit must re-roll the Charge Roll and does not count as having charged in the subsequent Fight phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="67f5-770d-60fc-a14f" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="ef86-6215-dff7-77ec" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" value="6df-937-16bc-8c1a" field="category" scope="parent" affects="unit"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Master Snipers" hidden="false" id="cf5f-7fbf-32a6-7ef8" sortIndex="3">
               <costs>
@@ -1467,10 +1480,21 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="dad3-0c7a-33a5-8230" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="67f5-770d-60fc-a14f" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile name="Master Snipers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="db75-9897-3d4b-bc2f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Shooting Phase, Ranged Weapons equipped by the bearer&apos;s unit have the PRECISION and IGNORES COVER rules providing the bearer&apos;s unit Remained Stationary. In addition, providing the bearer&apos;s unit did not shoot this turn, then its Overwatch attacks hit on a 5+ rather than 6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Precision" id="8d1e-8c7f-1f23-f127" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+                <infoLink name="Ignores Cover" id="7752-e2c6-c616-3123" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Jammers" hidden="false" id="6e08-808b-ad3a-5692" sortIndex="5">
               <costs>
@@ -1486,10 +1510,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="dad3-0c7a-33a5-8230" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="ef86-6215-dff7-77ec" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile name="Jammers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6bf8-80d7-1ecc-3950">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units within 6&quot; or in the same terrain feature may not be affected by friendly aura abilities unless that ability originates from their own unit, and cannot be targeted by Stratagems. If an enemy unit within the area of effect also possesses this Honour then neither instance functions.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Citadel Guard" hidden="false" id="7329-b01e-5fd3-465e" sortIndex="6">
               <costs>
@@ -1509,6 +1540,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile name="Citadel Guard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d5ce-d76d-7d0f-8107">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When occupying a Key Building, the bearer&apos;s unit may benefit from the effect even if another unit has already been selected as the beneficiary this turn. In addition, the bearer&apos;s unit doubles the effects of the Plunging Fire rule.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Street Kings" hidden="false" id="67f5-770d-60fc-a14f" sortIndex="1">
               <costs>
@@ -1521,13 +1559,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e64-721c-2bb8-dd73"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="dad3-0c7a-33a5-8230" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
+              <profiles>
+                <profile name="Street Kings" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a0a3-b961-26b7-3341">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer&apos;s unit may Charge targets that is cannot see. In addition, the bearer&apos;s unit may always move into terrain features as if it had the INFANTRY keyword.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Wire Cutters" hidden="false" id="ef86-6215-dff7-77ec" sortIndex="2">
               <costs>
@@ -1541,12 +1579,19 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f866-0f86-f564-3cb0"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="dad3-0c7a-33a5-8230" shared="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Wire Cutters" field="annotation" scope="parent" affects="profiles.Melee Weapons" join=", "/>
+                <modifier type="append" value="Anti-Vehicle 3+" field="893f-9000-ccf7-648e" scope="parent" affects="profiles.Melee Weapons" join=", "/>
               </modifiers>
+              <profiles>
+                <profile name="Wire Cutters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5c92-9468-052a-7da0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer&apos;s unit is immune to Razor Wire, and may remove it as part of a move. In addition, Melee attacks made by the Bearer&apos;s unit gain the Anti-Vehicle 3+ rule. Whenever the bearer&apos;s unit triggers a Booby Trap or Mine, it only detonates on a 5+ (rather than a 2+).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-" id="0bc2-7b78-fc3c-3b75" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
