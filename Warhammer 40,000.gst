@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="55" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="56" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -897,6 +897,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Brutal</comment>
+              <modifiers>
+                <modifier type="append" value="Brutal" field="annotation" join=", " affects="profiles.Ranged Weapons" scope="parent"/>
+                <modifier type="increment" value="1" field="2229-f494-25db-c5d3" scope="parent" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="Brutal" field="annotation" join=", " affects="profiles.Melee Weapons" scope="parent"/>
+                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="parent" affects="profiles.Melee Weapons"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Armour Piercing (AP+1)" hidden="false" id="d181-a615-5566-8e5a" sortIndex="3">
           <constraints>
@@ -914,6 +925,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="append" value="Armour Piercing" field="annotation" join=", " affects="profiles.Ranged Weapons" scope="parent"/>
                 <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="parent" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="Armour Piercing" field="annotation" join=", " affects="profiles.Melee Weapons" scope="parent"/>
+                <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="parent" affects="profiles.Melee Weapons"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -938,6 +951,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Precise</comment>
+              <modifiers>
+                <modifier type="append" value="Precise" field="annotation" join=", " affects="profiles.Ranged Weapons" scope="parent"/>
+                <modifier type="append" value="Precise" field="7f1b-8591-2fcf-d01c" scope="parent" affects="profiles.Ranged Weapons" join=", "/>
+                <modifier type="append" value="Precise" field="annotation" join=", " affects="profiles.Melee Weapons" scope="parent"/>
+                <modifier type="append" value="Precise" field="893f-9000-ccf7-648e" scope="parent" affects="profiles.Melee Weapons" join=", "/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master-worked (D+1)" hidden="false" id="4b25-c6e7-3350-9c1c" sortIndex="4">
           <constraints>
@@ -949,6 +973,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Master-Worked</comment>
+              <modifiers>
+                <modifier type="append" value="Master-Worked" field="annotation" join=", " affects="profiles.Ranged Weapons" scope="parent"/>
+                <modifier type="append" value="+1" field="a354-c1c8-a745-f9e3" scope="parent" affects="profiles.Ranged Weapons" position="-1"/>
+                <modifier type="append" value="Master-Worked" field="annotation" join=", " affects="profiles.Melee Weapons" scope="parent"/>
+                <modifier type="append" value="+1" field="3254-9fe6-d824-513e" scope="parent" affects="profiles.Melee Weapons" position="-1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heirloom (A+1)" hidden="false" id="09c4-6313-8cd5-d77a" sortIndex="5">
           <constraints>
@@ -960,6 +995,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Heirloom</comment>
+              <modifiers>
+                <modifier type="append" value="Heirloom" field="annotation" join=", " affects="profiles.Ranged Weapons" scope="parent"/>
+                <modifier type="append" value="+1" field="3bb-c35f-f54-fb08" scope="parent" affects="profiles.Ranged Weapons" position="-1"/>
+                <modifier type="append" value="Heirloom" field="annotation" join=", " affects="profiles.Melee Weapons" scope="parent"/>
+                <modifier type="append" value="+1" field="2337-daa1-6682-b110" scope="parent" affects="profiles.Melee Weapons" position="-1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Finely Balanced (BS/WS+1)" hidden="false" id="13b7-d8d5-72c2-1f72" sortIndex="1">
           <constraints>
@@ -971,6 +1017,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="1"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Finely Balanced</comment>
+              <modifiers>
+                <modifier type="append" value="Finely Balanced" field="annotation" join=", " affects="profiles.Ranged Weapons" scope="parent"/>
+                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" scope="parent" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="Finely Balanced" field="annotation" join=", " affects="profiles.Melee Weapons" scope="parent"/>
+                <modifier type="decrement" value="1" field="95d1-95f-45b4-11d6" scope="parent" affects="profiles.Melee Weapons"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
