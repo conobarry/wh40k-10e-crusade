@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="46" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="47" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1257,7 +1257,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Siege Armour" hidden="false" id="13eb-8ae7-ae28-9db7">
+            <selectionEntry type="upgrade" import="true" name="Siege Armour" hidden="false" id="13eb-8ae7-ae28-9db7" sortIndex="1">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
@@ -1275,10 +1275,22 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="bc45-4b4b-8bc0-bc64" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7fb-614f-a622-5822"/>
+              </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="13eb-8ae7-ae28-9db7" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1912,7 +1924,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               <profiles>
                 <profile name="Hardened Defences" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9a8c-10f1-049c-a12e">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have the Feel No Pain 6+ ability. </characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have the Feel No Pain 6+ ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
