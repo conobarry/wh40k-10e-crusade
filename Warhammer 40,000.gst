@@ -912,16 +912,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <modifierGroup type="and">
               <comment>Armour Piercing</comment>
               <modifiers>
-                <modifier type="append" value="Armour Piercing" field="annotation" join=", " affects="profiles.Ranged Weapons" scope="parent">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="self" childId="d181-a615-5566-8e5a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="parent" affects="profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d181-a615-5566-8e5a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Armour Piercing" field="annotation" join=", " affects="profiles.Ranged Weapons" scope="parent"/>
+                <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="parent" affects="profiles.Ranged Weapons"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>

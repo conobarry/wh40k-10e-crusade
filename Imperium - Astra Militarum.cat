@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b0ae-12a5-c84-ea45" name="Imperium - Astra Militarum" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="23" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b0ae-12a5-c84-ea45" name="Imperium - Astra Militarum" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="24" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="true" name="‘Iron Hand’ Straken" hidden="false" type="selectionEntry" id="f38c-6b5-d8d3-32db" targetId="913f-3cb6-fb80-7f6a"/>
     <entryLink import="true" name="Aegis Defence Line" hidden="false" type="selectionEntry" id="2c5d-9f8f-b19d-53be" targetId="cb99-456-f100-40ed">
@@ -923,152 +923,6 @@
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Logistics Points" id="f2d0-9d94-0ce7-2ac8" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Lexmechanicus" hidden="false" id="e927-2739-6d14-1135" sortIndex="2" defaultAmount="1">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d09c-7bcc-aa02-6006"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e010-cd17-11f3-206f" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Lexmechanicus Surplus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="721d-f953-7022-7734">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When selecting Agendas for a battle, you can select one additional Astra Militarum Agenda to be active for that battle in addition to any others selected for that battle.</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="2" field="selections" scope="parent" childId="e927-2739-6d14-1135" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-                <profile name="Lexmechanicus Deficiency" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8828-7786-cc39-4b35">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an OFFICER from your army issues an Order, roll one D6: on a 1, that Order is not issued.</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="parent" childId="e927-2739-6d14-1135" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Materiel" hidden="false" id="e1d9-5ada-1112-8189" sortIndex="3" defaultAmount="1">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e7d4-fbb0-f688-6a1f"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b4ad-50a9-3991-e606" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Materiel Surplus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d36e-686b-8750-72ca">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an ASTRA MILITARUM unit from your army is selected to shoot, you can re-roll one Hit roll when resolving that units attacks.</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="2" field="selections" scope="parent" childId="e1d9-5ada-1112-8189" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-                <profile name="Materiel Deficiency" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca27-9230-107f-38bd">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Subtract 2&quot; from the Move characteristic of ASTRA MILITARUM VEHICLE models from your Crusade force.</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="parent" childId="e1d9-5ada-1112-8189" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tithe Pool" hidden="false" id="7e2f-c431-9ebe-859c" sortIndex="4" defaultAmount="1">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ca95-dce0-3aca-093d"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9030-274c-76eb-1e1e" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Tithe Pool Surplus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7608-2d2b-d8ae-75d4">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, 1 destroyed model (excluding CHARACTERS) is returned to each REGIMENT INFANTRY unit from your army that is on the battlefield and not at its Starting Strength.</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="2" field="selections" scope="parent" childId="7e2f-c431-9ebe-859c" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-                <profile name="Tithe Pool Deficiency" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e715-8e86-ebe0-a909">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, if your WARLORD is not on the battlefield, you do not gain a Command point.</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="parent" childId="7e2f-c431-9ebe-859c" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Morale" hidden="false" id="fc13-37da-9c4c-5cdb" sortIndex="5" defaultAmount="1">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f792-9d72-c7c3-954c"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8e7c-6d40-6058-8bcf" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Morale Surplus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4359-c9e2-64fe-4186">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Leadership characteristic of ASTRA MILITARUM models in your Crusade force by 1.</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="2" field="selections" scope="parent" childId="fc13-37da-9c4c-5cdb" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-                <profile name="Morale Deficiency" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="78ee-d8e9-3c65-cd33">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You cannot use the Insane Bravery Stratagem.</characteristic>
-                  </characteristics>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="parent" childId="fc13-37da-9c4c-5cdb" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="force" shared="false" id="b189-e81a-e63d-74a9-min" includeChildSelections="false" negative="false"/>
-            <constraint type="max" value="4" field="selections" scope="force" shared="false" id="b189-e81a-e63d-74a9-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="5" field="b189-e81a-e63d-74a9-min">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6337-65e0-3bcf-14b8" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="5" field="b189-e81a-e63d-74a9-max">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6337-65e0-3bcf-14b8" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <selectionEntryGroups>
             <selectionEntryGroup name="Commit Everything Requisition" id="0965-d1f0-aabd-836f" hidden="false" flatten="true" sortIndex="1">
               <selectionEntries>
@@ -1078,6 +932,154 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" id="fb62-86cc-acff-a18a" hidden="false" flatten="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Lexmechanicus" hidden="false" id="e927-2739-6d14-1135" defaultAmount="1" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d09c-7bcc-aa02-6006"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e010-cd17-11f3-206f" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Lexmechanicus Surplus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="721d-f953-7022-7734">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When selecting Agendas for a battle, you can select one additional Astra Militarum Agenda to be active for that battle in addition to any others selected for that battle.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="2" field="selections" scope="parent" childId="e927-2739-6d14-1135" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="Lexmechanicus Deficiency" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8828-7786-cc39-4b35">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an OFFICER from your army issues an Order, roll one D6: on a 1, that Order is not issued.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="e927-2739-6d14-1135" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Materiel" hidden="false" id="e1d9-5ada-1112-8189" defaultAmount="1" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e7d4-fbb0-f688-6a1f"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b4ad-50a9-3991-e606" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Materiel Surplus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d36e-686b-8750-72ca">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an ASTRA MILITARUM unit from your army is selected to shoot, you can re-roll one Hit roll when resolving that units attacks.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="2" field="selections" scope="parent" childId="e1d9-5ada-1112-8189" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="Materiel Deficiency" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca27-9230-107f-38bd">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Subtract 2&quot; from the Move characteristic of ASTRA MILITARUM VEHICLE models from your Crusade force.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="e1d9-5ada-1112-8189" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Tithe Pool" hidden="false" id="7e2f-c431-9ebe-859c" defaultAmount="1" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ca95-dce0-3aca-093d"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9030-274c-76eb-1e1e" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Tithe Pool Surplus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7608-2d2b-d8ae-75d4">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, 1 destroyed model (excluding CHARACTERS) is returned to each REGIMENT INFANTRY unit from your army that is on the battlefield and not at its Starting Strength.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="2" field="selections" scope="parent" childId="7e2f-c431-9ebe-859c" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="Tithe Pool Deficiency" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e715-8e86-ebe0-a909">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, if your WARLORD is not on the battlefield, you do not gain a Command point.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="7e2f-c431-9ebe-859c" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Morale" hidden="false" id="fc13-37da-9c4c-5cdb" defaultAmount="1" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f792-9d72-c7c3-954c"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8e7c-6d40-6058-8bcf" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Morale Surplus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4359-c9e2-64fe-4186">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Improve the Leadership characteristic of ASTRA MILITARUM models in your Crusade force by 1.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="2" field="selections" scope="parent" childId="fc13-37da-9c4c-5cdb" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                    <profile name="Morale Deficiency" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="78ee-d8e9-3c65-cd33">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You cannot use the Insane Bravery Stratagem.</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="selections" scope="parent" childId="fc13-37da-9c4c-5cdb" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="force" shared="false" id="b189-e81a-e63d-74a9-min" includeChildSelections="false" negative="false"/>
+                <constraint type="max" value="4" field="selections" scope="force" shared="false" id="b189-e81a-e63d-74a9-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="5" field="b189-e81a-e63d-74a9-min">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6337-65e0-3bcf-14b8" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5" field="b189-e81a-e63d-74a9-max">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6337-65e0-3bcf-14b8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
