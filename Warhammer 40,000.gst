@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="49" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="50" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1213,7 +1213,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Cities of Ruin Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false">
+    <selectionEntryGroup name="Cities of Ruin Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false" collapsible="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Cityfight Veteran" hidden="false" id="ccaf-32ee-b7e4-82f1">
           <costs>
@@ -1579,8 +1579,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f866-0f86-f564-3cb0"/>
               </constraints>
               <modifiers>
-                <modifier type="append" value="Wire Cutters" field="annotation" scope="parent" affects="profiles.Melee Weapons" join=", "/>
-                <modifier type="append" value="Anti-Vehicle 3+" field="893f-9000-ccf7-648e" scope="parent" affects="profiles.Melee Weapons" join=", "/>
+                <modifier type="append" value="Wire Cutters" field="annotation" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
+                <modifier type="append" value="Anti-Vehicle 3+" field="893f-9000-ccf7-648e" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
               </modifiers>
               <profiles>
                 <profile name="Wire Cutters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5c92-9468-052a-7da0">
