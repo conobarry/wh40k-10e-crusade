@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="125" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="126" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -2161,156 +2161,163 @@
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Death Korps Trooper w/ Special weapon" id="1995-aedc-842d-e9fb" hidden="false">
-                      <selectionEntries>
-                        <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Flamer" hidden="false" id="662b-547f-745e-0f6d">
-                          <entryLinks>
-                            <entryLink import="true" name="Close combat weapon" hidden="false" id="77d4-3ed1-fbbc-3d89" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                    <selectionEntryGroup name="Death Korps Trooper w/ Special weapon" id="344b-0576-fd2d-96ce" hidden="false">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Death Korps Trooper w/ Vox-caster or special weapon" id="238d-e889-b0ce-3245" hidden="false">
+                          <selectionEntries>
+                            <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Vox-caster" hidden="false" id="879c-a5ba-d23b-8c53">
+                              <infoLinks>
+                                <infoLink name="Death Korps of Krieg" id="d9c8-9d86-be36-3e1d" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
+                              </infoLinks>
+                              <entryLinks>
+                                <entryLink import="true" name="Lasgun" hidden="false" id="96b9-0dd0-651e-d581" type="selectionEntry" targetId="26c-19b3-720-8dcf">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f4d-740a-b1d3-1dd0"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="740a-be65-81c8-2d19"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="Close combat weapon" hidden="false" id="bfb3-17de-7e5b-9e35" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ea7-1e60-b508-ba4c"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cde3-03bd-5105-5a26"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="Vox-caster" hidden="false" id="6a3d-b22d-7598-487a" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f2e-74f9-3ee-2183"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a5-a0bf-ed8b-9e44"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
                               <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eff6-61c3-a2ed-b8e7"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c90c-3777-d92e-db96"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b09a-ad45-7670-6f0d"/>
                               </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Flamer" hidden="false" id="4ddb-223d-e1f6-a540" type="selectionEntry" targetId="ddae-e6-79d8-3f66">
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Plasma gun" hidden="false" id="c986-93db-9061-d068">
+                              <infoLinks>
+                                <infoLink name="Death Korps of Krieg" id="f0bb-5220-0bee-0f3d" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
+                              </infoLinks>
+                              <entryLinks>
+                                <entryLink import="true" name="Close combat weapon" hidden="false" id="aa27-77fe-5c1e-befa" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b09-31fe-4fe6-b2ad"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e798-96de-854f-24ea"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="Plasma gun" hidden="false" id="950a-fbdc-87f4-3d51" type="selectionEntry" targetId="d0dc-eb53-4dc1-c69e">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b33-a3e6-c927-b23d"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bccc-cb2e-8d33-8ad8"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
                               <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cda1-79de-3654-f4ef"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d004-4f00-1c43-ae9b"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b0f-38f7-5e30-4d91"/>
                               </constraints>
-                            </entryLink>
-                          </entryLinks>
-                          <infoLinks>
-                            <infoLink name="Death Korps of Krieg" id="fffd-5bac-434c-1888" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
-                          </infoLinks>
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Meltagun" hidden="false" id="95aa-4e62-c7d1-d5c1">
+                              <entryLinks>
+                                <entryLink import="true" name="Close combat weapon" hidden="false" id="981c-ae11-b81b-1323" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23b0-59be-e7ee-b61a"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fb3-43fb-c320-05f9"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="Meltagun" hidden="false" id="3468-c57c-2bc0-826c" type="selectionEntry" targetId="e701-7c4-8b3b-49d6">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="447c-5989-963a-dbc7"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fed-2149-aa30-8ac1"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <infoLinks>
+                                <infoLink name="Death Korps of Krieg" id="f4c0-239e-9631-b004" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
+                              </infoLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="952e-e130-ef3f-e779"/>
+                              </constraints>
+                            </selectionEntry>
+                          </selectionEntries>
                           <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a353-ee28-c86e-b329"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f3b4-cad8-1c83-2761"/>
                           </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Grenade launcher" hidden="false" id="28ac-c671-417e-e0d9">
-                          <entryLinks>
-                            <entryLink import="true" name="Close combat weapon" hidden="false" id="8dbb-123b-0cc0-fc96" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                        </selectionEntryGroup>
+                        <selectionEntryGroup name="Death Korps Trooper w/ Special weapon" id="1995-aedc-842d-e9fb" hidden="false">
+                          <selectionEntries>
+                            <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Flamer" hidden="false" id="662b-547f-745e-0f6d">
+                              <entryLinks>
+                                <entryLink import="true" name="Close combat weapon" hidden="false" id="77d4-3ed1-fbbc-3d89" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eff6-61c3-a2ed-b8e7"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c90c-3777-d92e-db96"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="Flamer" hidden="false" id="4ddb-223d-e1f6-a540" type="selectionEntry" targetId="ddae-e6-79d8-3f66">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cda1-79de-3654-f4ef"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d004-4f00-1c43-ae9b"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <infoLinks>
+                                <infoLink name="Death Korps of Krieg" id="fffd-5bac-434c-1888" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
+                              </infoLinks>
                               <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4ef-39db-193c-770f"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cae-68fe-8ade-97d1"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a353-ee28-c86e-b329"/>
                               </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Grenade launcher" hidden="false" id="d31c-cfd2-1324-b9a5" type="selectionEntry" targetId="56dc-438-2698-6a6a">
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Grenade launcher" hidden="false" id="28ac-c671-417e-e0d9">
+                              <entryLinks>
+                                <entryLink import="true" name="Close combat weapon" hidden="false" id="8dbb-123b-0cc0-fc96" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4ef-39db-193c-770f"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cae-68fe-8ade-97d1"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="Grenade launcher" hidden="false" id="d31c-cfd2-1324-b9a5" type="selectionEntry" targetId="56dc-438-2698-6a6a">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dec9-e953-10ec-1567"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2004-0bd0-1652-b950"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <infoLinks>
+                                <infoLink name="Death Korps of Krieg" id="8c38-b191-7851-05e3" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
+                              </infoLinks>
                               <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dec9-e953-10ec-1567"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2004-0bd0-1652-b950"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4099-cda3-16d8-5d65"/>
                               </constraints>
-                            </entryLink>
-                          </entryLinks>
-                          <infoLinks>
-                            <infoLink name="Death Korps of Krieg" id="8c38-b191-7851-05e3" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
-                          </infoLinks>
+                            </selectionEntry>
+                            <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Long-las" hidden="false" id="0a2d-d66c-6536-f704">
+                              <entryLinks>
+                                <entryLink import="true" name="Close combat weapon" hidden="false" id="a84c-4f06-478d-6907" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cb6-540a-3444-04e3"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb5a-754c-e071-94f6"/>
+                                  </constraints>
+                                </entryLink>
+                                <entryLink import="true" name="Long-las" hidden="false" id="de7a-6b9f-e5b1-9edf" type="selectionEntry" targetId="7efa-b0a3-9454-b1a8">
+                                  <constraints>
+                                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0010-196a-167d-5e98"/>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e63-b8c6-baea-9f28"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <infoLinks>
+                                <infoLink name="Death Korps of Krieg" id="07b1-fba3-f460-50d5" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
+                              </infoLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2356-eefc-e440-e73b"/>
+                              </constraints>
+                            </selectionEntry>
+                          </selectionEntries>
                           <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4099-cda3-16d8-5d65"/>
+                            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="748e-cff3-6e88-5714"/>
                           </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Long-las" hidden="false" id="0a2d-d66c-6536-f704">
-                          <entryLinks>
-                            <entryLink import="true" name="Close combat weapon" hidden="false" id="a84c-4f06-478d-6907" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cb6-540a-3444-04e3"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb5a-754c-e071-94f6"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Long-las" hidden="false" id="de7a-6b9f-e5b1-9edf" type="selectionEntry" targetId="7efa-b0a3-9454-b1a8">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0010-196a-167d-5e98"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e63-b8c6-baea-9f28"/>
-                              </constraints>
-                            </entryLink>
-                          </entryLinks>
-                          <infoLinks>
-                            <infoLink name="Death Korps of Krieg" id="07b1-fba3-f460-50d5" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
-                          </infoLinks>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2356-eefc-e440-e73b"/>
-                          </constraints>
-                        </selectionEntry>
-                      </selectionEntries>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                       <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="748e-cff3-6e88-5714"/>
-                      </constraints>
-                    </selectionEntryGroup>
-                    <selectionEntryGroup name="Death Korps Trooper w/ Vox-caster or special weapon" id="238d-e889-b0ce-3245" hidden="false">
-                      <selectionEntries>
-                        <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Vox-caster" hidden="false" id="879c-a5ba-d23b-8c53">
-                          <infoLinks>
-                            <infoLink name="Death Korps of Krieg" id="d9c8-9d86-be36-3e1d" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
-                          </infoLinks>
-                          <entryLinks>
-                            <entryLink import="true" name="Lasgun" hidden="false" id="96b9-0dd0-651e-d581" type="selectionEntry" targetId="26c-19b3-720-8dcf">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f4d-740a-b1d3-1dd0"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="740a-be65-81c8-2d19"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Close combat weapon" hidden="false" id="bfb3-17de-7e5b-9e35" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ea7-1e60-b508-ba4c"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cde3-03bd-5105-5a26"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Vox-caster" hidden="false" id="6a3d-b22d-7598-487a" type="selectionEntry" targetId="6bfd-18be-90d3-2398">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f2e-74f9-3ee-2183"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a5-a0bf-ed8b-9e44"/>
-                              </constraints>
-                            </entryLink>
-                          </entryLinks>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b09a-ad45-7670-6f0d"/>
-                          </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Plasma gun" hidden="false" id="c986-93db-9061-d068">
-                          <infoLinks>
-                            <infoLink name="Death Korps of Krieg" id="f0bb-5220-0bee-0f3d" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
-                          </infoLinks>
-                          <entryLinks>
-                            <entryLink import="true" name="Close combat weapon" hidden="false" id="aa27-77fe-5c1e-befa" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b09-31fe-4fe6-b2ad"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e798-96de-854f-24ea"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Plasma gun" hidden="false" id="950a-fbdc-87f4-3d51" type="selectionEntry" targetId="d0dc-eb53-4dc1-c69e">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b33-a3e6-c927-b23d"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bccc-cb2e-8d33-8ad8"/>
-                              </constraints>
-                            </entryLink>
-                          </entryLinks>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b0f-38f7-5e30-4d91"/>
-                          </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="model" import="true" name="Death Korps Trooper w/ Meltagun" hidden="false" id="95aa-4e62-c7d1-d5c1">
-                          <entryLinks>
-                            <entryLink import="true" name="Close combat weapon" hidden="false" id="981c-ae11-b81b-1323" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23b0-59be-e7ee-b61a"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fb3-43fb-c320-05f9"/>
-                              </constraints>
-                            </entryLink>
-                            <entryLink import="true" name="Meltagun" hidden="false" id="3468-c57c-2bc0-826c" type="selectionEntry" targetId="e701-7c4-8b3b-49d6">
-                              <constraints>
-                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="447c-5989-963a-dbc7"/>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fed-2149-aa30-8ac1"/>
-                              </constraints>
-                            </entryLink>
-                          </entryLinks>
-                          <infoLinks>
-                            <infoLink name="Death Korps of Krieg" id="f4c0-239e-9631-b004" hidden="false" type="profile" targetId="11ee-5a7d-7e13-e1ef"/>
-                          </infoLinks>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="952e-e130-ef3f-e779"/>
-                          </constraints>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f3b4-cad8-1c83-2761"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="02d4-c669-7034-036c"/>
                       </constraints>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -20995,7 +21002,7 @@ Onslaught - 4</characteristic>
         <entryLink import="true" name="Vanquisher battle cannon" hidden="false" type="selectionEntry" id="9e6b-37ca-905b-e32d" targetId="2e39-f725-75aa-d68c"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Enhancements" hidden="false" id="33fd-bb93-1bf4-f1c">
+    <selectionEntryGroup name="Enhancements" hidden="false" id="33fd-bb93-1bf4-f1c" collapsible="true">
       <selectionEntryGroups>
         <selectionEntryGroup name="Combined Arms Enhancements" hidden="false" id="d572-4471-c9b8-dea5">
           <modifiers>
@@ -21106,7 +21113,11 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2f41-e4de-2caa-9002" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
               <profiles>
                 <profile name="Reactive Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="18ea-5365-499c-610b">
@@ -21383,6 +21394,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f66c-8732-eb76-b8ee" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21431,6 +21443,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="61d9-83cf-a2f3-ace9" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21462,6 +21475,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f4d4-801d-1cd8-bbc3" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21510,6 +21524,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8b17-af23-2937-433d" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21570,6 +21585,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f002-7f80-44a1-11bf" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21608,6 +21624,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d4fb-2961-2125-1d50" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21642,6 +21659,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e4e6-22a0-4cc6-19ad" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21690,6 +21708,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2576-b392-9c21-bc72" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21753,6 +21772,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0715-04a1-e920-9bae" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21801,6 +21821,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="22a4-2bab-2466-c494" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21835,6 +21856,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e6b0-dbca-4c93-c9e0" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21883,6 +21905,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b036-68ec-cd28-3d59" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21943,6 +21966,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="007b-5b61-32d3-0c6c" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21984,6 +22008,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a65c-df92-3fa0-4d44" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -22018,6 +22043,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9782-61b6-4e4e-3970" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -22066,6 +22092,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="331b-876a-3b22-0557" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
