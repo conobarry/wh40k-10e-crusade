@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="91" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="125" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -168,6 +168,9 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="b9c5-5f35-76b7-1641" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Attilan Rough Riders" hidden="false" id="2299-bed9-3e-2b60">
       <selectionEntries>
@@ -367,6 +370,9 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="91de-8b5d-24ed-bacb" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Baneblade" hidden="false" id="a6a1-1612-f982-31">
       <categoryLinks>
@@ -428,6 +434,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Wargear Options" hidden="false" id="8cf5-9c46-fef2-bcc7" type="selectionEntryGroup" targetId="947a-b0d1-6bb2-336a"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="09da-2c88-e3b2-2a9f" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Baneblade cannon" hidden="false" id="691f-b175-b914-c47a">
@@ -557,6 +564,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Wargear Options" hidden="false" id="d82f-8914-1f02-d954" type="selectionEntryGroup" targetId="947a-b0d1-6bb2-336a"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="4247-a2bb-e7c2-280c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Tremor cannon" hidden="false" id="c129-8d55-11c6-2bc5">
@@ -642,6 +650,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e68d-e2c6-5ddb-83e8" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="5fbc-ca52-7f03-49dd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Quake cannon" hidden="false" id="d288-8ac8-ba1-e9d7">
@@ -758,6 +767,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Wargear Options" hidden="false" type="selectionEntryGroup" id="dbdb-9148-560b-dd88" targetId="0605-ba19-1769-0a44"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="f9d5-db6f-9dd3-2f09" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bullgryn Squad" hidden="false" id="37ad-63e5-1786-87cf">
@@ -898,6 +908,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5d0-6580-1eec-6bc3"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="8913-68d9-2ecf-a73e" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cadian Castellan" hidden="false" id="2b49-4d03-aaf5-3532">
@@ -1053,6 +1064,7 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="da19-add6-1f36-bff0" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="4bf2-7b8b-c07b-c574" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="b6f7-5aa4-ab14-c2fc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -1416,6 +1428,9 @@
           </profiles>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="9b1d-4de9-0b77-a444" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cadian Shock Troops" hidden="false" id="a2aa-7688-dcb1-4132">
       <modifiers>
@@ -1543,6 +1558,9 @@
       <infoLinks>
         <infoLink name="Unit Composition" hidden="false" id="c1a6-f16c-d3be-23e3" type="profile" targetId="b592-33bc-a25d-b3a9"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="1650-af97-5d47-327d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Catachan Jungle Fighters" hidden="false" id="fe5a-764e-37ed-7cef">
       <categoryLinks>
@@ -1792,6 +1810,9 @@
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="faaf-69f7-0d7b-ff54" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chimera" hidden="false" id="cf23-58db-8ba4-9ec8">
       <categoryLinks>
@@ -1862,6 +1883,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a5b-496b-17aa-a634"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="5d18-21cf-4f06-e973" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear Options" id="5622-68b7-9262-272e" hidden="false">
@@ -1989,6 +2011,7 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="9135-5f9b-ecbd-57ec" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="7b8-f243-91a2-2b52" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="73ee-ec79-0106-2cee" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear Options" id="e380-c8f1-f67b-1564" hidden="false">
@@ -2656,6 +2679,9 @@
       <infoLinks>
         <infoLink name="Unit Composition" hidden="false" id="a3f7-2a09-1f80-583f" type="profile" targetId="b592-33bc-a25d-b3a9"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="caf4-b92c-4234-38fa" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Deathstrike" hidden="false" id="e19f-b9b8-75d5-8520">
       <categoryLinks>
@@ -2747,6 +2773,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85cf-b31b-e978-f72e"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="891e-cbbf-5ddb-8cb8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Doomhammer" hidden="false" id="8342-57dd-69d3-e698">
@@ -2809,6 +2836,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9670-dd2a-a83b-c0eb" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="a89a-a5b8-c331-7211" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Magma cannon" hidden="false" id="8cfb-c9b2-90cf-5ac4">
@@ -3068,6 +3096,9 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="c728-c185-4941-46c3" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gaunt’s Ghosts" hidden="false" id="653d-80-d715-7d55">
       <categoryLinks>
@@ -3649,6 +3680,9 @@
       <infoLinks>
         <infoLink name="Embarking" id="c119-4526-bff6-74bd" hidden="false" type="profile" targetId="5b59-38a0-a158-05b9"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="ffb6-dda0-7666-b9e6" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hellhammer" hidden="false" id="8277-6399-5d74-760d">
       <costs>
@@ -3710,6 +3744,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2ae-e0af-c175-5780"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="2821-e3df-a33a-21f1" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Hellhammer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9907-8b8a-4aff-2779">
@@ -3909,6 +3944,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbe4-15d4-6208-789a"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="3656-e101-92e9-5dff" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hydra" hidden="false" id="4967-19b6-1e2a-a300">
@@ -3970,6 +4006,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ed-775e-0729-2556"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="22ec-0950-85c2-c2ed" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Hydra autocannon" hidden="false" id="765-e58f-7093-d635">
@@ -4321,6 +4358,9 @@
       <infoLinks>
         <infoLink name="Unit Composition" hidden="false" id="a7bc-5e9a-c3f4-f9f6" type="profile" targetId="b592-33bc-a25d-b3a9"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="69b2-f3f9-1247-e293" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="‘Iron Hand’ Straken [Legends]" hidden="false" id="913f-3cb6-fb80-7f6a">
       <categoryLinks>
@@ -4815,6 +4855,9 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="d404-fae8-af3c-7f32" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Leman Russ Battle Tank" hidden="false" id="c581-3ab5-49a0-9ec0">
       <costs>
@@ -4863,6 +4906,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f733-d3fe-2278-b7c1"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="01ac-b40a-7408-48af" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink targetId="3f52-eab3-befb-8dcb" id="6586-78d8-8d44-c70e" type="profile" name="Leman Russ Battle Tank" hidden="false"/>
@@ -4923,6 +4967,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f16-0ca1-ba6d-dcdc"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="1de6-537f-a019-4ae8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Line-breaker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7bca-e35e-69d1-1135">
@@ -4981,6 +5026,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e1a-9f27-22d9-e626"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="eec0-6afb-8795-1ad4" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Urban Warfare" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a950-ab59-3c2d-a39b">
@@ -5035,6 +5081,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8ba-9e57-a273-a431"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="766d-615d-03d3-931d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Gung-ho Executioners" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d68-5238-1410-fed4">
@@ -5093,6 +5140,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18d4-877a-5050-e05a"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="6c8e-e479-86cd-0a44" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Withering Hail" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8344-2f14-e790-be5e">
@@ -5147,6 +5195,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4257-0483-ce49-9ce4"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="1359-4791-8dfb-6fbd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoGroups>
         <infoGroup name="Mow Down the Enemy" id="430d-6d09-8c71-a3ea" hidden="false">
@@ -5208,6 +5257,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8504-4ed4-ccd0-488a"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="aeb4-ec7f-7e66-5709" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Tank-killer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cc47-c40a-1c64-73e7">
@@ -5438,6 +5488,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aa0-5d11-1bce-68b5"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="eba0-3359-53c5-421d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Manticore" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="23f8-2a9c-dcaa-14a9">
@@ -5777,6 +5828,9 @@
       <infoLinks>
         <infoLink name="Deep Strike" id="b5ef-86b9-c108-4f11" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="7992-358c-5a2d-8c8b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Munitorum Servitors [Legends]" hidden="false" id="5c5f-8f23-7f13-2af6">
       <categoryLinks>
@@ -5951,6 +6005,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="5198-9708-d4fb-7209" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Nork Deddog" hidden="false" id="bcda-f4bb-e726-9bfe">
       <costs>
@@ -6221,6 +6278,7 @@ While this model is joined to a unit, it can embark within any **^^Transport^^**
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="b2f9-1a3b-0997-0bb3" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="7092-d003-e2de-8e50" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="d35c-7116-6213-cb2c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ogryn Squad" hidden="false" id="c9eb-2007-af01-a853">
@@ -6310,6 +6368,9 @@ While this model is joined to a unit, it can embark within any **^^Transport^^**
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="32be-7966-603d-e279" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Primaris Psyker" hidden="false" id="4ad0-e988-a513-9530">
       <categoryLinks>
@@ -6368,6 +6429,7 @@ While this model is joined to a unit, it can embark within any **^^Transport^^**
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ed9b-bf53-3395-5277" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="c4a2-c608-0add-817a" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="e342-d792-4c86-aa8c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Psychic Barrier (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9609-45b8-af09-de5b">
@@ -6618,6 +6680,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="4765-5b83-f7dc-e1c7" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tech-Priest Enginseer" hidden="false" id="f556-a33d-dc90-d6fc">
       <categoryLinks>
@@ -6766,6 +6831,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ddd4-4fa6-5da-fffe" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="eb63-59e8-0140-d976" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ce9c-49dc-24a6-b733" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rogal Dorn Battle Tank" hidden="false" id="2127-efcc-1f62-7fab">
@@ -6821,6 +6887,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Wargear Options" hidden="false" id="16bb-487a-c7ab-14ef" type="selectionEntryGroup" targetId="358f-fab0-7036-025a"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="fb4b-7a0d-886e-651a" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-6 Wounds Remaining" hidden="false" type="profile" id="458c-a7b0-5f21-814a" targetId="30d1-9e89-5aa2-6bde"/>
@@ -6936,6 +7003,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="0e5a-fffa-50d9-58bc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sergeant Harker [Legends]" hidden="false" id="a8d5-81f9-96a0-fd12">
       <categoryLinks>
@@ -7120,6 +7190,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Wargear Options" hidden="false" id="83b8-d3fd-4057-1f1e" type="selectionEntryGroup" targetId="947a-b0d1-6bb2-336a"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="1fa0-cf85-7242-b3f2" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Volcano cannon" hidden="false" id="c341-7e80-e7f6-4f75">
@@ -7323,6 +7394,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6b2-8cf1-8574-f85a" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="44cd-c510-c61d-cff0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Firing Deck" hidden="false" type="rule" id="9114-e7c0-af2a-cec4" targetId="13b2-6518-dab3-7ea1">
@@ -7443,6 +7515,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Wargear Options" hidden="false" id="9085-72ab-adc6-a996" type="selectionEntryGroup" targetId="947a-b0d1-6bb2-336a"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="7994-7ff6-2a94-77c1" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Stormsword siege cannon" hidden="false" id="7ed2-e35a-a22d-9f6b">
@@ -7638,6 +7711,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c364-d6a7-7dbb-bf66"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="77c2-9108-97d8-9a9e" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Taurox" hidden="false" id="11e5-d4ab-d140-ac38">
@@ -7705,6 +7779,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78c7-3b76-7b16-eb0f"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="55d1-142f-f048-488f" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear Options" id="ec02-eb87-767e-95b3" hidden="false">
@@ -7748,6 +7823,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e8a-350a-5358-fd1c"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="9277-b7a5-42cf-84cc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="8027-8baa-54fe-54f4" targetId="b68a-5ded-65ac-98c">
@@ -8222,6 +8298,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="b8e6-edb1-a42a-302b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ursula Creed" hidden="false" id="b6b2-9971-ec0c-349e">
       <categoryLinks>
@@ -8446,6 +8525,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cd7-e69d-7ec6-aac3"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="33f3-62af-e414-a505" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Wyvern" hidden="false" id="d11b-c49d-41bf-1f36">
@@ -8512,6 +8592,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed18-6929-abbf-2e39"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="e526-f8a1-274f-297c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Wyvern" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1788-9295-de1d-e6d">
@@ -8869,6 +8950,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <infoLinks>
         <infoLink name="Heavy" hidden="false" type="rule" id="c19d-8a19-cd0d-4fca" targetId="1202-10a8-78e9-4c67"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="bc47-5152-87c8-e440" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Laspistol" hidden="false" id="2689-4c0e-cdfb-3e5" collective="true">
       <profiles>
@@ -10115,6 +10199,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="af71-47fb-bf2b-451f" includeChildSelections="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="5e44-ac2a-f907-383e" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Carnodon [Legends]" hidden="false" id="173e-ddd1-354c-583b">
       <constraints>
@@ -10164,6 +10251,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="be2e-577b-f01f-b4b2" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="6719-e1d1-d270-17ca" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Main weapon" hidden="false" id="9041-a55d-68dc-fefe" defaultSelectionEntryId="c705-9c20-93bf-da0">
@@ -10398,6 +10486,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="138f-7a97-9490-1ef2" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Malcador [Legends]" hidden="false" id="f706-c35a-a325-38bf">
       <costs>
@@ -10436,6 +10527,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="fb2a-464a-aecf-8f84" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="1714-fb12-a18f-72fc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="70f-4935-4220-1f3a" targetId="b68a-5ded-65ac-98c">
@@ -10598,6 +10690,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="374a-96f1-bf85-bf38" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="5c0f-8958-11cb-9cb6" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="f564-f972-9c5-19d6" targetId="b68a-5ded-65ac-98c">
@@ -10758,6 +10851,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="945e-91ad-33c5-49bc"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="a5d2-ee99-6fe3-d7d9" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="13e9-aae3-5d78-32a3" targetId="b68a-5ded-65ac-98c">
@@ -10890,6 +10984,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="64aa-89a0-169-29cd" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="2836-28d5-8fcf-2a69" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="fe3-ff13-3d4f-3952" targetId="b68a-5ded-65ac-98c">
@@ -11087,6 +11182,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="1874-1e90-5783-958b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Earthshaker Carriage Battery [Legends]" hidden="false" id="efc7-ac4c-1fcd-5b39">
       <costs>
@@ -11178,6 +11276,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="8dd0-2c2e-8d87-fc6c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Stormblade [Legends]" hidden="false" id="a93c-9d4b-8fd9-15b4">
       <costs>
@@ -11364,6 +11465,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="9d2a-041b-24c9-db40" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Macharius [Legends]" hidden="false" id="d7a-7abb-831b-1c67">
       <constraints>
@@ -11433,6 +11537,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="869a-5e67-83d7-090d-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="3f50-61e7-980d-ae2b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="b00f-39e-6262-6caf">
@@ -11575,6 +11680,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2144-6455-d828-0fc8-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="1835-a1af-780e-aa70" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="e26-28aa-c405-6f0f">
@@ -11716,6 +11822,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="576a-6dff-71c2-803e-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="1532-e24f-3ecb-3b59" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="6b5c-a20e-6dfa-ac7e">
@@ -11892,6 +11999,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f208-ad9c-505c-e174"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="ea23-afd8-944f-aa22" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="830c-37dd-188d-21ed">
@@ -11973,6 +12081,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ec93-2845-cee2-24e9"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="22a1-26a3-60e7-51b0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Pintle weapon" hidden="false" id="414e-f1f6-e300-3e8e">
@@ -12060,6 +12169,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f02c-2477-a357-35f4"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0588-4a42-3295-e510" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Colossus siege mortar" hidden="false" id="1bd7-a985-449d-e6af">
@@ -12126,6 +12236,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="427e-38b7-f958-86db" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="3568-f8d9-941e-87df" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Valdor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="aa69-5ac-72f7-a1db">
@@ -12263,6 +12374,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d30-bee1-55aa-b638"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="f047-46f6-3a8d-6ba8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Avenger bolt cannon" hidden="false" id="596c-522f-3252-9584">
@@ -12333,6 +12445,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a29c-3540-b676-501c"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="5945-c6fa-155f-9634" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="4f86-5b6b-2198-2ce1" targetId="ac02-24ee-d928-9f4"/>
@@ -12459,6 +12572,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ea-6d82-94d7-20af"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="eebc-c0e0-f6b3-d280" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" hidden="false" id="4eb6-7b58-f051-992f" defaultSelectionEntryId="e466-913e-6cec-7718">
@@ -12614,6 +12728,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bfe9-9ead-a208-ed1"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="409e-2026-dc33-1e48" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Bombs" hidden="false" id="8fec-d411-bf45-d291" defaultSelectionEntryId="7677-cdc7-9473-49e6">
@@ -12709,6 +12824,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bfe9-9ead-a208-ed1"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="b072-b310-5773-eedc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Assault cannon" hidden="false" id="a08-fa8f-11c6-33e8">
@@ -12922,6 +13038,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="a616-7bd7-eff3-e010" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rapier Laser Destroyer Battery [Legends]" hidden="false" id="31ec-a804-92ad-97">
       <categoryLinks>
@@ -13016,6 +13135,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="309a-581d-dec9-7a93" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hades Breaching Drill [Legends]" hidden="false" id="ed8d-9053-9d33-61da">
       <costs>
@@ -13083,6 +13205,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="8187-4e07-9cf7-58a4" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trojan Support Vehicle [Legends]" hidden="false" id="fbaf-15f6-37d8-c5b">
       <costs>
@@ -13121,6 +13246,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="456-47f6-9b93-e1e6" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="4276-e13a-18c1-94b0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="d585-947c-5978-d82a" targetId="b68a-5ded-65ac-98c">
@@ -13211,6 +13337,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f71e-d84f-3ec6-6c86"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="c4d8-fcd5-4918-c2b7" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Hellstrike Missile Option" hidden="false" id="f93e-ec72-6da0-eb9c" defaultSelectionEntryId="5a9a-67d9-65b4-3079">
@@ -13324,6 +13451,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5913-69fd-17da-4259"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="a4ba-0c1e-bfdc-3f6b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="8512-d4f2-aa50-cd02" primary="true" name="Vehicle"/>
@@ -13405,6 +13533,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         </entryLink>
         <entryLink import="true" name="Pintle Mount" hidden="false" type="selectionEntryGroup" id="d4e9-5637-d960-dd4" targetId="164e-b04-edf-f354"/>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="2dff-289d-723d-83a7" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="6d6c-c8bc-d6d0-d40d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="2b48-90d1-bbb8-42b7" targetId="b68a-5ded-65ac-98c">
@@ -13608,6 +13737,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8153-ab0f-25e4-dbf3" includeChildSelections="true"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="3d23-a612-d907-2dbc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-7 Wounds Remaining" hidden="false" type="profile" id="af89-3a24-285a-e91a" targetId="4ca9-3652-f045-85ba"/>
@@ -13887,6 +14017,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="62fd-91d7-251c-f0f3" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Centaur Light Carrier [Legends]" hidden="false" id="81d4-2ed9-b0a4-6bdd">
       <costs>
@@ -13918,6 +14051,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28dd-9ee3-ee22-1d8d"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="51eb-8b17-9dc1-1bec" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Centaur Light Carrier" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d764-30b1-8be4-78e7">
@@ -14007,6 +14141,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Pintle Mount" hidden="false" type="selectionEntryGroup" id="4682-741d-dc86-2c00" targetId="164e-b04-edf-f354"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="5401-e8fb-259e-a25f" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="27e9-456b-e727-abb2" primary="true" name="Vehicle"/>
@@ -14128,6 +14263,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2e0-36a6-b262-f970"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="c9eb-db3b-5f15-ab79" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Stygies Laser Destroyer" hidden="false" id="ebd7-468a-1fce-2f34">
@@ -14496,6 +14632,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="fa45-57e-930e-602b" id="469d-3c5d-d683-e8cd" primary="false" name="Faction: Astra Militarum"/>
         <categoryLink name="Krieg" hidden="false" id="48f1-2a47-3665-cb47" targetId="ca9b-9951-ee3e-bcef" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="392c-ee2b-deb3-3292" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Atlas Recovery Vehicle [Legends]" hidden="false" id="9673-7eaa-8ed9-bc7c">
       <costs>
@@ -14527,6 +14666,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f29-96fa-46a0-3830"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="5208-696c-469c-dbe0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="1c9c-2c58-9faa-3316" targetId="b68a-5ded-65ac-98c">
@@ -14655,6 +14795,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="fa45-57e-930e-602b" id="c771-c904-8dbe-9407" primary="false" name="Faction: Astra Militarum"/>
         <categoryLink targetId="ebd4-1b78-a46-6eb4" id="f1b3-3873-a15c-7e9d" primary="false" name="Sabre Weapons Battery"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="fa37-ab26-b6de-1259" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Elysian Drop Sentinel [Legends]" hidden="false" id="badd-6133-a469-613c">
       <costs>
@@ -14691,6 +14834,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <entryLinks>
         <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="a8c2-1dd5-879f-7f2c" targetId="51a8-ffe2-928f-3f50"/>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="f67e-d4a1-da4f-622e" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="eaaa-c3ac-ec2a-5435" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Close Combat Weapons" hidden="false" id="1f51-1d4f-a43d-b4d6">
@@ -14828,6 +14972,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="8eb3-419e-8cee-3fa1" id="11ab-cde0-2d3e-5a40" primary="false" name="Elysian Sniper Squad"/>
         <categoryLink targetId="fa45-57e-930e-602b" id="d0fe-1a72-1d40-92b8" primary="false" name="Faction: Astra Militarum"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="3d82-6821-6ac5-5a59" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy Mortar Team [Legends]" hidden="false" id="e184-bfe9-ea12-a5e3">
       <costs>
@@ -14835,6 +14982,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </costs>
       <entryLinks>
         <entryLink import="true" name="Close combat weapons" hidden="false" type="selectionEntry" id="1bf5-b6dd-c544-6400" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="21b7-1e88-874a-77cd" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Heavy Mortar" hidden="false" id="5e46-c214-d826-2fca">
@@ -14963,6 +15111,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Pintle Mount" hidden="false" type="selectionEntryGroup" id="84a7-93bc-ad16-43e5" targetId="164e-b04-edf-f354"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="ac7f-6a00-04d0-a1f2" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Heavy Bolter Option" hidden="false" id="d135-f249-76fd-76e" defaultSelectionEntryId="c441-5d20-47bf-42b7">
@@ -15056,6 +15205,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Close combat weapons" hidden="false" type="selectionEntry" id="8355-7cc6-107e-6932" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="f7fa-e278-fe4a-fe35" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -15150,6 +15300,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="a38a-08e2-6276-f55d" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vendetta Gunship [Legends]" hidden="false" id="4946-40d2-ee8b-a71c">
       <costs>
@@ -15233,6 +15386,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e818-cfcb-cbe3-2b2d"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="2ade-f36a-9ac6-440b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armoured Hull" hidden="false" id="1686-bcbd-320c-b348">
@@ -15346,6 +15500,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc6e-f3f8-a0a9-7929"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="d8ba-2247-fba2-c8d8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -15506,6 +15661,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="905e-550a-9166-83e5" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="66f5-2e7b-deaa-b01f" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="59bd-352f-25d4-020b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sentinel Powerlifter [Legends]" hidden="false" id="8cc1-8512-710f-f15f">
@@ -15582,6 +15738,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3d0b-eecd-1012-6c35" includeChildForces="true"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="154c-c40a-a810-8d6a" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Manticore Platform [Legends]" hidden="false" id="adbb-4624-738f-61ec">
       <costs>
@@ -15631,6 +15790,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Close combat weapons" hidden="false" type="selectionEntry" id="6ceb-d49-baf7-146c" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="9387-da1c-ebdf-bcdf" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Storm Eagle Rockets" hidden="false" id="ce5-270d-2f2d-c333">
@@ -15742,6 +15902,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Close combat weapons" hidden="false" type="selectionEntry" id="9ceb-a6d2-bee0-6044" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="7e4e-01ff-13fd-c1c8" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="d21-95c4-2464-1ca4" id="dab5-f31e-39e-8198" primary="false" name="Hydra Platform"/>
@@ -15811,6 +15972,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e89-9d81-e1b7-e6cc"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="f368-4596-aa0e-1a0b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Griffon Heavy Mortar" hidden="false" id="cd39-d629-3c50-a0de">
@@ -15895,6 +16057,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Close combat weapons" hidden="false" type="selectionEntry" id="db1b-3054-ae1e-72f9" targetId="c772-1b47-5ec7-4d06"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="25b8-4c23-1ae4-8dc6" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <profiles>
         <profile name="Earthshaker Rounds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2aeb-af4e-d625-7282">
@@ -16087,6 +16250,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="5950-c1c7-df4a-5f38" primary="false" name="Grenades"/>
         <categoryLink targetId="c8a1-fef-5569-61c9" id="e22e-7b65-4569-10b1" primary="false" name="Regiment"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="0f4c-a43f-de7b-515b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Salamander Scout Vehicle [Legends]" hidden="false" id="73b2-edbf-eec3-563d">
       <costs>
@@ -16162,6 +16328,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83a0-711c-c182-bd40"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0846-44c0-cd8f-bd52" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d710-1ecc-49f7-df7a"/>
@@ -16268,6 +16435,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <entryLinks>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="82a1-efe7-4b3b-19f2" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="e705-3c1-b23a-a776" targetId="bd41-7c1b-c091-7413"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="33d9-d153-30c7-5067" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tauros Venator [Legends]" hidden="false" id="a95f-9dd6-de66-fa59">
@@ -16321,6 +16489,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <entryLinks>
         <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="e05-792-daed-567d" targetId="37aa-e4f5-30bd-c59c"/>
         <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="b75-9ab1-fef0-5f63" targetId="bd41-7c1b-c091-7413"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="7eba-5051-81c6-aee0" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Twin Multi-laser Option" hidden="false" id="59e0-de5e-7498-cdd7" defaultSelectionEntryId="6b7c-511c-123e-618c">
@@ -16423,6 +16592,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="464a-29a3-7c3c-cf2b"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="533f-b6cc-4244-559b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Arkurian Stormhammer [Legends]" hidden="false" id="59c4-e4de-fe70-b221">
@@ -16529,6 +16699,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c27-33b5-17e3-6d6d"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="adbf-1ddf-7a06-89a1" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Twin Battle Cannon" hidden="false" id="ad2e-577d-c893-63b5">
@@ -16877,6 +17048,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47ff-b82d-ddcf-9630-max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="8581-606c-f83f-2560" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Heavy Bolter Option" hidden="false" id="9525-78ab-8280-7d05" defaultSelectionEntryId="dc22-dd38-93e0-3a55">
@@ -17454,6 +17626,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="307c-a674-33e4-14fc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-shot lascarbine" hidden="false" id="a210-87ac-255e-7b8a" collective="true">
       <profiles>
@@ -17682,6 +17857,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="8e56-e8cb-fdca-b60b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sniper rifle" hidden="false" id="0b70-2702-788f-b739" collective="true">
       <profiles>
@@ -18229,6 +18407,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </profiles>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="f88d-adaa-cad2-f82b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lord Marshal Dreir" hidden="false" id="9033-d07c-3e1c-f6f0">
       <categoryLinks>
@@ -18595,6 +18776,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="bc42-5477-37dc-cfb5" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rogal Dorn Commander" hidden="false" id="78b6-f280-bba9-0594">
       <categoryLinks>
@@ -18667,6 +18851,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </constraints>
         </entryLink>
         <entryLink import="true" name="Wargear Options" hidden="false" id="2bde-e380-13d3-f336" type="selectionEntryGroup" targetId="358f-fab0-7036-025a"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="f3d6-efce-6eb6-0615" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-6 Wounds Remaining" hidden="false" type="profile" id="eeb0-880a-2016-1947" targetId="30d1-9e89-5aa2-6bde"/>
@@ -18750,6 +18935,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="dac3-57ec-ad5d-23de" targetId="ea3f-b52b-8dc7-d365"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="de80-6f18-a9ab-d557" targetId="33fd-bb93-1bf4-f1c"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="8b64-1e67-6d2e-9afb" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Zealot&apos;s Vindicator" id="0eaa-5b92-47ff-848c" hidden="false" defaultSelectionEntryId="eb1c-f031-ae2b-7653">
@@ -19127,6 +19313,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="a58e-e653-68fc-721b" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="7101-0a01-c2b9-c741">
       <profiles>
@@ -19399,6 +19588,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <infoLinks>
         <infoLink name="Embarking" id="d295-a045-4eb2-f32b" hidden="false" type="profile" targetId="5b59-38a0-a158-05b9"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="5360-e4ac-870a-e9bc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krieg Heavy Weapons Squad" hidden="false" id="1669-d311-eff9-243b">
       <categoryLinks>
@@ -19603,6 +19795,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="8750-43ed-aeb2-6872" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Artillery Team" hidden="false" id="0595-6d6c-a783-12ab">
       <costs>
@@ -22529,6 +22724,500 @@ Onslaught - 4</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <comment>Baneblade</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Codex Battle Honours" id="a8bc-1f53-a6ed-5822" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Codex Battle Traits" id="abe7-cbcb-0027-17f1" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Infantry and Cavalry Battle Traits" id="9145-0a70-f171-e067" hidden="false" collapsible="true" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="14a0-40c9-2748-ae6e" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dead-Eyed Killers" hidden="false" id="9aed-9ea7-9b69-56fb" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="666d-cfc1-e359-2cc6" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Dead-Eyed Killers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="009f-ca55-8541-ca31">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you take a Battle-shock, Leadership or Desperate Escape test for this unit, add 1 to that test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sharpshooters" hidden="false" id="af6f-8366-0f54-2d73" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16ab-9242-e746-a69b" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Sharpshooters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0870-cd1b-869b-9381">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by models in this unit have the HEAVY ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="a253-13eb-7abc-2088" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Officer Battle Traits" id="f641-85e5-1711-f6f4" hidden="false" collapsible="true" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Booming Voice" hidden="false" id="9c61-1d33-d0ab-a732">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65d7-3db1-71e8-2296" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Booming Voice" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8cca-e13e-2255-b6c8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this OFFICER issues an Order, you can select one eligible unit within 12&quot; of that OFFICER model to issue it to, instead of within 6&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eye for Talent" hidden="false" id="f9b5-29f3-f5fb-5077">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9640-a395-cc28-21ed" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Eye for Talent" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f11d-5060-7f63-c0f5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this OFFICER is part of your Crusade army and was not destroyed during the battle, then at the end of the battle, select one additional unit to be Marked for Greatness (you cannot use this ability to select this OFFICER&apos;s unit to be Marked for Greatness).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Old Grudges" hidden="false" id="6a97-4842-ab86-b8d7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59aa-8960-06b0-5e07" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Old Grudges" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aaf0-a605-5a02-ff62">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one unit from your opponent&apos;s army. Each time a model in this OFFICER&apos;s unit makes an attack that targets that unit, you can re-roll the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Vehicle Battle Traits" id="e3e8-a369-fb44-2940" hidden="false" collapsible="true" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Codex Crusade Relics" id="354c-db23-16dc-b83d" hidden="false" collapsible="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Antiquity Relics" id="5349-270b-c8ad-29c4" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tactical Auto-Reliquary of Tyberius" hidden="false" id="1ab5-8ee7-a51e-f98c">
+              <profiles>
+                <profile name="Tactical Auto-Reliquary of Tyberius" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bc9f-7190-dd55-fa85">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">INFANTRY OFFICER model only. The bearer can issue up to two Orders to REGIMENT units. While the bearer is leading a unit, that unit can be affected by up to two different Orders at the same time (without the most recent Order being replaced)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bc9a-dc76-ddf3-5047" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1ab5-8ee7-a51e-f98c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="1ab5-8ee7-a51e-f98c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                        <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Magallian&apos;s Mantle" hidden="false" id="78ba-75b1-1581-9d36">
+              <profiles>
+                <profile name="Magallian&apos;s Mantle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="75ec-9109-311f-a188">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">INFANTRY OFFICER model only. Improve the bearer&apos;s Save, Wounds, Leadership and Objective Control characteristics by 1, improve the Weapon Skill and Ballistic Skill characteristics of the bearer&apos;s weapons by 1, and improve the bearer&apos;s invulerable save (if it has one) by 1 (to a maximum of 4+).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5a7c-5a57-a7f1-e836" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="78ba-75b1-1581-9d36" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="78ba-75b1-1581-9d36" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                        <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Legendary Relics" id="e1cf-ae4d-13be-fdc5" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Star of Terra" hidden="false" id="d68b-fa52-2a08-ecc6">
+              <profiles>
+                <profile name="Star of Terra" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8bf7-0cb6-decc-0793">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">INFANTRY OFFICER model only. Models in the bearer&apos;s unit have a 5+ invulnerable save, and each time an attack targets the bearer&apos;s unit, subtract 1 from the Wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2779-b417-7365-e4c1" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d68b-fa52-2a08-ecc6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="d68b-fa52-2a08-ecc6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="model" childId="any" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Artificer Relics" id="5c7e-eea3-e520-bbfa" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Iconic Accoutrements" hidden="false" id="00fd-53f8-798b-fa7b">
+              <profiles>
+                <profile name="Iconic Accoutrements" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d5f8-4f36-f1c8-83bf">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, you can change either one Hit roll, one Wound roll or one saving throw made for the bearer&apos;s unit to a 6.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f151-f617-1f10-0fba" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="00fd-53f8-798b-fa7b" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="00fd-53f8-798b-fa7b" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Aquilan Eye" hidden="false" id="54b9-b5b8-cccf-1a2d">
+              <profiles>
+                <profile name="Aquilan Eye" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ef4a-5cb8-a03d-3350">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">OFFICER model only. In your Command phase, instead of issuing any Orders, the bearer can take a Leadership test. If it does, and that test is passed, you gain 1CP</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2a0c-f9de-04a1-5d5b" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="54b9-b5b8-cccf-1a2d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="54b9-b5b8-cccf-1a2d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Voice of Von Rhyne" hidden="false" id="89ce-a5ed-f61e-1610">
+              <profiles>
+                <profile name="Voice of Von Rhyne" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3ea-9e99-5bd0-2fc4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">OFFICER model only. The bearer can issue one additional Order in your Command phase and each time the bearer issues an Order to a unit, that Order does not cease to apply if that unit fails a Battle-shock test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e8d5-38ac-0684-8b3c" includeChildForces="true" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="89ce-a5ed-f61e-1610" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="89ce-a5ed-f61e-1610" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Crusade" id="faba-12e7-ef96-d38b" hidden="false" collapsible="true">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(Battle-ready)" field="name" scope="parent">
+          <conditions>
+            <condition type="atMost" value="5" field="selections" scope="parent" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(Blooded)" field="name">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" value="(Battle-hardened)" field="name">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" value="(Heroic)" field="name">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" value="(Legendary)" field="name">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="335f-5583-df3e-059f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" flatten="true" sortIndex="1"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Battle Traits" id="c308-98fb-0b6d-08e5" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="3704-804a-633c-bd09" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32"/>
+            <entryLink import="true" name="Codex Battle Traits" hidden="false" id="526b-ec82-6e8b-e144" type="selectionEntryGroup" targetId="abe7-cbcb-0027-17f1"/>
+            <entryLink import="true" name="Pariah Nexus Battle Traits" hidden="false" id="37ff-11c4-7f39-e9fc" type="selectionEntryGroup" targetId="3efc-9164-92d8-9514"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Crusade Relics" id="cfad-fe5f-cdd3-ccd0" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Cities of Ruin Crusade Relics" hidden="false" id="9679-5940-e228-49c6" type="selectionEntryGroup" targetId="6397-d12d-4ea8-c9f2"/>
+            <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="fded-de7e-3128-0081" type="selectionEntryGroup" targetId="354c-db23-16dc-b83d"/>
+            <entryLink import="true" name="Pariah Nexus Crusade Relics" hidden="false" id="910f-23cc-9216-110c" type="selectionEntryGroup" targetId="c390-a54d-0100-a7c8"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
