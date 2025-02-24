@@ -144,7 +144,6 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Infantry Squad" hidden="false" type="selectionEntry" id="9bfa-5927-3e10-893c" targetId="6c81-9fe6-c714-88e8"/>
     <entryLink import="true" name="Kasrkin" hidden="false" type="selectionEntry" id="3628-3edf-659e-6405" targetId="abe4-ca71-d5a7-3883"/>
     <entryLink import="true" name="Leman Russ Battle Tank" hidden="false" type="selectionEntry" id="4071-d276-4b66-b186" targetId="c581-3ab5-49a0-9ec0">
       <modifiers>

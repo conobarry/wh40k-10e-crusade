@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="76" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="82" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
     <rule name="For The Greater Good" hidden="false" id="eeb6-c42-48f7-cc21">
       <description>If your Army Faction is T’AU EMPIRE, then in your Shooting phase units from your army can work in pairs to help each other target specific enemy units. When they do this, one unit is the Observer unit and the other is their Guided unit. The enemy they are targeting is called their Spotted unit.
@@ -432,12 +432,7 @@ Until the end of the phase:
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="92d3-b338-5937-c0b1" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="2e18-ce-c8e9-56af" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="82fe-5399-c5f1-e516" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="b5d1-4c20-f435-102f" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="68bc-07c9-5757-5e80" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="8539-66f0-a4ee-7820" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <profiles>
         <profile name="Crisis Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1597-2952-693f-60f2">
@@ -692,12 +687,7 @@ Until the end of the phase:
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="30af-91ea-3c50-d237" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="a46a-691b-c4a0-29e4" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="1fdf-a547-7934-924f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="62db-7f7c-1e7d-9945" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="e726-fc42-b7fe-a1f1" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="d0f2-b966-f0b2-3444" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <profiles>
         <profile name="Enforcer Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2d3-2ad-5805-8a37">
@@ -938,12 +928,7 @@ Until the end of the phase:
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="a7ba-d2ae-514d-738a" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="9979-aac6-76a7-397e" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="f81a-26d5-be97-7b5a" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="5fe1-9174-a24c-a80d" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="84c2-fb4c-6185-d0cc" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="07c9-3ac4-3cf6-71ac" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <profiles>
         <profile name="Commander in Coldstar Battlesuit" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="433a-c741-cef6-e61b">
@@ -1160,12 +1145,7 @@ Until the end of the phase:
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="c4de-760c-da47-6d04" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="5646-22a8-1a07-6d9a" targetId="fae2-569a-6bec-9167" collapsible="true" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="cc1d-c595-302e-eecf" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="9439-d0dd-3d80-708a" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="bfe4-fc85-8103-cfd9" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="010e-91d0-c048-e2fc" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b161-903c-73a7-d9c"/>
@@ -1341,12 +1321,7 @@ Until the end of the phase:
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="e607-ea06-cc7a-d91" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="52a6-27b7-d761-77d2" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="d36e-3b85-a004-99dc" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="36f2-eea7-c689-3920" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="ed8f-4ccb-d7df-f4c6" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="9841-da40-4511-8e38" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifiers>
         <modifier type="add" value="Cannot take COMMANDER FARSIGHT and an ETHEREAL in the same army." field="error">
@@ -1449,7 +1424,7 @@ Until the end of the phase:
                       <modifiers>
                         <modifier type="append" value="Hover Drone" field="annotation" join=", " scope="model-or-unit" affects="self.entries.profiles.Unit">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4135-1065-ae32-09a4" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7b1c-902d-feb6-6fd6" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                         <modifier type="increment" value="4" field="e703-ecb6-5ce7-aec1" scope="model-or-unit" affects="self.entries.profiles.Unit">
@@ -1941,7 +1916,7 @@ Until the end of the phase:
         <categoryLink targetId="3d58-2655-391e-ecc" id="9b05-3ee2-7eac-b735" primary="false" name="Faction: T&apos;au Empire"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="d4c8-6980-7d18-1a84" targetId="179c-d88a-d49b-48b9"/>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="d4c8-6980-7d18-1a84" targetId="179c-d88a-d49b-48b9" sortIndex="1"/>
         <entryLink import="true" name="Armoured hull" hidden="false" id="8200-ad4a-afc0-a55d" type="selectionEntry" targetId="f2bd-0132-eee3-7311">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="912e-cd8a-0ef0-dd3c"/>
@@ -2083,7 +2058,7 @@ Until the end of the phase:
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Twin pulse carbines" hidden="false" id="2c92-4ef8-c103-91cb">
               <entryLinks>
-                <entryLink import="true" name="Twin pulse carbine" hidden="false" id="46e0-87f8-4b2d-8505" type="selectionEntry" targetId="bbee-14d9-45a4-02d9">
+                <entryLink import="true" name="Twin pulse carbine" hidden="false" id="46e0-87f8-4b2d-8505" type="selectionEntry" targetId="f532-7ffd-02fe-6af8">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="d60c-6503-0868-4ec5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
@@ -2139,7 +2114,6 @@ Until the end of the phase:
           </characteristics>
         </profile>
       </profiles>
-      <comment>Shared</comment>
       <infoLinks>
         <infoLink name="One Shot" id="2362-231c-24eb-9a2f" hidden="false" type="rule" targetId="cd26-1611-860a-91e4"/>
       </infoLinks>
@@ -2354,11 +2328,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="4f5c-a782-73b1-531c" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="d0c0-d143-0d4b-b588" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="be68-ffa6-5da8-60d4" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="410d-e591-feba-dfcf" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -2531,11 +2501,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="911a-7f32-c2aa-6b3c" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="d22e-3683-e5cb-e9fa" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="8ea5-ba33-2129-c85d" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="c97d-9778-adf5-45f9" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Breacher Fire Warrior Shas&apos;ui" id="a781-6d34-ae23-e754" hidden="false" sortIndex="2" collapsible="true">
@@ -2919,11 +2885,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="0366-67d7-27e8-3f46" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="7fec-0051-81f8-4b84" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="9792-5b2a-34e0-852c" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -3039,7 +3001,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="8eab-837b-bf55-0bfc" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Krootox Riders" hidden="false" id="aee2-c887-105a-ea1b" defaultSelectionEntryId="a3cd-29ef-8419-fde6">
+        <selectionEntryGroup name="Krootox Riders" hidden="false" id="aee2-c887-105a-ea1b" defaultSelectionEntryId="a3cd-29ef-8419-fde6" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Krootox Rider w/ repeater cannon" hidden="false" id="a3cd-29ef-8419-fde6">
               <constraints>
@@ -3214,11 +3176,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="f454-84c5-0142-8b32" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="3b5c-6027-5384-5e93" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="bf3b-60c6-8d34-8f18" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
@@ -3452,11 +3410,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="e220-8de4-ec8b-16b5" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="f8a6-d44a-6b27-7b6d" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="945e-3e86-ce3d-4d7d" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Crisis Shas’vre" id="9ce0-2538-ce73-4e22" hidden="false" sortIndex="2">
@@ -3980,11 +3934,7 @@ Designer’s Note: Place a Homing Beacon token next to this unit, removing it on
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="08bb-bb39-863a-9efb" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="7e76-2369-69ad-0a54" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="6961-9ee4-2d3a-dfca" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -4124,7 +4074,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="2ba-c7db-ab32-d74e" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="b66b-419b-794d-130d" hidden="false">
+        <selectionEntryGroup name="Wargear" id="b66b-419b-794d-130d" hidden="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="Twin T&apos;au flamer" id="a5ca-2dc6-27b-c040" hidden="false" defaultSelectionEntryId="41f6-4347-9b33-a099">
               <constraints>
@@ -4276,11 +4226,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
         <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="ba42-fbf8-4a3c-bbec" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="e216-d615-3d9a-1f2b" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="3aea-082a-de27-d6e2" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -4397,12 +4343,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="2330-c0-86bb-d406" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="fc57-5f59-6b04-e77a" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="1c25-9d3d-e898-4614" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="b975-4b33-6bfa-c179" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="b576-2d55-3559-2c2d" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="a476-62c8-9d73-728f" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
@@ -5053,11 +4994,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
         <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="9725-9bb4-47dc-8784" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="9064-4463-99ca-f503" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="caf7-5ef7-7d52-accb" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -5290,7 +5227,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21e1-0eb1-ffbb-62b2"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Twin pulse carbine" hidden="false" id="651e-ab03-7cad-fc4a" type="selectionEntry" targetId="bbee-14d9-45a4-02d9">
+            <entryLink import="true" name="Twin pulse carbine" hidden="false" id="651e-ab03-7cad-fc4a" type="selectionEntry" targetId="f532-7ffd-02fe-6af8">
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="89db-9ec7-fe6e-c7a6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
               </entryLinks>
@@ -5309,11 +5246,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="3713-c2b0-024a-87ec" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="928b-ae39-61a7-5d13" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="605a-4cf4-8f90-1ce5" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="5f56-9c7e-fd22-fd96" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -5434,11 +5367,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="628d-5193-9e1d-569f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="f863-933f-6d54-de11" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0541-fb61-7cd7-43b2" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Vespid Strain Leader" id="2455-7576-8e0d-04f6" hidden="false" sortIndex="2">
@@ -5758,7 +5687,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="Stealth" hidden="false" type="rule" id="29f6-40e2-cf9c-b153" targetId="bec5-4288-34a6-ccfa"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Kroot Hounds (5-10)" id="28b9-c686-23b0-a9ae" hidden="false">
+        <selectionEntryGroup name="Kroot Hounds (5-10)" id="28b9-c686-23b0-a9ae" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Kroot Hounds" hidden="false" id="3587-6ac3-7b41-e37e">
               <constraints>
@@ -5810,11 +5739,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="24f3-2661-f32e-2f58" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="070f-9a3e-f1b3-2bdd" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="8851-cc0f-5429-3d9e" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="f1e9-1e8b-6b56-26f0" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -6110,11 +6035,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="0e52-30ee-c9c7-6344" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="61c6-b9a7-6b64-40ae" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="6bfc-6ae8-097a-d11f" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -6239,7 +6160,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </infoGroup>
       </infoGroups>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="b9b3-9409-ad48-4c64" hidden="false">
+        <selectionEntryGroup name="Wargear" id="b9b3-9409-ad48-4c64" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Riptide fists" hidden="false" id="d41c-dfc2-1b8d-710c">
               <constraints>
@@ -6397,11 +6318,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="8b76-2417-afd7-a79f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="9f67-9760-c82d-0ae8" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="46c3-8d10-d34d-dad4" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -6621,8 +6538,25 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="2 Twin pulse carbines" hidden="false" id="f83b-f22d-da93-8f4b">
-                  <entryLinks>
-                    <entryLink import="true" name="Twin pulse carbine" hidden="false" id="7a1c-5988-8e6a-d2b6" type="selectionEntry" targetId="bbee-14d9-45a4-02d9">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Twin pulse carbine" hidden="false" id="bbee-14d9-45a4-02d9" collective="false">
+                      <profiles>
+                        <profile name="Twin pulse carbine" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e8a5-c9de-b590-ee97">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">20&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Twin-linked" id="6668-bacc-a259-feff" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+                      </infoLinks>
+                      <comment>Hammerhead variant</comment>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="6afe-2c4c-7de0-0f68" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -6637,8 +6571,8 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                           </conditions>
                         </modifier>
                       </modifiers>
-                    </entryLink>
-                  </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="2 Smart missile systems" hidden="false" id="b68a-bdff-3d5c-7b63">
                   <entryLinks>
@@ -6677,11 +6611,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="1a8b-78c6-8b9f-8467" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="6594-e3cb-4d44-69f9" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="c8e7-d1b1-a339-9979" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="145"/>
@@ -6787,11 +6717,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="c3f8-1e8b-0cf9-cfcb" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="848f-3e11-41b9-450e" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="a3cc-1086-1c6f-f009" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="ef2d-16fe-4600-61bb" targetId="4f24-6581-c017-3daa"/>
@@ -6813,7 +6739,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="6ed5-12b0-0ce2-c953" hidden="false">
+        <selectionEntryGroup name="Wargear" id="6ed5-12b0-0ce2-c953" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Seeker missile rack" hidden="false" id="cd24-168c-be83-b8d8">
               <constraints>
@@ -6870,7 +6796,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="2 Twin pulse carbines" hidden="false" id="7ad3-2853-6bba-c6b4">
                   <entryLinks>
-                    <entryLink import="true" name="Twin pulse carbine" hidden="false" id="dd14-62cf-1a07-7d20" type="selectionEntry" targetId="bbee-14d9-45a4-02d9">
+                    <entryLink import="true" name="Twin pulse carbine" hidden="false" id="dd14-62cf-1a07-7d20" type="selectionEntry" targetId="f532-7ffd-02fe-6af8">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="8883-51dd-2f49-c8f6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
                       </entryLinks>
@@ -7055,7 +6981,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="2 Twin pulse carbines" hidden="false" id="e2b9-ad4b-5f60-db9e">
                   <entryLinks>
-                    <entryLink import="true" name="Twin pulse carbine" hidden="false" id="f14e-7d5a-c03d-8222" type="selectionEntry" targetId="bbee-14d9-45a4-02d9">
+                    <entryLink import="true" name="Twin pulse carbine" hidden="false" id="f14e-7d5a-c03d-8222" type="selectionEntry" targetId="f532-7ffd-02fe-6af8">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="11eb-42ca-0bf9-d2a0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -7134,11 +7060,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="5fa5-ed6f-7304-27b1" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="e68c-bd72-9684-2eb5" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="856d-da03-8f89-4bcf" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
@@ -7259,14 +7181,10 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="7b70-b340-c18e-a12c" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="da2a-5c32-5d61-1852" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="2bd7-c06e-8561-4985" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="4adb-9aa0-887b-b366" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="2"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="62ed-4e85-d25a-ec37" hidden="false">
+        <selectionEntryGroup name="Wargear" id="62ed-4e85-d25a-ec37" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Accelerator Burst Cannon" id="9200-9eb-cbf7-b177" hidden="false" defaultSelectionEntryId="2ec6-6c16-6e7b-7e00">
               <constraints>
@@ -7455,7 +7373,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="ecb-a10b-7fbe-8752" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="be27-ec47-3149-8f10" hidden="false">
+        <selectionEntryGroup name="Wargear" id="be27-ec47-3149-8f10" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Twin ion rifle" hidden="false" id="7072-c47d-79b2-f80b">
               <constraints>
@@ -7570,11 +7488,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="9bc7-d330-90e0-1c28" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="4f90-a752-8949-febf" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="ec19-cd1c-e107-9af4" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="fa62-9fbd-28df-4929" primary="true" name="Vehicle"/>
@@ -7953,7 +7867,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="3d58-2655-391e-ecc" id="c9bc-2325-665e-76de" primary="false" name="Faction: T&apos;au Empire"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="e4fa-b389-4cdd-f860" hidden="false">
+        <selectionEntryGroup name="Wargear" id="e4fa-b389-4cdd-f860" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Cluster rocket system" hidden="false" id="cf60-7be2-e5a8-767">
               <infoLinks>
@@ -8197,11 +8111,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <cost name="pts" typeId="51b2-306e-1021-d207" value="400"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="1241-8c08-b306-b764" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="fc82-dee9-f98b-16b7" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="2288-cf3e-a2b0-7a91" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -8355,11 +8265,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="d1aa-9fc8-07ba-85cf" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="f183-7c9a-8ba6-a521" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="76cf-1b55-77df-c93b" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -8831,11 +8737,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="8b29-0bfa-7245-41fc" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="f616-795f-f9c3-e0d6" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0eb9-4cff-443f-3346" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -9013,7 +8915,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="Battlesuit Support System" hidden="false" type="profile" id="3575-e1bc-c74-a866" targetId="b5b2-f430-5dc1-106b"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="4bc7-4e93-0258-8a19" hidden="false">
+        <selectionEntryGroup name="Wargear" id="4bc7-4e93-0258-8a19" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Pulse submunitions cannon" hidden="false" id="38d1-fd46-bf47-d179">
               <constraints>
@@ -9086,11 +8988,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="48dc-1953-b52e-825d" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="cc76-583c-7822-1285" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="d38c-71cc-010f-6e60" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -9207,7 +9105,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="4ec6-1f57-89aa-f80e" targetId="4f24-6581-c017-3daa"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="f023-998c-2cc7-bdb2" hidden="false">
+        <selectionEntryGroup name="Wargear" id="f023-998c-2cc7-bdb2" hidden="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="Missile Drones (0-2)" id="70d-147c-3c60-3749" hidden="false">
               <constraints>
@@ -9333,11 +9231,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="003b-dd77-04cc-cff1" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="9e35-7e62-b3b5-6cd9" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="7724-20ec-7add-c055" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -9455,7 +9349,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="Infiltrators" hidden="false" type="rule" id="772f-3883-e3b0-bd54" targetId="c05d-f4c3-f091-4938"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Tetras (2-4)" hidden="false" id="ca53-4f8c-fdcb-3855">
+        <selectionEntryGroup name="Tetras (2-4)" hidden="false" id="ca53-4f8c-fdcb-3855" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Tetra" hidden="false" id="97e3-bc92-871a-54e">
               <constraints>
@@ -9528,11 +9422,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="115a-47c6-7bb0-e241" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="c4b6-f7a9-97cb-cdf4" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="8512-5054-307a-ad87" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -9745,11 +9635,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="6efc-c2ff-fbd0-36f8" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="8a1c-2d82-56a5-f5ff" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="33b1-c494-30d4-4af9" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -9869,14 +9755,10 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="Super-Heavy Walker" hidden="false" type="rule" id="dc3e-9a8d-af83-97ba" targetId="5e13-1624-d280-418d"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="3e1a-232d-504e-d3d3" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="95b4-cff0-6290-14a3" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="87eb-811b-acdc-b92e" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="9f99-ca6b-b3d9-7fc1" hidden="false">
+        <selectionEntryGroup name="Wargear" id="9f99-ca6b-b3d9-7fc1" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Crushing feet" hidden="false" id="8ce0-aef-a22a-959a">
               <constraints>
@@ -10259,7 +10141,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="e249-e772-6b50-fc69" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="8cc5-f55b-7930-af30" hidden="false">
+        <selectionEntryGroup name="Wargear" id="8cc5-f55b-7930-af30" hidden="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="Swiftstrike Burst Cannon" id="9bb0-1090-bfee-7ecd" hidden="false" defaultSelectionEntryId="3542-2950-5fa0-d109">
               <constraints>
@@ -10435,11 +10317,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="4279-dee0-8342-6112" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="bfd1-494d-68b9-28cd" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="ca3c-b0ad-16cf-71c7" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
@@ -10568,7 +10446,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="Damaged: 1-6 Wounds Remaining" hidden="false" type="profile" id="88b1-7c9a-f504-efcf" targetId="3a1d-540f-ebbf-700e"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="0fb7-63d7-33cf-538d" hidden="false">
+        <selectionEntryGroup name="Wargear" id="0fb7-63d7-33cf-538d" hidden="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="Burst Cannons" id="4160-b045-7340-5973" hidden="false" defaultSelectionEntryId="4ee6-3e8-4a53-a102">
               <constraints>
@@ -10830,11 +10708,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="765c-870f-b287-aba2" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="c222-e1dd-8a96-6cea" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="3567-252c-cb04-c087" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="325"/>
@@ -10957,7 +10831,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="Damaged: 1-6 Wounds Remaining" hidden="false" type="profile" id="ceb6-7b48-9364-7703" targetId="3a1d-540f-ebbf-700e"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="cd3f-473c-ea7e-b32a" hidden="false">
+        <selectionEntryGroup name="Wargear" id="cd3f-473c-ea7e-b32a" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Twin heavy rail cannon" hidden="false" id="65a0-3c61-2bd3-6be4">
               <constraints>
@@ -11081,11 +10955,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="7477-6ae0-e116-ab51" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="5a9a-6811-5a35-2534" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="7eff-af57-e5fb-d259" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <infoGroups>
         <infoGroup name="Titan Hunter" hidden="false" id="bf19-29b8-e120-ece1">
@@ -11242,17 +11112,13 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="3d58-2655-391e-ecc" id="4933-3045-37ef-e311" primary="false" name="Faction: T&apos;au Empire"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="d644-d1cf-c7d3-02d3" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="b9b4-137a-724c-ea4b" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="f439-c677-4605-e990" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="2100"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="2743-3988-2f22-ef85" hidden="false">
+        <selectionEntryGroup name="Wargear" id="2743-3988-2f22-ef85" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Armoured hull" hidden="false" id="c1a6-3a75-d0fb-ed95">
               <constraints>
@@ -11493,7 +11359,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Orca Dropship [Legends]" hidden="false" id="49c0-f84c-18c4-6377">
       <profiles>
-        <profile name="Orca Dropship [Legends]" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6ff7-c14f-a7f6-a4c3">
+        <profile name="Orca Dropship" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6ff7-c14f-a7f6-a4c3">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">20+&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
@@ -11547,11 +11413,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="91e6-2550-ec7f-b733" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="b84e-4357-7b52-931e" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="298b-cde8-1722-9002" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="5531-c0b7-6c6e-55ec" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="275"/>
@@ -11726,7 +11588,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Heavy Gun Drones" hidden="false" id="66f7-b861-80bd-10d6" defaultSelectionEntryId="f9ab-8176-da08-de83">
+        <selectionEntryGroup name="Heavy Gun Drones" hidden="false" id="66f7-b861-80bd-10d6" defaultSelectionEntryId="f9ab-8176-da08-de83" sortIndex="2">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a29b-7250-7551-9ab5"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c9b-6930-5465-8446"/>
@@ -11805,11 +11667,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="3591-5fb8-4d21-3ddd" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="f83e-2ca5-35ae-6496" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="feac-43d4-66de-a1a1" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -12061,11 +11919,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="a7f6-e3bc-18c9-9331" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="894b-820f-dae1-6f69" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="0b8e-bad7-07c9-60eb" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -12153,7 +12007,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="bbd7-9213-72c2-28fd" id="ebb0-dfc3-4e1e-883a" primary="false" name="TX42 Piranha"/>
       </categoryLinks>
       <profiles>
-        <profile name="TX42 Piranha [Legends]" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8395-da5c-8f37-7a1d">
+        <profile name="TX42 Piranha" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8395-da5c-8f37-7a1d">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">7</characteristic>
@@ -12186,7 +12040,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="a972-6b72-401-3b6a" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="137b-7359-f4ff-a8ed" hidden="false">
+        <selectionEntryGroup name="Wargear" id="137b-7359-f4ff-a8ed" hidden="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="Plasma Rifles" id="ca17-2ff0-a035-d1dd" hidden="false" defaultSelectionEntryId="e681-5e-2bab-9b2c">
               <constraints>
@@ -12317,11 +12171,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="6f61-3a0e-a4db-c75d" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="53b3-9814-3d20-7ec4" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="285d-1d66-0e7a-ba50" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -12527,11 +12377,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="7100-b76b-7311-c329" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="82c6-7ca3-12ad-fd1c" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="97ec-b0a7-c14d-da1a" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -12621,7 +12467,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="3d58-2655-391e-ecc" id="1b65-2402-2c3e-7f89" primary="false" name="Faction: T&apos;au Empire"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="bd31-c44c-9af5-f8f5" targetId="179c-d88a-d49b-48b9"/>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="bd31-c44c-9af5-f8f5" targetId="179c-d88a-d49b-48b9" sortIndex="1"/>
       </entryLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="a22e-70a6-b029-a4fd">
@@ -12654,7 +12500,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a CHARACTER unit, you can re-roll the Hit roll.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Shas&apos;o R&apos;alai [Legends]" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="58f3-a564-1ab-5b6f">
+        <profile name="Shas&apos;o R&apos;alai" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="58f3-a564-1ab-5b6f">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
@@ -12776,7 +12622,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="8710-845-d545-631b" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="XV9 Hazard Battlesuits" hidden="false" id="f86f-4f06-1b90-d45b" defaultSelectionEntryId="9a6b-c7be-b8fd-28">
+        <selectionEntryGroup name="XV9 Hazard Battlesuits" hidden="false" id="f86f-4f06-1b90-d45b" defaultSelectionEntryId="9a6b-c7be-b8fd-28" sortIndex="2">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c5f7-ce76-6f2-7c55"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c2b-84ad-9795-83ac"/>
@@ -12876,7 +12722,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
               </costs>
               <profiles>
-                <profile name="XV9 Hazard Battlesuits [Legends]" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cb0d-78d2-ee9e-936">
+                <profile name="XV9 Hazard Battlesuits" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cb0d-78d2-ee9e-936">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
@@ -12966,11 +12812,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="4eae-8559-902e-af7e" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="8935-e0f9-4a8a-5b09" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="7949-f456-ee0e-9daa" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -13366,11 +13208,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="5f3f-af98-3b27-8902" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="6574-cec1-e105-73e8" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="f5ac-d229-f105-4ff7" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -13601,11 +13439,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="e500-2187-e0c4-4edb" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="3775-01ee-fd4c-fc1e" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="4deb-cbd5-7141-d0a6" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -13849,11 +13683,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="5917-91b0-ace5-9e1c" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="c9ba-cc61-c907-9364" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="da03-0997-3715-2829" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -13989,12 +13819,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="8e79-6cf8-235-d70b" type="selectionEntry" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="63dd-6b0-7a37-c254" type="selectionEntryGroup" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="5a4c-c6c8-1da4-8f7c" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="eeb7-3388-4d82-564a" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="8126-bf62-8b24-ee3d" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="2d71-1e8c-efe8-5aa7" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3620-58a1-f0bc-8145"/>
@@ -14179,12 +14004,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="680c-f50c-b4ce-72d5" type="selectionEntry" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="daa-7fb5-4bb4-adf5" type="selectionEntryGroup" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="0e58-88a0-1bea-983b" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="0b58-f11c-b500-e314" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="2794-a90f-36a6-1180" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="039a-26ac-40b2-09ef" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="10d6-4d24-b81e-387a" hidden="false" sortIndex="4">
@@ -14451,12 +14271,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="2a3e-e572-770c-78c1" type="selectionEntry" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="7f1d-aca3-f836-ea76" type="selectionEntryGroup" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="3a70-5516-9d7c-1fe1" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="f0f2-94f5-57ae-e0a3" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="2783-d26f-1e17-d955" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="8b7c-ce63-d81e-6c03" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7e71-b8d1-c3c7-6196"/>
@@ -14790,12 +14605,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="a1e2-1859-bb25-1180" type="selectionEntry" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="b0ea-3beb-e871-a3c8" type="selectionEntryGroup" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
-        <entryLink import="true" name="Crusade" hidden="false" id="cb78-1578-2707-fa1f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="1802-6262-3823-c4e0" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-            <entryLink import="true" name="Crusade Relics" hidden="false" id="536e-d7bc-7c58-852d" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="e6e3-bc43-0b83-b15e" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -14906,7 +14716,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Krootox Rampagers" hidden="false" id="7db2-f936-132b-6d3a" defaultSelectionEntryId="f957-56b5-3a86-e923">
+        <selectionEntryGroup name="Krootox Rampagers" hidden="false" id="7db2-f936-132b-6d3a" defaultSelectionEntryId="f957-56b5-3a86-e923" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Krootox Rampagers" hidden="false" id="f957-56b5-3a86-e923">
               <selectionEntries>
@@ -15017,11 +14827,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="4e1a-8d88-ebe4-becf" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d">
-          <entryLinks>
-            <entryLink import="true" name="Battle Traits" hidden="false" id="0d7f-ce71-56a1-a109" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="67c1-a643-ca8e-65bc" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -15688,26 +15494,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin pulse carbine" hidden="false" id="bbee-14d9-45a4-02d9" collective="false">
-      <profiles>
-        <profile name="Twin pulse carbine" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e8a5-c9de-b590-ee97">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">20&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Twin-linked</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Twin-linked" id="6668-bacc-a259-feff" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-        <infoLink name="Assault" id="0d50-c120-74fb-9e70" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-      </infoLinks>
-      <comment>BS4+</comment>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin pulse carbine" hidden="false" id="1ad0-be27-ab4c-3459" collective="true">
       <profiles>
         <profile name="Twin pulse carbine" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bca7-e744-1c90-b631">
@@ -15726,7 +15512,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <infoLink name="Twin-linked" id="562f-7cfc-3414-e236" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
         <infoLink name="Assault" id="4361-25c1-5c51-96ff" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
-      <comment>BS5+</comment>
+      <comment>BS5+ Assault</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kroot rifle" hidden="false" id="753f-f27b-6694-4def" collective="true">
       <profiles>
@@ -15805,6 +15591,26 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin pulse carbine" hidden="false" id="f532-7ffd-02fe-6af8" collective="false">
+      <profiles>
+        <profile name="Twin pulse carbine" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="47d1-604d-fa7f-0ec4">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">20&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="30da-a17c-119a-e887" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+        <infoLink name="Assault" id="4425-97c9-6eff-332d" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+      </infoLinks>
+      <comment>BS4+ Assault</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -16859,439 +16665,8 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa78-6df5-230f-2b4"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Battle Traits" id="3743-d313-0fa1-54f4" hidden="false" collapsible="true">
-      <comment>Crusade Battle Honours</comment>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Sentry AI" hidden="false" id="4a94-a1b3-1a00-b63f">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37ae-2837-e20f-47c9" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Sentry AI" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="781d-2f4d-4fd7-b1e8">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is Battle-shocked, change the Objective Control characteristic of models in this unit to 1, instead of 0.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warden Drones" hidden="false" id="7612-6baa-570d-d566">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15d5-e118-4fe5-bc09" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Warden Drones" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="273d-6431-86ad-21b0">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Reactive Thrust System" hidden="false" id="0e79-fb19-0e3e-ae5a">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19b1-de42-3d38-c159" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Reactive Thrust System" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dc4c-e87b-938e-f4d6">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can target this unit with the Heroic Intervention Stratagem for 0CP.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Integrated Targeting AI" hidden="false" id="ebec-067b-e6b7-441f">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eae-ba84-f6f4-724c" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Integrated Targeting AI" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1cd4-c27b-45d2-5fcf">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Electrochaff Backups" hidden="false" id="fe59-bb81-fb62-a664">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1ec-b60a-a8f1-dab8" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Electrochaff Backups" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3683-7b12-6447-916d">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets this unit, unless the attacking model is within 18&quot;, subtract 1 from the Hit roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Leaping Flame" hidden="false" id="0ff7-aa6e-3a7a-2c88">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f222-b5b6-9dfa-d205" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Leaping Flame" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="081f-ef2c-ea7c-3b88">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit Advances, until the start of your next Movement phase, this unit has the Stealth ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Esteemed Leader" hidden="false" id="5e71-f500-0ab8-712b">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ca4-b16c-5e94-2bc8" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e6e-aad6-ee91-7c3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Esteemed Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0f4-bc67-e798-01f1">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When rolling for this model’s Coordinated Leadership ability, add 1 to the result.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Healer&apos;s Hands" hidden="false" id="b4aa-6fde-17be-a7cc">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9212-026b-7bdc-86be" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e6e-aad6-ee91-7c3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="The Healer&apos;s Hands" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a387-e610-97c9-9463">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the battle, if this model was part of your Crusade army and was not destroyed during the battle, you can ignore one failed Out of Action test taken for a T&apos;AU EMPIRE unit; that test is treated as having been passed instead.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Heralds of the T&apos;au&apos;va" hidden="false" id="03f3-0090-e514-c55d">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95f9-35ca-8bcf-5462" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e6e-aad6-ee91-7c3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Heralds of the T&apos;au&apos;va" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="37a8-d7b4-b997-0dc6">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the battle, if this model was part of your Crusade army and was not destroyed during the battle, roll one D6: on a 5+, your Crusade force gains 1 Diplomat point.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Merciless Marksmen" hidden="false" id="240e-3f35-b12a-7716">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbb9-e520-87b6-118c" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c3af-6e36-252c-1006" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e3bc-69df-88a0-e5de" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="8fa3-ee6b-447e-3cff" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Merciless Marksmen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="26c9-87df-bd88-1d5e">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by models in this unit (excluding support turrets) have the [LETHAL HITS] ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Lethal Hits" id="cbf0-4d84-3bba-6a83" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Quick Shots" hidden="false" id="dc09-68a4-bcf7-6f47">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ba9-5c19-cd8b-afc7" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c3af-6e36-252c-1006" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e3bc-69df-88a0-e5de" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="8fa3-ee6b-447e-3cff" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Quick Shots" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="064f-5349-5d53-12d8">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, you can target this unit with the Fire Overwatch Stratagem for 0CP.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Practised Aim" hidden="false" id="e31f-8dc8-a9e8-5ed6">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01a3-baf0-48e4-ef6c" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c3af-6e36-252c-1006" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e3bc-69df-88a0-e5de" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="8fa3-ee6b-447e-3cff" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Practised Aim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fdd2-3f25-7c75-929d">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Ballistic Skill characteristic of ranged weapons equipped by models in this unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Takers of Heads" hidden="false" id="2afa-361d-3b75-4856">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9628-1f67-a1c5-8a34" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="79c5-9fc4-7b97-7c3f" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Takers of Heads" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c080-6d93-e857-2503">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes an attack that targets a CHARACTER unit, add 1 to the Hit roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Prey Slayers" hidden="false" id="4ee8-de1a-0ab4-b871">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ee6-2d33-f11c-26ac" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="79c5-9fc4-7b97-7c3f" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Prey Slayers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fed0-fa51-3add-ff75">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one unit from your opponent’s army. Until the end of the battle, each time this KROOT unit makes an attack that targets that enemy unit, you can re-roll the Hit roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Technological Trophies" hidden="false" id="0e03-811f-9806-daed">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36c3-43d3-d5f9-316f" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="79c5-9fc4-7b97-7c3f" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Technological Trophies" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d34-3c85-ef6b-be87">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit declares a charge, if you select a Monster or Vehicle unit as a target of that charge, until the end of the turn, melee weapons equipped by models in this unit have the [LANCE] ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Lance" id="c0a9-c683-05d9-2a7c" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
+    <selectionEntryGroup name="Codex Battle Traits" id="3743-d313-0fa1-54f4" hidden="false" collapsible="true">
+      <comment>Crusade content</comment>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -17300,120 +16675,574 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Totemic Infusions" id="293f-4c6d-60e1-443c" hidden="false">
+        <selectionEntryGroup name="Codex Battle Traits" id="52e2-33b7-e293-6f47" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Imperium" hidden="false" id="7884-8b06-d0dd-8f51">
+            <selectionEntry type="upgrade" import="true" name="Electrochaff Backups" hidden="false" id="fe59-bb81-fb62-a664">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56ce-e716-dbc1-b028" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1ec-b60a-a8f1-dab8" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
                 <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
-                <profile name="Totemic Infusions - Imperium" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3257-41a9-1808-dfbc">
+                <profile name="Electrochaff Backups" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3683-7b12-6447-916d">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that SHAPER model is leading a unit, re-roll Battle-shock tests taken for that unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack targets this unit, unless the attacking model is within 18&quot;, subtract 1 from the Hit roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Aeldari" hidden="false" id="a1b8-1e56-1e00-6483">
+            <selectionEntry type="upgrade" import="true" name="Esteemed Leader" hidden="false" id="5e71-f500-0ab8-712b">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e051-0f28-c3e4-5ccf" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ca4-b16c-5e94-2bc8" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
                 <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e6e-aad6-ee91-7c3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
-                <profile name="Totemic Infusions - Aeldari" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7342-4a38-d575-e8b3">
+                <profile name="Esteemed Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e0f4-bc67-e798-01f1">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that SHAPER model is leading a unit, add 2&quot; to that unit’s Move characteristic.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When rolling for this model’s Coordinated Leadership ability, add 1 to the result.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Orks" hidden="false" id="e4c5-02da-af2f-866a">
+            <selectionEntry type="upgrade" import="true" name="Heralds of the T&apos;au&apos;va" hidden="false" id="03f3-0090-e514-c55d">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd2d-1bce-70d2-4509" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95f9-35ca-8bcf-5462" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
                 <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e6e-aad6-ee91-7c3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
-                <profile name="Totemic Infusions - Orks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="298f-418e-2bd7-9d49">
+                <profile name="Heralds of the T&apos;au&apos;va" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="37a8-d7b4-b997-0dc6">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that SHAPER model is leading a unit, add 1 to the Strength characteristic of melee weapons equipped by that unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the battle, if this model was part of your Crusade army and was not destroyed during the battle, roll one D6: on a 5+, your Crusade force gains 1 Diplomat point.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Leagues of Votann" hidden="false" id="767c-07cb-beb9-aa74">
+            <selectionEntry type="upgrade" import="true" name="Integrated Targeting AI" hidden="false" id="ebec-067b-e6b7-441f">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f74-2bc0-01d1-195e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eae-ba84-f6f4-724c" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
                 <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
-                <profile name="Totemic Infusions - Leagues of Votann" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="da06-6971-6fd0-8105">
+                <profile name="Integrated Targeting AI" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1cd4-c27b-45d2-5fcf">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that SHAPER model is leading a unit, add 1 to the Toughness characteristic of models in that unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you target this unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Other" hidden="false" id="840e-7b92-ec57-6ac9">
+            <selectionEntry type="upgrade" import="true" name="Leaping Flame" hidden="false" id="0ff7-aa6e-3a7a-2c88">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ac-bfa9-986b-976c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f222-b5b6-9dfa-d205" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
                 <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
-                <profile name="Totemic Infusions - Other" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6d36-0053-d930-d4b2">
+                <profile name="Leaping Flame" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="081f-ef2c-ea7c-3b88">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that SHAPER model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit Advances, until the start of your next Movement phase, this unit has the Stealth ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Stealth" id="b60f-f8b7-bcc0-8f19" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Merciless Marksmen" hidden="false" id="240e-3f35-b12a-7716">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbb9-e520-87b6-118c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c3af-6e36-252c-1006" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e3bc-69df-88a0-e5de" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="8fa3-ee6b-447e-3cff" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Merciless Marksmen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="26c9-87df-bd88-1d5e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged weapons equipped by models in this unit (excluding support turrets) have the **[LETHAL HITS]** ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lethal Hits" id="cbf0-4d84-3bba-6a83" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Practised Aim" hidden="false" id="e31f-8dc8-a9e8-5ed6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01a3-baf0-48e4-ef6c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c3af-6e36-252c-1006" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e3bc-69df-88a0-e5de" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="8fa3-ee6b-447e-3cff" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Practised Aim" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fdd2-3f25-7c75-929d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Ballistic Skill characteristic of ranged weapons equipped by models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Practised Aim" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="e31f-8dc8-a9e8-5ed6" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="model-or-unit" childId="e31f-8dc8-a9e8-5ed6" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Prey Slayers" hidden="false" id="4ee8-de1a-0ab4-b871">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ee6-2d33-f11c-26ac" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="79c5-9fc4-7b97-7c3f" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Prey Slayers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fed0-fa51-3add-ff75">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one unit from your opponent’s army. Until the end of the battle, each time this **^^Kroot^^** unit makes an attack that targets that enemy unit, you can re-roll the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Quick Shots" hidden="false" id="dc09-68a4-bcf7-6f47">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ba9-5c19-cd8b-afc7" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c3af-6e36-252c-1006" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e3bc-69df-88a0-e5de" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="8fa3-ee6b-447e-3cff" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Quick Shots" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="064f-5349-5d53-12d8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, you can target this unit with the Fire Overwatch Stratagem for 0CP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reactive Thrust System" hidden="false" id="0e79-fb19-0e3e-ae5a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19b1-de42-3d38-c159" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Reactive Thrust System" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dc4c-e87b-938e-f4d6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can target this unit with the Heroic Intervention Stratagem for 0CP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sentry AI" hidden="false" id="4a94-a1b3-1a00-b63f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37ae-2837-e20f-47c9" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Sentry AI" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="781d-2f4d-4fd7-b1e8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is Battle-shocked, change the Objective Control characteristic of models in this unit to 1, instead of 0.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Takers of Heads" hidden="false" id="2afa-361d-3b75-4856">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9628-1f67-a1c5-8a34" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="79c5-9fc4-7b97-7c3f" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Takers of Heads" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c080-6d93-e857-2503">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes an attack that targets a **^^Character^^** unit, add 1 to the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Technological Trophies" hidden="false" id="0e03-811f-9806-daed">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36c3-43d3-d5f9-316f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="79c5-9fc4-7b97-7c3f" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Technological Trophies" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d34-3c85-ef6b-be87">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit declares a charge, if you select a Monster or Vehicle unit as a target of that charge, until the end of the turn, melee weapons equipped by models in this unit have the **[LANCE]** ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Lance" id="c0a9-c683-05d9-2a7c" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Healer&apos;s Hands" hidden="false" id="b4aa-6fde-17be-a7cc">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9212-026b-7bdc-86be" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e6e-aad6-ee91-7c3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="The Healer&apos;s Hands" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a387-e610-97c9-9463">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the battle, if this model was part of your Crusade army and was not destroyed during the battle, you can ignore one failed Out of Action test taken for a **^^T&apos;au Empire^^** unit; that test is treated as having been passed instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Warden Drones" hidden="false" id="7612-6baa-570d-d566">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15d5-e118-4fe5-bc09" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="7288-48b3-c4df-66c6" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Warden Drones" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="273d-6431-86ad-21b0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
           </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="f3d0-13af-62bd-1054" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="2c5e-7638-d746-1d27" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="2b-e589-40b4-d88" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="61d6-82b9-c667-0179" includeChildSelections="false"/>
-          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Totemic Infusions" id="293f-4c6d-60e1-443c" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Imperium" hidden="false" id="7884-8b06-d0dd-8f51">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56ce-e716-dbc1-b028" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Totemic Infusions - Imperium" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3257-41a9-1808-dfbc">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that **^^Shaper^^** model is leading a unit, re-roll Battle-shock tests taken for that unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Aeldari" hidden="false" id="a1b8-1e56-1e00-6483">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e051-0f28-c3e4-5ccf" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Totemic Infusions - Aeldari" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7342-4a38-d575-e8b3">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that **^^Shaper^^** model is leading a unit, add 2&quot; to that unit’s Move characteristic.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Orks" hidden="false" id="e4c5-02da-af2f-866a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd2d-1bce-70d2-4509" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Totemic Infusions - Orks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="298f-418e-2bd7-9d49">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that **^^Shaper^^** model is leading a unit, add 1 to the Strength characteristic of melee weapons equipped by that unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Leagues of Votann" hidden="false" id="767c-07cb-beb9-aa74">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f74-2bc0-01d1-195e" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Totemic Infusions - Leagues of Votann" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="da06-6971-6fd0-8105">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that **^^Shaper^^** model is leading a unit, add 1 to the Toughness characteristic of models in that unit.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Totemic Infusions - Other" hidden="false" id="840e-7b92-ec57-6ac9">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ac-bfa9-986b-976c" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Totemic Infusions - Other" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6d36-0053-d930-d4b2">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While that **^^Shaper^^** model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="f3d0-13af-62bd-1054" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="2c5e-7638-d746-1d27" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="2b-e589-40b4-d88" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="61d6-82b9-c667-0179" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -18183,9 +18012,9 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
         <selectionEntry type="upgrade" import="true" name="Diplomat Points" hidden="false" id="ea32-6d13-01af-176e"/>
         <selectionEntry type="upgrade" import="true" name="Military Points" hidden="false" id="8c0b-2e56-e642-97a9"/>
       </selectionEntries>
-      <comment>Crusade Content</comment>
+      <comment>Crusade content</comment>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Crusade Relics" id="afc3-5c30-aa33-7b07" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Codex Crusade Relics" id="afc3-5c30-aa33-7b07" hidden="false" collapsible="true">
       <selectionEntryGroups>
         <selectionEntryGroup name="Antiquity Relics" id="4c18-7f65-d84f-3e34" hidden="false" sortIndex="2">
           <selectionEntries>
@@ -18434,6 +18263,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <comment>Crusade content</comment>
     </selectionEntryGroup>
     <selectionEntryGroup name="Drones (0-2)" hidden="false" id="de95-b481-fb09-1bce">
       <entryLinks>
@@ -18480,7 +18310,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e3bc-69df-88a0-e5de" shared="true"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8fa3-ee6b-447e-3cff" shared="true"/>
@@ -18539,6 +18369,32 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Crusade" id="bc88-2f42-15bd-1714" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Experience Points" hidden="false" id="043f-b047-3b04-c188" type="selectionEntry" targetId="2dbf-4d49-5d74-85c9"/>
+        <entryLink import="true" name="Legendary Veterans" hidden="false" id="285d-6a3f-0b20-6225" type="selectionEntry" targetId="1511-18fe-f51e-7b9d"/>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="fbd0-0fa5-5db5-7e75" type="selectionEntry" targetId="d1a5-4297-168b-11cd"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" id="2bcf-aa10-e274-57b8" type="selectionEntryGroup" targetId="1576-e816-033f-828d"/>
+        <entryLink import="true" name="Battle Traits" hidden="false" id="f9d9-450d-ec22-370e" type="selectionEntryGroup" targetId="0511-d9ad-2978-2234">
+          <entryLinks>
+            <entryLink import="true" name="Codex Battle Traits" hidden="false" id="cc38-c672-98bf-8acb" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Crusade Relics" hidden="false" id="cae5-f8b5-336b-5478" type="selectionEntryGroup" targetId="e919-5b46-974d-a5b1">
+          <entryLinks>
+            <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="fc4b-0c7c-208e-7f66" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Crusade content</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
