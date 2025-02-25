@@ -8139,8 +8139,15 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="dd33-0a2e-98f9-f9e8" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dd33-0a2e-98f9-f9e8" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="dd33-0a2e-98f9-f9e8">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="parent" childId="9b26-c4c5-8af0-8ea4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
