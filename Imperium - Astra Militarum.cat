@@ -1080,6 +1080,7 @@
     <entryLink import="true" name="Krieg Combat Engineers" hidden="false" type="selectionEntry" id="6fd0-a0ae-a673-1b14" targetId="3e90-9359-2aaa-205e"/>
     <entryLink import="true" name="Krieg Heavy Weapons Squad" hidden="false" type="selectionEntry" id="4bde-dc8a-4a53-6924" targetId="1669-d311-eff9-243b"/>
     <entryLink import="true" name="Catachan Heavy Weapons Squad" hidden="false" type="selectionEntry" id="5727-4dd2-5ff4-abd0" targetId="dfcb-7854-1d6d-cd02"/>
+    <entryLink import="true" name="Death Korps Marshal [Legends]" hidden="false" id="3e57-c51f-e42b-ba21" type="selectionEntry" targetId="6480-c46e-fdd0-a3a6"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink id="e373-3c0a-1185-467a" name="Imperium - Astra Militarum - Library" targetId="5a44-f048-114b-e3ff" type="catalogue" importRootEntries="false"/>
