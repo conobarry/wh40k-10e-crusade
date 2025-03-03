@@ -528,6 +528,11 @@
   <entryLinks>
     <entryLink id="7380-3e40-6ed6-b7cc" name="Battle Size" hidden="false" collective="false" import="true" targetId="564e-fbc6-5266-3ea4" type="selectionEntry"/>
     <entryLink import="true" name="Crusade Options" hidden="false" id="17e1-4c58-4770-ba71" type="selectionEntry" targetId="2e43-860a-3614-6ec4"/>
+    <entryLink import="true" name="Tactical Reserves" hidden="false" id="c754-3532-8472-4940" type="selectionEntry" targetId="9151-92e0-a6f6-d6c7">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="6f1d-86e1-e48d-54be" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="564e-fbc6-5266-3ea4" name="Battle Size" hidden="false" collective="false" import="true" type="upgrade">
@@ -818,7 +823,7 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="4acd-f39c-235c-b464" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+        <categoryLink name="Configuration" hidden="false" id="4acd-f39c-235c-b464" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tactical Reserves" hidden="false" id="9151-92e0-a6f6-d6c7">
