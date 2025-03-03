@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="57" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="58" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -802,6 +802,18 @@
             <modifier type="set" value="0" field="d6cc-d3d2-972f-a23c"/>
             <modifier type="set" value="0" field="ca7c-1de4-6b51-c47d"/>
             <modifier type="set" value="Cities of Ruin" field="name"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show Nachmund Gauntlet Crusade" hidden="false" id="383e-f0ec-6806-3541">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b1b8-e5d5-ce69-85d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d53b-ef83-c4cd-46b5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9435-e1b8-fe37-82ee"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="b1b8-e5d5-ce69-85d1"/>
+            <modifier type="set" value="0" field="d53b-ef83-c4cd-46b5"/>
+            <modifier type="set" value="Nachmund Gauntlet" field="name"/>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
