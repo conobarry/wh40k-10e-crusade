@@ -3055,6 +3055,573 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
         </modifier>
       </modifiers>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Nachmund Gauntlet Battle Traits" id="460b-5a88-2a6b-2873" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="383e-f0ec-6806-3541" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Monster and Vehicle Units" id="5e60-7726-e85f-d36b" hidden="false" sortIndex="1" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9693-cf84-fe69-37a9" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Armour" hidden="false" id="a604-6528-b5dc-bf17" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6f9-68c5-3522-4f7b"/>
+              </constraints>
+              <profiles>
+                <profile name="Reinforced Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5e8e-d3d0-c89d-9fdb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack with a Damage characteristic of 1 is allocated to a model in this unit, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Monstrous Momentum" hidden="false" id="1a26-2714-1dea-83a0" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37a8-d1c7-0a2f-acb1"/>
+              </constraints>
+              <profiles>
+                <profile name="Monstrous Momentum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e9a5-7960-7beb-dfd6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2&quot; to the Move characteristic of models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" scope="parent" affects="recursive.profiles.Unit"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Behemoth" hidden="false" id="e770-a657-c726-66a2" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e3d-7eff-fbef-53d2"/>
+              </constraints>
+              <profiles>
+                <profile name="Behemoth" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e468-f79a-3b70-f881">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2 the Wounds characteristic of models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="increment" value="2" field="750a-a2ec-90d3-21fe" scope="parent" affects="recursive.profiles.Unit"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Unrelenting" hidden="false" id="a661-75a1-f751-97f0" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cb6-8680-4317-3635"/>
+              </constraints>
+              <profiles>
+                <profile name="Unrelenting" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8f03-3cb1-f1a8-d7d3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can ignore any or all modifiers to this unit&apos;s Move characteristic. In addition, each time this unit makes a Normal move, models in this unit can move through terrain, but if any do so, after this unit has moved, roll one D6: on a 1-3 this unit is Battle-shocked.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Titan Slayer" hidden="false" id="5330-2146-b445-b72b" sortIndex="5">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1934-9007-3d5c-21e6"/>
+              </constraints>
+              <profiles>
+                <profile name="Titan Slayer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a77-e0d7-b614-bd25">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a MONSTER or VEHICLE unit, re-roll a Hit roll of 1. If that attack targets a TITANIC unit, you can re-roll the Hit roll instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Talismanic" hidden="false" id="1933-4d3a-6877-5f42" sortIndex="6">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9471-3ee4-b34b-4832"/>
+              </constraints>
+              <profiles>
+                <profile name="Talismanic" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4893-e1c9-0629-a985">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is Marked for Greatness, it gains an additional 2XP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Infantry Units" id="0f1e-efd3-2d31-cb77" hidden="false" sortIndex="2" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grim Survivors" hidden="false" id="061d-f59a-cb51-bbf7" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3d6-5b27-5e4d-f8d4"/>
+              </constraints>
+              <profiles>
+                <profile name="Grim Survivors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4d37-6bff-0d83-6f4d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, this unit can use this Battle Trait. If it does, unit the end of the phase, models in this unit have the Feel No Pain 5+ ability. If this unit is Below Half-strength when this Battle Trait is used, then until the end of the phase, models in this unit have the Feel No Pain 4+ ability instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Drop Zone Defenders" hidden="false" id="a99b-e841-7680-ce27" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="859b-1bca-ed6a-8506"/>
+              </constraints>
+              <profiles>
+                <profile name="Drop Zone Defenders" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9d9d-202f-dee4-bcd9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is wholly within your deployment zone, improve the Leadership and Objective Control characteristics of models in this unit by 1. Each time an enemy unit performs a Surgical Deep Strike within 9&quot; of this unit, subtract 1 from that unit&apos;s Deep Strike test result.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Strikemasters" hidden="false" id="0332-de6b-bbd8-7df2" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de2f-79d5-b63f-82c2"/>
+              </constraints>
+              <profiles>
+                <profile name="Strikemasters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e392-77e8-f902-2800">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Declare Battle Formations step, you can spend 1 Requisition point; if you do, then until the end of the battle, this unit has the Deep Strike ability and each time this unit performs a Surgical Deep Strike, add 1 to its Deep Strike test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tempered in Battle" hidden="false" id="7e8c-9906-d2c2-1e3b" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c16-c622-ab0d-4d78"/>
+              </constraints>
+              <profiles>
+                <profile name="Tempered in Battle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8534-0e36-554a-991c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, in you Command phase, this unit can use this Battle Trait. If it does, until the end of the turn, this unit is eligible to shoot, declare a charge and perform an Action in a turn in which it Fell Back. In addition, this unit is eligible to perform an Action while it is battle-shocked.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fleet of Foot" hidden="false" id="d681-43b9-489c-7a43" sortIndex="5">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2157-1930-11ee-952e"/>
+              </constraints>
+              <profiles>
+                <profile name="Fleet of Foot" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9177-f5b3-6092-0a86">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance rolls for this unit and this unit is eligible to perform an action in a turn in which they Advanced. In addition, if this unit is selected to Advance, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Territorial" hidden="false" id="2876-a1e0-5cca-c318" sortIndex="6">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a081-57d2-6f0d-7c1f"/>
+              </constraints>
+              <profiles>
+                <profile name="Territorial" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cb38-0cf5-c43c-3589">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a unit that is within range of an objective marker, re-roll a Wound roll of 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mounted Units" id="9457-3ede-cc1b-c9d3" hidden="false" sortIndex="3" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="14a0-40c9-2748-ae6e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Evasive" hidden="false" id="aae4-9903-d5a9-7122" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd02-07f5-978d-0ef2"/>
+              </constraints>
+              <profiles>
+                <profile name="Evasive" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9fcf-ec65-94b3-bf24">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack is allocated to a model in this unit, provided this unit did not Remain Stationary in your previous turn, worsen the Armour Penetration characteristic of that attack by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cavalry Outriders" hidden="false" id="248b-a66b-dd76-ee80" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd27-4601-1b16-5a64"/>
+              </constraints>
+              <profiles>
+                <profile name="Cavalry Outriders" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6357-c758-c7a1-e014">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Scouts 6&quot; ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Scouts" id="ca1c-477f-1e34-1928" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                  <modifiers>
+                    <modifier type="append" value="6&quot;" field="name" join=" "/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shock Cavalry" hidden="false" id="1702-24ed-ba19-d204" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d463-34b4-7455-d90f"/>
+              </constraints>
+              <profiles>
+                <profile name="Shock Cavalry" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5653-53e1-b6b2-c5b9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll. In addition, each time a model in this unit makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Jump Pack Units" id="5f1b-cfee-ac0f-f26f" hidden="false" sortIndex="4" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dda2-bb0a-215e-ad9c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sleek Interceptors" hidden="false" id="0ea9-1cff-36c6-3817" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8899-69d5-d264-0efb"/>
+              </constraints>
+              <profiles>
+                <profile name="Sleek Interceptors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4c18-f9a0-a46f-1bb5">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6&quot; to the Move characteristic of models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fiery Descent" hidden="false" id="934c-9cc1-9a72-2f9e" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5d7-383f-6d55-f678"/>
+              </constraints>
+              <profiles>
+                <profile name="Fiery Descent" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bdcf-80ac-234d-c7e9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP. If this unit performs a Surgical Deep Strike when doing so, before any Deep Strike tests are made, roll one D6 for each enemy unit within 6&quot; of your unit: on a 4+, that enemy unit suffers 1 mortal wound.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Take to the Skies" hidden="false" id="6948-1f31-adce-c91c" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7b7-475a-72cf-fcad"/>
+              </constraints>
+              <profiles>
+                <profile name="Take to the Skies" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bfe2-1b5a-06cd-b814">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the end of your opponent&apos;s Fight phase, you can remove this unit from the battlefield and place it into Strategic Reserves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Beast Units" id="0efe-2415-fadb-b491" hidden="false" sortIndex="5" flatten="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hunting Beasts" hidden="false" id="6dcf-0522-1445-caf3" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5609-a991-824d-ccbc"/>
+              </constraints>
+              <profiles>
+                <profile name="Hunting Beasts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cd81-9631-59b3-fcf9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance and Charge rolls made for this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pouncing Predators" hidden="false" id="5579-e805-8a44-40f0" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18a0-57d2-9b86-6a9c"/>
+              </constraints>
+              <profiles>
+                <profile name="Pouncing Predators" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1edc-0f62-745c-8903">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Heroic Intervention Stratagem for 0CP, and each time you do so, until the end of the turn, this unit has the Fights First ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Enhanced Endurance" hidden="false" id="fe63-0590-664a-a47e" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d682-262d-6af9-1624"/>
+              </constraints>
+              <profiles>
+                <profile name="Enhanced Endurance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8be9-735a-074f-1898">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Toughness characteristic of models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="parent" affects="recursive.profiles.Unit"/>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Any Unit" id="609d-57b1-72ed-bc02" hidden="false" sortIndex="6">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Stealthy Arrival" hidden="false" id="4b49-dd75-4450-de5e" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f44-2ea8-3608-c8d0"/>
+              </constraints>
+              <profiles>
+                <profile name="Stealthy Arrival" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0d2c-b32f-1ff5-4d58">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is set up on the battlefield using the Deep Strike ability, until the start of your next turn, this unit has the Stealth ability and enemy units cannot use the Fire Overwatch Stratagem to shoot at this unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Drop Zone Veterans" hidden="false" id="6b0e-7ee8-0f79-20a6" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="219d-e671-f5b8-dc79"/>
+              </constraints>
+              <profiles>
+                <profile name="Drop Zone Veterans" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4347-11af-0020-887a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is set up on the battlefield using the Deep Strike ability, until the end of the turn, each time a model in this unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1. Each time this unit performs a Surgical Deep Strike, you can re-roll the Deep Strike test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Precision Insertion" hidden="false" id="3bec-01b1-8f64-5280" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0160-5b7f-86db-c778"/>
+              </constraints>
+              <profiles>
+                <profile name="Precision Insertion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c487-c408-46f6-4309">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when this unit is set up on the battlefield using the Deep Strike ability, it can perform a Precision Insertion. If it does, this unit can be set up anywhere on the battlefield that is more than 6&quot; horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge. Each time this unit performs a Surgical Deep Strike, add 2 to the Deep Strike test.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Nachmund Gauntlet Crusade Relics" id="a62d-e6a6-d9c2-40a4" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="383e-f0ec-6806-3541" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedInfoGroups>
     <infoGroup name="Feel No Pain 5+" id="8a4b-57b8-c4f4-ba03" hidden="false">
