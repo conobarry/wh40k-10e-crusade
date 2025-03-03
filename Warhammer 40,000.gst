@@ -821,6 +821,52 @@
         <categoryLink name="Configuration" hidden="false" id="4acd-f39c-235c-b464" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tactical Reserves" hidden="false" id="9151-92e0-a6f6-d6c7">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="383e-f0ec-6806-3541" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Stance" id="0aad-ce1d-c122-75cd" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Alpha" hidden="false" id="fb0f-396b-3df7-9402"/>
+            <selectionEntry type="upgrade" import="true" name="Beta" hidden="false" id="eadf-d5f9-19d7-54f6"/>
+            <selectionEntry type="upgrade" import="true" name="Gamma" hidden="false" id="1007-bfa8-18e8-cb0a"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Primary Wave" hidden="false" id="dce1-3faa-f4a0-ab73">
+          <associations>
+            <association min="1" max="1" scope="force" childId="unit" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="true"/>
+          </associations>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c76d-1a91-b260-e7ad"/>
+            <constraint type="max" value="400" field="51b2-306e-1021-d207" scope="parent" shared="true" id="380a-a111-39b3-c153"/>
+          </constraints>
+          <modifiers>
+            <modifier type="append" value="Primary Wave" field="annotation" join=", " scope="roster" affects="unit"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="500" field="380a-a111-39b3-c153">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fb0f-396b-3df7-9402" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="8bf7-8812-923d-29e4" name="Pistol" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
