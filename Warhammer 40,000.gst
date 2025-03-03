@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="65" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="66" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -2802,7 +2802,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
     </selectionEntryGroup>
     <selectionEntryGroup name="Pariah Nexus Crusade Relics" id="c390-a54d-0100-a7c8" hidden="false" flatten="false" collapsible="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Artificer Relics" id="c9c5-456d-c045-b849" hidden="false" flatten="false" collapsible="true" sortIndex="1">
+        <selectionEntryGroup name="Artificer Relics" id="c9c5-456d-c045-b849" hidden="false" flatten="false" collapsible="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Blackstone Compass" hidden="false" id="8111-fb45-b7e2-0bb2" sortIndex="1">
               <constraints>
@@ -2978,7 +2978,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Antiquity Relics" id="4abb-9ef9-8243-e50a" hidden="false" flatten="false" collapsible="true" sortIndex="2">
+        <selectionEntryGroup name="Antiquity Relics" id="4abb-9ef9-8243-e50a" hidden="false" flatten="false" collapsible="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Noctilith Sigil" hidden="false" id="2044-04de-bb32-0cc7" sortIndex="1">
               <constraints>
@@ -3126,7 +3126,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Legendary Relics" id="4e04-d0f6-4c37-57a8" hidden="false" flatten="false" collapsible="true" sortIndex="3">
+        <selectionEntryGroup name="Legendary Relics" id="4e04-d0f6-4c37-57a8" hidden="false" flatten="false" collapsible="false" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Blade of the Dynast" hidden="false" id="7714-0ce5-5269-8188" sortIndex="1">
               <constraints>
