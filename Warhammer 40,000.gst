@@ -850,13 +850,13 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Primary Wave" hidden="false" id="dce1-3faa-f4a0-ab73" collapsible="false" flatten="false">
           <associations>
-            <association min="1" scope="force" childId="entry" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="false" max="2"/>
+            <association min="1" scope="force" childId="entry" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="false" max=""/>
           </associations>
           <constraints>
             <constraint type="max" value="400" field="51b2-306e-1021-d207" scope="self" shared="true" id="380a-a111-39b3-c153"/>
           </constraints>
           <modifiers>
-            <modifier type="append" value="(Primary Wave)" field="name" scope="force" join=" " affects="recursive.unit"/>
+            <modifier type="append" value="(Primary Wave)" field="name" scope="force" join=" " affects="recursive"/>
           </modifiers>
           <modifierGroups>
             <modifierGroup type="and">
