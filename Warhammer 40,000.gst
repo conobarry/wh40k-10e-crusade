@@ -3122,6 +3122,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </profiles>
               <modifiers>
                 <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" scope="parent" affects="recursive.profiles.Unit"/>
+                <modifier type="append" value="Monstrous Momentum" field="annotation" scope="parent" affects="recursive.profiles.Unit" join=", "/>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Behemoth" hidden="false" id="e770-a657-c726-66a2" sortIndex="3">
@@ -3144,6 +3145,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </profiles>
               <modifiers>
                 <modifier type="increment" value="2" field="750a-a2ec-90d3-21fe" scope="parent" affects="recursive.profiles.Unit"/>
+                <modifier type="append" value="Behemoth" field="annotation" scope="parent" affects="recursive.profiles.Unit" join=", "/>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Unrelenting" hidden="false" id="a661-75a1-f751-97f0" sortIndex="4">
@@ -3540,6 +3542,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </profiles>
               <modifiers>
                 <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="parent" affects="recursive.profiles.Unit"/>
+                <modifier type="append" value="Enhanced Endurance" field="annotation" scope="parent" affects="recursive.profiles.Unit" join=", "/>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
@@ -3621,6 +3624,266 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Artificer Relics" id="1963-4354-090e-10b0" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Strategic Laurels" hidden="false" id="155e-437e-691b-315f" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3517-dd85-d90b-3aa9" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3c8-5ad7-8395-0b2a"/>
+              </constraints>
+              <profiles>
+                <profile name="Strategic Laurels" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6c8d-270d-2aeb-81f3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your first Command phase, if the bearer is on the battlefield, you gain 1CP. At the end of the battle, if the bearer is on the battlefield, you gain 1 Strategic Asset Point (SAP).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Conversion Field" hidden="false" id="aea4-17b7-709e-1510" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="33a7-3aff-8862-d3a5" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07ef-48fb-f28f-8d1f"/>
+              </constraints>
+              <profiles>
+                <profile name="Conversion Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="83c4-572c-d1a0-f916">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in the bearer&apos;s unit have a 5+ invulnerable save against ranged attacks and each time a ranged attack is allocated to a model in the bearer&apos;s unit, on an unmodified saving throw of 6, the attacking unit suffers 1 mortal wound after it has finished making its attacks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gene-Toxin Autofont" hidden="false" id="71ee-8334-abb4-6122" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b9d9-8e74-8b97-d6e2" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6450-2524-857e-6505"/>
+              </constraints>
+              <profiles>
+                <profile name="Gene-Toxin Autofont" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bb2b-80dd-817f-f186">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or Crusade Relic, or upgraded with any Battle Traits). That weapon is now a Crusade Relic and, in your Fight phase, after the bearer has fought, select one enemy unit hit by one or more of those attacks made with this weapon. Until the end of the battle, that enemy unit is poisoned. At the start of each player&apos;s Command phase, roll one D6 for each poisoned enemy unit on the battlefield: on a 1, the poison wears off and the unit is no longer poisoned; on a 2-3, that enemy unit suffers 1 mortal wound; on a 4+, that enemy unit suffers D3 mortal wounds.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Auto-Medicae" hidden="false" id="70d6-ec50-83b3-7576" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9313-44b7-6c24-18d8" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd74-c37b-ae83-4df4"/>
+              </constraints>
+              <profiles>
+                <profile name="Auto-Medicae" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a68e-bcc4-c917-e1b1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has the Feel No Pain 5+ ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Feel No Pain" id="6114-7a5d-6f41-edbe" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                  <modifiers>
+                    <modifier type="append" value="5+" field="name" join=" "/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Antiquity Relics" id="a64b-18a7-fdcb-fdb0" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hammer of the Heavens" hidden="false" id="8b92-326c-0fbb-c1a4" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a746-f5c1-f1e8-ad7a" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60d2-6d8a-2015-33ca"/>
+              </constraints>
+              <profiles>
+                <profile name="Hammer of the Heavens" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e751-2ce3-5567-39d8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, in your Command phase, if the bearer is on the battlefield, you can use this ability. Select one point on the battlefield and place a marker on that point. At the start of your next Command phase, roll six D6 for each unit within 6&quot; of the centre of that marker, adding 2 to the roll for each unit within 3&quot; of the centre of that marker: for each 4+, that unit suffers 1 mortal wound. The marker is then removed.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Maelstrom Clarion" hidden="false" id="9273-bf53-489f-8481" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f5a0-8825-2753-21c4" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a614-678d-b63b-d2df"/>
+              </constraints>
+              <profiles>
+                <profile name="Maelstrom Clarion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="52a8-ef78-af53-7d16">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12&quot; of the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Displacer Field" hidden="false" id="7bba-5e32-a1d6-bae9" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e528-f955-94ab-2f06" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6547-4cfb-a2f5-73e1"/>
+              </constraints>
+              <profiles>
+                <profile name="Displacer Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a025-92ef-f882-2f79">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the end of your opponent&apos;s Shooting phase, if the bearer&apos;s unit is not within Engagement Range of one or more enemy units, and if it was targeted by one or more attacks during that phase, you can remove the bearer&apos;s unit from the battlefield and place it into Strategic Reserves. If you do, when you next set up the bearer&apos;s unit from Strategic Reserves, models in that unit have the Deep Strike ability until the end of that phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sigil of Psychic Amplification" hidden="false" id="ad8a-64b2-4116-2cad" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a76-5fe7-9543-e7ab" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa5b-26bc-bf68-6747"/>
+              </constraints>
+              <profiles>
+                <profile name="Sigil of Psychic Amplification" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="35f3-35bd-39b9-bf8f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">PSKYER model only. Add 6&quot; to the Range characteristic of the bearer&apos;s ranged PSYCHIC weapons. If the bearer has a Psychic ability that instructs you to select one or more units within a specified range, you can increase the range of that ability by 6&quot;. If the bearer has a Psychic Aura ability, increase the range of that ability by an additional 3&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Legendary Relics" id="a8df-2f26-19af-a44d" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gloaming Mantle" hidden="false" id="3eba-6a82-e7c1-d297" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="91d0-04af-65fe-f603" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="033e-b525-0c2f-27b9"/>
+              </constraints>
+              <profiles>
+                <profile name="Gloaming Mantle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a96f-777a-f724-6417">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has the Lone Operative and Stealth abilities. While the bearer is leading a unit, models in that unit have the Stealth ability and that unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Stealth" id="c2a9-e41d-19ed-2b2a" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+                <infoLink name="Lone Operative" id="1332-33c1-bdf2-6eb9" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lyreth&apos;s Mirror" hidden="false" id="784f-f329-de2c-d9ad" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b64c-6016-9308-6885" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0a4-b1e6-e641-398a"/>
+              </constraints>
+              <profiles>
+                <profile name="Lyreth&apos;s Mirror" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="41e7-db63-cdbf-9f62">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent&apos;s Movement phase, you can select one enemy unit that was set up on the battlefield within 12&quot; of the bearer&apos;s unit during this phase; the bearer&apos;s unit can then either:
+
+
+- Shoot, but when resolving those attacks the bearer&apos;s unit can only target that enemy unit (and only if it is an eligible target.
+- Declare a charge against that unit (note that even if this charge is successful, the bearer&apos;s unit does not receive any Charge bonus this turn).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fate-Forged Weapon" hidden="false" id="26c3-34b6-6746-5d03" sortIndex="3">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ab1f-a933-f5d5-9d4c" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab96-14c0-1667-b3e7"/>
+              </constraints>
+              <profiles>
+                <profile name="Fate-Forged Weapon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="071f-86fe-ca10-5003">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select one melee weapon equipped by the bearer (excluding a weapon that has been replaced by an Enhancement or Crusade Relic, or upgraded with any Battle Traits). That weapon is now a Crusade Relic and:
+
+
+- Each time an attack is made with it, you can re-roll the Wound roll.
+- Once per battle, at the start of the fight phase, the bearer can unleash the power stored in that weapon. When they do, until the end of the turn, that weapon has the DEVASTATING WOUNDS ability and its Strength and Attacks characteristics are increased by a number equal to the current battle round number.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedInfoGroups>
