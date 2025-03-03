@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="63" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="64" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -848,9 +848,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Primary Wave" hidden="false" id="dce1-3faa-f4a0-ab73" collapsible="false" flatten="false">
+        <selectionEntry type="unit" import="true" name="Primary Wave" hidden="false" id="dce1-3faa-f4a0-ab73" collapsible="false" flatten="false" subType="unit-group">
           <associations>
-            <association min="1" scope="force" childId="entry" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="false" max=""/>
+            <association min="1" scope="force" childId="unit" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="false" max=""/>
           </associations>
           <constraints>
             <constraint type="max" value="400" field="51b2-306e-1021-d207" scope="self" shared="true" id="380a-a111-39b3-c153"/>
@@ -1197,11 +1197,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="set" value="2" field="2a14-db5e-c5ad-5ae9">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="self" childId="any" shared="true"/>
-          </conditions>
         </modifier>
       </modifiers>
       <constraints>
