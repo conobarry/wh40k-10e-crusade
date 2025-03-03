@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="59" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="60" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -773,7 +773,7 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Show Pariah Nexus Crusade" hidden="false" id="62af-c6ca-3e51-6bd4">
+        <selectionEntry type="upgrade" import="true" name="Show Pariah Nexus Crusade" hidden="false" id="62af-c6ca-3e51-6bd4" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3640-6b96-c7e4-e153" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a8b-463b-1f78-aedc"/>
@@ -785,7 +785,7 @@
             <modifier type="set" value="Pariah Nexus" field="name"/>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Show Tyrannic War Crusade" hidden="true" id="ec7c-3a18-03da-4912">
+        <selectionEntry type="upgrade" import="true" name="Show Tyrannic War Crusade" hidden="true" id="ec7c-3a18-03da-4912" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="68c8-4407-bcdf-32ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee9a-1f75-94da-f788"/>
@@ -809,7 +809,7 @@
             <modifier type="set" value="Cities of Ruin" field="name"/>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Show Nachmund Gauntlet Crusade" hidden="false" id="383e-f0ec-6806-3541">
+        <selectionEntry type="upgrade" import="true" name="Show Nachmund Gauntlet Crusade" hidden="false" id="383e-f0ec-6806-3541" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b1b8-e5d5-ce69-85d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d53b-ef83-c4cd-46b5"/>
@@ -841,19 +841,22 @@
             <selectionEntry type="upgrade" import="true" name="Beta" hidden="false" id="eadf-d5f9-19d7-54f6"/>
             <selectionEntry type="upgrade" import="true" name="Gamma" hidden="false" id="1007-bfa8-18e8-cb0a"/>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="627c-b7cb-1383-295f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="627c-b7cb-1383-295f-max"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Primary Wave" hidden="false" id="dce1-3faa-f4a0-ab73">
+        <selectionEntry type="upgrade" import="true" name="Primary Wave" hidden="false" id="dce1-3faa-f4a0-ab73" collapsible="false" flatten="false">
           <associations>
-            <association min="1" max="1" scope="force" childId="unit" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="true"/>
+            <association min="1" max="-1" scope="force" childId="unit" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="true"/>
           </associations>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c76d-1a91-b260-e7ad"/>
-            <constraint type="max" value="400" field="51b2-306e-1021-d207" scope="parent" shared="true" id="380a-a111-39b3-c153"/>
+            <constraint type="max" value="400" field="51b2-306e-1021-d207" scope="self" shared="true" id="380a-a111-39b3-c153"/>
           </constraints>
           <modifiers>
-            <modifier type="append" value="Primary Wave" field="annotation" join=", " scope="roster" affects="unit"/>
+            <modifier type="append" value="(Primary Wave)" field="name" scope="force" join=" " affects="recursive.unit"/>
           </modifiers>
           <modifierGroups>
             <modifierGroup type="and">
