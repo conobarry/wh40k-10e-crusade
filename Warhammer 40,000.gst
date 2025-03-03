@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="64" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="65" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -1546,7 +1546,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Cities of Ruin Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false">
+    <selectionEntryGroup name="Cities of Ruin Battle Traits" id="b4a3-1ebb-06c1-2d32" hidden="false" collapsible="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Cityfight Veteran" hidden="false" id="ccaf-32ee-b7e4-82f1">
           <costs>
@@ -2238,7 +2238,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Pariah Nexus Battle Traits" id="3efc-9164-92d8-9514" hidden="false">
+    <selectionEntryGroup name="Pariah Nexus Battle Traits" id="3efc-9164-92d8-9514" hidden="false" collapsible="true">
       <selectionEntryGroups>
         <selectionEntryGroup name="Character Units" id="91bf-b17f-875d-e115" hidden="false" flatten="true">
           <selectionEntries>
@@ -2823,6 +2823,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8111-fb45-b7e2-0bb2" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8111-fb45-b7e2-0bb2" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Veil of Ancients" hidden="false" id="912a-d50d-c5d2-c021" sortIndex="2">
               <constraints>
@@ -2843,6 +2855,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="912a-d50d-c5d2-c021" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="912a-d50d-c5d2-c021" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Treasure of the Technomandrites" hidden="false" id="6813-47ca-3511-87e2" sortIndex="3">
               <constraints>
@@ -2904,6 +2928,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6813-47ca-3511-87e2" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6813-47ca-3511-87e2" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Armour of the Soulless Sentry" hidden="false" id="a388-5a2f-ef05-bd5c" sortIndex="4">
               <constraints>
@@ -2928,6 +2964,16 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                 <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="parent" affects="profiles.Unit"/>
                 <modifier type="decrement" value="1" field="450-a17e-9d5e-29da" scope="parent" affects="profiles.Unit"/>
                 <modifier type="append" value="Armour of the Soulless Sentry" field="annotation" scope="parent" affects="profiles.Unit" join=", "/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="a388-5a2f-ef05-bd5c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="a388-5a2f-ef05-bd5c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
@@ -2958,6 +3004,14 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2044-04de-bb32-0cc7" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="2044-04de-bb32-0cc7" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -2983,6 +3037,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               <infoLinks>
                 <infoLink name="Deep Strike" id="0a9b-5768-50b1-fec1" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="a9a2-1ab7-23d9-9bef" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="a9a2-1ab7-23d9-9bef" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Vantachren&apos;s Mirror" hidden="false" id="bc37-cdad-5d44-3bb5" sortIndex="3">
               <constraints>
@@ -3006,6 +3072,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               <infoLinks>
                 <infoLink name="Stealth" id="bbc0-c9a1-fd3e-0ab8" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="bc37-cdad-5d44-3bb5" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="bc37-cdad-5d44-3bb5" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Eye of Mars" hidden="false" id="61f7-6ab7-1075-2e1c" sortIndex="4">
               <constraints>
@@ -3026,8 +3104,27 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="61f7-6ab7-1075-2e1c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="61f7-6ab7-1075-2e1c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Legendary Relics" id="4e04-d0f6-4c37-57a8" hidden="false" flatten="false" collapsible="true" sortIndex="3">
           <selectionEntries>
@@ -3055,6 +3152,16 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                 <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons"/>
                 <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons"/>
                 <modifier type="append" value="Blade of the Dynast" field="annotation" scope="parent" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7714-0ce5-5269-8188" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7714-0ce5-5269-8188" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Noctic Shield" hidden="false" id="04cc-17c4-bd6d-8e59" sortIndex="2">
@@ -3080,6 +3187,16 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                 <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="parent" affects="profiles.Unit"/>
                 <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" scope="parent" affects="profiles.Unit"/>
                 <modifier type="append" value="Noctic Shield" field="annotation" scope="parent" affects="profiles.Unit" join=", "/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="04cc-17c4-bd6d-8e59" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="04cc-17c4-bd6d-8e59" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Rod of the Omnissiah" hidden="false" id="e0bd-eee4-dac7-0a42" sortIndex="3">
@@ -3101,8 +3218,27 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e0bd-eee4-dac7-0a42" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="e0bd-eee4-dac7-0a42" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
@@ -3119,7 +3255,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Nachmund Gauntlet Battle Traits" id="460b-5a88-2a6b-2873" hidden="false">
+    <selectionEntryGroup name="Nachmund Gauntlet Battle Traits" id="460b-5a88-2a6b-2873" hidden="false" collapsible="true">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -3674,7 +3810,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Nachmund Gauntlet Crusade Relics" id="a62d-e6a6-d9c2-40a4" hidden="false">
+    <selectionEntryGroup name="Nachmund Gauntlet Crusade Relics" id="a62d-e6a6-d9c2-40a4" hidden="false" collapsible="true">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -3710,6 +3846,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="155e-437e-691b-315f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="155e-437e-691b-315f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Conversion Field" hidden="false" id="aea4-17b7-709e-1510" sortIndex="2">
               <costs>
@@ -3730,6 +3878,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="aea4-17b7-709e-1510" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="aea4-17b7-709e-1510" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Gene-Toxin Autofont" hidden="false" id="71ee-8334-abb4-6122" sortIndex="3">
               <costs>
@@ -3750,6 +3910,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="71ee-8334-abb4-6122" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="71ee-8334-abb4-6122" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Auto-Medicae" hidden="false" id="70d6-ec50-83b3-7576" sortIndex="4">
               <costs>
@@ -3777,6 +3949,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="70d6-ec50-83b3-7576" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="70d6-ec50-83b3-7576" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3801,6 +3985,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8b92-326c-0fbb-c1a4" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b92-326c-0fbb-c1a4" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Maelstrom Clarion" hidden="false" id="9273-bf53-489f-8481" sortIndex="2">
               <costs>
@@ -3821,6 +4017,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9273-bf53-489f-8481" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="9273-bf53-489f-8481" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Displacer Field" hidden="false" id="7bba-5e32-a1d6-bae9" sortIndex="3">
               <costs>
@@ -3841,6 +4049,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7bba-5e32-a1d6-bae9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="7bba-5e32-a1d6-bae9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Sigil of Psychic Amplification" hidden="false" id="ad8a-64b2-4116-2cad" sortIndex="4">
               <costs>
@@ -3866,10 +4086,25 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ad8a-64b2-4116-2cad" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="ad8a-64b2-4116-2cad" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Legendary Relics" id="a8df-2f26-19af-a44d" hidden="false" sortIndex="3">
           <selectionEntries>
@@ -3896,6 +4131,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                 <infoLink name="Stealth" id="c2a9-e41d-19ed-2b2a" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
                 <infoLink name="Lone Operative" id="1332-33c1-bdf2-6eb9" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3eba-6a82-e7c1-d297" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="3eba-6a82-e7c1-d297" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lyreth&apos;s Mirror" hidden="false" id="784f-f329-de2c-d9ad" sortIndex="2">
               <costs>
@@ -3920,6 +4167,18 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="784f-f329-de2c-d9ad" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="784f-f329-de2c-d9ad" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fate-Forged Weapon" hidden="false" id="26c3-34b6-6746-5d03" sortIndex="3">
               <costs>
@@ -3944,8 +4203,27 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="26c3-34b6-6746-5d03" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="26c3-34b6-6746-5d03" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>

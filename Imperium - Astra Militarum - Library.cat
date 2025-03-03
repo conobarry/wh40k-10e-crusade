@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="131" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="132" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -22928,7 +22928,7 @@ Onslaught - 4</characteristic>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Codex Battle Traits" id="abe7-cbcb-0027-17f1" hidden="false">
+    <selectionEntryGroup name="Codex Battle Traits" id="abe7-cbcb-0027-17f1" hidden="false" collapsible="true">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -22937,7 +22937,7 @@ Onslaught - 4</characteristic>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Infantry and Cavalry Battle Traits" id="9145-0a70-f171-e067" hidden="false" collapsible="true" flatten="true">
+        <selectionEntryGroup name="Infantry and Cavalry Battle Traits" id="9145-0a70-f171-e067" hidden="false" collapsible="false" flatten="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -23093,7 +23093,7 @@ Onslaught - 4</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Officer Battle Traits" id="f641-85e5-1711-f6f4" hidden="false" collapsible="true" flatten="true">
+        <selectionEntryGroup name="Officer Battle Traits" id="f641-85e5-1711-f6f4" hidden="false" collapsible="false" flatten="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -23164,7 +23164,7 @@ Onslaught - 4</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Vehicle Battle Traits" id="e3e8-a369-fb44-2940" hidden="false" collapsible="true" flatten="true">
+        <selectionEntryGroup name="Vehicle Battle Traits" id="e3e8-a369-fb44-2940" hidden="false" collapsible="false" flatten="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -23241,9 +23241,9 @@ Onslaught - 4</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Codex Crusade Relics" id="354c-db23-16dc-b83d" hidden="false" collapsible="false">
+    <selectionEntryGroup name="Codex Crusade Relics" id="354c-db23-16dc-b83d" hidden="false" collapsible="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Antiquity Relics" id="5349-270b-c8ad-29c4" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Antiquity Relics" id="5349-270b-c8ad-29c4" hidden="false" sortIndex="2" collapsible="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Tactical Auto-Reliquary of Tyberius" hidden="false" id="1ab5-8ee7-a51e-f98c">
               <profiles>
@@ -23327,7 +23327,7 @@ Onslaught - 4</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Legendary Relics" id="e1cf-ae4d-13be-fdc5" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Legendary Relics" id="e1cf-ae4d-13be-fdc5" hidden="false" sortIndex="3" collapsible="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Star of Terra" hidden="false" id="d68b-fa52-2a08-ecc6">
               <profiles>
@@ -23371,7 +23371,7 @@ Onslaught - 4</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Artificer Relics" id="5c7e-eea3-e520-bbfa" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Artificer Relics" id="5c7e-eea3-e520-bbfa" hidden="false" sortIndex="1" collapsible="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Iconic Accoutrements" hidden="false" id="00fd-53f8-798b-fa7b">
               <profiles>
