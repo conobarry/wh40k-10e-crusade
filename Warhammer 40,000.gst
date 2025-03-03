@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="62" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="61" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -850,7 +850,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Primary Wave" hidden="false" id="dce1-3faa-f4a0-ab73" collapsible="false" flatten="false">
           <associations>
-            <association min="1" max="2" scope="model-or-unit" childId="entry" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="false"/>
+            <association min="1" max="" scope="model-or-unit" childId="entry" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="false"/>
           </associations>
           <constraints>
             <constraint type="max" value="400" field="51b2-306e-1021-d207" scope="self" shared="true" id="380a-a111-39b3-c153"/>
@@ -1430,6 +1430,16 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                         <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4135-1065-ae32-09a4" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="floor" value="0" field="e703-ecb6-5ce7-aec1" affects="self.entries.profiles.Unit" scope="model-or-unit">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4135-1065-ae32-09a4" shared="true" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="63f1-e6e8-f6f6-a4f0" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -1496,6 +1506,11 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                       </conditions>
                     </modifier>
                     <modifier type="append" value="Fatigued" field="annotation" join=", " scope="model-or-unit" affects="self.entries.profiles.Unit">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="9d70-a94e-3f89-5eed" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="floor" value="0" field="bef7-942a-1a23-59f8" scope="model-or-unit" affects="self.entries.profiles.Unit">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="9d70-a94e-3f89-5eed" shared="true" includeChildSelections="true"/>
                       </conditions>
