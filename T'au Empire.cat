@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="86" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="87" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
     <rule name="For The Greater Good" hidden="false" id="eeb6-c42-48f7-cc21">
       <description>If your Army Faction is T’AU EMPIRE, then in your Shooting phase units from your army can work in pairs to help each other target specific enemy units. When they do this, one unit is the Observer unit and the other is their Guided unit. The enemy they are targeting is called their Spotted unit.
@@ -18345,12 +18345,12 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
         <entryLink import="true" name="Legendary Veterans" hidden="false" id="285d-6a3f-0b20-6225" type="selectionEntry" targetId="1511-18fe-f51e-7b9d"/>
         <entryLink import="true" name="Weapon Modifications" hidden="false" id="fbd0-0fa5-5db5-7e75" type="selectionEntry" targetId="d1a5-4297-168b-11cd"/>
         <entryLink import="true" name="Battle Scars" hidden="false" id="2bcf-aa10-e274-57b8" type="selectionEntryGroup" targetId="1576-e816-033f-828d"/>
-        <entryLink import="true" name="Battle Traits" hidden="false" id="f9d9-450d-ec22-370e" type="selectionEntryGroup" targetId="0511-d9ad-2978-2234">
+        <entryLink import="true" name="Battle Traits" hidden="false" id="f9d9-450d-ec22-370e" type="selectionEntryGroup" targetId="8db0-d4d9-a2a9-bc75">
           <entryLinks>
             <entryLink import="true" name="Codex Battle Traits" hidden="false" id="cc38-c672-98bf-8acb" type="selectionEntryGroup" targetId="3743-d313-0fa1-54f4"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Crusade Relics" hidden="false" id="cae5-f8b5-336b-5478" type="selectionEntryGroup" targetId="e919-5b46-974d-a5b1">
+        <entryLink import="true" name="Crusade Relics" hidden="false" id="cae5-f8b5-336b-5478" type="selectionEntryGroup" targetId="c7fa-cecd-563a-49fb">
           <entryLinks>
             <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="fc4b-0c7c-208e-7f66" type="selectionEntryGroup" targetId="afc3-5c30-aa33-7b07"/>
           </entryLinks>

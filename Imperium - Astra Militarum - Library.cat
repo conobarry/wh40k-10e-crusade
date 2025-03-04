@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="134" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="135" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -23592,37 +23592,17 @@ Onslaught - 4</characteristic>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="335f-5583-df3e-059f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" flatten="true" sortIndex="1"/>
-        <entryLink import="true" name="Battle Traits" hidden="false" id="3fe6-d917-ca98-e82c" type="selectionEntryGroup" targetId="8db0-d4d9-a2a9-bc75">
+        <entryLink import="true" name="Battle Traits" hidden="false" id="5616-6517-90e3-0bee" type="selectionEntryGroup" targetId="8db0-d4d9-a2a9-bc75" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Codex Battle Traits" hidden="false" id="a0df-1296-c80c-c2ad" type="selectionEntryGroup" targetId="abe7-cbcb-0027-17f1"/>
+            <entryLink import="true" name="Codex Battle Traits" hidden="false" id="109f-bc7b-8d1a-b463" type="selectionEntryGroup" targetId="abe7-cbcb-0027-17f1"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Crusade Relics" hidden="false" id="6eff-5bbf-0631-ee54" type="selectionEntryGroup" targetId="c7fa-cecd-563a-49fb" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="8daa-e495-93d4-0d3c" type="selectionEntryGroup" targetId="354c-db23-16dc-b83d"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Traits" id="c308-98fb-0b6d-08e5" hidden="true" sortIndex="2">
-          <entryLinks>
-            <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="3704-804a-633c-bd09" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32" sortIndex="4"/>
-            <entryLink import="true" name="Codex Battle Traits" hidden="false" id="526b-ec82-6e8b-e144" type="selectionEntryGroup" targetId="abe7-cbcb-0027-17f1" sortIndex="1"/>
-            <entryLink import="true" name="Pariah Nexus Battle Traits" hidden="false" id="37ff-11c4-7f39-e9fc" type="selectionEntryGroup" targetId="3efc-9164-92d8-9514" sortIndex="2"/>
-            <entryLink import="true" name="Nachmund Gauntlet Battle Traits" hidden="false" id="d9b8-190f-2f2d-dcc4" type="selectionEntryGroup" targetId="460b-5a88-2a6b-2873" sortIndex="3"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Crusade Relics" id="cfad-fe5f-cdd3-ccd0" hidden="false" sortIndex="3">
-          <entryLinks>
-            <entryLink import="true" name="Cities of Ruin Crusade Relics" hidden="false" id="9679-5940-e228-49c6" type="selectionEntryGroup" targetId="6397-d12d-4ea8-c9f2" sortIndex="4"/>
-            <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="fded-de7e-3128-0081" type="selectionEntryGroup" targetId="354c-db23-16dc-b83d" sortIndex="1"/>
-            <entryLink import="true" name="Pariah Nexus Crusade Relics" hidden="false" id="910f-23cc-9216-110c" type="selectionEntryGroup" targetId="c390-a54d-0100-a7c8" sortIndex="2"/>
-            <entryLink import="true" name="Nachmund Gauntlet Crusade Relics" hidden="false" id="988a-e70c-1957-5a5b" type="selectionEntryGroup" targetId="a62d-e6a6-d9c2-40a4" sortIndex="3"/>
-          </entryLinks>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

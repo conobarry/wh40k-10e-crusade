@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="67" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="68" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -4231,8 +4231,22 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
       <entryLinks>
         <entryLink import="true" name="Pariah Nexus Battle Traits" hidden="false" id="c5a0-2185-1967-3bbb" type="selectionEntryGroup" targetId="3efc-9164-92d8-9514" sortIndex="1"/>
         <entryLink import="true" name="Nachmund Gauntlet Battle Traits" hidden="false" id="4c36-fd46-366d-de7a" type="selectionEntryGroup" targetId="460b-5a88-2a6b-2873" sortIndex="2"/>
-        <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="32ae-6376-9c23-ca0b" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32"/>
+        <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="32ae-6376-9c23-ca0b" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32" sortIndex="3"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Crusade Relics" id="c7fa-cecd-563a-49fb" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Cities of Ruin Crusade Relics" hidden="false" id="df05-a159-1a05-1c70" type="selectionEntryGroup" targetId="6397-d12d-4ea8-c9f2" sortIndex="3"/>
+        <entryLink import="true" name="Nachmund Gauntlet Crusade Relics" hidden="false" id="9528-688f-109a-0436" type="selectionEntryGroup" targetId="a62d-e6a6-d9c2-40a4" sortIndex="2"/>
+        <entryLink import="true" name="Pariah Nexus Crusade Relics" hidden="false" id="0119-2253-e2c2-ea34" type="selectionEntryGroup" targetId="c390-a54d-0100-a7c8" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedInfoGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Space Marines" revision="97" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Space Marines" revision="98" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -40970,7 +40970,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
         <entryLink import="true" name="Legendary Veterans" hidden="false" id="ed66-8932-594e-0ad0" type="selectionEntry" targetId="1511-18fe-f51e-7b9d"/>
         <entryLink import="true" name="Weapon Modifications" hidden="false" id="2a0f-bb09-e17d-1020" type="selectionEntry" targetId="d1a5-4297-168b-11cd"/>
         <entryLink import="true" name="Battle Scars" hidden="false" id="f203-aebb-aff9-fff7" type="selectionEntryGroup" targetId="1576-e816-033f-828d"/>
-        <entryLink import="true" name="Battle Traits" hidden="false" id="8536-92cd-7783-574c" type="selectionEntryGroup" targetId="0511-d9ad-2978-2234">
+        <entryLink import="true" name="Battle Traits" hidden="false" id="8536-92cd-7783-574c" type="selectionEntryGroup" targetId="8db0-d4d9-a2a9-bc75">
           <entryLinks>
             <entryLink import="true" name="Codex Battle Traits" hidden="false" id="0010-7343-6e06-016f" type="selectionEntryGroup" targetId="5555-84fd-de6d-d847"/>
             <entryLink import="true" name="Dark Angels Battle Traits" hidden="false" id="f6be-7154-128c-43c2" type="selectionEntryGroup" targetId="9e22-c863-7f57-6913"/>
@@ -40987,7 +40987,7 @@ Enhancement. When it does, until the start of your next Command phase, all Ange
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Crusade Relics" hidden="false" id="c432-adc6-a9d3-f853" type="selectionEntryGroup" targetId="e919-5b46-974d-a5b1">
+        <entryLink import="true" name="Crusade Relics" hidden="false" id="c432-adc6-a9d3-f853" type="selectionEntryGroup" targetId="c7fa-cecd-563a-49fb">
           <entryLinks>
             <entryLink import="true" name="Codex Crusade Relics" hidden="false" id="b67c-6986-85a8-52d2" type="selectionEntryGroup" targetId="c793-96fb-f9a6-5c04"/>
             <entryLink import="true" name="Dark Angels Crusade Relics" hidden="false" id="786b-2686-ca42-1f25" type="selectionEntryGroup" targetId="3aae-acce-03e8-baac"/>
