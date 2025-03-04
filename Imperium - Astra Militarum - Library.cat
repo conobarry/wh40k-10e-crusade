@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="133" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="134" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -124,7 +124,7 @@
                     <entryLink import="true" name="Autocannon" hidden="false" id="bf47-27cc-a9ce-b017" type="selectionEntry" targetId="4a22-4d7b-aea8-75f0"/>
                     <entryLink import="true" name="Lascannon" hidden="false" id="fc87-32b9-9e7b-701a" type="selectionEntry" targetId="af85-b936-7f-430c"/>
                     <entryLink import="true" name="Heavy flamer" hidden="false" id="757-da98-3e00-3e06" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
-                    <entryLink import="true" name="Missile Launcher" hidden="false" id="9809-33d9-9594-f30f" type="selectionEntry" targetId="fc7a-6cff-c0e5-3b96"/>
+                    <entryLink import="true" name="Missile Launcher" hidden="false" id="9809-33d9-9594-f30f" type="selectionEntry" targetId="4984-dc69-33b1-4085"/>
                     <entryLink import="true" name="Plasma cannon" hidden="false" id="525b-aaab-bb53-ca9c" type="selectionEntry" targetId="f26-434a-79ef-40a5"/>
                   </entryLinks>
                   <constraints>
@@ -6790,7 +6790,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <entryLink import="true" name="Autocannon" hidden="false" id="6359-a056-3a2a-5a37" type="selectionEntry" targetId="4a22-4d7b-aea8-75f0"/>
                     <entryLink import="true" name="Lascannon" hidden="false" id="26e9-862-9862-e1ba" type="selectionEntry" targetId="af85-b936-7f-430c"/>
                     <entryLink import="true" name="Heavy flamer" hidden="false" id="6b15-7d94-fb23-454d" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
-                    <entryLink import="true" name="Missile Launcher" hidden="false" id="744c-fd1a-5ebe-46c7" type="selectionEntry" targetId="fc7a-6cff-c0e5-3b96"/>
+                    <entryLink import="true" name="Missile Launcher" hidden="false" id="744c-fd1a-5ebe-46c7" type="selectionEntry" targetId="4984-dc69-33b1-4085"/>
                     <entryLink import="true" name="Plasma cannon" hidden="false" id="1844-b72f-b74-4dd" type="selectionEntry" targetId="f26-434a-79ef-40a5"/>
                     <entryLink import="true" name="Multi-laser" hidden="false" id="715a-8901-7a57-7b37" targetId="866e-e876-1f61-2022" type="selectionEntry"/>
                   </entryLinks>
@@ -8644,6 +8644,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Heavy" hidden="false" type="rule" id="2bc9-81f2-41ce-f6b6" targetId="1202-10a8-78e9-4c67"/>
         <infoLink name="Blast" hidden="false" type="rule" id="a4dc-1969-6985-78fb" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
+      <comment>BS5+</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mortar" hidden="false" id="9274-cb2d-ba0-281b">
       <profiles>
@@ -11185,7 +11186,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="2 Lascannons and 2 Twin Heavy Bolters" hidden="false" id="6028-349c-520b-3527">
+                <selectionEntry type="upgrade" import="true" name="2 Lascannons and 2 Twin Heavy Flamers" hidden="false" id="6028-349c-520b-3527">
                   <entryLinks>
                     <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="a46d-7bf9-9b84-417f" targetId="af85-b936-7f-430c">
                       <constraints>
@@ -17127,7 +17128,11 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="7174-5440-d21f-4973" targetId="37aa-e4f5-30bd-c59c"/>
+        <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="7174-5440-d21f-4973" targetId="37aa-e4f5-30bd-c59c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d70-94d2-16d1-f2ea"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Pintle Mount" hidden="false" type="selectionEntryGroup" id="a467-3e2-cee9-f437" targetId="164e-b04-edf-f354"/>
         <entryLink import="true" name="Armoured tracks" hidden="false" type="selectionEntry" id="7b64-aeb4-3c87-107d" targetId="5ba9-b266-8524-54f5">
           <constraints>
@@ -18551,7 +18556,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </profile>
         <profile name="Orders" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="c4eb-5868-02ac-efe3">
           <characteristics>
-            <characteristic name="Orders" typeId="36b-c3c9-245f-e97d">This **^^Officer^^** can issue up to 3 Orders to **^^Astra Militarum^^** units</characteristic>
+            <characteristic name="Orders" typeId="36b-c3c9-245f-e97d">This **^^Officer^^** can issue up to 3 Orders to **^^Regiment^^** units</characteristic>
           </characteristics>
         </profile>
         <profile name="Tough to Kill" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11cf-ed3e-25f9-00be">
@@ -18624,7 +18629,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7721-dd74-7636-9d64"/>
           </constraints>
           <profiles>
-            <profile name="Konstantin&apos;s hooves" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8742-3e89-72c6-21aa">
+            <profile name="Savage Claws" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8742-3e89-72c6-21aa">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                 <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
@@ -19685,6 +19690,11 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Embarking" id="d295-a045-4eb2-f32b" hidden="false" type="profile" targetId="5b59-38a0-a158-05b9"/>
+        <infoLink name="Scouts" id="2acf-427f-b6fd-fdc7" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5360-e4ac-870a-e9bc" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
@@ -19719,7 +19729,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <profiles>
         <profile name="Final Duty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="afd7-1aee-c637-14c8">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the Fire Coordinator model is on the battlefield, each time a Heavy Weapons Gunner model is destroyed, roll one D6: one a 3+, do remove it from play. The destroyed model can shoot after the attacking model&apos;s unit has finished making its attacks, and is then removed from play.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the Fire Coordinator model is on the battlefield, each time a Heavy Weapons Gunner model is destroyed, roll one D6: one a 3+, remove it from play. The destroyed model can shoot after the attacking model&apos;s unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -20729,6 +20739,37 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="4984-dc69-33b1-4085">
+      <profiles>
+        <profile name="➤ Missile Launcher - Frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="da5b-8a67-e1bd-b128">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Missile Launcher - Krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2131-4d5b-cec1-8e75">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" hidden="false" type="rule" id="87d0-4f39-4f61-f178" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Blast" hidden="false" type="rule" id="e997-49ed-de39-dc7b" targetId="6c1f-1cf7-ff25-c99e"/>
+      </infoLinks>
+      <comment>BS4+</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
@@ -23551,9 +23592,14 @@ Onslaught - 4</characteristic>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="335f-5583-df3e-059f" type="selectionEntryGroup" targetId="a877-78a7-06f2-f04d" flatten="true" sortIndex="1"/>
+        <entryLink import="true" name="Battle Traits" hidden="false" id="3fe6-d917-ca98-e82c" type="selectionEntryGroup" targetId="8db0-d4d9-a2a9-bc75">
+          <entryLinks>
+            <entryLink import="true" name="Codex Battle Traits" hidden="false" id="a0df-1296-c80c-c2ad" type="selectionEntryGroup" targetId="abe7-cbcb-0027-17f1"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Traits" id="c308-98fb-0b6d-08e5" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Battle Traits" id="c308-98fb-0b6d-08e5" hidden="true" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="3704-804a-633c-bd09" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32" sortIndex="4"/>
             <entryLink import="true" name="Codex Battle Traits" hidden="false" id="526b-ec82-6e8b-e144" type="selectionEntryGroup" targetId="abe7-cbcb-0027-17f1" sortIndex="1"/>

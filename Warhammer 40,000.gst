@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="66" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="67" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -850,7 +850,7 @@
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Primary Wave" hidden="false" id="dce1-3faa-f4a0-ab73" collapsible="false" flatten="false" subType="unit-group">
           <associations>
-            <association min="1" scope="force" childId="unit" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="false" max=""/>
+            <association min="1" scope="force" childId="unit" name="Primary Wave" id="fef6-cf0b-42a2-56e6" includeChildSelections="false"/>
           </associations>
           <constraints>
             <constraint type="max" value="400" field="51b2-306e-1021-d207" scope="self" shared="true" id="380a-a111-39b3-c153"/>
@@ -4226,6 +4226,13 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Battle Traits" id="8db0-d4d9-a2a9-bc75" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Pariah Nexus Battle Traits" hidden="false" id="c5a0-2185-1967-3bbb" type="selectionEntryGroup" targetId="3efc-9164-92d8-9514" sortIndex="1"/>
+        <entryLink import="true" name="Nachmund Gauntlet Battle Traits" hidden="false" id="4c36-fd46-366d-de7a" type="selectionEntryGroup" targetId="460b-5a88-2a6b-2873" sortIndex="2"/>
+        <entryLink import="true" name="Cities of Ruin Battle Traits" hidden="false" id="32ae-6376-9c23-ca0b" type="selectionEntryGroup" targetId="b4a3-1ebb-06c1-2d32"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedInfoGroups>
