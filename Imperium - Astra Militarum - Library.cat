@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="135" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="136" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -2973,7 +2973,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Field Ordnance Battery" hidden="false" id="64a9-4cb2-400e-efd1">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3607,7 +3607,7 @@
         <categoryLink targetId="c8a1-fef-5569-61c9" id="208f-9879-b0cc-bd0" primary="false" name="Regiment"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4336,7 +4336,7 @@
               <entryLinks>
                 <entryLink targetId="56ad-b03d-517e-124a" id="ae26-a7a0-9bc8-48eb" type="selectionEntry" name="Hot-shot laspistol" hidden="false"/>
                 <entryLink import="true" name="Plasma pistol" hidden="false" type="selectionEntry" id="772c-a1f9-5954-d001" targetId="2da9-abbd-3c4d-361a"/>
-                <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="b4e3-ee0b-ddb4-285d" targetId="edce-b2da-b8c3-7c8b"/>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="fd2c-37f3-25d7-50ae" type="selectionEntry" targetId="3117-5234-7ed4-8d7f"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Chainsword" id="579c-ff84-5013-22fd" hidden="false" defaultSelectionEntryId="f5b8-84b1-30a5-8a58">
@@ -5303,7 +5303,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Militarum Tempestus Command Squad" hidden="false" id="497-36ad-8ecb-f7c7">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6078,8 +6078,6 @@ While this model is joined to a unit, it can embark within any **^^Transport^^**
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="b2f9-1a3b-0997-0bb3" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365"/>
-        <entryLink import="true" name="Enhancements" hidden="false" id="7092-d003-e2de-8e50" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
         <entryLink import="true" name="Crusade" hidden="false" id="d35c-7116-6213-cb2c" type="selectionEntryGroup" targetId="faba-12e7-ef96-d38b"/>
       </entryLinks>
     </selectionEntry>
@@ -7853,14 +7851,14 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tempestus Scions" hidden="false" id="679b-f37f-2388-748">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="130" field="51b2-306e-1021-d207">
+        <modifier type="set" value="140" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="5" field="selections" scope="679b-f37f-2388-748" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -7900,8 +7898,8 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <selectionEntryGroup name="Hot-shot Laspistol" hidden="false" id="d1ce-800-6dd7-ddb0" defaultSelectionEntryId="a8e7-97ab-5dea-305b">
               <entryLinks>
                 <entryLink import="true" name="Hot-shot laspistol" hidden="false" type="selectionEntry" id="a8e7-97ab-5dea-305b" targetId="56ad-b03d-517e-124a"/>
-                <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="f532-a9fa-5716-629b" targetId="edce-b2da-b8c3-7c8b"/>
                 <entryLink import="true" name="Plasma pistol" hidden="false" type="selectionEntry" id="4e18-4b71-69ea-c92e" targetId="2da9-abbd-3c4d-361a"/>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="76a6-09c3-4bbf-fc4f" type="selectionEntry" targetId="3117-5234-7ed4-8d7f"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17b0-9f68-ce59-8465"/>
@@ -18252,46 +18250,17 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="127d-e6e3-1a8c-3ca2"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Laspistol" hidden="false" id="fb49-4797-9225-719c" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="430b-44df-8043-3f31"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be6a-ccf6-b08e-3b37"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d856-d4c9-d6b2-e715"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9db-fc09-44b1-e86d"/>
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Laspistol" id="3b43-2e2a-e783-6bb7" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="8123-9a24-3ba5-cd10" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="cca6-e306-1220-4e29" shared="true" id="764c-3435-4851-b0b3" includeChildSelections="true"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="764c-3435-4851-b0b3">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="cca6-e306-1220-4e29" childId="abf2-656d-322e-3c7e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Laspistol" hidden="false" id="fb49-4797-9225-719c" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5"/>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="9909-9c27-afaf-072b" type="selectionEntry" targetId="abf2-656d-322e-3c7e">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="cca6-e306-1220-4e29" shared="true" id="5a9c-cff6-3d2e-4c3b" includeChildSelections="true"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="5a9c-cff6-3d2e-4c3b">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="cca6-e306-1220-4e29" childId="abf2-656d-322e-3c7e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db67-7add-cd2a-9dbb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33ff-2346-32e1-09a2"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Alchemyk Counteragents" hidden="false" id="b13e-6566-90f9-a7ed">
                   <constraints>
@@ -18421,31 +18390,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Laspistol" id="a257-11bd-2383-ef2b" hidden="false" defaultSelectionEntryId="e3ee-17c9-bb4e-3c9c">
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="d5b1-f799-7c9e-250f" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="cca6-e306-1220-4e29" shared="true" id="10fc-aa47-95cb-c9db" includeChildSelections="true"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="10fc-aa47-95cb-c9db">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="cca6-e306-1220-4e29" childId="abf2-656d-322e-3c7e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="d5b1-f799-7c9e-250f" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
                     <entryLink import="true" name="Laspistol" hidden="false" id="e3ee-17c9-bb4e-3c9c" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5"/>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="04d1-8497-c844-42cd" type="selectionEntry" targetId="abf2-656d-322e-3c7e">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="cca6-e306-1220-4e29" shared="true" id="6f7d-7b2a-6793-1f4e" includeChildSelections="true"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="6f7d-7b2a-6793-1f4e">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="cca6-e306-1220-4e29" childId="abf2-656d-322e-3c7e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="04d1-8497-c844-42cd" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8895-bd04-c866-852c"/>
@@ -19387,7 +19334,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <profiles>
                     <profile name="Remote mine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="226c-0e3f-ad12-847a">
                       <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of your Shooting phase, you can select one enemy unit within 12&quot; of the bearer and roll one D6: on 3+, that enemy unit suffers D6 mortal wounds, or D3+3 mortal wounds instead if it is a **^^Vehicle^^** or **^^Fortifications^^** unit.
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of your Shooting phase, you can select one enemy unit within 9&quot; of and visible to the bearer and roll one D6: on 3+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a **^^Vehicle^^** or **^^Fortifications^^** unit.
 
 **Designer&apos;s Note:** *Place a Remote Mine token next to the unit, removing it once this ability has been used.*</characteristic>
                       </characteristics>
@@ -19515,7 +19462,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <categoryLink name="Catachan Heavy Weapons Squad" hidden="false" id="c2e1-72ef-6e57-3f45" targetId="1c2d-0c1c-8fa9-99be" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -21253,7 +21200,7 @@ Each time a model in a **^^Squadron^^** unit from your army makes a ranged attac
             </profile>
             <profile name="Fire Zone Purge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8cb7-eb05-f6c3-179f">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a **^^Militarum Tempestus^^** model from your army makes a ranged attack in a turn in which it was set up on the battlefield from Reserves or it disembarked from a **^^Transport^^**, add 1 to the Wound roll.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a **^^Militarum Tempestus^^** model from your army makes a ranged attack in a turn in which it was set up on the battlefield from Reserves or it disembarked from a **^^Transport^^**, add 1 to the Hit roll.</characteristic>
               </characteristics>
             </profile>
             <profile name="Keywords" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f342-50ad-488e-211e">
@@ -21493,9 +21440,14 @@ Onslaught - 4</characteristic>
         <selectionEntryGroup name="Bridgehead Strike Enhancements" hidden="false" id="eda0-9510-3829-9c5d">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7afb-a0f6-b95d-e791" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="7afb-a0f6-b95d-e791" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <selectionEntries>
@@ -21534,7 +21486,7 @@ Onslaught - 4</characteristic>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c7cf-b3b3-6c6b-0518" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
