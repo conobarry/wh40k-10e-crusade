@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="68" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition Crusade" revision="69" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="1843-5a64-b6e4-4faa" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="eb74-8c48-94d6-8265" shortName="conobarry/wh40k-10e-crusade" publisherUrl="https://github.com/conobarry/wh40k-10e-crusade"/>
@@ -2987,7 +2987,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -3022,7 +3022,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -3057,7 +3057,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -3092,7 +3092,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -3135,7 +3135,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -3171,7 +3171,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -3206,7 +3206,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
               </constraints>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -3969,7 +3969,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             <selectionEntry type="upgrade" import="true" name="Hammer of the Heavens" hidden="false" id="8b92-326c-0fbb-c1a4" sortIndex="1">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -4001,7 +4001,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             <selectionEntry type="upgrade" import="true" name="Maelstrom Clarion" hidden="false" id="9273-bf53-489f-8481" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -4033,7 +4033,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             <selectionEntry type="upgrade" import="true" name="Displacer Field" hidden="false" id="7bba-5e32-a1d6-bae9" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -4065,7 +4065,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             <selectionEntry type="upgrade" import="true" name="Sigil of Psychic Amplification" hidden="false" id="ad8a-64b2-4116-2cad" sortIndex="4">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="2"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -4111,7 +4111,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             <selectionEntry type="upgrade" import="true" name="Gloaming Mantle" hidden="false" id="3eba-6a82-e7c1-d297" sortIndex="1">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -4147,7 +4147,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             <selectionEntry type="upgrade" import="true" name="Lyreth&apos;s Mirror" hidden="false" id="784f-f329-de2c-d9ad" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
@@ -4183,7 +4183,7 @@ destroyed and counts as having failed an Out of Action test, and their unit ta
             <selectionEntry type="upgrade" import="true" name="Fate-Forged Weapon" hidden="false" id="26c3-34b6-6746-5d03" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="3"/>
                 <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
                 <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
