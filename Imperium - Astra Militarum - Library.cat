@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="136" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="137" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -8990,6 +8990,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <infoLinks>
         <infoLink name="Blast" hidden="false" type="rule" id="f531-d4ab-51c6-c602" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2a81-e861-c4c1-878d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="b349-9d3a-1a65-3e48" collective="false">
       <profiles>
