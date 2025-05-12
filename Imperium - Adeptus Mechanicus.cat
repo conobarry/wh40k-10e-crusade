@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="61" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="62" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -405,6 +405,7 @@
         <categoryLink id="512b-fb30-ba-e294" name="Fly" hidden="false" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink id="e7a-c044-feb2-102f" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink id="70cf-fbf0-87a6-1ca4" name="Skitarii" hidden="false" targetId="2a4e-9018-d675-74f1" primary="false"/>
+        <categoryLink targetId="75e8-57c4-40e3-1817" id="087f-94f9-98af-1ff6" primary="false" name="Transport"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7a58-c918-3dbd-3dc0" name="Replace command uplink" hidden="false" collective="false" import="true" defaultSelectionEntryId="0ce7-c37e-ef38-4917">
@@ -4674,7 +4675,7 @@ as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP.</characteristi
         </profile>
         <profile id="0572-a04a-1973-cbab" name="Galvanic Field" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [Lethal Hits] ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="fda2-046d-2f2f-a407" name="Defend the Divine Work" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -4980,6 +4981,13 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21a4-29e7-2160-b8d9"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="77b9-2f66-3f9b-5cf3" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="705b-2635-fcab-48f9" name="Secutarii Hoplites [Legends]" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
