@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1f19-6509-d906-ca10" name="Imperium - Adeptus Custodes" revision="60" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1f19-6509-d906-ca10" name="Imperium - Adeptus Custodes" revision="62" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="a43a-4cf6-6443-f48e" name="Aleya" hidden="false"/>
     <categoryEntry id="5386-42fc-f4d0-7d64" name="Allarus Custodians" hidden="false"/>
@@ -179,17 +179,17 @@
     </selectionEntry>
     <selectionEntry id="c8a6-a4c5-703e-b717" name="Allarus Custodians" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="195">
+        <modifier type="set" field="51b2-306e-1021-d207" value="180">
           <conditions>
             <condition field="selections" scope="c8a6-a4c5-703e-b717" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="51b2-306e-1021-d207" value="325">
+        <modifier type="set" field="51b2-306e-1021-d207" value="300">
           <conditions>
             <condition field="selections" scope="c8a6-a4c5-703e-b717" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="390" field="51b2-306e-1021-d207">
+        <modifier type="set" value="360" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="c8a6-a4c5-703e-b717" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -379,7 +379,11 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8650-2081-37d9-87b1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -5112,6 +5116,9 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" affects="self.entries.recursive.profiles.Melee Weapons" scope="parent"/>
+            <modifier type="increment" value="1" field="3254-9fe6-d824-513e" affects="self.entries.recursive.profiles.Melee Weapons" scope="parent" position="-1"/>
+            <modifier type="increment" value="1" field="2337-daa1-6682-b110" affects="self.entries.recursive.profiles.Melee Weapons" scope="parent"/>
           </modifiers>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
@@ -5203,6 +5210,8 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="parent" affects="self.entries.profiles.Melee Weapons"/>
+            <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="parent" affects="self.entries.profiles.Melee Weapons" position="-1"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Radiant Mantle" hidden="false" id="1c2d-6ccb-ac24-fad3" collective="false">
@@ -5325,6 +5334,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="2" field="750a-a2ec-90d3-21fe" scope="parent" affects="self.entries.profiles.Unit"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Enhanced Voidsheen Cloak" hidden="false" id="a597-2781-f386-2b76" collective="false">
@@ -5469,6 +5479,7 @@ All other **^^Adeptus Custodes**^^ units from your army gain the following abili
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="a36b-bb22-1a15-2a48" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="2" field="2337-daa1-6682-b110" affects="self.entries.recursive.profiles.Melee Weapons" scope="parent"/>
           </modifiers>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>

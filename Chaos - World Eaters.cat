@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="df9a-59b2-f464-59ad" name="Chaos - World Eaters" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="df9a-59b2-f464-59ad" name="Chaos - World Eaters" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <profileTypes>
     <profileType id="02a0-fa96-6f9b-354f" name="Wrathful Presence">
       <characteristicTypes>
@@ -481,7 +481,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="410"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="385"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -639,6 +639,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="Blessings of Khorne" hidden="false" type="rule" id="5894-1c7e-9336-2c96" targetId="e68b-b42f-6f7c-4670"/>
+        <infoLink name="Deep Strike" id="7076-b0da-b51c-1a6c" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7ba8-53d1-9ec0-d5e5" name="Faction: World Eaters" hidden="false" targetId="bd1d-c1a5-6ca2-c791" primary="false"/>
@@ -857,7 +858,7 @@
         <entryLink id="5d2a-3072-b1d3-7563" name="Enhancements" hidden="false" collective="false" import="true" targetId="7b6d-6d90-0ffe-b45b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -876,12 +877,12 @@
         </profile>
         <profile id="ef20-bc48-20c9-6af6" name="Bloodied Terror" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, each enemy unit within Engagement Range of this model must take a Battle-shock test.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, each enemy unit within Engagement Range of this model must take a Battle-shock test, subtracting 1 if that enemy unit is Below Half-strength.</characteristic>
           </characteristics>
         </profile>
-        <profile id="8d55-b620-1f13-577b" name="Oath to Khorne" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+        <profile id="8d55-b620-1f13-577b" name="Swooping Predator" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, select one unit from your opponent’s army to be this model’s sworn foe. Each time this model makes an attack that targets that sworn foe, you can re-roll the Hit roll and you can re-roll the Wound roll. If, at the end of the battle, that sworn foe has not been destroyed, this model is destroyed.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model ends a Normal or Advance move, you can select one enemy unit that it moved over during that move and roll 6 D6: for each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
           </characteristics>
         </profile>
         <profile id="d5e3-08eb-fa8d-cfda" name="Daemon Prince of Khorne with wings" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -946,24 +947,24 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbdd-ab5e-9f8f-6a61" type="max"/>
           </constraints>
           <profiles>
-            <profile id="06ab-c72c-416a-7058" name="➤ Hellforged weapons - strike" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+            <profile name="➤ Hellforged weapons - strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="fdd7-7a6f-39d2-2cd8">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
                 <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
               </characteristics>
             </profile>
-            <profile id="dbe0-61f3-9be9-1cad" name="➤ Hellforged weapons - sweep" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+            <profile name="➤ Hellforged weapons - sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d8f1-b2bc-81c0-8f0d">
               <characteristics>
                 <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">14</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">16</characteristic>
                 <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
               </characteristics>
@@ -979,7 +980,7 @@
         <entryLink id="341d-3145-c33d-f32e" name="Enhancements" hidden="false" collective="false" import="true" targetId="7b6d-6d90-0ffe-b45b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="215"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1030,7 +1031,6 @@
         <categoryLink id="92f7-ab3a-393e-7221" name="Faction: World Eaters" hidden="false" targetId="bd1d-c1a5-6ca2-c791" primary="false"/>
         <categoryLink id="fd18-a6a6-255f-0aad" name="Mounted" hidden="false" targetId="14a0-40c9-2748-ae6e" primary="false"/>
         <categoryLink id="ea9b-6826-a989-6add" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
-        <categoryLink id="6aee-0622-7bad-d1b1" name="Grenades" hidden="false" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink id="0ea8-9124-47bb-ce5d" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="be60-5217-952d-e623" name="Khorne" hidden="false" targetId="4bd-5ee0-f179-2fc5" primary="false"/>
         <categoryLink id="f996-9443-12ab-952e" name="Lord on Juggernaut" hidden="false" targetId="e531-2b12-c56c-aa51" primary="false"/>
@@ -1052,6 +1052,18 @@
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks, Lance</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="3" field="2337-daa1-6682-b110">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c4c-5aac-b510-28ef" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="75ce-5ce7-0a6e-a876" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -1204,7 +1216,7 @@
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="ff03-58c5-c684-1fe8" targetId="9754-481c-c292-a1f9"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1267,8 +1279,17 @@
               </constraints>
               <entryLinks>
                 <entryLink id="7b18-d954-c7a9-a1a7" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="2ba4-635b-fffd-0f59" type="selectionEntry"/>
-                <entryLink id="5339-6c9b-ac7d-03ba" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="47e1-9e86-8a80-66e1" type="selectionEntry"/>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="f20c-0563-3e0a-e0c8">
+                  <infoLinks>
+                    <infoLink name="Hazardous" id="2df0-7595-817e-2bd5" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+                    <infoLink name="Pistol" id="a10d-be9f-2098-901c" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+                    <infoLink name="➤ Plasma pistol - standard" id="77f5-d84f-4cfe-e383" hidden="false" type="profile" targetId="1c84-74f8-f27d-55db"/>
+                    <infoLink name="➤ Plasma pistol - supercharge" id="04a0-0fd0-7002-3fd6" hidden="false" type="profile" targetId="7250-9be2-c024-4f64"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -1966,17 +1987,18 @@
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Sustained Hits 1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Rapid Fire 2, Sustained Hits 1</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                       <infoLinks>
                         <infoLink id="388c-2f8a-aafe-4190" name="Sustained Hits" hidden="false" targetId="1897-c22c-9597-12b1" type="rule"/>
                         <infoLink id="6e51-ddf9-54e3-8f16" name="Devastating Wounds" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
+                        <infoLink name="Rapid Fire" id="6947-08cf-426b-8142" hidden="false" targetId="c5c8-8b58-b8b6-7786" type="rule"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -2005,7 +2027,7 @@
     </selectionEntry>
     <selectionEntry id="6f81-4538-a414-251e" name="Jakhals" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="130">
+        <modifier type="set" field="51b2-306e-1021-d207" value="140">
           <conditions>
             <condition field="selections" scope="6f81-4538-a414-251e" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -2338,7 +2360,7 @@
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
@@ -2362,7 +2384,7 @@
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-VEHICLE 3+</characteristic>
@@ -2383,7 +2405,7 @@
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -2401,7 +2423,7 @@
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -2418,11 +2440,11 @@
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2458,7 +2480,7 @@
     </selectionEntry>
     <selectionEntry id="9435-1f44-7e5b-d510" name="Eightbound" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="310">
+        <modifier type="set" field="51b2-306e-1021-d207" value="300">
           <conditions>
             <condition field="selections" scope="9435-1f44-7e5b-d510" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -2576,7 +2598,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="155"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2585,7 +2607,7 @@
     </selectionEntry>
     <selectionEntry id="9932-3d2b-1e47-d53b" name="Exalted Eightbound" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="51b2-306e-1021-d207" value="350">
+        <modifier type="set" field="51b2-306e-1021-d207" value="320">
           <conditions>
             <condition field="selections" scope="9932-3d2b-1e47-d53b" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -2681,7 +2703,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2802,7 +2824,7 @@
         <entryLink id="4a8f-1b1a-1ad4-c547" name="Havoc launcher" hidden="false" collective="false" import="true" targetId="5df1-0d33-8cea-a191" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="240"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3015,7 +3037,7 @@
         <entryLink id="7a7b-a3f9-68d5-a91b" name="Havoc launcher" hidden="false" collective="false" import="true" targetId="5df1-0d33-8cea-a191" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="145"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3409,7 +3431,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="245"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3560,7 +3582,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="155"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -3890,7 +3912,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4219,7 +4241,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -4604,7 +4626,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="445"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="505"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5267,7 +5289,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5320,33 +5342,11 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="6fd1-efa4-7787-db82" collective="false">
-      <profiles>
-        <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3408-5c02-aceb-87d3">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="➤ Plasma pistol - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b701-f448-2044-d161">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Pistol" id="3200-06cc-c625-d9c6" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
         <infoLink name="Hazardous" id="4839-c6b7-b2af-8362" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+        <infoLink name="➤ Plasma pistol - standard" id="1310-0055-9d43-45cd" hidden="false" type="profile" targetId="1c84-74f8-f27d-55db"/>
+        <infoLink name="➤ Plasma pistol - supercharge" id="47b5-4b15-a0d6-a6d3" hidden="false" type="profile" targetId="7250-9be2-c024-4f64"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -5516,7 +5516,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="385"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="305"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5696,7 +5696,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         <entryLink import="true" name="Enhancements" hidden="false" id="a554-e89b-604b-ad86" type="selectionEntryGroup" targetId="7b6d-6d90-0ffe-b45b"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="300"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="305"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5732,7 +5732,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">7+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5784,7 +5784,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5855,7 +5855,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bloodcrushers" hidden="false" id="e65f-c7c7-1d18-1a60" collective="false">
       <modifiers>
-        <modifier type="set" value="230" field="51b2-306e-1021-d207">
+        <modifier type="set" value="220" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="e65f-c7c7-1d18-1a60" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
@@ -5944,7 +5944,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -5979,7 +5979,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Flesh Hounds" hidden="false" id="b657-1743-6e3a-0838" collective="false">
       <modifiers>
-        <modifier type="set" value="120" field="51b2-306e-1021-d207">
+        <modifier type="set" value="150" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="b657-1743-6e3a-0838" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
@@ -6088,7 +6088,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -6148,7 +6148,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e02a-ceaa-d20f-a3fb" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2c4c-5aac-b510-28ef" name="Berzerker Glaive" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2c4c-5aac-b510-28ef" name="Berzerker Glaive" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8098-67da-bf1c-173f" type="max"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6511-59d-8149-65dc" includeChildSelections="true"/>
@@ -6174,7 +6174,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Berzerker Warband</comment>
         </selectionEntry>
-        <selectionEntry id="33e2-4ee8-2e10-3e47" name="Battle-lust" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="33e2-4ee8-2e10-3e47" name="Battle-lust" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf42-3c8e-7dc5-6610" type="max"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="13d8-a20b-81e1-3556" includeChildSelections="true"/>
@@ -6202,7 +6202,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Berzerker Warband</comment>
         </selectionEntry>
-        <selectionEntry id="6836-5818-2135-a8aa" name="Helm of Brazen Ire" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6836-5818-2135-a8aa" name="Helm of Brazen Ire" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31dc-1362-57de-f436" type="max"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d9c-8b4d-d2a7-3348" includeChildSelections="true"/>
@@ -6230,7 +6230,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Berzerker Warband</comment>
         </selectionEntry>
-        <selectionEntry id="9ecf-cc71-16df-c473" name="Favoured of Khorne" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9ecf-cc71-16df-c473" name="Favoured of Khorne" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97dd-5daf-8795-8630" type="max"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6e0a-cca0-b9d-ca20" includeChildSelections="true"/>
@@ -6258,7 +6258,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Berzerker Warband</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Archslaughterer" hidden="false" id="5b76-3e1c-8801-1e4b">
+        <selectionEntry type="upgrade" import="true" name="Archslaughterer" hidden="false" id="5b76-3e1c-8801-1e4b" sortIndex="21">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6286,7 +6286,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Vessels of Wrath</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Vox-Diabolus" hidden="false" id="4548-4f87-97e8-fc14">
+        <selectionEntry type="upgrade" import="true" name="Vox-Diabolus" hidden="false" id="4548-4f87-97e8-fc14" sortIndex="24">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6314,7 +6314,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Vessels of Wrath</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Avenger&apos;s Crown" hidden="false" id="ebe6-5a5b-cdf3-815f">
+        <selectionEntry type="upgrade" import="true" name="Avenger&apos;s Crown" hidden="false" id="ebe6-5a5b-cdf3-815f" sortIndex="22">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6342,7 +6342,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Vessels of Wrath</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Gateways to Glory" hidden="false" id="0986-e2aa-a2d9-f0db">
+        <selectionEntry type="upgrade" import="true" name="Gateways to Glory" hidden="false" id="0986-e2aa-a2d9-f0db" sortIndex="23">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6380,7 +6380,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Vessels of Wrath</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Brazen Form" hidden="false" id="564a-24c3-b6c5-f85c">
+        <selectionEntry type="upgrade" import="true" name="Brazen Form" hidden="false" id="564a-24c3-b6c5-f85c" sortIndex="5">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6421,7 +6421,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Butcher Lord" hidden="false" id="3109-eff5-24d5-cf3d">
+        <selectionEntry type="upgrade" import="true" name="Butcher Lord" hidden="false" id="3109-eff5-24d5-cf3d" sortIndex="6">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6454,7 +6454,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Cult of Blood</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chosen of the Blood God" hidden="false" id="5990-5b77-0916-c439">
+        <selectionEntry type="upgrade" import="true" name="Chosen of the Blood God" hidden="false" id="5990-5b77-0916-c439" sortIndex="7">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6487,7 +6487,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Cult of Blood</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Strategic Slaughter" hidden="false" id="05fc-0c29-ad53-acd9">
+        <selectionEntry type="upgrade" import="true" name="Strategic Slaughter" hidden="false" id="05fc-0c29-ad53-acd9" sortIndex="8">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6515,7 +6515,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Cult of Blood</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Disciple of Khorne" hidden="false" id="6d28-ca9d-79a5-063a">
+        <selectionEntry type="upgrade" import="true" name="Disciple of Khorne" hidden="false" id="6d28-ca9d-79a5-063a" sortIndex="11">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6550,7 +6550,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Khorne Daemonkin</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blood-forged Armour" hidden="false" id="eddd-9b27-00c2-b0ce">
+        <selectionEntry type="upgrade" import="true" name="Blood-forged Armour" hidden="false" id="eddd-9b27-00c2-b0ce" sortIndex="10">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6579,7 +6579,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Khorne Daemonkin</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Icon of War" hidden="false" id="29b7-1040-548a-a4b1">
+        <selectionEntry type="upgrade" import="true" name="Icon of War" hidden="false" id="29b7-1040-548a-a4b1" sortIndex="12">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6612,7 +6612,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Khorne Daemonkin</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blade of Endless Bloodshed" hidden="false" id="75ce-5ce7-0a6e-a876">
+        <selectionEntry type="upgrade" import="true" name="Blade of Endless Bloodshed" hidden="false" id="75ce-5ce7-0a6e-a876" sortIndex="9">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6648,7 +6648,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Khorne Daemonkin</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Frenzied Focus" hidden="false" id="426e-34a5-b952-1612">
+        <selectionEntry type="upgrade" import="true" name="Frenzied Focus" hidden="false" id="426e-34a5-b952-1612" sortIndex="13">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6681,7 +6681,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Possessed Slaughterband</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Killing Clarity" hidden="false" id="e987-b024-d619-1bb9">
+        <selectionEntry type="upgrade" import="true" name="Killing Clarity" hidden="false" id="e987-b024-d619-1bb9" sortIndex="14">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6714,7 +6714,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Possessed Slaughterband</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Violent Demise" hidden="false" id="46b0-fddc-73aa-9539">
+        <selectionEntry type="upgrade" import="true" name="Violent Demise" hidden="false" id="46b0-fddc-73aa-9539" sortIndex="16">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6747,7 +6747,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Possessed Slaughterband</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Malicious Vigour" hidden="false" id="2492-65d1-1840-3f19">
+        <selectionEntry type="upgrade" import="true" name="Malicious Vigour" hidden="false" id="2492-65d1-1840-3f19" sortIndex="15">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6780,7 +6780,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Possessed Slaughterband</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Aggressive Deployment" hidden="false" id="ba80-4557-e097-bf3e">
+        <selectionEntry type="upgrade" import="true" name="Aggressive Deployment" hidden="false" id="ba80-4557-e097-bf3e" sortIndex="17">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6808,7 +6808,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Goretrack Onslaught</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Unleash Hell" hidden="false" id="32d7-ab1a-70f8-ca05">
+        <selectionEntry type="upgrade" import="true" name="Unleash Hell" hidden="false" id="32d7-ab1a-70f8-ca05" sortIndex="20">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6836,7 +6836,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Goretrack Onslaught</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Infernal Infusion" hidden="false" id="62d3-25b8-aa7f-7ebb">
+        <selectionEntry type="upgrade" import="true" name="Infernal Infusion" hidden="false" id="62d3-25b8-aa7f-7ebb" sortIndex="18">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6864,7 +6864,7 @@ Melee weapons equipped by ^^**Blood Legions^^** units from your army have the [L
           </modifiers>
           <comment>Goretrack Onslaught</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Murderous Onslaught" hidden="false" id="507e-a083-0a4e-e427">
+        <selectionEntry type="upgrade" import="true" name="Murderous Onslaught" hidden="false" id="507e-a083-0a4e-e427" sortIndex="19">
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -6985,10 +6985,33 @@ Until the end of the battle round, each of those models has the VESSEL OF WRATH 
         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
       </characteristics>
     </profile>
+    <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1c84-74f8-f27d-55db">
+      <characteristics>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ Plasma pistol - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7250-9be2-c024-4f64">
+      <characteristics>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="12b4-9b00-007b-6045" name="Chaos - Chaos Knights Library" targetId="8106-aad2-918a-9ac" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="ab59-7c23-a58c-f8d5" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Titans" id="53cd-cf73-8ced-dd24" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Unaligned Forces" id="0631-ff5c-6bb7-c465" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

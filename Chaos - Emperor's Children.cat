@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="03fe-a162-4c02-f07b" name="Chaos - Emperor&apos;s Children" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="31" revision="5" authorContact="Mad_Spy" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="03fe-a162-4c02-f07b" name="Chaos - Emperor&apos;s Children" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="31" revision="11" authorContact="Mad_Spy" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Lucius the Eternal" hidden="false" id="e390-b58b-db9-816" collective="false">
       <profiles>
@@ -104,7 +104,7 @@
         <entryLink import="true" name="Warlord" hidden="false" id="8a5c-d7b0-b5ff-efd9" collective="false" targetId="c7a7-3164-12bc-3462" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -292,7 +292,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f5ce-3f52-3eba-2880" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="385"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="365"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -332,7 +332,7 @@
         </profile>
         <profile name="Euphoric Strikes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="828a-cdf4-e64a-cf75">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of the Fight phase, this model can use this ability. If it does so, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of the Fight phase, this model can use this ability. If it does so, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1.</characteristic>
           </characteristics>
         </profile>
         <profile name="Lord of the Host" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3cf5-ff3c-e78d-51c8">
@@ -484,7 +484,17 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="722d-ca12-6d6f-6341" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Plasma pistol" id="3917-f8a7-fcde-c954" hidden="false" targetId="0cbe-31f4-e833-9ef4" type="infoGroup"/>
+        <infoLink name="Hazardous" id="7c4a-1224-29a9-dd20" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
+        <infoLink name="Pistol" id="3b26-8ceb-37be-87d2" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+        <infoLink name="Precision" id="8278-f28f-c009-dbe2" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b950-835c-0fb7-9b47" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -495,7 +505,36 @@
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6264-8211-3a47-31d6" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="Precision" field="7f1b-8591-2fcf-d01c" affects="profiles.Ranged Weapons" join=", ">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b950-835c-0fb7-9b47" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <profiles>
+        <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="65d3-9d25-d59b-cfa9">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Plasma pistol - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f4b9-1aa7-21d4-4736">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="aab5-3545-6d30-9e87" collective="true">
       <comment>4 Attacks</comment>
@@ -545,6 +584,15 @@
       <comment>Collective</comment>
       <infoLinks>
         <infoLink name="Pistol" id="7675-08b8-947b-9188" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
+        <infoLink name="Precision" id="928b-f6f1-ec25-d248" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b950-835c-0fb7-9b47" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -560,6 +608,13 @@
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Pistol, Precision" field="7f1b-8591-2fcf-d01c">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b950-835c-0fb7-9b47" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <modifiers>
@@ -1057,7 +1112,7 @@
         <infoLink name="Deep Strike" id="7f25-4c6d-39a4-2b3a" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -1328,7 +1383,7 @@
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -1634,7 +1689,7 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Accursed weapon and combi-bolter" hidden="false" id="4a52-6694-b18b-54aa" collective="false">
               <constraints>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3dfd-adf8-7979-840f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3dfd-adf8-7979-840f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Combi-bolter" hidden="false" id="6e74-6bfd-720b-0193" collective="false" targetId="02c9-ea19-b105-af58" type="selectionEntry">
@@ -1655,7 +1710,7 @@
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Accursed weapon and combi-weapon" hidden="false" id="dcc8-aa7a-d2d8-3439" collective="false">
               <constraints>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="2f2f-f691-a190-b87f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2f2f-f691-a190-b87f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Accursed weapon" hidden="false" id="10b2-bf3c-b41e-d1cb" collective="false" targetId="37f9-08dc-948b-7a0b" type="selectionEntry">
@@ -2378,7 +2433,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="9811-85da-9f18-472b" targetId="cf47-a0d7-7207-29dc" primary="true"/>
-        <categoryLink name="Grenades" hidden="false" id="2c3c-78b2-bdda-c856" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Chaos" hidden="false" id="8790-33f3-8cb6-1a88" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Slaanesh" hidden="false" id="41f4-cd17-2f2b-a793" targetId="b2a9-ede5-7a83-4da8" primary="false"/>
         <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="27d2-b9e0-29df-84dc" targetId="31bb-7d77-943e-94bd" primary="false"/>
@@ -2582,7 +2636,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="135"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="145"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -2628,7 +2682,7 @@
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">20&quot;+</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">14</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
@@ -3072,7 +3126,7 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">20</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">5</characteristic>
@@ -4090,36 +4144,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
     <entryLink import="true" name="Seekers" hidden="false" id="2610-a708-7a64-1129" type="selectionEntry" targetId="c9df-2c38-25e5-ffc7"/>
   </entryLinks>
   <sharedInfoGroups>
-    <infoGroup name="Plasma pistol" id="0cbe-31f4-e833-9ef4" hidden="false">
-      <profiles>
-        <profile name="➤ Plasma pistol - standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="65d3-9d25-d59b-cfa9">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="➤ Plasma pistol - supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f4b9-1aa7-21d4-4736">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Pistol</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Hazardous" id="7c4a-1224-29a9-dd20" hidden="false" targetId="8367-374c-f87-c627" type="rule"/>
-        <infoLink name="Pistol" id="3b26-8ceb-37be-87d2" hidden="false" targetId="8bf7-8812-923d-29e4" type="rule"/>
-      </infoLinks>
-    </infoGroup>
+    <infoGroup name="Plasma pistol" id="0cbe-31f4-e833-9ef4" hidden="false"/>
   </sharedInfoGroups>
   <sharedProfiles>
     <profile name="Accursed weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bec5-9e9c-b187-c1c0">
@@ -4149,6 +4174,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
     <catalogueLink type="catalogue" name="Library - Astartes Heresy Legends" id="1a94-f115-b6aa-cdee" targetId="ac3b-689c-4ad4-70cb" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Chaos - Chaos Knights Library" id="379a-6b61-9b41-26a4" targetId="8106-aad2-918a-9ac" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Titans" id="4fb5-2490-7b48-0545" targetId="7481-280e-b55e-7867" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Unaligned Forces" id="2e24-f4aa-ba49-d22a" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Enhancements" id="ce10-1f30-82b7-fc7a" hidden="false">
@@ -4157,7 +4183,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2fe2-824a-bb3e-3c41" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Eager to Prove" hidden="false" id="b846-443f-45e9-d2f4">
+        <selectionEntry type="upgrade" import="true" name="Eager to Prove" hidden="false" id="b846-443f-45e9-d2f4" sortIndex="21">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -4184,7 +4210,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Repulsed by Weakness" hidden="false" id="0bd8-0ae9-8584-ecb4">
+        <selectionEntry type="upgrade" import="true" name="Repulsed by Weakness" hidden="false" id="0bd8-0ae9-8584-ecb4" sortIndex="23">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -4211,7 +4237,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Proud and Vainglorious" hidden="false" id="9885-a9c2-6a2c-9da0">
+        <selectionEntry type="upgrade" import="true" name="Proud and Vainglorious" hidden="false" id="9885-a9c2-6a2c-9da0" sortIndex="22">
           <comment>Slaanesh&apos;s Chosen</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -4238,7 +4264,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Slayer of Champions" hidden="false" id="5524-2326-c5c1-e188">
+        <selectionEntry type="upgrade" import="true" name="Slayer of Champions" hidden="false" id="5524-2326-c5c1-e188" sortIndex="24">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -4265,7 +4291,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Faultless Opportunist" hidden="false" id="ff3a-6be4-e450-7902">
+        <selectionEntry type="upgrade" import="true" name="Faultless Opportunist" hidden="false" id="ff3a-6be4-e450-7902" sortIndex="15">
           <comment>Peerless Bladesmen</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9a91-816c-a45d-486c" includeChildSelections="true"/>
@@ -4292,7 +4318,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blinding Speed" hidden="false" id="d2db-5680-3844-8286">
+        <selectionEntry type="upgrade" import="true" name="Blinding Speed" hidden="false" id="d2db-5680-3844-8286" sortIndex="13">
           <comment>Peerless Bladesmen</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a16-f919-9c7f-55b2" includeChildSelections="true"/>
@@ -4319,7 +4345,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Distortion" hidden="false" id="e83e-a805-5a10-df20">
+        <selectionEntry type="upgrade" import="true" name="Distortion" hidden="false" id="e83e-a805-5a10-df20" sortIndex="14">
           <comment>Peerless Bladesmen</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="834a-ce66-bcb6-2b85" includeChildSelections="true"/>
@@ -4354,7 +4380,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Rise to the Challenge" hidden="false" id="63af-738c-632a-22ee">
+        <selectionEntry type="upgrade" import="true" name="Rise to the Challenge" hidden="false" id="63af-738c-632a-22ee" sortIndex="16">
           <comment>Peerless Bladesmen</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9d88-0613-0d02-5867" includeChildSelections="true"/>
@@ -4386,7 +4412,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sublime Presence" hidden="false" id="336d-3ff2-42d5-e7d0">
+        <selectionEntry type="upgrade" import="true" name="Sublime Presence" hidden="false" id="336d-3ff2-42d5-e7d0" sortIndex="20">
           <comment>Rapid Evisceration</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a1c0-9123-4393-5e31" includeChildSelections="true"/>
@@ -4418,7 +4444,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Spearhead Striker" hidden="false" id="ec33-5c60-4896-f3a9">
+        <selectionEntry type="upgrade" import="true" name="Spearhead Striker" hidden="false" id="ec33-5c60-4896-f3a9" sortIndex="19">
           <comment>Rapid Evisceration</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a2b2-f866-524e-e64e" includeChildSelections="true"/>
@@ -4450,7 +4476,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Accomplished Tactician" hidden="false" id="6ac4-b6b5-c72e-c6f0">
+        <selectionEntry type="upgrade" import="true" name="Accomplished Tactician" hidden="false" id="6ac4-b6b5-c72e-c6f0" sortIndex="17">
           <comment>Rapid Evisceration</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ba7a-0352-3a63-17ce" includeChildSelections="true"/>
@@ -4482,7 +4508,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Heretek Adept" hidden="false" id="b7ae-e36a-f771-71ba">
+        <selectionEntry type="upgrade" import="true" name="Heretek Adept" hidden="false" id="b7ae-e36a-f771-71ba" sortIndex="18">
           <comment>Rapid Evisceration</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9d1b-48c7-cf46-1a40" includeChildSelections="true"/>
@@ -4514,7 +4540,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pledge of Eternal Servitude" hidden="false" id="481c-fd3f-f851-c1f4">
+        <selectionEntry type="upgrade" import="true" name="Pledge of Eternal Servitude" hidden="false" id="481c-fd3f-f851-c1f4" sortIndex="6">
           <comment>Coterie</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1cf1-dd71-db98-0b86" includeChildSelections="true"/>
@@ -4541,7 +4567,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pledge of Dark Glory" hidden="false" id="96ce-821e-570d-4ed4">
+        <selectionEntry type="upgrade" import="true" name="Pledge of Dark Glory" hidden="false" id="96ce-821e-570d-4ed4" sortIndex="5">
           <comment>Coterie</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="56dc-107b-8cef-a48f" includeChildSelections="true"/>
@@ -4568,7 +4594,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pledge of Mortal Pain" hidden="false" id="8033-d9bc-5e16-cc15">
+        <selectionEntry type="upgrade" import="true" name="Pledge of Mortal Pain" hidden="false" id="8033-d9bc-5e16-cc15" sortIndex="7">
           <comment>Coterie</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2a19-0845-5768-f558" includeChildSelections="true"/>
@@ -4595,7 +4621,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pledge of Unholy Fortune" hidden="false" id="88b7-8def-835d-259d">
+        <selectionEntry type="upgrade" import="true" name="Pledge of Unholy Fortune" hidden="false" id="88b7-8def-835d-259d" sortIndex="8">
           <comment>Coterie</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="37a4-3074-b94d-63dc" includeChildSelections="true"/>
@@ -4615,14 +4641,14 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
             <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Steeped in Suffering" hidden="false" id="eac7-57c3-db74-558b">
+        <selectionEntry type="upgrade" import="true" name="Steeped in Suffering" hidden="false" id="eac7-57c3-db74-558b" sortIndex="11">
           <comment>Mercurial Host</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e576-75f3-b904-9bad" includeChildSelections="true"/>
@@ -4649,7 +4675,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Intoxicating Musk" hidden="false" id="9019-ad76-2166-e240">
+        <selectionEntry type="upgrade" import="true" name="Intoxicating Musk" hidden="false" id="9019-ad76-2166-e240" sortIndex="9">
           <comment>Mercurial Host</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7df5-2d6b-222b-e1cb" includeChildSelections="true"/>
@@ -4676,7 +4702,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tactical Perfection" hidden="false" id="5e38-6ec6-6a34-ab23">
+        <selectionEntry type="upgrade" import="true" name="Tactical Perfection" hidden="false" id="5e38-6ec6-6a34-ab23" sortIndex="12">
           <comment>Mercurial Host</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6bd3-45eb-5c5c-a469" includeChildSelections="true"/>
@@ -4703,7 +4729,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Loathsome Dexterity" hidden="false" id="c463-1bc6-623d-08fd">
+        <selectionEntry type="upgrade" import="true" name="Loathsome Dexterity" hidden="false" id="c463-1bc6-623d-08fd" sortIndex="10">
           <comment>Mercurial Host</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3bcb-499e-ba6c-5ea1" includeChildSelections="true"/>
@@ -4730,7 +4756,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Empyric Suffusion" hidden="false" id="1336-bc76-85d0-11de">
+        <selectionEntry type="upgrade" import="true" name="Empyric Suffusion" hidden="false" id="1336-bc76-85d0-11de" sortIndex="2">
           <comment>Carnival of Excess</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5152-be6d-78a3-092b" includeChildSelections="true"/>
@@ -4762,7 +4788,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Dark Blessings" hidden="false" id="5e67-143c-4a82-df8a">
+        <selectionEntry type="upgrade" import="true" name="Dark Blessings" hidden="false" id="5e67-143c-4a82-df8a" sortIndex="1">
           <comment>Carnival of Excess</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9701-7105-4b3e-c972" includeChildSelections="true"/>
@@ -4794,7 +4820,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Possessed Blade" hidden="false" id="2f9f-6de5-bb22-815d">
+        <selectionEntry type="upgrade" import="true" name="Possessed Blade" hidden="false" id="2f9f-6de5-bb22-815d" sortIndex="3">
           <comment>Carnival of Excess</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="38f3-aec6-fc78-3396" includeChildSelections="true"/>
@@ -4826,7 +4852,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warp Walker" hidden="false" id="c1af-55bd-1303-dbb7">
+        <selectionEntry type="upgrade" import="true" name="Warp Walker" hidden="false" id="c1af-55bd-1303-dbb7" sortIndex="4">
           <comment>Carnival of Excess</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="206e-a2b7-5b7d-1be2" includeChildSelections="true"/>
