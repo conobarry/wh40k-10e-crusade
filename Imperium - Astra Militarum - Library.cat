@@ -23895,7 +23895,7 @@ Onslaught - 4</characteristic>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="d1a5-4297-168b-11cd" shared="true" percentValue="false"/>
+            <condition type="lessThan" value="1" field="716d-91b7-d55a-1022" scope="parent" childId="any" shared="true" percentValue="false"/>
           </conditions>
         </modifier>
       </modifiers>
