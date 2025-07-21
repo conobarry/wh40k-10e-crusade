@@ -8801,6 +8801,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Weapon Modifications" hidden="false" id="bc47-5152-87c8-e440" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="19c8-2f0a-b794-6561" type="selectionEntryGroup" targetId="bf1a-cfbe-0f83-3c83"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Laspistol" hidden="false" id="2689-4c0e-cdfb-3e5" collective="true">
@@ -23890,6 +23891,105 @@ Onslaught - 4</characteristic>
           </entryLinks>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Weapon Modifications" id="bf1a-cfbe-0f83-3c83" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="d1a5-4297-168b-11cd" shared="true" percentValue="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bad2-da08-02f4-600d"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Finely Balanced" hidden="false" id="6b3a-670d-29f9-3425" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
+            <modifier type="decrement" value="1" field="95d1-95f-45b4-11d6" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Brutal" hidden="false" id="64a9-7743-165c-1a38" sortIndex="2">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="increment" value="1" field="2229-f494-25db-c5d3" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
+            <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Armour Piercing" hidden="false" id="d98b-7d0b-ef30-48dc" sortIndex="3">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="decrement" value="1" field="9ead-8a10-520-de15" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
+            <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Master-Worked" hidden="false" id="d60e-8aca-6948-7eca" sortIndex="4">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="append" value="+1" field="a354-c1c8-a745-f9e3" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
+            <modifier type="append" value="+1" field="3254-9fe6-d824-513e" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Precise" hidden="false" id="4a94-3dfe-e905-637c" sortIndex="6">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="append" value="Precise" field="annotation" affects="profiles.Ranged Weapons" join=", " scope="parent"/>
+            <modifier type="append" value="Precise" field="annotation" affects="profiles.Melee Weapons" join=", " scope="parent"/>
+          </modifiers>
+          <profiles>
+            <profile name="Precise" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2ee5-3364-b668-12fd">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Critical Wound is scored for an attack made with this weapon, that attack has the Precision ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heirloom" hidden="false" id="d60e-7051-9240-bc13" sortIndex="5">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="XP" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="append" value="+1" field="3bb-c35f-f54-fb08" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
+            <modifier type="append" value="+1" field="2337-daa1-6682-b110" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
