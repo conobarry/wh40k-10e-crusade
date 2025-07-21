@@ -8978,7 +8978,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Blast" hidden="false" type="rule" id="f531-d4ab-51c6-c602" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2a81-e861-c4c1-878d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5112-4758-b60b-f2cb" type="selectionEntryGroup" targetId="bf1a-cfbe-0f83-3c83"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="b349-9d3a-1a65-3e48" collective="false">
@@ -23907,6 +23907,8 @@ Onslaught - 4</characteristic>
           <modifiers>
             <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
             <modifier type="decrement" value="1" field="95d1-95f-45b4-11d6" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+            <modifier type="append" value="Finely Balanced" field="annotation" affects="profiles.Ranged Weapons" join=", " scope="parent"/>
+            <modifier type="append" value="Finely Balanced" field="annotation" affects="profiles.Melee Weapons" join=", " scope="parent"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Brutal" hidden="false" id="64a9-7743-165c-1a38" sortIndex="2">
@@ -23920,6 +23922,8 @@ Onslaught - 4</characteristic>
           <modifiers>
             <modifier type="increment" value="1" field="2229-f494-25db-c5d3" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
             <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+            <modifier type="append" value="Brutal" field="annotation" affects="profiles.Ranged Weapons" join=", " scope="parent"/>
+            <modifier type="append" value="Brutal" field="annotation" affects="profiles.Melee Weapons" join=", " scope="parent"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Armour Piercing" hidden="false" id="d98b-7d0b-ef30-48dc" sortIndex="3">
@@ -23933,6 +23937,8 @@ Onslaught - 4</characteristic>
           <modifiers>
             <modifier type="decrement" value="1" field="9ead-8a10-520-de15" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
             <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+            <modifier type="append" value="Armour Piercing" field="annotation" affects="profiles.Ranged Weapons" join=", " scope="parent"/>
+            <modifier type="append" value="Armour Piercing" field="annotation" affects="profiles.Melee Weapons" join=", " scope="parent"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master-Worked" hidden="false" id="d60e-8aca-6948-7eca" sortIndex="4">
@@ -23944,8 +23950,10 @@ Onslaught - 4</characteristic>
             <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
           <modifiers>
-            <modifier type="append" value="+1" field="a354-c1c8-a745-f9e3" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
-            <modifier type="append" value="+1" field="3254-9fe6-d824-513e" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+            <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
+            <modifier type="increment" value="1" field="3254-9fe6-d824-513e" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+            <modifier type="append" value="Master-Worked" field="annotation" affects="profiles.Ranged Weapons" join=", " scope="parent"/>
+            <modifier type="append" value="Master-Worked" field="annotation" affects="profiles.Melee Weapons" join=", " scope="parent"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Precise" hidden="false" id="4a94-3dfe-e905-637c" sortIndex="6">
@@ -23959,6 +23967,8 @@ Onslaught - 4</characteristic>
           <modifiers>
             <modifier type="append" value="Precise" field="annotation" affects="profiles.Ranged Weapons" join=", " scope="parent"/>
             <modifier type="append" value="Precise" field="annotation" affects="profiles.Melee Weapons" join=", " scope="parent"/>
+            <modifier type="append" value="Precise" field="7f1b-8591-2fcf-d01c" affects="profiles.Ranged Weapons" scope="parent" join=", "/>
+            <modifier type="append" value="Precise" field="7f1b-8591-2fcf-d01c" affects="profiles.Melee Weapons" scope="parent" join=", "/>
           </modifiers>
           <profiles>
             <profile name="Precise" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2ee5-3364-b668-12fd">
@@ -23977,8 +23987,11 @@ Onslaught - 4</characteristic>
             <cost name="Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
           <modifiers>
-            <modifier type="append" value="+1" field="3bb-c35f-f54-fb08" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
-            <modifier type="append" value="+1" field="2337-daa1-6682-b110" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+            <modifier type="increment" value="1" field="3bb-c35f-f54-fb08" affects="profiles.Ranged Weapons" position="1" scope="parent"/>
+            <modifier type="increment" value="1" field="2337-daa1-6682-b110" affects="profiles.Melee Weapons" position="1" scope="parent"/>
+            <modifier type="append" value="Heirloom" field="annotation" affects="profiles.Ranged Weapons" join=", " scope="parent"/>
+            <modifier type="append" value="Heirloom
+" field="annotation" affects="profiles.Melee Weapons" join=", " scope="parent"/>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
