@@ -8800,7 +8800,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Heavy" hidden="false" type="rule" id="c19d-8a19-cd0d-4fca" targetId="1202-10a8-78e9-4c67"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Weapon Modifications" hidden="false" id="bc47-5152-87c8-e440" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
         <entryLink import="true" name="Weapon Modifications" hidden="false" id="19c8-2f0a-b794-6561" type="selectionEntryGroup" targetId="bf1a-cfbe-0f83-3c83"/>
       </entryLinks>
     </selectionEntry>
