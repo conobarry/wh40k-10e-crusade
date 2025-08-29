@@ -6402,14 +6402,12 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="2703-d190-1f1a-38a0" targetId="ea3f-b52b-8dc7-d365"/>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Crusade" id="19f3-9173-1f87-4264" hidden="false" sortIndex="1">
+        <entryLink import="true" name="Crusade" hidden="false" id="1db7-db24-e2bf-0802" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518">
           <entryLinks>
             <entryLink import="true" name="Mighty Champions" hidden="false" id="3d1a-8d20-4b45-8f32" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
           </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kasrkin" hidden="false" id="abe4-ca71-d5a7-3883">
       <costs>
