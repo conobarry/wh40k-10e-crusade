@@ -918,5 +918,6 @@
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="38dd-a3d5-684f-2dea" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="4e1e-d351-d01e-df32" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Library - Titans" id="60ee-b4f-eafc-93d1" targetId="7481-280e-b55e-7867"/>
+    <catalogueLink type="catalogue" name="Chaos - Daemons Library" id="acbb-0fa1-16bf-2643" targetId="b45c-af22-788a-dfd6"/>
   </catalogueLinks>
 </catalogue>
