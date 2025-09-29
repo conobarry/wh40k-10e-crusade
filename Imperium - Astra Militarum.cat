@@ -613,6 +613,10 @@
         <entryLink import="true" name="Show Imperial Knights" hidden="false" type="selectionEntry" id="f8d5-8d30-ef1d-9fc3" targetId="e82c-6f8c-2b97-a287"/>
         <entryLink import="true" name="Show Agents of the Imperium" hidden="false" type="selectionEntry" id="7593-597b-26b7-2717" targetId="e08b-2448-5606-fefb"/>
         <entryLink import="true" name="Show Titans" hidden="false" type="selectionEntry" id="1494-4bb1-b7e6-d879" targetId="f26b-79db-80e0-3a3b"/>
+        <entryLink import="true" name="Show Khorne Daemons" hidden="false" id="a551-ce96-baa8-0b5c" type="selectionEntry" targetId="f5f9-1339-84bb-ae85"/>
+        <entryLink import="true" name="Show Nurgle Daemons" hidden="false" id="2c77-d07d-2c1e-60a0" type="selectionEntry" targetId="f486-5e38-994c-15ec"/>
+        <entryLink import="true" name="Show Slaanesh Daemons" hidden="false" id="e74a-4c00-69f6-6dc7" type="selectionEntry" targetId="d3ff-16f0-dad2-c03c"/>
+        <entryLink import="true" name="Show Tzeentch Daemons" hidden="false" id="47b6-ea79-343f-9787" type="selectionEntry" targetId="1248-8642-b42f-1dca"/>
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Dominus Armoured Siege Bombard [Legends]" hidden="false" type="selectionEntry" id="8b44-2197-db9f-2af4" targetId="fc41-a899-8d5a-dc01">
