@@ -524,23 +524,6 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Crusade Force" id="cac3-71d1-ea4b-795d" hidden="false">
-      <forceEntries>
-        <forceEntry name="Crusade Army" id="ff7b-8f73-1756-650a" hidden="false">
-          <categoryLinks>
-            <categoryLink name="Configuration" hidden="false" id="c078-56fb-a0e9-fa0d" targetId="4ac9-fd30-1e3d-b249"/>
-          </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="1" field="21dc-d454-3048-5aeb">
-              <conditions>
-                <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="forces" scope="roster" shared="true" id="21dc-d454-3048-5aeb" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </forceEntry>
-      </forceEntries>
       <categoryLinks>
         <categoryLink name="Order of Battle" hidden="false" id="2452-ede7-7eb6-add4" targetId="ac7e-be7b-eb02-4752"/>
         <categoryLink name="Configuration" hidden="false" id="a290-a601-b0c5-3ba1" targetId="4ac9-fd30-1e3d-b249"/>
@@ -575,9 +558,6 @@
         <categoryLink name="Unit" hidden="false" id="4657-058c-657b-3d14" targetId="1160-70ae-a862-b1a8" primary="false"/>
         <categoryLink name="Allied Units" hidden="false" id="8d77-c7df-e1a3-0680" targetId="887b-ab87-92a2-20f5"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="0" field="51b2-306e-1021-d207" scope="force" shared="true" id="215f-8816-ff04-d1ef" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
     </forceEntry>
   </forceEntries>
   <entryLinks>
@@ -8242,18 +8222,22 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="11ab-9c3e-c756-9602" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="11ab-9c3e-c756-9602" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
         </modifier>
       </modifiers>
       <comment>Tyrannic War Crusade content</comment>
@@ -8491,10 +8475,14 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
       </selectionEntries>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="0e83-84fd-f2a7-223c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="0e83-84fd-f2a7-223c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <comment>Pariah Nexus Crusade content</comment>
