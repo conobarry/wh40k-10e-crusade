@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="48" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="76" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -687,13 +687,6 @@
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Show Legends" hidden="false" id="9ed-cbf4-bfe5-90bf">
       <categoryLinks>
@@ -796,14 +789,27 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Current Campaign" id="41a3-8e07-1e16-db1d" hidden="false" sortIndex="1" defaultSelectionEntryId="none" collapsible="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tyrannic War" hidden="false" id="11ab-9c3e-c756-9602"/>
-            <selectionEntry type="upgrade" import="true" name="Nachmund Gauntlet" hidden="false" id="a1e8-4bda-9200-f7c7"/>
-            <selectionEntry type="upgrade" import="true" name="Armageddon" hidden="false" id="fd80-17e3-3c1a-6570"/>
-            <selectionEntry type="upgrade" import="true" name="Pariah Nexus" hidden="false" id="0e83-84fd-f2a7-223c"/>
+            <selectionEntry type="upgrade" import="true" name="Tyrannic War" hidden="false" id="11ab-9c3e-c756-9602">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d8e-504d-9001-6cc1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nachmund Gauntlet" hidden="false" id="a1e8-4bda-9200-f7c7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="336d-3a1a-be99-2d6a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Armageddon" hidden="false" id="fd80-17e3-3c1a-6570">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18fa-8059-6bde-4166" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pariah Nexus" hidden="false" id="0e83-84fd-f2a7-223c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cae-d68e-fae1-1e53" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18fa-8059-6bde-4166" includeChildSelections="false"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -2612,6 +2618,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="11ab-9c3e-c756-9602" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Pariah Nexus Battle Traits" id="0272-ff62-2b5b-7390" hidden="false" collapsible="true">
           <selectionEntries>
@@ -3611,6 +3624,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="0e83-84fd-f2a7-223c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Nachmund Gauntlet Battle Traits" id="5370-0734-ffdb-9fdf" hidden="false" collapsible="true">
           <selectionEntries>
@@ -4444,6 +4464,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="a1e8-4bda-9200-f7c7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armageddon Battle Traits" id="9c28-2876-4721-62f5" hidden="false" collapsible="true">
           <selectionEntries>
@@ -5299,6 +5326,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="fd80-17e3-3c1a-6570" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -5821,6 +5855,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </selectionEntryGroup>
           </selectionEntryGroups>
           <comment>Crusade content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="0e83-84fd-f2a7-223c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Tyrannic War Crusade Relics" id="5a5c-df7d-ba6b-5441" hidden="false" collapsible="true">
           <selectionEntryGroups>
@@ -6396,6 +6437,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </selectionEntryGroup>
           </selectionEntryGroups>
           <comment>Crusade content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="11ab-9c3e-c756-9602" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Nachmund Gauntlet Crusade Relics" id="2910-0a1e-8c87-584f" hidden="false" collapsible="true">
           <selectionEntryGroups>
@@ -6890,6 +6938,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </selectionEntryGroup>
           </selectionEntryGroups>
           <comment>Crusade content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="a1e8-4bda-9200-f7c7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armageddon Crusade Relics" id="7e29-d0e8-4322-2063" hidden="false" collapsible="true">
           <selectionEntryGroups>
@@ -7443,6 +7498,13 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </selectionEntryGroup>
           </selectionEntryGroups>
           <comment>Crusade content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="fd80-17e3-3c1a-6570" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -8226,6 +8288,9 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </conditions>
             </conditionGroup>
           </conditionGroups>
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="11ab-9c3e-c756-9602" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <comment>Tyrannic War Crusade content</comment>
@@ -8465,6 +8530,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="0e83-84fd-f2a7-223c" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8476,6 +8542,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="fd80-17e3-3c1a-6570" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="a1e8-4bda-9200-f7c7" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
