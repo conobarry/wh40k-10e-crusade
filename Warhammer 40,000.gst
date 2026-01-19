@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="76" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="87" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -92,7 +92,15 @@
     <categoryEntry id="aff3-d6a3-2a95-9dc" name="Imperium" hidden="false"/>
     <categoryEntry id="4ac9-fd30-1e3d-b249" name="Configuration" hidden="false"/>
     <categoryEntry id="1160-70ae-a862-b1a8" name="Unit" hidden="false"/>
-    <categoryEntry id="c619-2086-bbcf-69c9" name="Fly" hidden="false"/>
+    <categoryEntry id="c619-2086-bbcf-69c9" name="Fly" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry id="6df-937-16bc-8c1a" name="Smoke" hidden="false"/>
     <categoryEntry id="13bf-2bee-3ae0-b414" name="Psyker" hidden="false"/>
     <categoryEntry id="dbd4-63-af05-998" name="Vehicle" hidden="false"/>
@@ -337,6 +345,7 @@
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -347,6 +356,7 @@
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -357,13 +367,14 @@
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="roster" shared="true" id="dee8-c245-3c3c-86b6" includeChildSelections="true" includeChildForces="true" negative="false"/>
+        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="dee8-c245-3c3c-86b6" includeChildSelections="true" includeChildForces="true" negative="false"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="226b-cf1e-353a-ae7f" name="Faction: Genestealer Cults" hidden="false"/>
@@ -408,11 +419,6 @@
     <categoryEntry name="Dominus" id="af4c-b971-a31c-669c"/>
     <categoryEntry name="Allied Units" hidden="false" id="887b-ab87-92a2-20f5">
       <modifiers>
-        <modifier type="set" value="Brood Brothers" field="name">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="500" field="4d8f-6e09-606e-788e" id="4ff4-f313-206c-fcb0">
           <conditionGroups>
             <conditionGroup type="and">
@@ -464,7 +470,52 @@
       <comment>Crusade content</comment>
     </categoryEntry>
     <categoryEntry name="Psychic Weapon" id="4546-4a0c-b3be-e84c" hidden="true"/>
-    <categoryEntry name="Extra Attacks" id="84c4-6d1e-e724-bd6e" hidden="true"/>
+    <categoryEntry name="Extra Attacks Weapon" id="84c4-6d1e-e724-bd6e" hidden="true"/>
+    <categoryEntry name="Torrent Weapon" id="064a-0470-60eb-e3ef" hidden="true"/>
+    <categoryEntry name="Ranged Weapon" id="eeda-8544-a2f3-3fab" hidden="true">
+      <comment>Used for Enhancement / Crusade Relic upgrades</comment>
+    </categoryEntry>
+    <categoryEntry name="Melee Weapon" id="ccdd-3987-11ed-90cd" hidden="true">
+      <comment>Used for Enhancement / Crusade Relic upgrades</comment>
+    </categoryEntry>
+    <categoryEntry name="Crusade Relic" id="c13c-1717-f8a8-a8df" hidden="true">
+      <comment>Category to be used to ignore characteristic changes by other upgrades</comment>
+    </categoryEntry>
+    <categoryEntry name="Pistol Weapon" id="1db0-c6b5-19db-8d0c" hidden="true"/>
+    <categoryEntry name="Death Company" id="7278-781b-ce6c-d23c" hidden="false"/>
+    <categoryEntry name="Attacks Dx Weapon" id="e993-e086-6de1-12af" hidden="true">
+      <comment>Weapons that have D3/D6 but no &quot;+x&quot; in their Attacks characteristic - used for logic calculations</comment>
+    </categoryEntry>
+    <categoryEntry name="Damage Dx Weapon" id="4986-bf86-beb4-13ac" hidden="true">
+      <comment>Weapons that have D3/D6 but no &quot;+x&quot; in their Damage characteristic - used for logic calculations</comment>
+    </categoryEntry>
+    <categoryEntry name="Attacks Dx+0 Modifier" id="6337-b83b-0d1e-5770" hidden="true">
+      <comment>Flags a weapon that has had a +0 added to a D3/D6 Attacks characteristic - used for logic calculations</comment>
+    </categoryEntry>
+    <categoryEntry name="Damage Dx+0 Modifier" id="982b-de77-dd2d-d9bd" hidden="true">
+      <comment>Flags a weapon that has had a +0 added to a D3/D6 Damage characteristic - used for logic calculations</comment>
+    </categoryEntry>
+    <categoryEntry id="59a9-b5cc-7c11-aaad" name="Tech-Priest" hidden="false"/>
+    <categoryEntry name="Ministorum Priest" hidden="false" id="cc88-9467-86ac-4ca2">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9ad1-8aef-0d46-3b1b" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Sanctifiers" id="9d4f-4beb-107d-3175" hidden="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3b97-07bb-1241-9cc6" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Pilot" id="5b15-724e-2eeb-8cb7" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="upgrade" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Assault Weapon" id="e106-0758-7137-2432" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -502,7 +553,7 @@
         <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
+    <forceEntry name="Boarding Actions" hidden="true" id="1d6e-2579-8e7f-1ed4">
       <categoryLinks>
         <categoryLink id="4f79-1f3a-7f95-ae21" name="Configuration" hidden="false" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
         <categoryLink id="73b6-764d-b0ab-977c" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="false"/>
@@ -521,6 +572,7 @@
         <categoryLink id="5db7-9406-f21f-2de0" name="Drone" hidden="false" targetId="2471-e2e0-3f55-d6cb" primary="false"/>
         <categoryLink id="fe2b-ae0-8572-b6ff" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink name="Retinue" hidden="false" id="d932-86b9-29ec-c799" targetId="cc77-a53-fca8-f48e"/>
+        <categoryLink name="Allied Units" hidden="false" id="ea52-2956-b106-5ec2" targetId="887b-ab87-92a2-20f5"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Crusade Force" id="cac3-71d1-ea4b-795d" hidden="false">
@@ -556,6 +608,7 @@
         <categoryLink name="Dedicated Transport" hidden="false" id="8ef9-4038-9434-2ed0" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink name="Fortification" hidden="false" id="9521-ccd2-1cb5-eef5" targetId="19d7-9c74-2140-5851" primary="false"/>
         <categoryLink name="Unit" hidden="false" id="4657-058c-657b-3d14" targetId="1160-70ae-a862-b1a8" primary="false"/>
+        <categoryLink name="Pilot" hidden="false" id="3577-efe1-f844-d1e0" targetId="5b15-724e-2eeb-8cb7"/>
         <categoryLink name="Allied Units" hidden="false" id="8d77-c7df-e1a3-0680" targetId="887b-ab87-92a2-20f5"/>
       </categoryLinks>
     </forceEntry>
@@ -583,91 +636,119 @@
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry id="baf8-997f-e323-a090" name="2. Strike Force (2000 Point limit)" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry id="4204-82d0-908c-a62a" name="3. Onslaught (3000 Point limit)" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="4. Boarding Patrol (500 Point Limit)" hidden="false" id="21b-48a5-24c-152c">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Boarding Actions" id="30b5-5345-e180-13af" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Boarding Patrol" hidden="false" id="21b-48a5-24c-152c" sortIndex="1"/>
+            <selectionEntry type="upgrade" import="true" name="Narrative Mission: Seize the Engine Dock (Defender)" hidden="false" id="227e-45aa-4d8b-4171"/>
+            <selectionEntry type="upgrade" import="true" name="Narrative Mission: Macro-junction IV-B" hidden="false" id="6d4e-233a-387d-6fc9"/>
+            <selectionEntry type="upgrade" import="true" name="Breaching Operation Mission" hidden="false" id="f3ef-6eb6-31d1-8d0d"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d79-cd5a-699f-7813" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="258c-a3b8-c0b0-d9af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Mission Ruleset" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Show Legends" hidden="false" id="9ed-cbf4-bfe5-90bf">
+    <selectionEntry type="upgrade" import="true" name="Show Legends" hidden="false" id="9ed-cbf4-bfe5-90bf" defaultAmount="1">
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="8f35-ad49-afb5-715" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cbd-24e3-bacb-1eb1" type="min"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51d8-e3c2-867-5eb"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f32-5aaa-603e-fed1"/>
       </constraints>
       <modifiers>
-        <modifier type="set" field="7cbd-24e3-bacb-1eb1" value="0"/>
-        <modifier type="set" field="51d8-e3c2-867-5eb" value="0"/>
-        <modifier type="set" value="Legends are visible" field="name"/>
+        <modifier type="set" value="Legends are visible" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9ed-cbf4-bfe5-90bf" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Show Unaligned Forces" hidden="false" id="2973-ea51-7f8d-5403">
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="756f-43f7-60e3-d93b" type="min"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2caa-2d0e-2ef7-2245"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed3f-a6a6-a555-2a07"/>
       </constraints>
       <modifiers>
-        <modifier type="set" field="756f-43f7-60e3-d93b" value="0"/>
-        <modifier type="set" field="2caa-2d0e-2ef7-2245" value="0"/>
-        <modifier type="set" value="Unaligned Forces are visible" field="name"/>
+        <modifier type="set" value="Unaligned Forces are visible" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2973-ea51-7f8d-5403" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="defaultAmount">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Show Unaligned Fortifications" hidden="false" id="e916-2cf4-a49d-b8c4">
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="555c-624d-1099-249b" type="min"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d690-2eb1-642-a72a"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="355a-61e4-abb8-b97b"/>
       </constraints>
       <modifiers>
-        <modifier type="set" field="555c-624d-1099-249b" value="0"/>
-        <modifier type="set" field="d690-2eb1-642-a72a" value="0"/>
-        <modifier type="set" value="Unaligned Fortifications are visible" field="name"/>
+        <modifier type="set" value="Unaligned Fortifications are visible" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="e916-2cf4-a49d-b8c4" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="defaultAmount">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Show/Hide Options" hidden="false" id="e8ef-836a-a9d1-901d">
@@ -693,6 +774,110 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade Options" id="e7cc-312b-6c80-450d" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Show Nachmund Gauntlet content" hidden="false" id="c9b3-8039-f1e9-c975">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="4650-5005-ee33-9136" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="64f8-b8da-3c1b-6cf6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e1a-3e2f-d5cc-ddaa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3afb-a4a6-df71-c656"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="64f8-b8da-3c1b-6cf6"/>
+                <modifier type="set" value="0" field="7e1a-3e2f-d5cc-ddaa"/>
+                <modifier type="set" value="Nachmund Gauntlet content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Show Pariah Nexus content" hidden="false" id="41bc-337c-cae2-eb21">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="83e3-b7a8-b906-91b8" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f6b6-2c31-2873-5b81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c705-cac0-b570-bffd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e7f-6333-8785-c524"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="f6b6-2c31-2873-5b81"/>
+                <modifier type="set" value="0" field="c705-cac0-b570-bffd"/>
+                <modifier type="set" value="Pariah Nexus content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Show Tyrannic War content" hidden="false" id="c566-c14f-c589-5375">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="0d1d-84f9-e9fc-7564" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2173-f2a6-397c-8fbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d147-319b-3d28-53cb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6d9-d4e8-59d5-5a35"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="2173-f2a6-397c-8fbf"/>
+                <modifier type="set" value="0" field="d147-319b-3d28-53cb"/>
+                <modifier type="set" value="Tyrannic War content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Show Armageddon content" hidden="false" id="5700-66f7-a020-7386">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="ad09-2744-4123-e5e3" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="44e6-438f-81a1-612e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="396c-cc07-a31f-fc0c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8aa0-b655-2f64-12c5"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="44e6-438f-81a1-612e"/>
+                <modifier type="set" value="0" field="396c-cc07-a31f-fc0c"/>
+                <modifier type="set" value="Armageddon content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Show White Dwarf content" hidden="false" id="c00c-b9d6-e0f7-4c37">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="f600-543f-cadc-0f0b" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6b90-ed5c-2319-a854" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4846-14da-105b-0ef6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d0f-fae4-fcdd-d2c7"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="6b90-ed5c-2319-a854"/>
+                <modifier type="set" value="0" field="4846-14da-105b-0ef6"/>
+                <modifier type="set" value="White Dwarf content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Boarding Actions Options" id="bcb6-3ad0-ad8a-0c30" hidden="false" flatten="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Show Killzone Upgrade: Shadowvaults content" hidden="false" id="9869-d845-89a6-6273">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64ec-d604-9232-79b4" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Order of Battle" hidden="false" id="eda7-8b4b-3719-af36">
       <categoryLinks>
@@ -714,6 +899,15 @@
           <constraints>
             <constraint type="min" value="1000" field="selections" scope="parent" shared="true" id="6be6-c41c-ea86-298a" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blackstone Fragments" hidden="false" id="da84-2394-ae2a-ed65" sortIndex="6">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="0e83-84fd-f2a7-223c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -827,7 +1021,7 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="8199-2676-9f51-f430" includeChildSelections="false"/>
       </constraints>
-      <comment>Crusade content</comment>
+      <comment>Pariah Nexus Crusade content</comment>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -856,23 +1050,38 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Damned Souls" hidden="false" id="e66d-3831-dd6d-5f88">
+      <comment>Blood Angels Crusade content</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7278-781b-ce6c-d23c" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="977c-2d1e-aa65-6364" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="8bf7-8812-923d-29e4" name="Pistol" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with [PISTOL] in their profile are known as Pistols. If a unit contains any models equipped with Pistols, that unit is eligible to shoot in its controlling player’s Shooting phase even while it is within Engagement Range of one or more enemy units. When such a unit is selected to shoot, it can only resolve attacks using its Pistols and can only target one of the enemy units it is within Engagement Range of. In such circumstances, a Pistol can target an enemy unit even if other friendly units are within Engagement Range of the same enemy unit. 
+      <description>Weapons with **[PISTOL]** in their profile are known as Pistols. If a unit contains any models equipped with Pistols, that unit is eligible to shoot in its controlling player’s Shooting phase even while it is within Engagement Range of one or more enemy units. When such a unit is selected to shoot, it can only resolve attacks using its Pistols and can only target one of the enemy units it is within Engagement Range of. In such circumstances, a Pistol can target an enemy unit even if other friendly units are within Engagement Range of the same enemy unit. 
 
-If a model is equipped with one or more Pistols, unless it is a MONSTER or VEHICLE model, it can either shoot with its Pistols or with all of its other ranged weapons. Declare whether such a model will shoot with its Pistols or its other ranged weapons before selecting targets.</description>
+If a model is equipped with one or more Pistols, unless it is a **^^Monster^^** or **^^Vehicle^^** model, it can either shoot with its Pistols or with all of its other ranged weapons. Declare whether such a model will shoot with its Pistols or its other ranged weapons before selecting targets.</description>
+      <alias>PISTOL</alias>
     </rule>
     <rule id="8367-374c-f87-c627" name="Hazardous" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
-      <description>Weapons with [HAZARDOUS] in their profile are known as Hazardous weapons. Each time a unit is selected to shoot or fight, after that unit has resolved all of its attacks, for each Hazardous weapon that targets were selected for when resolving those attacks, that unit must take one Hazardous test. To do so, roll one D6: on a 1, that test is failed. For each failed test you must resolve the following sequence (resolve each failed test one at a time): 
+      <description>Weapons with **[HAZARDOUS]** in their profile are known as Hazardous weapons. Each time a unit is selected to shoot or fight, after that unit has resolved all of its attacks, for each Hazardous weapon that targets were selected for when resolving those attacks, that unit must take one Hazardous test. To do so, roll one D6: on a 1, that test is failed. For each failed test you must resolve the following sequence (resolve each failed test one at a time): 
 
 ■ If possible, select one model in that unit that has lost one or more wounds and is equipped with one or more Hazardous weapons. 
-■ Otherwise, if possible, select one model in that unit (excluding CHARACTER models) equipped with one or more Hazardous weapons. 
-■ Otherwise, select one CHARACTER model in that unit equipped with one or more Hazardous weapons. 
+■ Otherwise, if possible, select one model in that unit (excluding **^^Character^^** models) equipped with one or more Hazardous weapons. 
+■ Otherwise, select one **^^Character^^** model in that unit equipped with one or more Hazardous weapons. 
 
 If a model was selected, that unit suffers 3 mortal wounds and when allocating those mortal wounds, they must be allocated to the selected model. 
 
 If a unit from a player’s army is selected as the target of the Fire Overwatch Stratagem in their opponent’s Charge phase, any mortal wounds inflicted by Hazardous tests are allocated after the charging unit has ended its Charge move.</description>
+      <alias>HAZARDOUS</alias>
     </rule>
     <rule id="b4dd-3e1f-41cb-218f" name="Leader" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>While a Bodyguard unit contains a Leader, it is known as an Attached unit and, with the exception of rules that are triggered when units are destroyed (pg 12), it is treated as a single unit for all rules purposes. Each time an attack targets an Attached unit, until the attacking unit has resolved all of its attacks, you must use the Toughness characteristic of the Bodyguard models in that unit, even if a Leader in that unit has a different Toughness characteristic. Each time an attack successfully wounds an Attached unit, that attack cannot be allocated to a Character model in that unit, even if that Character model has lost one or more wounds or has already had attacks allocated to it this phase. As soon as the last Bodyguard model in an Attached unit has been destroyed, any attacks made against that unit that have yet to be allocated can then be allocated to Character models in that unit.
@@ -884,61 +1093,74 @@ Each time the last model in a CHARACTER unit that is attached to a Bodyguard uni
 Each time a unit that is part of an Attached unit is destroyed, it does not have the keywords of any other units that make up that Attached unit (unless it has those keywords on its own datasheet) for the purposes of any rules that would be triggered when that unit is destroyed.</description>
     </rule>
     <rule id="be1e-ac8e-1e2c-3528" name="Devastating Wounds" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
-      <description>Weapons with [DEVASTATING WOUNDS] in their profile are known as Devastating Wounds weapons. Each time an attack is made with such a weapon, if that attack scores a Critical Wound, no saving throw of any kind can be made against that attack (including invulnerable saving throws). Such attacks are only allocated to models after all other attacks made by the attacking unit have been allocated and resolved. After that attack is allocated and after any modifiers are applied, it inflicts a number of mortal wounds on the target equal to the Damage characteristic of that attack, instead of inflicting damage normally.</description>
+      <description>Weapons with **[DEVASTATING WOUNDS]** in their profile are known as Devastating Wounds weapons. Each time an attack is made with such a weapon, if that attack scores a Critical Wound, no saving throw of any kind can be made against that attack (including invulnerable saving throws). Such attacks are only allocated to models after all other attacks made by the attacking unit have been allocated and resolved. After that attack is allocated and after any modifiers are applied, it inflicts a number of mortal wounds on the target equal to the Damage characteristic of that attack, instead of inflicting damage normally.</description>
       <alias>DEVASTATING WOUNDS</alias>
     </rule>
     <rule id="fc8a-8c24-bae9-cc1c" name="Assault" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with [ASSAULT] in their profile are known as Assault weapons. If a unit that Advanced this turn contains any models equipped with Assault weapons, it is still eligible to shoot in this turn’s Shooting phase. When such a unit is selected to shoot, you can only resolve attacks using Assault weapons its models are equipped with.</description>
+      <description>Weapons with **[ASSAULT]** in their profile are known as Assault weapons. If a unit that Advanced this turn contains any models equipped with Assault weapons, it is still eligible to shoot in this turn’s Shooting phase. When such a unit is selected to shoot, you can only resolve attacks using Assault weapons its models are equipped with.</description>
+      <alias>ASSAULT</alias>
     </rule>
     <rule id="115b-79dc-f723-d761" name="Extra Attacks" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
-      <description>Weapons with [EXTRA ATTACKS] in their profile are known as Extra Attacks weapons. Each time the bearer of one or more Extra Attacks weapons fights, it makes attacks with each of the Extra Attacks melee weapons it is equipped with and it makes attacks with one of the melee weapons it is equipped with that does not have the [EXTRA ATTACKS] ability (if any). The number of attacks made with an Extra Attacks weapon cannot be modified by other rules, unless that weapon’s name is explicitly specified in that rule.</description>
+      <description>Weapons with **[EXTRA ATTACKS]** in their profile are known as Extra Attacks weapons. Each time the bearer of one or more Extra Attacks weapons fights, it makes attacks with each of the Extra Attacks melee weapons it is equipped with and it makes attacks with one of the melee weapons it is equipped with that does not have the [EXTRA ATTACKS] ability (if any). The number of attacks made with an Extra Attacks weapon cannot be modified by other rules, unless that weapon’s name is explicitly specified in that rule.</description>
+      <alias>EXTRA ATTACKS</alias>
     </rule>
     <rule id="cf93-ad4d-2f08-a79d" name="Twin-linked" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with [TWIN-LINKED] in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack’s Wound roll.</description>
+      <description>Weapons with **[TWIN-LINKED]** in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack’s Wound roll.</description>
+      <alias>TWIN-LINKED</alias>
     </rule>
     <rule id="4111-82e3-9444-e942" name="Anti-" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
-      <description>Weapons with [ANTI-KEYWORD X+] in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the keyword after the word ‘Anti-’, an unmodified Wound roll of ‘x+’ scores a Critical Wound.</description>
+      <description>Weapons with **[ANTI-KEYWORD X+]** in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the keyword after the word ‘Anti-’, an unmodified Wound roll of ‘x+’ scores a Critical Wound.</description>
+      <alias>ANTI-</alias>
     </rule>
     <rule id="1897-c22c-9597-12b1" name="Sustained Hits" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
-      <description>Weapons with [SUSTAINED HITS X] in their profile are known as Sustained Hits weapons. Each time an attack is made with such a weapon, if a Critical Hit is rolled, that attack scores a number of additional hits on the target as denoted by ‘x’</description>
+      <description>Weapons with **[SUSTAINED HITS X]** in their profile are known as Sustained Hits weapons. Each time an attack is made with such a weapon, if a Critical Hit is rolled, that attack scores a number of additional hits on the target as denoted by ‘x’</description>
       <alias>SUSTAINED HITS</alias>
     </rule>
     <rule id="1202-10a8-78e9-4c67" name="Heavy" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
-      <description>Weapons with [HEAVY] in their profile are known as Heavy weapons. Each time an attack is made with such a weapon, if the attacking model’s unit Remained Stationary this turn, add 1 to that attack’s Hit roll.</description>
+      <description>Weapons with **[HEAVY]** in their profile are known as Heavy weapons. Each time an attack is made with such a weapon, if the attacking model’s unit Remained Stationary this turn, add 1 to that attack’s Hit roll.</description>
+      <alias>HEAVY</alias>
     </rule>
     <rule id="7cdb-fb99-44a9-8849" name="Melta" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
-      <description>Weapons with [MELTA X] in their profile are known as Melta weapons. Each time an attack made with such a weapon targets a unit within half that weapon’s range, that attack’s Damage characteristic is increased by the amount denoted by ‘x’.</description>
+      <description>Weapons with **[MELTA X]** in their profile are known as Melta weapons. Each time an attack made with such a weapon targets a unit within half that weapon’s range, that attack’s Damage characteristic is increased by the amount denoted by ‘x’.</description>
+      <alias>MELTA</alias>
     </rule>
     <rule id="9bf4-280f-bbe2-6fbb" name="Feel No Pain" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
       <description>Some models have &apos;Feel No Pain x+&apos; listed in their abilities. Each time a model with this ability suffers damage and so would lose a wound (including wounds lost due to mortal wounds), roll one D6: if the result is greater than or equal to the number denoted by &apos;x: that wound is ignored and is not lost. If a model has more than one Feel No Pain ability, you can only use one of those abilities each time that model suffers damage and so would lose a wound.</description>
     </rule>
     <rule id="6c1f-1cf7-ff25-c99e" name="Blast" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
-      <description>Weapons with [BLAST] in their profile are known as Blast weapons, and they make a random number of attacks. Each time you determine how many attacks are made with a Blast weapon, add 1 to the result for every five models that were in the target unit when you selected it as the target (rounding down). Blast weapons can never be used to make attacks against a unit that is within Engagement Range of one or more units from the attacking model’s army (including its own unit).</description>
+      <description>Weapons with **[BLAST]** in their profile are known as Blast weapons, and they make a random number of attacks. Each time you determine how many attacks are made with a Blast weapon, add 1 to the result for every five models that were in the target unit when you selected it as the target (rounding down). Blast weapons can never be used to make attacks against a unit that is within Engagement Range of one or more units from the attacking model’s army (including its own unit).</description>
+      <alias>BLAST</alias>
     </rule>
     <rule id="9143-31ae-e0a6-6007" name="Precision" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
-      <description>Weapons with [PRECISION] in their profile are known as Precision weapons. Each time an attack made with such a weapon successfully wounds an Attached unit, if a Character model in that unit is visible to the attacking model, the attacking model’s player can choose to have that attack allocated to that Character model instead of following the normal attack sequence.</description>
+      <description>Weapons with **[PRECISION]** in their profile are known as Precision weapons. Each time an attack made with such a weapon successfully wounds an Attached unit, if a Character model in that unit is visible to the attacking model, the attacking model’s player can choose to have that attack allocated to that Character model instead of following the normal attack sequence.</description>
+      <alias>PRECISION</alias>
     </rule>
     <rule id="4ddd-4e29-acdd-5e6d" name="Indirect Fire" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
-      <description>Weapons with [INDIRECT FIRE] in their profile are known as Indirect Fire weapons, and attacks can be made with them even if the target is not visible to the attacking model. These attacks can destroy enemy models in a target unit even though none may have been visible to the attacking unit when you selected that target.
+      <description>Weapons with **[INDIRECT FIRE]** in their profile are known as Indirect Fire weapons, and attacks can be made with them even if the target is not visible to the attacking model. These attacks can destroy enemy models in a target unit even though none may have been visible to the attacking unit when you selected that target.
 
 
-If no models in a target unit are visible to the attacking unit when you select that target, then each time a model in the attacking unit makes an attack against that target using an Indirect Fire weapon, subtract 1 from that attack’s Hit roll, an unmodified Hit roll of 1-3 always fails, and the target has the Benefit of Cover against that attack. Weapons with the [TORRENT] ability cannot be fired using the [INDIRECT FIRE] ability.</description>
+If no models in a target unit are visible to the attacking unit when you select that target, then each time a model in the attacking unit makes an attack against that target using an Indirect Fire weapon, subtract 1 from that attack’s Hit roll, an unmodified Hit roll of 1-3 always fails, and the target has the Benefit of Cover against that attack. Weapons with the **[TORRENT]** ability cannot be fired using the **[INDIRECT FIRE]** ability.</description>
+      <alias>INDIRECT FIRE</alias>
     </rule>
     <rule id="2ebc-abdf-8129-6c57" name="Lance" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with [LANCE] in their profile are known as Lance weapons. Each time an attack is made with such a weapon, if the bearer made a Charge move this turn, add 1 to that attack’s Wound roll.</description>
+      <description>Weapons with **[LANCE]** in their profile are known as Lance weapons. Each time an attack is made with such a weapon, if the bearer made a Charge move this turn, add 1 to that attack’s Wound roll.</description>
+      <alias>LANCE</alias>
     </rule>
     <rule id="d1d1-611e-5191-1095" name="Lethal Hits" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with [LETHAL HITS] in their profile are known as Lethal Hits weapons. Each time an attack is made with such a weapon, a Critical Hit automatically wounds the target.</description>
+      <description>Weapons with **[LETHAL HITS]** in their profile are known as Lethal Hits weapons. Each time an attack is made with such a weapon, a Critical Hit automatically wounds the target.</description>
       <alias>LETHAL HITS</alias>
     </rule>
     <rule id="4640-43e7-30b-215a" name="Ignores Cover" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with [IGNORES COVER] in their profile are known as Ignores Cover weapons. Each time an attack is made with such a weapon, the target cannot have the Benefit of Cover against that attack.</description>
+      <description>Weapons with **[IGNORES COVER]** in their profile are known as Ignores Cover weapons. Each time an attack is made with such a weapon, the target cannot have the Benefit of Cover against that attack.</description>
+      <alias>IGNORES COVER</alias>
     </rule>
     <rule id="c5c8-8b58-b8b6-7786" name="Rapid Fire" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with [RAPID FIRE X] in their profile are known as Rapid Fire weapons. Each time such a weapon targets a unit within half that weapon’s range, the Attacks characteristic of that weapon is increased by the amount denoted by ‘x’.</description>
+      <description>Weapons with **[RAPID FIRE X]** in their profile are known as Rapid Fire weapons. Each time such a weapon targets a unit within half that weapon’s range, the Attacks characteristic of that weapon is increased by the amount denoted by ‘x’.</description>
+      <alias>RAPID FIRE</alias>
     </rule>
     <rule id="5edf-d619-23e0-9b56" name="Torrent" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with [TORRENT] in their profile are known as Torrent weapons. Each time an attack is made with such a weapon, that attack automatically hits the target.</description>
+      <description>Weapons with **[TORRENT]** in their profile are known as Torrent weapons. Each time an attack is made with such a weapon, that attack automatically hits the target.</description>
+      <alias>TORRENT</alias>
     </rule>
     <rule id="ada6-bac1-ffe0-d6f7" name="Scouts" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>Some units have ‘Scouts x&quot;’ listed in their abilities. If every model in a unit has this ability, then at the start of the first battle round, before the first turn begins, it can make a Normal move of up to x&quot;, with the exception that, while making that move, the distance moved by each model in that unit can be greater than that model&apos;s Move characteristic, as long as it is not greater than x&quot;. 
@@ -946,6 +1168,13 @@ If no models in a target unit are visible to the attacking unit when you select 
 DEDICATED TRANSPORT models can make use of any Scouts x&quot; ability listed in their abilities, or a Scouts x&quot; ability that a unit that starts the battle embarked within that DEDICATED TRANSPORT  model has (provided only models with this ability are embarked within that Dedicated Transport model), regardless of how that embarked unit gained this ability (e.g. listed in their abilities, conferred by an Enhancement or by an attached Character, etc.). 
 
 A unit that moves using this ability must end that move more than 9&quot; horizontally away from all enemy models. If both players have units that can do this, the player who is taking the first turn moves their units first.</description>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="c05d-f4c3-f091-4938" name="Infiltrators" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>During deployment, if every model in a unit has this ability, then when you set it up, it can be set up anywhere on the battlefield that is more than 9&quot; horizontally away from the enemy deployment zone and all enemy models.</description>
@@ -971,21 +1200,23 @@ When doing so:
       <description>Unless part of an Attached unit, this unit can only be selected as the target of a ranged attack if the attacking model is within 12&quot;.</description>
     </rule>
     <rule id="eec5-5f54-9c03-c305" name="Hover" publicationId="48fc-15aa-b307-9443" page="53" hidden="false">
-      <description>Some AIRCRAFT models have &apos;Hover&apos; listed in their abilities. When you are instructed to Declare Battle Formations, before doing anything else, you must first declare which models from your army with this ability will be in Hover mode.
+      <description>Some **^^Aircraft^^** models have &apos;Hover&apos; listed in their abilities. When you are instructed to Declare Battle Formations, before doing anything else, you must first declare which models from your army with this ability will be in Hover mode.
 
-If a model is in Hover mode,  then until the end of the battle, its Move characteristic is changed to 20&quot;, it loses the AIRCRAFT keyword and it loses all associated rules for being an AlRCRAFT model. Models in Hover mode do not start the battle in Reserves, but you can choose to place them into Strategic Reserves following the normal rules if you wish.</description>
+If a model is in Hover mode, then until the end of the battle, its Move characteristic is changed to 20&quot;, it loses the **^^Aircraft^^** keyword and it loses all associated rules for being an **^^Aircraft^^** model. Models in Hover mode do not start the battle in Reserves, but you can choose to place them into Strategic Reserves following the normal rules if you wish.</description>
     </rule>
     <rule id="24-c886-e8ba-5a89" name="Fights First" publicationId="48fc-15aa-b307-9443" page="32" hidden="false">
       <description>Units with this ability that are eligible to fight do so in the Fights First step, provided every model in the unit has this ability.</description>
     </rule>
     <rule id="e9c4-2bb8-12ee-cd1b" name="Psychic" publicationId="48fc-15aa-b307-9443" page="38" hidden="false">
-      <description>Some weapons and abilities can only be used by PSYKERS. Such weapons and abilities are tagged with the word &apos;Psychic&apos;. If a Psychic weapon or ability causes any unit to suffer one or more wounds, each of those wounds is considered to have been inflicted by a Psychic Attack.</description>
+      <description>Some weapons and abilities can only be used by **^^Psykers^^**. Such weapons and abilities are tagged with the word &apos;Psychic&apos;. If a Psychic weapon or ability causes any unit to suffer one or more wounds, each of those wounds is considered to have been inflicted by a Psychic Attack.</description>
+      <alias>PSYCHIC</alias>
     </rule>
     <rule id="13b2-6518-dab3-7ea1" name="Firing Deck" page="17" hidden="false">
-      <description>Some TRANSPORT models have ‘Firing Deck x’ listed in their abilities. Each time such a model is selected to shoot in the Shooting phase, you can select up to ‘x’ models embarked within it whose units have not already shot this phase. Then, for each of those embarked models, you can select one ranged weapon that embarked model is equipped with (excluding weapons with the [ONE SHOT] ability). Until that TRANSPORT model has resolved all of its attacks, it counts as being equipped with all of the weapons you selected in this way, in addition to its other weapons. Until the end of the phase, those selected models’ units are not eligible to shoot.</description>
+      <description>Some **^^Transport^^** models have ‘Firing Deck x’ listed in their abilities. Each time such a model is selected to shoot in the Shooting phase, you can select up to ‘x’ models embarked within it whose units have not already shot this phase. Then, for each of those embarked models, you can select one ranged weapon that embarked model is equipped with (excluding weapons with the **[ONE SHOT]** ability). Until that **^^Transport^^** model has resolved all of its attacks, it counts as being equipped with all of the weapons you selected in this way, in addition to its other weapons. Until the end of the phase, those selected models’ units are not eligible to shoot.</description>
     </rule>
     <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
+      <alias>ONE SHOT</alias>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -1010,6 +1241,9 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <conditionGroup type="or">
               <conditions>
                 <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b678-4a99-210e-931f" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -1021,25 +1255,25 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
                             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="6" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="6" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="equalTo" value="3" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="3" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
                             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="3" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="3" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                         <conditionGroup type="and">
                           <conditions>
                             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true"/>
-                            <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="model-or-unit" childId="any" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="6" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="6" field="75bb-ded1-c86d-bdf0" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="6" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1048,49 +1282,43 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="lessThan" value="1" field="selections" scope="unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="2" field="selections" scope="model-or-unit" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="2" field="selections" scope="root-entry" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="lessThan" value="1" field="selections" scope="self" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="equalTo" value="2" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="4" field="selections" scope="model-or-unit" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="2" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="4" field="selections" scope="root-entry" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="lessThan" value="1" field="selections" scope="self" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="equalTo" value="3" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="6" field="selections" scope="model-or-unit" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="3" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="6" field="selections" scope="root-entry" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="lessThan" value="1" field="selections" scope="self" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="equalTo" value="4" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="8" field="selections" scope="model-or-unit" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="4" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="8" field="selections" scope="root-entry" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="lessThan" value="1" field="selections" scope="self" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="equalTo" value="5" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="10" field="selections" scope="model-or-unit" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="5" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="10" field="selections" scope="root-entry" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="lessThan" value="1" field="selections" scope="self" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="equalTo" value="6" field="selections" scope="model-or-unit" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="12" field="selections" scope="model-or-unit" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="6" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="12" field="selections" scope="root-entry" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="lessThan" value="1" field="selections" scope="self" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -1139,26 +1367,10 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <modifierGroup type="and">
               <comment>Armour Piercing</comment>
               <modifiers>
-                <modifier type="append" value="Armour Piercing" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Armour Piercing" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="128d-c573-273f-47b5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Armour Piercing" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="decrement" value="1" field="9ead-8a10-520-de15" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="append" value="Armour Piercing" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+                <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1177,26 +1389,10 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <modifierGroup type="and">
               <comment>Brutal</comment>
               <modifiers>
-                <modifier type="append" value="Brutal" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="c5fb-58f5-2d2f-cc09" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="c5fb-58f5-2d2f-cc09" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="c5fb-58f5-2d2f-cc09" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Brutal" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="c5fb-58f5-2d2f-cc09" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Brutal" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="increment" value="1" field="2229-f494-25db-c5d3" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+                <modifier type="append" value="Brutal" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1215,36 +1411,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <modifierGroup type="and">
               <comment>Finely Balanced</comment>
               <modifiers>
-                <modifier type="append" value="Finely Balanced" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="a925-2f50-1580-0f5c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="a925-2f50-1580-0f5c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="95d1-95f-45b4-11d6" scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="a925-2f50-1580-0f5c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Finely Balanced" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="a925-2f50-1580-0f5c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="floor" value="2" field="95d1-95f-45b4-11d6" scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="a925-2f50-1580-0f5c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="floor" value="2" field="94d-8a98-cf90-183e" scope="upgrade" affects="self.entries.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="a925-2f50-1580-0f5c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Finely Balanced" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
+                <modifier type="decrement" value="1" field="95d1-95f-45b4-11d6" scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+                <modifier type="append" value="Finely Balanced" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+                <modifier type="floor" value="2" field="95d1-95f-45b4-11d6" scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+                <modifier type="floor" value="2" field="94d-8a98-cf90-183e" scope="upgrade" affects="self.entries.profiles.Ranged Weapons"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1263,39 +1435,27 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <modifierGroup type="and">
               <comment>Heirloom</comment>
               <modifiers>
-                <modifier type="append" value="Heirloom" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="3bb-c35f-f54-fb08" scope="upgrade" affects="profiles.Ranged Weapons" position="-1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" position="-1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Heirloom" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="replace" field="3bb-c35f-f54-fb08" scope="upgrade" affects="profiles.Ranged Weapons" arg="+0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" arg="+0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Heirloom" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="Heirloom" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" field="3bb-c35f-f54-fb08" scope="upgrade" affects="e993-e086-6de1-12af.profiles.Ranged Weapons" arg="+0" value="+0" join=""/>
+                <modifier type="append" field="2337-daa1-6682-b110" scope="upgrade" affects="e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" value="+0" join=""/>
+                <modifier type="replace" field="3bb-c35f-f54-fb08" scope="upgrade" affects="6337-b83b-0d1e-5770.profiles.Ranged Weapons" arg="+0"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="3bb-c35f-f54-fb08" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="3bb-c35f-f54-fb08" scope="upgrade" affects="profiles.Ranged Weapons" arg="+0"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="upgrade" arg="+0" affects="e993-e086-6de1-12af"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="84c4-6d1e-e724-bd6e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master-worked (D+1)" hidden="false" id="584b-5fa7-a3c3-942e">
           <constraints>
@@ -1311,36 +1471,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <modifierGroup type="and">
               <comment>Master-worked</comment>
               <modifiers>
-                <modifier type="append" value="Master-worked" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" position="-1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Master-worked" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" position="-1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" join="" arg="+0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" join="" arg="+0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Master-worked" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="Master-worked" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0" value="+0"/>
+                <modifier type="append" field="3254-9fe6-d824-513e" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0" value="+0"/>
+                <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
+                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="upgrade" join="" arg="+0" affects="4986-bf86-beb4-13ac"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1352,7 +1493,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
           <profiles>
             <profile name="Precise" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e257-ed3e-c157-a9c6">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Critical Wound is scored for an attack made with this weapon, that attack has the [PRECISION] ability.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Critical Wound is scored for an attack made with this weapon, that attack has the **[PRECISION]** ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1391,26 +1532,10 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             <modifierGroup type="and">
               <comment>Master-worked</comment>
               <modifiers>
-                <modifier type="append" value="Seeping Poisons" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="d327-a8ea-20de-37f4" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Lethal Hits" field="7f1b-8591-2fcf-d01c" scope="upgrade" affects="profiles.Ranged Weapons" position="-1" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="d327-a8ea-20de-37f4" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Seeping Poisons" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="d327-a8ea-20de-37f4" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Lethal Hits" field="893f-9000-ccf7-648e" scope="upgrade" affects="profiles.Melee Weapons" position="-1" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="d327-a8ea-20de-37f4" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Seeping Poisons" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="Lethal Hits" field="7f1b-8591-2fcf-d01c" scope="upgrade" affects="profiles.Ranged Weapons" position="-1" join=", "/>
+                <modifier type="append" value="Seeping Poisons" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" value="Lethal Hits" field="893f-9000-ccf7-648e" scope="upgrade" affects="profiles.Melee Weapons" position="-1" join=", "/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1589,6 +1714,19 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="e66d-3831-dd6d-5f88" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7278-781b-ce6c-d23c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <comment>Crusade content</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -2130,7 +2268,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2169,7 +2307,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2208,7 +2346,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2248,7 +2386,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2280,7 +2418,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2312,7 +2450,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -3115,8 +3253,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3159,8 +3297,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3199,8 +3337,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3213,43 +3351,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </modifiers>
               <profiles>
                 <profile name="United By Adversity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ce60-226f-407f-96d5">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="United By Adversity" hidden="false" id="cb8b-d76c-2668-6a96">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09d2-6ebe-9f2e-d369" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="United By Adversity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="552b-9bd7-2c13-f2bf">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
                   </characteristics>
@@ -3273,8 +3374,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3310,8 +3411,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3350,8 +3451,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3859,7 +3960,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -3894,7 +3995,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -3926,7 +4027,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -3958,7 +4059,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -3990,7 +4091,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4022,7 +4123,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4253,7 +4354,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4285,7 +4386,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4320,7 +4421,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4431,9 +4532,14 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                   <conditions>
@@ -4464,7 +4570,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4496,7 +4602,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4528,7 +4634,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4563,7 +4669,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4595,7 +4701,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4635,7 +4741,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -5014,7 +5120,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -5046,7 +5152,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -5078,7 +5184,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -5109,9 +5215,14 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                   <conditions>
@@ -5144,9 +5255,14 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                   <conditions>
@@ -5186,9 +5302,14 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                   <conditions>
@@ -5218,9 +5339,14 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                   <conditions>
@@ -5250,9 +5376,14 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                   <conditions>
@@ -5317,7 +5448,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -5360,7 +5491,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
                           </conditions>
                         </conditionGroup>
@@ -5407,7 +5538,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -5453,7 +5584,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -5503,7 +5634,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -5546,7 +5677,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -5569,8 +5700,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                       <modifiers>
                         <modifier type="append" value="Blade of the Dynast" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
                         <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
-                        <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", " position="-1"/>
                         <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
+                        <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                        <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                        <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                        <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                        <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
@@ -5599,7 +5734,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -5780,6 +5915,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="add" value="Must upgrade a weapon to a Crusade Relic" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="07b8-2a06-de26-16d6" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="0fbc-9dce-f882-48ad" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -5793,6 +5934,129 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <infoLink name="Sustained Hits" id="128d-cc2b-de55-f91c" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
                     <infoLink name="Precision" id="9925-0721-d889-af63" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
                   </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Nameless Tome" hidden="false" id="8c3a-a64e-ce1b-446d">
+                  <profiles>
+                    <profile name="Nameless Tome" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dd14-2e6f-1274-d2b0">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is on the battlefield, you can use the New Orders Stratagem for 0CP.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="23ff-f4bd-8177-d334" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8c3a-a64e-ce1b-446d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8c3a-a64e-ce1b-446d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="c00c-b9d6-e0f7-4c37" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Rod of Command" hidden="false" id="c34c-bad4-f04a-9cce">
+                  <profiles>
+                    <profile name="Rod of Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1f5e-dbbc-b14a-9478">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, before drawing cards from your Secondary Mission deck, if the bearer is on the battlefield, you can look at the top card of your Secondary Mission deck, then you can return that card to the bottom of your Secondary Mission deck.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9076-2ca6-faa7-190f" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c34c-bad4-f04a-9cce" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="c34c-bad4-f04a-9cce" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="c00c-b9d6-e0f7-4c37" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shard of Shattered Futures" hidden="false" id="4d30-7d18-aed5-214b">
+                  <profiles>
+                    <profile name="Shard of Shattered Futures" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9bf2-831a-62c4-dea8">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, if the bearer is in your Crusade army, you can remove up to three Secondary Mission cards from your Secondary Mission deck and discard them, If you do, you can must then reshuffle your Secondary Mission deck.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="621c-8981-4d73-0703" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d30-7d18-aed5-214b" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="4d30-7d18-aed5-214b" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="c00c-b9d6-e0f7-4c37" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -5834,7 +6098,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
                           </conditions>
                         </conditionGroup>
@@ -5878,7 +6142,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -5921,7 +6185,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
                           </conditions>
                         </conditionGroup>
@@ -5965,7 +6229,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6011,7 +6275,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6054,7 +6318,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
                           </conditions>
                         </conditionGroup>
@@ -6102,7 +6366,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6156,7 +6420,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6202,7 +6466,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6245,7 +6509,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6367,6 +6631,48 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="add" value="Must upgrade a weapon to a Crusade Relic" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="80bb-b4df-b32c-6625" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="be3b-002c-05eb-b21f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Biosplint Gland" hidden="false" id="a55e-b0b2-21d9-6a9a">
+                  <profiles>
+                    <profile name="Biosplint Gland" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="179e-a700-2330-1df8">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer&apos;s unit ends Charge moved, select one enemy unit within Engagement Range of the bearer. Until the end of the turn, each time a model in that enemy unit makes an attack, subtract 1 from that attack&apos;s Hit roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3189-9d43-0504-588d" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a55e-b0b2-21d9-6a9a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="a55e-b0b2-21d9-6a9a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -6416,7 +6722,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
                           </conditions>
                         </conditionGroup>
@@ -6468,7 +6774,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6511,7 +6817,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6554,7 +6860,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6607,7 +6913,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6615,6 +6921,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="Must upgrade a weapon to a Crusade Relic" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="f36f-9bf8-0744-3752" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="247c-5357-828e-4cc5" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -6653,7 +6965,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6703,7 +7015,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6868,6 +7180,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="add" value="Must upgrade a weapon to a Crusade Relic" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="59bf-61aa-e8ff-07f3" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="3cb0-57d2-8e00-9f54" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -6920,7 +7238,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6963,7 +7281,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -7009,7 +7327,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -7017,6 +7335,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="Must upgrade a weapon to a Crusade Relic" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="d931-d16c-638c-216c" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="13d0-c7e2-1702-ff13" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -7056,7 +7380,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -7106,7 +7430,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -7149,7 +7473,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -7192,7 +7516,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                             <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
                           </conditions>
                         </conditionGroup>
@@ -7255,7 +7579,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -7263,6 +7587,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="Must upgrade a weapon to a Crusade Relic" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="99f2-ed97-edc9-27bd" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="07f8-50b6-543a-e5b4" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -7560,23 +7890,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="faa2-8145-18a4-34c1" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="79d5-885d-8cc2-f885" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Painful Lessons" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0443-b9f5-0690-1c6a">
@@ -7603,23 +7916,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8791-d292-d3df-69a2" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="79d5-885d-8cc2-f885" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -7648,23 +7944,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4556-4f10-f8fe-640c" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8791-d292-d3df-69a2" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Hamstringing Attacks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c2be-b94d-d4cb-f914">
@@ -7691,31 +7970,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="d441-8e0d-f984-52ee" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ab52-bc6a-1099-5000" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8791-d292-d3df-69a2" shared="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="faa2-8145-18a4-34c1" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -7757,23 +8011,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4556-4f10-f8fe-640c" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="faa2-8145-18a4-34c1" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Nimble Defence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38ac-2ed6-0bd7-e628">
@@ -7799,14 +8036,9 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               </conditionGroups>
             </modifier>
             <modifier type="set" value="1" field="8937-5c60-e52d-dd07">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7767-9b46-61a3-c62a" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="set" value="1" field="a18f-126f-0697-e5df">
               <conditions>
@@ -7866,17 +8098,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8b22-21b7-9d42-ed41" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="31bd-ce57-db23-cd21" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Indomitable Stature" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3e8f-093a-1795-a68a">
@@ -7903,17 +8124,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="0631-30ea-dc30-6668" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="31bd-ce57-db23-cd21" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -7944,17 +8154,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="0631-30ea-dc30-6668" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8b22-21b7-9d42-ed41" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Prey Taker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="99ff-4ba1-2488-7c2f">
@@ -7981,16 +8180,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="1473-e060-09f0-2261" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="0631-30ea-dc30-6668" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8019,16 +8208,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a2b9-1412-57b8-d6f8" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="0631-30ea-dc30-6668" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Sweeping Blow" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38e1-9c82-18ed-4bf0">
@@ -8055,16 +8234,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4b0-aae0-e3b9-d952" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="31bd-ce57-db23-cd21" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8095,16 +8264,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="14d4-1e97-4302-1654" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="31bd-ce57-db23-cd21" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8144,16 +8303,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="702d-9520-9430-7269" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b22-21b7-9d42-ed41" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Unstoppable Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="acc3-e888-1539-0b15">
@@ -8181,16 +8330,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ee3c-b45a-e693-96f5" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b22-21b7-9d42-ed41" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Massive Stomp" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="459d-1377-d4a2-a93c">
@@ -8207,14 +8346,8 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                 <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="fe0b-a773-b244-d6a3" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="1" field="2255-b8fc-34ba-43b6">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="fe0b-a773-b244-d6a3" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2255-b8fc-34ba-43b6" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d674-520e-d71b-1586" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
@@ -8239,12 +8372,17 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="c566-c14f-c589-5375" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <comment>Tyrannic War Crusade content</comment>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Pariah Nexus Blackstone Upgrades" id="66c2-2a46-e7ed-a935" hidden="false">
+    <selectionEntryGroup name="Pariah Nexus Blackstone Upgrades" id="66c2-2a46-e7ed-a935" hidden="false" collapsible="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Blackstone Battle Honours" id="eef7-e5fc-10bd-c99a" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Blackstone Battle Honours" id="eef7-e5fc-10bd-c99a" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Acquisitive Opportunist" hidden="false" id="5e47-9ac7-39ff-6bf0">
               <constraints>
@@ -8348,7 +8486,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Blackstone Crusade Relics" id="4db6-cde6-c1ed-ed63" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Blackstone Crusade Relics" id="4db6-cde6-c1ed-ed63" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Blackstone Amulet" hidden="false" id="98c5-b3e3-bbb7-e473">
               <profiles>
@@ -8455,6 +8593,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="add" value="Must upgrade a weapon to a Crusade Relic" field="error">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="d36e-d497-6068-1b83" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="7499-0c7d-efd2-d306" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -8470,9 +8614,6 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Blackstone Fragments" hidden="false" id="da84-2394-ae2a-ed65" sortIndex="1"/>
-      </selectionEntries>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -8559,7 +8700,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <profiles>
                 <profile name="Inspirational Champions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c358-6a5e-8ae9-f95e">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore and and/or all Battle Scars that Bodyguard unit has. In addition, if your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle you can select one additional unit from your Crusade army to be Marked for Greatness.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore any and/or all Battle Scars that Bodyguard unit has. In addition, if your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle you can select one additional unit from your Crusade army to be Marked for Greatness.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8689,7 +8830,7 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
               <profiles>
                 <profile name="Inspirational Champions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7255-2c06-ecb5-7913">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore and and/or all Battle Scars that Bodyguard unit has. If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle, you can select one additional unit from your Crusade army to be Marked for Greatness.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore any and/or all Battle Scars that Bodyguard unit has. If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle, you can select one additional unit from your Crusade army to be Marked for Greatness.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8792,6 +8933,509 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Crusade Relic Upgrades" id="b678-4a99-210e-931f" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gene-toxin Autofont upgrade" hidden="false" id="59bf-61aa-e8ff-07f3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e39c-5e22-abb9-eed2" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="66db-d03a-2d0c-d3df" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="3cb0-57d2-8e00-9f54" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="ccdd-3987-11ed-90cd" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="59bf-61aa-e8ff-07f3" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="59bf-61aa-e8ff-07f3" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="false"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="59bf-61aa-e8ff-07f3" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="66db-d03a-2d0c-d3df">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="3cb0-57d2-8e00-9f54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c13c-1717-f8a8-a8df" field="category" join=", " scope="upgrade"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Gene-toxin Autofont" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Treasure of the Technomandrites upgrade" hidden="false" id="07b8-2a06-de26-16d6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a702-c9d7-905a-56d8" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="808a-fcdd-3be5-6a42" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="0fbc-9dce-f882-48ad" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="07b8-2a06-de26-16d6" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="07b8-2a06-de26-16d6" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="false"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="07b8-2a06-de26-16d6" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="808a-fcdd-3be5-6a42">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="0fbc-9dce-f882-48ad" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c13c-1717-f8a8-a8df" field="category" join=", " scope="upgrade"/>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Abilities" id="86f4-1a93-192e-68bb" hidden="false" collapsible="true" defaultSelectionEntryId="none">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Precision" hidden="false" id="e61a-5d5d-9393-e0c3"/>
+                <selectionEntry type="upgrade" import="true" name="Lethal Hits" hidden="false" id="dad3-c44d-6954-0a02"/>
+                <selectionEntry type="upgrade" import="true" name="Sustained Hits 1" hidden="false" id="aa7e-1d9b-be7d-3ed7"/>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a9d-b3a2-a0e4-9ee7" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0779-353b-c89d-c04b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Treasure of the Technomandrites" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" value="Treasure of the Technomandrites" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="Lethal Hits" field="893f-9000-ccf7-648e" join=", " scope="upgrade" affects="profiles.Melee Weapons">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dad3-c44d-6954-0a02" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="Lethal Hits" field="7f1b-8591-2fcf-d01c" join=", " scope="upgrade" affects="profiles.Ranged Weapons">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dad3-c44d-6954-0a02" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="Precision" field="893f-9000-ccf7-648e" join=", " scope="upgrade" affects="profiles.Melee Weapons">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e61a-5d5d-9393-e0c3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="Precision" field="7f1b-8591-2fcf-d01c" join=", " scope="upgrade" affects="profiles.Ranged Weapons">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e61a-5d5d-9393-e0c3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="Sustained Hits 1" field="893f-9000-ccf7-648e" join=", " scope="upgrade" affects="profiles.Melee Weapons">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa7e-1d9b-be7d-3ed7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="Sustained Hits 1" field="7f1b-8591-2fcf-d01c" join=", " scope="upgrade" affects="profiles.Ranged Weapons">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa7e-1d9b-be7d-3ed7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Artificer Weapon upgrade" hidden="false" id="80bb-b4df-b32c-6625">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4c1c-5a78-7a4c-07bf" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="20d8-03f9-b458-ed8b" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="be3b-002c-05eb-b21f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="80bb-b4df-b32c-6625" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="80bb-b4df-b32c-6625" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="false"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="80bb-b4df-b32c-6625" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="20d8-03f9-b458-ed8b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="be3b-002c-05eb-b21f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c13c-1717-f8a8-a8df" field="category" join=", " scope="upgrade"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Artificer Weapon" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" value="Artificer Weapon" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fate-forged Weapon upgrade" hidden="false" id="f36f-9bf8-0744-3752">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e45a-a691-0851-b1bb" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="57a9-c508-fce9-d960" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="247c-5357-828e-4cc5" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="ccdd-3987-11ed-90cd" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="f36f-9bf8-0744-3752" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="f36f-9bf8-0744-3752" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="false"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="f36f-9bf8-0744-3752" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="57a9-c508-fce9-d960">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="be3b-002c-05eb-b21f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c13c-1717-f8a8-a8df" field="category" join=", " scope="upgrade"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Fate-forged Weapon" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Weapon of Renown upgrade" hidden="false" id="d931-d16c-638c-216c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7296-10af-0156-3a5b" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="c7de-2202-3302-511d" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="13d0-c7e2-1702-ff13" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="ccdd-3987-11ed-90cd" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d931-d16c-638c-216c" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="d931-d16c-638c-216c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="false"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="d931-d16c-638c-216c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="c7de-2202-3302-511d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="13d0-c7e2-1702-ff13" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c13c-1717-f8a8-a8df" field="category" join=", " scope="upgrade"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Weapon of Renown" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" value="Anti-Unbound Adversaries 4+, Devastating Wounds" field="893f-9000-ccf7-648e" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp-touched Weapon upgrade" hidden="false" id="99f2-ed97-edc9-27bd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b341-537e-08d4-d056" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="7331-b6bd-2846-402e" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="07f8-50b6-543a-e5b4" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="ccdd-3987-11ed-90cd" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="99f2-ed97-edc9-27bd" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="99f2-ed97-edc9-27bd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="false"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="99f2-ed97-edc9-27bd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="7331-b6bd-2846-402e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="07f8-50b6-543a-e5b4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c13c-1717-f8a8-a8df" field="category" join=", " scope="upgrade"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Warp-touched Weapon" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="upgrade" affects="e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="upgrade" arg="+0" affects="e993-e086-6de1-12af"/>
+                <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="upgrade" join="" arg="+0" affects="4986-bf86-beb4-13ac"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Noctilith Armament upgrade" hidden="false" id="d36e-d497-6068-1b83">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5304-c783-7cd3-9220" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="2e15-6683-fff6-d21d" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="7499-0c7d-efd2-d306" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="ccdd-3987-11ed-90cd" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d36e-d497-6068-1b83" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="d36e-d497-6068-1b83" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="false"/>
+                        <condition type="lessThan" value="1" field="selections" scope="upgrade" childId="d36e-d497-6068-1b83" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="2e15-6683-fff6-d21d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="7499-0c7d-efd2-d306" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="c13c-1717-f8a8-a8df" field="category" join=", " scope="upgrade"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Noctilith Armament" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dce-7584-846f-e698" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Boarding Actions Enhancements" id="5a79-2c0b-66e4-2122" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close-quarters Killer" hidden="false" id="3180-1582-d15c-fb6f">
+          <profiles>
+            <profile name="Close-quarters Killer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="73af-ab1f-6d21-3645">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer makes a melee attack, you can re-roll the Wound roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Expert Breacher" hidden="false" id="4952-6a30-3d10-3de9">
+          <profiles>
+            <profile name="Expert Breacher" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1cb3-0d95-5d5b-d715">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer&apos;s unit can attempt to operate a Hatchway at the start or end of the Move Units step of your Movement phase. The bearer&apos;s unit cannot attempt to operate more than one Hatchway per turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Peerless Leader" hidden="false" id="4de4-9fb2-35cb-f5ad">
+          <profiles>
+            <profile name="Peerless Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bbc6-1deb-3d70-0fdd">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, the bearer can be targeted with the Battlefield Command Stratagem for 0CP, even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Personal Teleporter" hidden="false" id="f23e-54e8-e8e7-c789">
+          <profiles>
+            <profile name="Personal Teleporter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3875-c0db-7439-0466">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has the Deep Strike ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Deep Strike" id="1845-7a49-adf7-a878" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Superior Boarding Tactics" hidden="false" id="d63a-df06-dfed-ce99">
+          <profiles>
+            <profile name="Superior Boarding Tactics" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5872-2ad1-05b9-7a8b">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You start the battle with 2CP.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trademark Weapon" hidden="false" id="69c3-5579-d475-e5a5">
+          <profiles>
+            <profile name="Trademark Weapon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ecd2-a98c-6bc2-7276">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When you select this Enhancement, select one ranged weapon equipped by the bearer (excluding Torrent weapons) and make a note of this on your Army Roster. Add 1 to the Strength and Damage characteristics of that weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Boarding Actions content</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Breaching Operation Enhancements" id="fc3b-5a53-47b1-4b2d" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Paralysing Assault" hidden="false" id="cfe1-3457-9fa3-aed9">
+          <profiles>
+            <profile name="Paralysing Assault" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="61f1-6a68-83eb-c57c">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1&quot; of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, each enemy unit that is on the opposite side of and visible to that Weakened Wall is stunned. Each time a unit is stunned, until the end of the turn, that unit cannot fire Overwatch and each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Breaching Charges" hidden="false" id="268a-88b3-a5c1-fd98">
+          <profiles>
+            <profile name="Breaching Charges" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f42-46a6-5b4f-9252">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1&quot; of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, that Weakened Wall&apos;s Vulnerable Section is destroyed. In addition, each unit that is on the opposite side of that Weakened Wall and is visible to and within 6&quot; of it suffers 1 mortal wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Spoor Seeker" hidden="false" id="7270-0ae0-e331-d15f">
+          <profiles>
+            <profile name="Spoor Seeker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="965d-bce2-021d-f3e2">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, when the bearer is selected to move, at the start or the end of that move if the bearer is within 1&quot; of a Weakened Wall that has not been breached, it can use this Enhancement. If it does so, select one enemy unit that is on the opposite side of and visible to that Weakened Wall. Until the end of the turn, each time a friendly model makes an attack against that enemy unit, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="f3ef-6eb6-31d1-8d0d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <comment>Boarding Actions content</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </gameSystem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="03fe-a162-4c02-f07b" name="Chaos - Emperor&apos;s Children" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="31" revision="21" authorContact="Mad_Spy" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="03fe-a162-4c02-f07b" name="Chaos - Emperor&apos;s Children" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="31" revision="41" authorContact="Mad_Spy" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Lucius the Eternal" hidden="false" id="e390-b58b-db9-816" collective="false">
       <profiles>
@@ -178,6 +178,11 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is in your army, it must be your **^^Warlord^^**.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Serpentine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9842-31b9-4cb1-d821">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes a Normal, Advance or Fall Back move, it can move over sections of terrain features that are 4&quot; or less in height.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Malefic lash" hidden="false" id="e6eb-4713-7a67-6a2d">
@@ -223,6 +228,9 @@
           <infoLinks>
             <infoLink name="Extra Attacks" id="3c0c-ba3e-ef29-2fa8" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="941d-507e-41c1-9d2f" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Daemonic blades" hidden="false" id="fb08-130a-eb0a-d9a9">
           <constraints>
@@ -299,11 +307,12 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f5ce-3f52-3eba-2880" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="365"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="340"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Crusade" id="e043-ad49-4ecd-49dd" hidden="false" sortIndex="1">
@@ -376,9 +385,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9da1-6ef8-4db1-7841-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9da1-6ef8-4db1-7841-max" includeChildSelections="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="7a8e-553b-5533-5765" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="ccdf-84fe-ab92-d0d3" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c4db-8857-ab8e-b948" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7aa9-e71e-6f0f-d7ea" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
           <selectionEntries>
@@ -400,9 +414,17 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="4dde-03d0-077d-f19b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="095d-1fd5-b4ee-37ad" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="21a3-d5d5-40d3-e017" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="1024-291c-ae39-068b" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Melee Weapon" hidden="false" id="20f2-0930-f91b-530a" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -424,37 +446,51 @@
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
                       </characteristics>
-                      <modifierGroups>
-                        <modifierGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="7b4c-dfe0-6a0a-304a" childId="e83e-a805-5a10-df20" shared="true"/>
-                          </conditions>
-                          <modifiers>
-                            <modifier type="decrement" value="1" field="2337-daa1-6682-b110"/>
-                            <modifier type="decrement" value="1" field="3254-9fe6-d824-513e"/>
-                          </modifiers>
-                        </modifierGroup>
-                      </modifierGroups>
                     </profile>
                   </profiles>
                   <infoLinks>
                     <infoLink name="Extra Attacks" id="9e4f-0960-4efa-c6c8" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="cfdb-4b5a-43dd-08b4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="61c1-1dce-861f-85b2" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="4934-ac6a-cd70-cf2d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="efa6-c5a1-ca28-3265" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="705b-9d13-fa92-b711" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="6dd1-a4ea-84bb-14f7" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink import="true" name="Plasma pistol" hidden="false" id="96d6-d69e-37b6-a9da" type="selectionEntry" targetId="e13a-503d-72dc-f4ed">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="8d38-d56b-6ec0-d996" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="1b14-818f-9f74-50e9" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7bce-84f6-00eb-dc21" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="6751-163c-a9e5-8a9d" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Ranged Weapon" hidden="false" id="b0b1-34c1-465a-78e3" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                  </categoryLinks>
                 </entryLink>
                 <entryLink import="true" name="Power fist" hidden="false" id="95ba-0c75-8d73-154e" type="selectionEntry" targetId="aab5-3545-6d30-9e87">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="654d-dbe9-0a81-3b77" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="f4a2-6cd8-9dfa-c7dd" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="2b4a-4099-67d8-941c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="10bf-b3d1-eafa-f11d" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="adb0-bff2-7c85-efac" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -481,9 +517,17 @@
                   <infoLinks>
                     <infoLink name="Lance" id="9899-8da2-ea8a-2a5d" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="48e6-5096-119a-b0e6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="f75d-7e2a-7263-505d" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9944-ea43-5a2e-206f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="67a0-435a-7661-cda3" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="dd27-c2de-8a1c-1a62" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Master-crafted power sword" hidden="false" id="d453-bd87-1a87-97dc">
                   <profiles>
@@ -502,16 +546,29 @@
                   <infoLinks>
                     <infoLink name="Precision" id="6a27-781c-2c9f-f737" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="4297-79da-7e7e-6fb9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="dbcc-c01e-2864-5ef0" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="0b46-3c5a-439b-6c13" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="9eb4-0e84-0517-faa7" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="bcb6-13fa-9308-e7ac" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink import="true" name="Screamer pistol" hidden="false" id="c07d-3e13-a092-9425" type="selectionEntry" targetId="c0fe-28ad-5f83-e1d1">
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="2294-51ba-48c4-fbf7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="734a-4bbb-af0b-db31" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="b982-04ba-0611-0d9f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="f07e-51c9-98cf-b6c4" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -755,6 +812,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="8b6c-a517-eb2a-c949" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rapture lash" hidden="false" id="7d60-17ec-c8ad-1ba4">
       <profiles>
@@ -807,6 +867,9 @@
         <infoLink name="Ignores Cover" id="dc67-fcae-dfe3-2a9e" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Pistol" id="6dad-be58-89be-0da1" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="05be-77a8-b8c6-b97d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lord Kakophonist" hidden="false" id="ee50-955a-0a81-41f1">
       <profiles>
@@ -853,9 +916,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b90-0613-4e9a-fb5d-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b90-0613-4e9a-fb5d-max" includeChildSelections="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="bf0f-8d14-e967-27fd" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="6052-a7a0-a9db-a96c" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="617c-d2b0-9442-5b20" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="c9c3-afea-9104-4ff8" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
@@ -875,9 +943,17 @@
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="20ea-25b0-dd66-c0fa" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="2d9a-7d55-7177-a252" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="725b-d3c6-5f0a-d4ce" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="feeb-ad24-e623-4251" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <categoryLinks>
+                    <categoryLink name="Melee Weapon" hidden="false" id="43eb-7f7f-eb6e-e93c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Screamer pistol and close combat weapon" hidden="false" id="d3ce-37c9-31af-7513">
                   <selectionEntries>
@@ -899,9 +975,17 @@
                           </characteristics>
                         </profile>
                       </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="deae-ad30-d0b2-9654" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="e4e9-ece7-ad5a-38c8" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="ab80-333b-f1c9-47b8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="98cb-f43a-f00e-c0db" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <categoryLinks>
+                        <categoryLink name="Melee Weapon" hidden="false" id="f918-2540-75a9-9e32" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -910,9 +994,14 @@
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc6f-a3aa-0d21-e560-min" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc6f-a3aa-0d21-e560-max" includeChildSelections="false"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="60d6-3cbb-f3f5-b896" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Weapon Upgrades" id="7a24-16ab-3bc9-859a" hidden="false" flatten="true">
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="2da2-99b4-9827-4320" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                            <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="b589-00a3-8f40-6dcf" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
@@ -940,7 +1029,6 @@
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9b08-fabc-aee9-9284" includeChildSelections="true"/>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d317-789f-956f-5ccb" includeChildSelections="true"/>
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="10f3-4301-04fb-071f" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="8c7a-1d0d-4370-e6a0" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1916-c333-a717-1bb6" includeChildSelections="true"/>
@@ -956,11 +1044,12 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
@@ -1118,18 +1207,6 @@
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
                 <profile name="Agonising Energies - focused witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b3ab-f8ad-dee3-6a37">
                   <characteristics>
@@ -1141,18 +1218,6 @@
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Hazardous, Psychic</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -1160,12 +1225,20 @@
                 <infoLink name="Hazardous" id="32a3-3442-9b44-5c8b" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
                 <infoLink name="Devastating Wounds" id="f764-2b1a-17c5-bead" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="6db2-46f2-e4c3-0955" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="196a-63c7-f09e-5f9f" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+                <categoryLink name="Ranged Weapon" hidden="false" id="f642-ddd1-a798-b9d9" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="d9e5-b054-ed70-0da0" targetId="e993-e086-6de1-12af" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="0c27-dd8e-2aab-3515" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="4e5e-1166-c42e-8ee0" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="a964-c6ae-c129-6ee8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="42eb-3ef7-93b8-7955" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Force weapon" hidden="false" id="76d8-2228-b6cb-2d36">
               <constraints>
@@ -1183,24 +1256,24 @@
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Psychic" id="e9f6-b828-b976-a35d" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="177e-c3f9-0361-4570" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="5286-8715-d889-aec0" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+                <categoryLink name="Melee Weapon" hidden="false" id="ef9a-08b3-f855-61a4" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="f9c4-f217-55d4-1299" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="8d28-25c0-6f5a-fee6" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="55e1-7aba-835e-1f01" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="8253-5fd3-50fa-4681" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -1209,9 +1282,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="984e-cc3a-b5ee-6b7f-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="984e-cc3a-b5ee-6b7f-max" includeChildSelections="false"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="fcf3-5dbc-aa67-6134" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="ffa6-8b4e-8f67-cfa8" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="1e72-096b-61bd-4c26" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="adf7-5bd7-f86e-67e1" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -1346,24 +1424,35 @@
         <infoLink name="Thrill Seekers" id="b68c-27d6-00e2-5277" hidden="false" type="rule" targetId="1674-23e6-eacf-9624"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="195"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="1672-83c5-eb04-4813" hidden="false" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Hellforged weapons" hidden="false" id="cd80-af32-8b71-8a3a" type="selectionEntry" targetId="9ad3-083a-577b-56b0">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="3323-7d54-c7a7-4304" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="0b41-e146-d27b-bd27" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="d48f-4b44-3671-a205" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="42b6-cfba-025b-705f" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
             <entryLink import="true" name="Infernal cannon" hidden="false" id="b0d7-6f51-f278-85ae" type="selectionEntry" targetId="b464-6a59-916f-c9d9">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="986e-0feb-041c-9493" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="4e53-e4f1-109e-1d59" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="3ddd-7317-9804-dbc9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0ea0-b0d5-f463-3c5b" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -1454,6 +1543,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="dcb4-06c0-7f01-1fc4" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hellforged weapons" hidden="false" id="9ad3-083a-577b-56b0">
       <constraints>
@@ -1484,6 +1576,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="a1e0-e16b-1f5e-8692" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Daemon Prince of Slaanesh with Wings" hidden="false" id="e452-08be-33e6-3864">
       <categoryLinks>
@@ -1544,24 +1639,35 @@
         <infoLink name="Deep Strike" id="7f25-4c6d-39a4-2b3a" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="215"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="7c86-15e7-a294-800a" hidden="false" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Hellforged weapons" hidden="false" id="40c1-075d-238e-1f6a" type="selectionEntry" targetId="9ad3-083a-577b-56b0">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="923a-4b19-67ff-c7ba" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="d4f4-a2ae-5897-6f69" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="cfde-1486-9578-28f8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="e0be-250a-13f1-482d" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
             <entryLink import="true" name="Infernal cannon" hidden="false" id="b803-ca37-2e2c-c815" type="selectionEntry" targetId="b464-6a59-916f-c9d9">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="fa52-6fe9-229d-c977" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrades" id="d3ee-98f1-c818-9c17" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="fad5-71a7-d98b-8beb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="67ea-ad21-b549-d37e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -1642,6 +1748,7 @@
         <categoryLink name="Chaos" hidden="false" id="0d2f-1331-88ed-1255" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Slaanesh" hidden="false" id="4ab7-698a-ad27-ebae" targetId="b2a9-ede5-7a83-4da8" primary="false"/>
         <categoryLink name="Tormentors" hidden="false" id="0ed2-72c0-b233-e31e" targetId="b950-835c-0fb7-9b47" primary="false"/>
+        <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="44e9-5ed0-04ba-8ef5" targetId="31bb-7d77-943e-94bd" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="b5fc-e865-a2b6-ea4d" includeChildSelections="true"/>
@@ -1849,6 +1956,9 @@
                     <infoLink name="Melta" id="7c00-a5aa-de94-7ab3" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
                     <infoLink name="Precision" id="9181-45b9-2d9b-eac6" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="5c20-3d90-a856-5645" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -1992,6 +2102,13 @@
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Precision" field="893f-9000-ccf7-648e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ff6d-0152-7e0e-7e88" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
@@ -2023,6 +2140,7 @@
         <categoryLink name="Chaos" hidden="false" id="7e50-32b8-c747-ec1a" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink name="Slaanesh" hidden="false" id="5430-6e16-79c7-6d7b" targetId="b2a9-ede5-7a83-4da8" primary="false"/>
         <categoryLink name="Infractors" hidden="false" id="485a-e231-1029-67de" targetId="ff6d-0152-7e0e-7e88" primary="false"/>
+        <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="79c1-3840-7ee3-01e4" targetId="31bb-7d77-943e-94bd" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Infractors" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="77f0-f801-df0f-26b9">
@@ -2092,6 +2210,9 @@
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="ca3f-b158-3da9-1b20" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Precision" id="3fd9-9a19-11ce-2544" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+                  </infoLinks>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -2295,7 +2416,7 @@
                 <profile name="Blissblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a401-7dd2-62ab-639a">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
                     <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
                     <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
                     <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
@@ -2572,6 +2693,9 @@
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="71bd-ffc2-8dd4-6573" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Reaper autocannon" hidden="false" id="6d30-9591-4f61-5eb0" collective="false">
                       <profiles>
@@ -2678,11 +2802,12 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="155"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6f78-e653-892f-d8d9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -3137,11 +3262,12 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="9df4-ab8a-f306-55c5" type="selectionEntryGroup" targetId="3ead-f21c-66ef-1a02" sortIndex="1"/>
@@ -3261,9 +3387,9 @@
         <categoryLink name="Transport" hidden="false" id="ddf3-62a4-6f31-02e5" targetId="75e8-57c4-40e3-1817" primary="false"/>
         <categoryLink name="Smoke" hidden="false" id="cdbe-98ac-d500-e7df" targetId="6df-937-16bc-8c1a" primary="false"/>
         <categoryLink name="Chaos" hidden="false" id="840c-738d-133a-3318" targetId="4c00-2578-faf5-6918" primary="false"/>
-        <categoryLink name="Land Raider Proteus" hidden="false" id="902c-557a-3461-1cef" targetId="d864-e0e3-a261-3096" primary="false"/>
         <categoryLink name="Slaanesh" hidden="false" id="f948-20f4-ebba-6c6e" targetId="b2a9-ede5-7a83-4da8" primary="false"/>
         <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="6f13-8105-fe9f-830e" targetId="31bb-7d77-943e-94bd" primary="false"/>
+        <categoryLink name="Land Raider" hidden="false" id="7c10-636e-232c-06aa" targetId="1c72-7f65-e03d-8c7a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="f68d-7873-207f-27ef" hidden="false" sortIndex="2">
@@ -3360,7 +3486,12 @@
         <entryLink import="true" name="Crusade" hidden="false" id="5de0-0f22-2513-9dbf" type="selectionEntryGroup" targetId="3ead-f21c-66ef-1a02" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="240"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
@@ -3445,13 +3576,6 @@
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -3460,6 +3584,9 @@
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="b30a-804f-087d-8db3" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin heavy bolter" hidden="false" id="b16a-3c62-69d6-5c90" collective="false">
       <profiles>
@@ -4142,18 +4269,14 @@
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="a4ac-1384-a921-ae5a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="8bb7-b9c8-2ece-2ef1" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -4473,9 +4596,7 @@
                 <rule name="Internal Rivalries" id="26e3-58c8-a7f2-9697" hidden="false">
                   <description>^^**Emperor&apos;s Children Character**^^ units from your army can ignore any or all modifiers to their Move characteristic and any or all modifiers to Advance and Charge rolls made for them.
 
-
 At the start of the battle, your **^^Warlord^^**&apos;s unit is your army&apos;s Favoured Champions. The first time in each player&apos;s turn that an **^^Emperor&apos;s Children Character**^^ unit from your army destroys an enemy unit, after resolving all of its attacks, that **^^Character**^^ unit becomes your army&apos;s Favoured Champions, replacing the old one.
-
 
 Each time a model in your army&apos;s Favoured Champions unit makes an attack, you can re-roll the Wound roll.</description>
                 </rule>
@@ -4493,7 +4614,7 @@ Each time a model in your army&apos;s Favoured Champions unit makes an attack, y
             <selectionEntry type="upgrade" import="true" name="Rapid Evisceration" hidden="false" id="26ff-306a-fca9-ebfd">
               <rules>
                 <rule name="Mechanised Murder" id="543c-c7fe-bd85-793c" hidden="false">
-                  <description>Each time an ^^**Emperor&apos;s Children^^** model from your army makes an attack, if it disembarked from a ^^**Transport^^** this turn, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</description>
+                  <description>Each time an ^^**Emperor&apos;s Children^^** model from your army makes an attack, if it is a ^^**Transport^^** model or disembarked from a ^^**Transport^^** this turn, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4502,9 +4623,7 @@ Each time a model in your army&apos;s Favoured Champions unit makes an attack, y
                 <rule name="Pledges to the Dark Prince" id="2aec-b6cb-9185-ff51" hidden="false">
                   <description>At the start of the battle round, if your **^^Warlord^^** is on the battlefield, you must pledge a number to Slaanesh representing how many enemy units will be destroyed this battle round. At the end of the battle round, if the number of enemy units destroyed this battle round is greater than or equal to your pledge, you gain a number of Pact points equal to your pledge. Otherwise, you do not gain any Pact points this battle round and your **^^Warlord**^^ model suffers D3 mortal wounds.
 
-
 **^^Emperor&apos;s Children^^** units from your army gain a bonus depending on how many Pact points you have gained during the battle, as shown below (these are all cumulative).
-
 
 1+: Each time a model in this unit makes an attack, re-roll a Hit roll of 1.
 3+: Each time a model in this unit makes an attack, re-roll a Wound roll of 1.
@@ -4526,8 +4645,21 @@ Each time a model in your army&apos;s Favoured Champions unit makes an attack, y
                   <description>- While an ^^**Emperor&apos;s Children^^** unit from your army is within 6&quot; of one or more friendly ^^**Legions of Excess**^^ units, it is Empowered.
 - While a ^^**Legions of Excess**^^ unit from your army is within 6&quot; of one or more friendly  ^^**Emperor&apos;s Children^^** units, it is Empowered.
 
-
 While a unit from your army is Empowered, weapons equipped by models in that unit have the [^^Sustained Hits 1^^] ability. If such a weapon already has that ability, each time an attack is made with that weapon, an unmodified Hit roll of 5+ scores a Critical Hit.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Court of the Phoenician" hidden="false" id="12b9-2601-5150-66f4">
+              <rules>
+                <rule name="Sensational Performance" id="b26d-f768-30b7-9556" hidden="false">
+                  <description>^^**Emperor’s Children^^** units from your army have the following ability: 
+**Sensational Performance**: Each time this unit is selected to fight, if this unit made a Charge move this turn, it can use this ability. If it does, until the end of the phase: 
+- This unit cannot target a unit it was within Engagement Range of at the start of the turn. 
+- This unit cannot target a unit that was the target of another unit’s attack this phase. 
+- Improve the Strength and Armour Penetration characteristics of this unit’s melee weapons by 1.</description>
+                </rule>
+                <rule name="Master of the Pageant" id="9a13-8599-a4b7-272f" hidden="false">
+                  <description>Once per battle round, when you target a ^^**Fulgrim^^** unit from your army with the Sinuous Breach or Prideful Superiority Stratagem, you can reduce the CP cost of that use of that Stratagem by 1CP.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4685,6 +4817,9 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="ad08-1630-6cf4-3f8d" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Soulpiercer" hidden="false" id="28ab-f405-9836-1cfc" collective="false">
           <constraints>
@@ -4713,11 +4848,12 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="380"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="340"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -4861,6 +4997,9 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
                 <infoLink name="Devastating Wounds" id="32b6-1627-074a-6d57" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                 <infoLink name="Extra Attacks" id="5600-3729-76ce-1512" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="de6f-fdc3-cd39-0547" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Witstealer sword" hidden="false" id="3cce-7e30-b9a6-b807" collective="false">
               <constraints>
@@ -4932,6 +5071,9 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
+                  <categoryLinks>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="af5a-87af-1276-ca59" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Shining aegis" hidden="false" id="acf6-dc7e-c9b6-2c65" collective="false">
                   <profiles>
@@ -4954,11 +5096,12 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
         <entryLink import="true" name="Enhancements" hidden="false" id="711c-1b08-416c-c2df" collective="false" targetId="ce10-1f30-82b7-fc7a" type="selectionEntryGroup" sortIndex="1"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="280"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="240"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -5291,7 +5434,7 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Seekers" hidden="false" id="c9df-2c38-25e5-ffc7" collective="false">
       <modifiers>
-        <modifier type="set" value="180" field="51b2-306e-1021-d207">
+        <modifier type="set" value="160" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="c9df-2c38-25e5-ffc7" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
@@ -5390,6 +5533,9 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="766d-5c7f-0f08-8d10" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slashing claws" hidden="false" id="d560-e258-97e3-87ee" collective="true">
               <constraints>
@@ -5478,6 +5624,9 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="92de-5213-94be-6cdb" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slashing claws" hidden="false" id="5439-c7ca-293b-099e" collective="true">
               <constraints>
@@ -5512,11 +5661,12 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combat Elixirs equipped in Current Battle" hidden="false" id="5955-90eb-2f66-c483">
@@ -5916,6 +6066,30 @@ While a unit from your army is Empowered, weapons equipped by models in that uni
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Perfect Ascension" hidden="false" id="32bc-07c5-6da4-c94e">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52ed-6493-d6ea-fe17" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="bb9d-299a-ed60-2d8a" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="227d-98ab-930c-3e7f" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Faction: Emperor&apos;s Children" id="31bb-7d77-943e-94bd" hidden="false"/>
@@ -5978,6 +6152,8 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
     <categoryEntry name="Fiends" id="d16a-86a4-5880-3e94" hidden="false"/>
     <categoryEntry name="Summoned" id="38a2-f283-606d-7a37" hidden="false"/>
     <categoryEntry name="Seekers" id="15d7-63fa-2466-d392" hidden="false"/>
+    <categoryEntry name="meme" id="54bb-8fde-067b-3a2b" hidden="false"/>
+    <categoryEntry name="Land Raider" id="1c72-7f65-e03d-8c7a" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="Thrill Seekers" id="1674-23e6-eacf-9624" hidden="false">
@@ -6067,7 +6243,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2fe2-824a-bb3e-3c41" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Eager to Prove" hidden="false" id="b846-443f-45e9-d2f4" sortIndex="21">
+        <selectionEntry type="upgrade" import="true" name="Eager to Prove" hidden="false" id="b846-443f-45e9-d2f4" sortIndex="25">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -6099,7 +6275,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Repulsed by Weakness" hidden="false" id="0bd8-0ae9-8584-ecb4" sortIndex="23">
+        <selectionEntry type="upgrade" import="true" name="Repulsed by Weakness" hidden="false" id="0bd8-0ae9-8584-ecb4" sortIndex="27">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -6131,7 +6307,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Proud and Vainglorious" hidden="false" id="9885-a9c2-6a2c-9da0" sortIndex="22">
+        <selectionEntry type="upgrade" import="true" name="Proud and Vainglorious" hidden="false" id="9885-a9c2-6a2c-9da0" sortIndex="26">
           <comment>Slaanesh&apos;s Chosen</comment>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -6163,7 +6339,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Slayer of Champions" hidden="false" id="5524-2326-c5c1-e188" sortIndex="24">
+        <selectionEntry type="upgrade" import="true" name="Slayer of Champions" hidden="false" id="5524-2326-c5c1-e188" sortIndex="28">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -6195,7 +6371,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Faultless Opportunist" hidden="false" id="ff3a-6be4-e450-7902" sortIndex="15">
+        <selectionEntry type="upgrade" import="true" name="Faultless Opportunist" hidden="false" id="ff3a-6be4-e450-7902" sortIndex="19">
           <comment>Peerless Bladesmen</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9a91-816c-a45d-486c" includeChildSelections="true"/>
@@ -6227,7 +6403,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blinding Speed" hidden="false" id="d2db-5680-3844-8286" sortIndex="13">
+        <selectionEntry type="upgrade" import="true" name="Blinding Speed" hidden="false" id="d2db-5680-3844-8286" sortIndex="17">
           <comment>Peerless Bladesmen</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a16-f919-9c7f-55b2" includeChildSelections="true"/>
@@ -6259,7 +6435,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Distortion" hidden="false" id="e83e-a805-5a10-df20" sortIndex="14">
+        <selectionEntry type="upgrade" import="true" name="Distortion" hidden="false" id="e83e-a805-5a10-df20" sortIndex="18">
           <comment>Peerless Bladesmen</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="834a-ce66-bcb6-2b85" includeChildSelections="true"/>
@@ -6286,8 +6462,18 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model-or-unit" affects="self.entries.profiles.Melee Weapons" position="-1"/>
-                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model-or-unit" affects="self.entries.profiles.Melee Weapons"/>
+                <modifier type="append" value="Distortion" field="annotation" scope="model" affects="self.entries.profiles.Melee Weapons" position="-1" join=", "/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
+                <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -6299,7 +6485,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Rise to the Challenge" hidden="false" id="63af-738c-632a-22ee" sortIndex="16">
+        <selectionEntry type="upgrade" import="true" name="Rise to the Challenge" hidden="false" id="63af-738c-632a-22ee" sortIndex="20">
           <comment>Peerless Bladesmen</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9d88-0613-0d02-5867" includeChildSelections="true"/>
@@ -6336,7 +6522,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sublime Presence" hidden="false" id="336d-3ff2-42d5-e7d0" sortIndex="20">
+        <selectionEntry type="upgrade" import="true" name="Sublime Presence" hidden="false" id="336d-3ff2-42d5-e7d0" sortIndex="24">
           <comment>Rapid Evisceration</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a1c0-9123-4393-5e31" includeChildSelections="true"/>
@@ -6373,7 +6559,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Spearhead Striker" hidden="false" id="ec33-5c60-4896-f3a9" sortIndex="19">
+        <selectionEntry type="upgrade" import="true" name="Spearhead Striker" hidden="false" id="ec33-5c60-4896-f3a9" sortIndex="23">
           <comment>Rapid Evisceration</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a2b2-f866-524e-e64e" includeChildSelections="true"/>
@@ -6410,7 +6596,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Accomplished Tactician" hidden="false" id="6ac4-b6b5-c72e-c6f0" sortIndex="17">
+        <selectionEntry type="upgrade" import="true" name="Accomplished Tactician" hidden="false" id="6ac4-b6b5-c72e-c6f0" sortIndex="21">
           <comment>Rapid Evisceration</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ba7a-0352-3a63-17ce" includeChildSelections="true"/>
@@ -6447,7 +6633,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Heretek Adept" hidden="false" id="b7ae-e36a-f771-71ba" sortIndex="18">
+        <selectionEntry type="upgrade" import="true" name="Heretek Adept" hidden="false" id="b7ae-e36a-f771-71ba" sortIndex="22">
           <comment>Rapid Evisceration</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9d1b-48c7-cf46-1a40" includeChildSelections="true"/>
@@ -6612,7 +6798,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Steeped in Suffering" hidden="false" id="eac7-57c3-db74-558b" sortIndex="11">
+        <selectionEntry type="upgrade" import="true" name="Steeped in Suffering" hidden="false" id="eac7-57c3-db74-558b" sortIndex="15">
           <comment>Mercurial Host</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e576-75f3-b904-9bad" includeChildSelections="true"/>
@@ -6644,7 +6830,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Intoxicating Musk" hidden="false" id="9019-ad76-2166-e240" sortIndex="9">
+        <selectionEntry type="upgrade" import="true" name="Intoxicating Musk" hidden="false" id="9019-ad76-2166-e240" sortIndex="13">
           <comment>Mercurial Host</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7df5-2d6b-222b-e1cb" includeChildSelections="true"/>
@@ -6676,7 +6862,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tactical Perfection" hidden="false" id="5e38-6ec6-6a34-ab23" sortIndex="12">
+        <selectionEntry type="upgrade" import="true" name="Tactical Perfection" hidden="false" id="5e38-6ec6-6a34-ab23" sortIndex="16">
           <comment>Mercurial Host</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6bd3-45eb-5c5c-a469" includeChildSelections="true"/>
@@ -6708,7 +6894,7 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Loathsome Dexterity" hidden="false" id="c463-1bc6-623d-08fd" sortIndex="10">
+        <selectionEntry type="upgrade" import="true" name="Loathsome Dexterity" hidden="false" id="c463-1bc6-623d-08fd" sortIndex="14">
           <comment>Mercurial Host</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3bcb-499e-ba6c-5ea1" includeChildSelections="true"/>
@@ -6881,6 +7067,154 @@ No **^^Legions of Excess**^^ models from your army can be your **^^Warlord**^^.<
             <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Soulstain Made Manifest" hidden="false" id="8cd3-11be-e902-d3cb" sortIndex="10">
+          <profiles>
+            <profile name="Soulstain Made Manifest" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c5f-51dc-dc66-28c0">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, you can select one enemy unit within Engagement Range of the bearer; that unit must take a Battle‑shock test, subtracting 1 from the result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="12b9-2601-5150-66f4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <comment>Court of the Phoenician</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ba9d-1441-a6f9-f26d" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Exalted Patron" hidden="false" id="f432-1ac7-b753-8f9b" sortIndex="9">
+          <profiles>
+            <profile name="Exalted Patron" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d58b-34af-bc5f-8a4b">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1&quot; to the Move characteristic of the bearer.
+In the Declare Battle Formations step, the bearer can be attached to a ^^**Flawless Blades^^** unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6264-8211-3a47-31d6" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="12b9-2601-5150-66f4" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="e703-ecb6-5ce7-aec1" scope="root-entry" affects="profiles.Unit"/>
+          </modifiers>
+          <comment>Court of the Phoenician</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c358-fd8a-aacb-228f" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Spiritsliver" hidden="false" id="81b8-40c9-607b-379a" sortIndex="11">
+          <profiles>
+            <profile name="Spiritsliver" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a928-ecf7-5287-dc87">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Strength and Attacks characteristics of the bearer’s melee weapons.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="12b9-2601-5150-66f4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="root-entry" affects="self.entries.profiles.Melee Weapons"/>
+            <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="root-entry" affects="self.entries.profiles.Melee Weapons"/>
+          </modifiers>
+          <comment>Court of the Phoenician</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c0ed-6936-3ff2-f270" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tears of the Phoenix" hidden="false" id="fcc0-7ead-c5b8-e6dd" sortIndex="12">
+          <profiles>
+            <profile name="Tears of the Phoenix" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e849-72e6-b47b-32c5">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in the bearer’s unit makes a melee attack, you can ignore any or all modifiers to that attack’s Weapon Skill characteristic and any or all modifiers to the Hit roll and Wound roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="12b9-2601-5150-66f4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <comment>Court of the Phoenician</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5423-7dfc-a5e4-ae89" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7530,7 +7864,7 @@ At the end of the battle, if one or more models from your Crusade army with this
                         </conditionGroup>
                       </conditionGroups>
                       <conditions>
-                        <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="31" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -7557,11 +7891,9 @@ At the end of the battle, if one or more models from your Crusade army with this
               <profiles>
                 <profile name="Blissgiver" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="53ac-7226-48a5-2aa9">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by the bearer have the **[PRECISION]** and **[DEVASTATING WOUNDS]** abilities, and improves the Attacks, Armour Penetration and Damage characteristics of those weapons by 1.
-
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Melee weapons equipped by the bearer have the **[PRECISION]** and **[DEVASTATING WOUNDS]** abilities, and improve the Attacks, Armour Penetration and Damage characteristics of those weapons by 1.
 
 At the end of the Fight phase, each enemy **^^Character^^** model that had one or more attacks made by the bearer allocated to it this phase but is not destroyed must take a Leadership test; if that test is failed, that **^^Character^^** model&apos;s unit suffers 3 mortal wounds, and when allocating those mortal wounds, they must be allocated to that **^^Character^^** model.
-
 
 At the end of the battle, if during the battle the bearer&apos;s unit destroyed one or more **^^Imperium^^** Leader units or **^^Imperium Character^^** units without the Leader ability with a melee attack or with mortal wounds inflicted by this Crusade Relic (see above), you gain 1 Dilution of False Hope.</characteristic>
                   </characteristics>
@@ -7583,7 +7915,7 @@ At the end of the battle, if during the battle the bearer&apos;s unit destroyed 
                         </conditionGroup>
                       </conditionGroups>
                       <conditions>
-                        <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="51" field="a623-fe74-1d33-cddf" scope="root-entry" childId="any" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -7604,31 +7936,20 @@ At the end of the battle, if during the battle the bearer&apos;s unit destroyed 
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="append" value="Blissgiver" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="c378-a5fa-1528-f558" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="c378-a5fa-1528-f558" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="c378-a5fa-1528-f558" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="c378-a5fa-1528-f558" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="Devastating Wounds, Precision" field="893f-9000-ccf7-648e" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="c378-a5fa-1528-f558" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="append" value="Blissgiver" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="append" value="Devastating Wounds, Precision" field="893f-9000-ccf7-648e" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                    <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                    <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+                    <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
+                    <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -7758,8 +8079,9 @@ At the end of the battle, if one or more enemy units failed a Battle-shock test 
     <selectionEntryGroup name="Crusade" id="3ead-f21c-66ef-1a02" hidden="false" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Experience Points" hidden="false" id="6941-8b0d-805c-e8ae" type="selectionEntry" targetId="2dbf-4d49-5d74-85c9" sortIndex="1"/>
-        <entryLink import="true" name="Legendary Veterans" hidden="false" id="dc6e-0ec0-e31c-f9d8" type="selectionEntry" targetId="1511-18fe-f51e-7b9d" sortIndex="2"/>
-        <entryLink import="true" name="Battle Scars" hidden="false" id="3133-4574-d2b2-f820" type="selectionEntryGroup" targetId="1576-e816-033f-828d" sortIndex="5" collapsible="true"/>
+        <entryLink import="true" name="Legendary Veterans" hidden="false" id="dc6e-0ec0-e31c-f9d8" type="selectionEntry" targetId="1511-18fe-f51e-7b9d" sortIndex="3"/>
+        <entryLink import="true" name="Battle Scars" hidden="false" id="3133-4574-d2b2-f820" type="selectionEntryGroup" targetId="1576-e816-033f-828d" sortIndex="6" collapsible="true"/>
+        <entryLink import="true" name="Perfect Ascension" hidden="false" id="6c1f-39cd-fc54-fa88" type="selectionEntry" targetId="32bc-07c5-6da4-c94e" sortIndex="2"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -7770,14 +8092,14 @@ At the end of the battle, if one or more enemy units failed a Battle-shock test 
       </modifiers>
       <comment>Crusade content</comment>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Tallies" id="2b51-6b2b-cf57-8d39" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Battle Tallies" id="2b51-6b2b-cf57-8d39" hidden="false" sortIndex="4">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Battles Played" hidden="false" id="7632-55d2-0aa3-cd7a"/>
             <selectionEntry type="upgrade" import="true" name="Battles Survived" hidden="false" id="cb8e-329e-86eb-504d"/>
             <selectionEntry type="upgrade" import="true" name="Enemy Units Destroyed" hidden="false" id="78d9-2179-9a78-5720"/>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Battle Honours" id="12cc-7866-2c38-64d9" hidden="false" sortIndex="4" collapsible="true">
+        <selectionEntryGroup name="Battle Honours" id="12cc-7866-2c38-64d9" hidden="false" sortIndex="5" collapsible="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon Modifications" id="a774-5e3b-510c-e290" hidden="false">
               <entryLinks>
@@ -8304,7 +8626,7 @@ At the end of the battle, if one or more enemy units failed a Battle-shock test 
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9c0e-7e25-4580-e439" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4f09-0141-6c70-6c5a" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="32bc-07c5-6da4-c94e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8340,7 +8662,7 @@ At the end of the battle, if one or more enemy units failed a Battle-shock test 
                     <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="3266-4449-dfb8-7e15" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="58d2-b879-49c7-43bc" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit">
+                <modifier type="decrement" value="1" field="58d2-b879-49c7-43bc" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="3266-4449-dfb8-7e15" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -8550,16 +8872,13 @@ At the end of the battle, if one or more enemy units failed a Battle-shock test 
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="Betentacled Limbs" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="8cbd-68ec-3853-d215" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8cbd-68ec-3853-d215" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Betentacled Limbs" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
