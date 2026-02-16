@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b654-a18a-ea1-3bf2" name="Xenos - Necrons" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="92" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b654-a18a-ea1-3bf2" name="Xenos - Necrons" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="95" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Enhancements" hidden="false" id="9574-b5d1-8b0a-d95d" collapsible="true">
       <constraints>
@@ -2571,7 +2571,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="fb1c-7e3c-e35f-66ed" primary="false" name="Infantry"/>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="ca8b-521b-b5ab-e85d" primary="false" name="Character"/>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="4118-a3a5-18f7-c7b0" primary="true" name="Epic Hero"/>
-        <categoryLink targetId="3311-d741-5a07-847d" id="a1fc-f577-8886-479" primary="false" name="Varguard Obyron"/>
+        <categoryLink targetId="3311-d741-5a07-847d" id="a1fc-f577-8886-479" primary="false" name="Vargard Obyron"/>
       </categoryLinks>
       <profiles>
         <profile name="Vargard Obyron" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e7a3-2c53-d4bd-7828">
@@ -5536,6 +5536,16 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
             <condition type="atLeast" value="6" field="selections" scope="f81-b23c-e183-39d7" childId="model" shared="true" id="db70-3966-b824-3330" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="All models must be equipped identically" field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="f81-b23c-e183-39d7" childId="cc7c-74ca-3bb6-926f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="f81-b23c-e183-39d7" childId="7a74-dc6f-1118-92c3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="5-10 Immortals" hidden="false" id="a349-35a2-c7f8-90f7" defaultSelectionEntryId="6c87-24f8-cd1c-c3c8" sortIndex="2">
@@ -6152,30 +6162,46 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
                       </entryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Hyperphase sword and dispersion shield" hidden="false" id="d28a-823-5ce2-8af4" collective="true">
-                      <profiles>
-                        <profile name="Hyperphase sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c473-cc38-3b86-f24a">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="Dispersion Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3154-b43-deb7-ce47">
-                          <characteristics>
-                            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a 4+ invulnerable save.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de1d-308c-ee90-75fd"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="966c-7f44-8f50-964a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-                      </entryLinks>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Hyperphase sword" hidden="false" id="b2e0-6b74-8a82-c842">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a3e-f527-5780-a891-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a3e-f527-5780-a891-max" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Hyperphase sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c473-cc38-3b86-f24a">
+                              <characteristics>
+                                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <entryLinks>
+                            <entryLink import="true" name="Weapon Modifications" hidden="false" id="966c-7f44-8f50-964a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
+                          </entryLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Dispersion shield" hidden="false" id="bb77-7dec-79cf-2990">
+                          <profiles>
+                            <profile name="Dispersion Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3154-b43-deb7-ce47">
+                              <characteristics>
+                                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a 4+ invulnerable save.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea59-efa1-cd61-79d4-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea59-efa1-cd61-79d4-max" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -6960,7 +6986,7 @@ You can attach this model to one of the above units even if one ROYAL WARDEN or
         </modifierGroup>
         <modifierGroup type="and">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="c4ee-83c7-812c-5ff0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c4ee-83c7-812c-5ff0" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
           <modifiers>
             <modifier type="increment" value="2" field="2229-f494-25db-c5d3" affects="self.entries.recursive.profiles.Ranged Weapons"/>
@@ -14853,7 +14879,7 @@ When mustering your army, each ^^**Necrons Monster^^** unit from your army has t
     <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="b04d-22c1-e41b-3aeb" targetId="82f1-b597-7b06-8ba2"/>
     <entryLink import="true" name="Anrakyr the Traveller [Legends]" hidden="false" type="selectionEntry" id="5575-621b-c6ca-75d5" targetId="43b5-f4f9-f7c6-327a"/>
     <entryLink import="true" name="Illuminor Szeras" hidden="false" type="selectionEntry" id="2593-8c2-e010-3f23" targetId="d977-6a26-bc03-4722"/>
-    <entryLink import="true" name="Varguard Obyron [Legends]" hidden="false" type="selectionEntry" id="1806-237a-9809-eebe" targetId="b5c3-317e-df69-53bb"/>
+    <entryLink import="true" name="Vargard Obyron [Legends]" hidden="false" type="selectionEntry" id="1806-237a-9809-eebe" targetId="b5c3-317e-df69-53bb"/>
     <entryLink import="true" name="Nemesor Zahndrekh [Legends]" hidden="false" type="selectionEntry" id="54eb-c0ac-f8df-31dd" targetId="8386-4191-ac3a-aa28"/>
     <entryLink import="true" name="Trazyn the Infinite" hidden="false" type="selectionEntry" id="ff0e-62a0-48a8-f438" targetId="c1e6-b88a-2003-174d"/>
     <entryLink import="true" name="Royal Warden" hidden="false" type="selectionEntry" id="3934-2cb0-2ee-1807" targetId="379b-d6a0-cd05-ef89"/>
