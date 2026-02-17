@@ -2982,13 +2982,6 @@ This unit is eligible to shoot and declare a charge in a turn in which it Fell B
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="76b4-a2c4-208e-ceb9" name="Abaddon the Despoiler" hidden="false" collective="false" import="true" type="model">
       <constraints>
