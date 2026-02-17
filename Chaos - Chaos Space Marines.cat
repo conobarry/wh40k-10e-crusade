@@ -28436,10 +28436,6 @@ This unit cannot join an Attached unit, and only ^^**Huron Blackheart**^^ can jo
                   </constraints>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Flamer tendril" hidden="false" id="e254-4144-3e2e-7500" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46a4-1bd7-6edb-0fce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10cd-ba07-1e1e-59dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <profiles>
                         <profile name="Flamer tendril" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="90ba-4ce6-1d16-044e">
                           <characteristics>
@@ -28475,10 +28471,6 @@ This unit cannot join an Attached unit, and only ^^**Huron Blackheart**^^ can jo
                       </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melta tendril" hidden="false" id="a24e-6919-60af-1115" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ddb9-39ce-60a7-16f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c78e-0578-0159-483d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <profiles>
                         <profile name="Melta tendril" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="90c2-2294-61d9-a0c6">
                           <characteristics>
@@ -28514,13 +28506,8 @@ This unit cannot join an Attached unit, and only ^^**Huron Blackheart**^^ can jo
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="01b4-cca7-acdd-889f" type="selectionEntry" targetId="244-694c-22c-74fb">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a75-1b0e-1736-e7ef" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="484b-c70b-adec-0263" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
                     <entryLink import="true" name="Bolt pistol" hidden="false" id="44b1-21a7-6b4a-84f7" type="selectionEntry" targetId="a12a-4a92-aef-2ccc"/>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="9975-1913-3e4b-2dc5" targetId="244-694c-22c-74fb" type="selectionEntry" collective="false"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Melee Weapons" id="e9dc-c2fc-8629-0791" hidden="false" sortIndex="3">
@@ -28585,10 +28572,6 @@ This unit cannot join an Attached unit, and only ^^**Huron Blackheart**^^ can jo
                       </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Axe of dismemberment" hidden="false" id="2d27-ab41-7a46-fed9" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02be-0f6c-6874-6401" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b840-73b3-76e0-00a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <profiles>
                         <profile name="Axe of dismemberment" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7823-a792-2287-04f5">
                           <characteristics>
@@ -28669,10 +28652,6 @@ This unit cannot join an Attached unit, and only ^^**Huron Blackheart**^^ can jo
                       </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Exalted weapon" hidden="false" id="21f3-435a-071e-988b" collective="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2026-b733-3ec7-2a00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e36a-07e4-652c-274d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
                       <profiles>
                         <profile name="Exalted weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9209-c40e-afd8-0433">
                           <characteristics>
