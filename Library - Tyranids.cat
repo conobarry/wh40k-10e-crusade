@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="77" revision="15" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="77" revision="16" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="fa68-fcb9-38c-cd0f" name="Winged Hive Tyrant" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -4543,7 +4543,7 @@ In the Deploy Armies step, your opponent must set up their entire army before yo
               <profiles>
                 <profile id="774b-3731-c69e-ad2" name="The Dirgeheart of Kharis" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Tyranids Synapse^^** model only. While an enemy unit is within 9&quot; of the bearer, worse that unit&apos;s Leadership characteristic by 1.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Tyranids Synapse^^** model only. While an enemy unit is within 9&quot; of the bearer, worsen that unit&apos;s Leadership characteristic by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
