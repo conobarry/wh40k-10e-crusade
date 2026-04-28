@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="3bdf-a114-5035-c6ac" name="Xenos - Genestealer Cults" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="111" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="3bdf-a114-5035-c6ac" name="Xenos - Genestealer Cults" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="112" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="Detachment" hidden="false" id="b96c-3fb6-1ee9-15ae">
       <constraints>
@@ -2002,7 +2002,7 @@
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Heavy Stubber" id="f308-2ed-9bcc-ee78" hidden="false" defaultSelectionEntryId="dfa6-4bc7-aaaa-8962">
+                <selectionEntryGroup name="Heavy Stubber" id="f308-2ed-9bcc-ee78" hidden="false" defaultSelectionEntryId="5525-eb42-8592-a13a">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Mining laser" hidden="false" id="17f0-d036-dc8d-3399" collective="false">
                       <profiles>
@@ -2073,15 +2073,26 @@
                         <categoryLink name="Attacks Dx Weapon" hidden="false" id="6f33-427c-a69c-a86c" targetId="e993-e086-6de1-12af" primary="false"/>
                       </categoryLinks>
                     </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f9f-39d9-74a2-e93d" includeChildSelections="true"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee73-9aad-a96e-6184" includeChildSelections="true"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Heavy stubber" hidden="false" id="dfa6-4bc7-aaaa-8962" type="selectionEntry" targetId="2edb-110e-e4f8-b6da">
+                    <selectionEntry type="upgrade" import="true" name="Heavy stubber" hidden="false" id="5525-eb42-8592-a13a">
+                      <profiles>
+                        <profile name="Heavy stubber" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="19c5-b53b-5591-2290">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire 3</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Rapid Fire" id="947c-95da-5c7c-93b2" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+                        <infoLink name="Assault" id="c511-d8ec-f9c5-bc87" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                      </infoLinks>
                       <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="894e-183d-a2dd-1512" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9">
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="3f70-ffd6-0d96-f433" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9">
                           <modifiers>
                             <modifier type="increment" value="1" field="2a14-db5e-c5ad-5ae9">
                               <conditions>
@@ -2096,8 +2107,13 @@
                           </modifiers>
                         </entryLink>
                       </entryLinks>
-                    </entryLink>
-                  </entryLinks>
+                      <comment>Assault variant</comment>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f9f-39d9-74a2-e93d" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee73-9aad-a96e-6184" includeChildSelections="true"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
