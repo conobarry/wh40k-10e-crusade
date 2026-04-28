@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="108" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="109" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -77,7 +77,7 @@
     </profileType>
     <profileType id="8a40-4aaa-c780-9046" name="Melee Weapons">
       <characteristicTypes>
-        <characteristicType id="914c-b413-91e3-a132" name="Range"/>
+        <characteristicType id="914c-b413-91e3-a132" name="Range" defaultValue="Melee"/>
         <characteristicType id="2337-daa1-6682-b110" name="A"/>
         <characteristicType id="95d1-95f-45b4-11d6" name="WS"/>
         <characteristicType id="ab33-d393-96ce-ccba" name="S"/>
