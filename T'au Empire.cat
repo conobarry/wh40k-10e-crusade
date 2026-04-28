@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="157" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="158" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
     <rule name="For The Greater Good" hidden="false" id="eeb6-c42-48f7-cc21">
       <description>If your Army Faction is **^^T’au Empire^^**, at the start of your Shooting phase you can select units from your army with this ability to become Observer units.
@@ -15557,6 +15557,16 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
 - **^^Kroot Farstalkers^^**</characteristic>
           </characteristics>
         </profile>
+        <profile name="Rites of Feasting" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b698-3b5c-4503-4ed">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have the Feel Not Pain 6+ ability. If that unit destroys one or more enemy units in the Fight phase, until the end of the battle, models in that unit have the Feel No Pain 5+ ability instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ritual Butchery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c4f6-2b72-9aef-ce30">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Infiltrators" hidden="false" id="def5-69f9-676b-2523" type="rule" targetId="c05d-f4c3-f091-4938"/>
@@ -15567,33 +15577,9 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </infoLink>
         <infoLink name="Stealth" hidden="false" id="7795-3b95-f10a-9197" type="rule" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Leader" id="f5e6-7a3a-ba25-3f99" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Feel No Pain" id="7b4c-4f1f-d847-7996" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+        <infoLink name="Sustained Hits" id="b12a-d9be-f1fd-a73" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Ritual Butchery" hidden="false" id="9a56-e27-1c9f-ca4d">
-          <profiles>
-            <profile name="Ritual Butchery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c4f6-2b72-9aef-ce30">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Sustained Hits" hidden="false" id="b12a-d9be-f1fd-a73" type="rule" targetId="1897-c22c-9597-12b1"/>
-          </infoLinks>
-        </infoGroup>
-        <infoGroup name="Rites of Feasting" hidden="false" id="1da5-b09c-35eb-9ceb">
-          <profiles>
-            <profile name="Rites of Feasting" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b698-3b5c-4503-4ed">
-              <characteristics>
-                <characteristic name="Description" hidden="false" id="5b75-ce50-c9eb-eff8" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have the Feel Not Pain 6+ ability. If that unit destroys one or more enemy units in the Fight phase, unit the end of the battle, models in that unit have the Feel No Pain 5+ ability instead.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Feel No Pain" hidden="false" id="7b4c-4f1f-d847-7996" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="2a3e-e572-770c-78c1" type="selectionEntry" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
         <entryLink import="true" name="Enhancements" hidden="false" id="7f1d-aca3-f836-ea76" type="selectionEntryGroup" targetId="fae2-569a-6bec-9167" sortIndex="3"/>
