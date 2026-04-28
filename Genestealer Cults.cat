@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="3bdf-a114-5035-c6ac" name="Xenos - Genestealer Cults" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="112" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="3bdf-a114-5035-c6ac" name="Xenos - Genestealer Cults" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="113" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="Detachment" hidden="false" id="b96c-3fb6-1ee9-15ae">
       <constraints>
@@ -10334,6 +10334,34 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
     <entryLink import="true" name="Cult Insurrectionist [Crucible]" hidden="false" id="0819-deca-adfc-8dbf" targetId="0f8d-ba1b-c2cf-c8e7" type="selectionEntry"/>
     <entryLink import="true" name="Cult Guerrilla [Crucible]" hidden="false" id="cb22-9657-9cc4-c4be" targetId="5138-978e-c8e6-b90c" type="selectionEntry"/>
     <entryLink import="true" name="Voice of the Patriarch [Crucible]" hidden="false" id="aa47-f82b-0940-adc0" targetId="678c-b59c-f85d-0a43" type="selectionEntry"/>
+    <entryLink import="true" name="Hippogriff AFV" hidden="false" id="7eb0-df19-2d2b-0c9b" targetId="b566-8903-3a36-62f1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="0a59-1d64-257c-04fb" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Centaur RSV" hidden="false" id="789a-21b9-cc87-01dc" targetId="c871-4769-71ed-c4b3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="0a59-1d64-257c-04fb" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Astra Militarum - Library" id="1931-3c9a-ba46-7c7b" targetId="5a44-f048-114b-e3ff"/>
