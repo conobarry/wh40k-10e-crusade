@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="109" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="110" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -4656,899 +4656,10 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armageddon Battle Traits" id="9c28-2876-4721-62f5" hidden="false" collapsible="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Warp Terrors (Psychic)" hidden="false" id="b283-c2a9-13fd-21b4">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8aed-05e4-ff2b-ad12" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Warp Terrors (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a1ea-aab1-9189-c5e1">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, at the start of your Command phase, Movement phase, Shooting phase, or Charge phase, or the Fight phase, you can select one enemy unit within 18&quot; of this model. That unit must take a Battle-shock test, subtracting 1 from the test when it does so if it has one or more Warp counters.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Fortune&apos;s Favoured" hidden="false" id="7864-987f-04b1-abbe">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7d7-ef59-ab4d-4bde" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Fortune&apos;s Favoured" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be18-6e02-45c7-9ffd">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save. While this unit has one or more Warp counters, models in this unit have a 5+ invulnerable save (excluding against Psychic Attacks).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warp-hardened Veterans" hidden="false" id="2c50-7b9e-ffaf-d455">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66b-328d-867e-8cd7" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Warp-hardened Veterans" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ef2d-1e34-4e2a-256a">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is Marked for Greatness, it gains an additional 2XP. In addition, once per battle, in your Command phase, you can add or remove one Warp counter to/from this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Adaptive Camouflage" hidden="false" id="5245-2894-d81e-d51e">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cf1-ca66-fa38-7d89" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Adaptive Camouflage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7aa7-8172-3499-0ead">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Stealth ability and if this unit is in Strategic Reserves, it counts the battle round number as one higher than the current battle round number for the purpose of determining when and where it is set up.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Stealth" id="20b7-ab61-607a-fef0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Stalwarts" hidden="false" id="6d14-584a-16d2-932c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9804-a515-ac6b-aa23" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Stalwarts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="039a-9fa3-d83f-1118">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, in your Command phase, this unit can use this Battle Trait. When it does, if it is Battle-shocked, it is no longer Battle-shocked and, until the end of the turn, this unit is eligible to perform an Action in a turn in which it Fell Back and/or while within Engagement Range of one or more enemy units.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Footsloggers" hidden="false" id="92ff-c4fc-ecec-3c7c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ae1-e3da-73be-f18c" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Footsloggers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0a22-f42b-2ddf-fea8">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1&quot; to the Move characteristic of models in this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Footsloggers" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Unit"/>
-                    <modifier type="increment" value="1" field="e703-ecb6-5ce7-aec1" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warp Hunters" hidden="false" id="8e64-355a-0778-2d5c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4127-9102-e391-d0e1" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Warp Hunters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dc03-6a23-e16b-3cf4">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets the closest eligible target, you can re-roll a Wound roll of 1. If the target of that is an **^^Unbound Adversaries^^** unit, and it is the closest eligible target, you can re-roll the Wound roll instead.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warding Inscriptions" hidden="false" id="3f5b-2433-0530-4f23">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b20c-2719-3c1e-e0d2" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Warding Inscriptions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c30-003c-fc9e-29ce">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have the Feel No Pain 6+ ability against Psychic Attacks and mortal wounds. While this unit has one or more Warp counters, models in this unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Feel No Pain" id="ea99-4ed5-7483-c1c2" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Advanced Suspensors" hidden="false" id="9fb1-e766-6b60-793f">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51a7-106c-802f-e75d" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Advanced Suspensors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a35c-3950-4d57-057c">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged Weapons equipped by models in this unit have the **[ASSAULT]** ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Advanced Suspensors" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons"/>
-                    <modifier type="append" value="Assault" field="7f1b-8591-2fcf-d01c" scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-              <infoLinks>
-                <infoLink name="Assault" id="b3e0-7002-cb6a-7a28" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="bd62-2817-efff-a103">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec8a-1027-21ee-1953" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Extra Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5cb4-877b-8f87-e680">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Toughness characteristic of models in this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Extra Armour" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Unit"/>
-                    <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Juggernaut" hidden="false" id="5cfc-9526-1f87-9efc">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a498-6115-7f21-bf09" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Juggernaut" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea86-e64e-2600-8253">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can ignore any or all modifiers to this unit&apos;s Move characteristic. In addition, each time this unit makes a Normal move, its models can move through sections of terrain features more than 2&quot; in height, but if any do so, just after this unit has moved, roll one D6: on a 1-3 this unit is Battle-shocked.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Endless Rage" hidden="false" id="6813-9048-33f5-ed81">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5e3-79a4-4a04-d2af" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Endless Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8ad7-68a8-beaf-3629">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Daemon Hunter" hidden="false" id="a738-ed65-3759-a759">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f457-e745-97b4-9b15" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Daemon Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6f4e-0c0e-71b1-d237">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit targets an **^^Unbound Adversaries^^** unit, you can re-roll the Hit roll. In addition, at the Update Crusade Cards step, if this unit would gain XP from Dealers in Death, it gains 1 additional XP.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tip of the Spear" hidden="false" id="0f83-14d6-4e73-786a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ee2-3239-1553-c685" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Tip of the Spear" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d57e-3ffa-56bd-894f">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Scouts 6&quot; ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Scouts" id="7b76-b0ae-2894-e709" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
-                  <modifiers>
-                    <modifier type="append" value="6&quot;" field="name" join=" "/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Skilled Riders" hidden="false" id="2c28-7a28-0b4c-8f04">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="713e-1d67-a5b3-cba0" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Skilled Riders" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="438d-b00c-e81a-5497">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Normal, Advance or Charge move, its models can move through sections of terrain features more than 2&quot; in height, but if any do so, just after this unit has moved, roll one D6: on a 1, this unit suffers D3 mortal wounds and is Battle-shocked; on a 2-3 this unit is Battle-shocked.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reactive Redeployment" hidden="false" id="0f45-1f87-f171-fc2c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e01-5901-532c-f3d3" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Reactive Redeployment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1485-9199-6622-9b6d">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, you can redeploy this unit. When doing so, you can set this unit up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="War Beasts" hidden="false" id="feb9-cb74-c5bb-8f61">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="855a-fb6f-e4ff-cf2e" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="War Beasts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="16c5-021a-5190-1d42">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Leaping Frenzy" hidden="false" id="bc29-bfae-0ea6-b10b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa9c-cb24-803f-b69f" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Leaping Frenzy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0c9e-169b-11e5-c3a2">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit, adding 1 to the result if this unit has 1 or more Warp counters: for each 5+, that enemy unit suffers 1 mortal wound.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Fearsome Predators (Aura)" hidden="false" id="fbcd-b33c-616d-2514">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c279-7fbe-be55-98af" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Fearsome Predators (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f76b-6411-cd78-ada6">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit is within 6&quot; of this unit, worsen the Leadership and Objective characteristics of models in that unit by 1 (to a minimum of 1).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ritual of Shrouding (Psychic)" hidden="false" id="5af5-ea75-c0d5-b4d3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc9f-57b3-7222-9626" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Ritual of Shrouding (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7c37-65c5-df4f-62c3">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Deploy Crusade Armies step, you can spend 1RP; if you do, until the end of the battle, each model in this unit has the Infiltrators ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Infiltrators" id="7f8d-1cff-ab1e-8784" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warp Focus (Psychic)" hidden="false" id="5190-d5c0-1c38-2697">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e065-09ff-f9d6-b6d4" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Warp Focus (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1377-3875-ed15-5926">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Strength characteristic of Psychic weapons equipped by models in this unit. While this unit has one or more Warp counters, add 2 to the Strength characteristic of Psychic weapons equipped by models in this unit instead.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Warp Focus" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons"/>
-                    <modifier type="increment" value="1" field="2229-f494-25db-c5d3" scope="model-or-unit" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" join=", "/>
-                    <modifier type="append" value="Warp Focus" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons"/>
-                    <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="model-or-unit" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Scrier&apos;s Gaze (Aura, Psychic)" hidden="false" id="2317-bd50-51d4-7894">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02b9-3135-5ad2-966e" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Scrier&apos;s Gaze (Aura, Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="86ef-191f-7164-45fb">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units that are set up on the battlefield from Reserves cannot be set up within 12&quot; of this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warp Alacrity (Psychic)" hidden="false" id="8317-4f41-1bdc-c9b3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97d0-bc63-26a4-7f8f" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Warp Alacrity (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ef24-3c97-c267-bdaf">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance and Charge rolls for this unit. In addition, each time this unit is selected to Advance, you can remove one Warp counter from it. If you do, then until the end of the turn, this unit is not eligible to declare a charge (even if another rule would let it Advance and Charge in the same turn), but you do not make an Advance roll; instead, until the end of the phase, add 6&quot; to the Move characteristic of models in this unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Force Shield (Psychic)" hidden="false" id="f3c8-27fa-c98d-a4bd">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8530-271d-ed73-5209" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Force Shield (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a48-4edb-7e5f-ba05">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit (excluding Psychic Attacks), if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="5700-66f7-a020-7386" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink targetId="9c28-2876-4721-62f5" id="f654-23d5-0fc2-ecd4" type="selectionEntryGroup" name="Armageddon Battle Traits" hidden="false"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Crusade Relics" id="e919-5b46-974d-a5b1" hidden="false">
       <comment>Crusade content</comment>
@@ -8771,7 +7882,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Nachmund Gauntlet Crusade Abilities" id="b112-44a1-b89f-08b3" hidden="false" defaultSelectionEntryId="none">
+        <selectionEntryGroup name="Nachmund Gauntlet Crusade Abilities" id="b112-44a1-b89f-08b3" hidden="false" defaultSelectionEntryId="none" sortIndex="3">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -8912,7 +8023,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="793c-5182-d3fa-d350" includeChildSelections="true"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Armageddon Crusade Abilities" id="bf32-3a87-fccc-86f2" hidden="false" defaultSelectionEntryId="none">
+        <selectionEntryGroup name="Armageddon Crusade Abilities" id="bf32-3a87-fccc-86f2" hidden="false" defaultSelectionEntryId="none" sortIndex="1">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -9064,6 +8175,26 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Armageddon Battle Traits" hidden="false" id="d1df-b418-75c6-6641" type="selectionEntryGroup" targetId="9c28-2876-4721-62f5" sortIndex="2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="cdec-18f6-3a70-c6dc" shared="true" childName="Front-line Champions" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="e259-a0bf-d93e-4b6c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cdec-18f6-3a70-c6dc" shared="true" childName="Front-line Champions" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e259-a0bf-d93e-4b6c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f685-b526-a910-f453" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Crusade Relic Upgrades" id="b678-4a99-210e-931f" hidden="false">
       <selectionEntries>
@@ -9762,6 +8893,898 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armageddon Battle Traits" id="9c28-2876-4721-62f5" hidden="false" collapsible="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Warp Terrors (Psychic)" hidden="false" id="b283-c2a9-13fd-21b4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8aed-05e4-ff2b-ad12" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warp Terrors (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a1ea-aab1-9189-c5e1">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, at the start of your Command phase, Movement phase, Shooting phase, or Charge phase, or the Fight phase, you can select one enemy unit within 18&quot; of this model. That unit must take a Battle-shock test, subtracting 1 from the test when it does so if it has one or more Warp counters.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fortune&apos;s Favoured" hidden="false" id="7864-987f-04b1-abbe">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7d7-ef59-ab4d-4bde" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Fortune&apos;s Favoured" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be18-6e02-45c7-9ffd">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have a 6+ invulnerable save. While this unit has one or more Warp counters, models in this unit have a 5+ invulnerable save (excluding against Psychic Attacks).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp-hardened Veterans" hidden="false" id="2c50-7b9e-ffaf-d455">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66b-328d-867e-8cd7" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warp-hardened Veterans" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ef2d-1e34-4e2a-256a">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is Marked for Greatness, it gains an additional 2XP. In addition, once per battle, in your Command phase, you can add or remove one Warp counter to/from this unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Adaptive Camouflage" hidden="false" id="5245-2894-d81e-d51e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cf1-ca66-fa38-7d89" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Adaptive Camouflage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7aa7-8172-3499-0ead">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Stealth ability and if this unit is in Strategic Reserves, it counts the battle round number as one higher than the current battle round number for the purpose of determining when and where it is set up.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Stealth" id="20b7-ab61-607a-fef0" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stalwarts" hidden="false" id="6d14-584a-16d2-932c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9804-a515-ac6b-aa23" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Stalwarts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="039a-9fa3-d83f-1118">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, in your Command phase, this unit can use this Battle Trait. When it does, if it is Battle-shocked, it is no longer Battle-shocked and, until the end of the turn, this unit is eligible to perform an Action in a turn in which it Fell Back and/or while within Engagement Range of one or more enemy units.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Footsloggers" hidden="false" id="92ff-c4fc-ecec-3c7c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ae1-e3da-73be-f18c" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Footsloggers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0a22-f42b-2ddf-fea8">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1&quot; to the Move characteristic of models in this unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Footsloggers" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Unit"/>
+                <modifier type="increment" value="1" field="e703-ecb6-5ce7-aec1" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp Hunters" hidden="false" id="8e64-355a-0778-2d5c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4127-9102-e391-d0e1" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warp Hunters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dc03-6a23-e16b-3cf4">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets the closest eligible target, you can re-roll a Wound roll of 1. If the target of that is an **^^Unbound Adversaries^^** unit, and it is the closest eligible target, you can re-roll the Wound roll instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warding Inscriptions" hidden="false" id="3f5b-2433-0530-4f23">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b20c-2719-3c1e-e0d2" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warding Inscriptions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c30-003c-fc9e-29ce">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have the Feel No Pain 6+ ability against Psychic Attacks and mortal wounds. While this unit has one or more Warp counters, models in this unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Feel No Pain" id="ea99-4ed5-7483-c1c2" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Advanced Suspensors" hidden="false" id="9fb1-e766-6b60-793f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51a7-106c-802f-e75d" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Advanced Suspensors" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a35c-3950-4d57-057c">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ranged Weapons equipped by models in this unit have the **[ASSAULT]** ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Advanced Suspensors" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons"/>
+                <modifier type="append" value="Assault" field="7f1b-8591-2fcf-d01c" scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons" join=", "/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <infoLinks>
+            <infoLink name="Assault" id="b3e0-7002-cb6a-7a28" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="bd62-2817-efff-a103">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec8a-1027-21ee-1953" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Extra Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5cb4-877b-8f87-e680">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Toughness characteristic of models in this unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Extra Armour" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Unit"/>
+                <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="model-or-unit" affects="self.entries.recursive.profiles.Unit" join=", "/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Juggernaut" hidden="false" id="5cfc-9526-1f87-9efc">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a498-6115-7f21-bf09" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Juggernaut" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ea86-e64e-2600-8253">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can ignore any or all modifiers to this unit&apos;s Move characteristic. In addition, each time this unit makes a Normal move, its models can move through sections of terrain features more than 2&quot; in height, but if any do so, just after this unit has moved, roll one D6: on a 1-3 this unit is Battle-shocked.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Endless Rage" hidden="false" id="6813-9048-33f5-ed81">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5e3-79a4-4a04-d2af" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Endless Rage" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8ad7-68a8-beaf-3629">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Daemon Hunter" hidden="false" id="a738-ed65-3759-a759">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f457-e745-97b4-9b15" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Daemon Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6f4e-0c0e-71b1-d237">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit targets an **^^Unbound Adversaries^^** unit, you can re-roll the Hit roll. In addition, at the Update Crusade Cards step, if this unit would gain XP from Dealers in Death, it gains 1 additional XP.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tip of the Spear" hidden="false" id="0f83-14d6-4e73-786a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ee2-3239-1553-c685" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Tip of the Spear" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d57e-3ffa-56bd-894f">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Scouts 6&quot; ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Scouts" id="7b76-b0ae-2894-e709" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+              <modifiers>
+                <modifier type="append" value="6&quot;" field="name" join=" "/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Skilled Riders" hidden="false" id="2c28-7a28-0b4c-8f04">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="713e-1d67-a5b3-cba0" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Skilled Riders" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="438d-b00c-e81a-5497">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Normal, Advance or Charge move, its models can move through sections of terrain features more than 2&quot; in height, but if any do so, just after this unit has moved, roll one D6: on a 1, this unit suffers D3 mortal wounds and is Battle-shocked; on a 2-3 this unit is Battle-shocked.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reactive Redeployment" hidden="false" id="0f45-1f87-f171-fc2c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e01-5901-532c-f3d3" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Reactive Redeployment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1485-9199-6622-9b6d">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After both players have deployed their armies, you can redeploy this unit. When doing so, you can set this unit up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="War Beasts" hidden="false" id="feb9-cb74-c5bb-8f61">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="855a-fb6f-e4ff-cf2e" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="War Beasts" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="16c5-021a-5190-1d42">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to Advance and Charge rolls made for this unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leaping Frenzy" hidden="false" id="bc29-bfae-0ea6-b10b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa9c-cb24-803f-b69f" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Leaping Frenzy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0c9e-169b-11e5-c3a2">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit, adding 1 to the result if this unit has 1 or more Warp counters: for each 5+, that enemy unit suffers 1 mortal wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fearsome Predators (Aura)" hidden="false" id="fbcd-b33c-616d-2514">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c279-7fbe-be55-98af" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Fearsome Predators (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f76b-6411-cd78-ada6">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy unit is within 6&quot; of this unit, worsen the Leadership and Objective characteristics of models in that unit by 1 (to a minimum of 1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ritual of Shrouding (Psychic)" hidden="false" id="5af5-ea75-c0d5-b4d3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc9f-57b3-7222-9626" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Ritual of Shrouding (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7c37-65c5-df4f-62c3">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Deploy Crusade Armies step, you can spend 1RP; if you do, until the end of the battle, each model in this unit has the Infiltrators ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Infiltrators" id="7f8d-1cff-ab1e-8784" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp Focus (Psychic)" hidden="false" id="5190-d5c0-1c38-2697">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e065-09ff-f9d6-b6d4" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warp Focus (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1377-3875-ed15-5926">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Strength characteristic of Psychic weapons equipped by models in this unit. While this unit has one or more Warp counters, add 2 to the Strength characteristic of Psychic weapons equipped by models in this unit instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Warp Focus" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons"/>
+                <modifier type="increment" value="1" field="2229-f494-25db-c5d3" scope="model-or-unit" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" join=", "/>
+                <modifier type="append" value="Warp Focus" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons"/>
+                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="model-or-unit" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" join=", "/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scrier&apos;s Gaze (Aura, Psychic)" hidden="false" id="2317-bd50-51d4-7894">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02b9-3135-5ad2-966e" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Scrier&apos;s Gaze (Aura, Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="86ef-191f-7164-45fb">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units that are set up on the battlefield from Reserves cannot be set up within 12&quot; of this unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp Alacrity (Psychic)" hidden="false" id="8317-4f41-1bdc-c9b3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97d0-bc63-26a4-7f8f" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Warp Alacrity (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ef24-3c97-c267-bdaf">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can re-roll Advance and Charge rolls for this unit. In addition, each time this unit is selected to Advance, you can remove one Warp counter from it. If you do, then until the end of the turn, this unit is not eligible to declare a charge (even if another rule would let it Advance and Charge in the same turn), but you do not make an Advance roll; instead, until the end of the phase, add 6&quot; to the Move characteristic of models in this unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Force Shield (Psychic)" hidden="false" id="f3c8-27fa-c98d-a4bd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8530-271d-ed73-5209" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+            <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Force Shield (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a48-4edb-7e5f-ba05">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack targets this unit (excluding Psychic Attacks), if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5700-66f7-a020-7386" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
