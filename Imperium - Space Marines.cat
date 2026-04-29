@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="203" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="204" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -146,6 +146,7 @@
     <categoryEntry name="Emperor&apos;s Champion" hidden="false" id="1ba5-20a1-4dd6-9a4f"/>
     <categoryEntry name="Faction: Raptors" id="8ff0-ffd2-4e40-ee75" hidden="false"/>
     <categoryEntry name="Faction: Tome Keepers" id="04e6-516d-e0ad-1b57" hidden="false"/>
+    <categoryEntry name="Heavy Transport" id="abee-1a02-8002-a13f" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="e9ed-6763-ea0d-39fe" targetId="82cb-ba1-1aae-3b1d"/>
@@ -20666,6 +20667,11 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="2d4e-4add-4e69-f412" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -20872,6 +20878,11 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="c8ad-027d-26e2-7423" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -21065,6 +21076,11 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="5287-7335-a131-cd04" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -21368,6 +21384,11 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="9b42-f7fc-407f-cd15" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -21643,6 +21664,11 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="e2e7-6719-e277-a783" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -23248,6 +23274,11 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="40f8-636c-7ad5-debd" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -29599,6 +29630,11 @@ You can attach this model to one of the above units even if one Captain, Chapte
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="1f11-1ae0-fb08-1de8" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="6cd7-668d-fccf-fd0e" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -31276,6 +31312,11 @@ You can attach this model to one of the above units even if one Captain, Chapte
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="7f3f-208a-f6f0-9c56" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="10d5-fb9e-e48c-2e43" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -31973,6 +32014,11 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="7e45-fef5-f802-3221" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="8940-aa1a-e524-b028" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -38683,6 +38729,16 @@ than the Toughness characteristic of your unit or your unit has the ^^**Titus^^
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Armoured Speartip" hidden="false" id="187b-6ef3-33dd-fe0d">
+          <rules>
+            <rule name="Rapid Deployment" id="b867-8297-a69a-4065" hidden="false">
+              <description>Each time an Adeptus Astartes unit from your army disembarks from a Transport (excluding Aircraft) that made a Normal or Advance move this phase, that disembarked unit can make a Normal move of up to D6&quot;, or a Normal move of up to D3+3&quot; instead if that Transport is a Heavy Transport (see below)
+
+
+Adeptus Astartes Transport units from your army (excluding Aircraft) that have a Wounds characteristic of 14+ have the Heavy Transport keyword.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Enhancements" hidden="false" id="9e5d-de4c-c5d1-1d3e" collapsible="true">
@@ -43622,6 +43678,78 @@ target is within range of an objective marker, you can re‑roll the Hit roll a
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armoured Speartip Enhancements" id="2147-3a39-18e2-ff7c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Liberator" hidden="false" id="30b6-3d7b-5bc9-e6ee">
+              <profiles>
+                <profile name="Liberator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3c1d-43e3-d54b-88db">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. If you control an objective marker at the end of your Command phase,
+and the bearer’s unit (or any Heavy Transport it is embarked within) is within range of that objective
+marker, that objective marker remains under your control until your opponent’s Level of Control over
+that objective marker is greater than yours at the end of a phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tip of the Spear" hidden="false" id="189e-db08-cd33-9d34">
+              <profiles>
+                <profile name="Tip of the Spear" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="84a5-2d44-f010-4c38">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. If the bearer starts the battle embarked within a Transport, that transport
+has the Scouts 9&quot; ability</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shock Deployment" hidden="false" id="9272-4e8e-58d4-eb86">
+              <profiles>
+                <profile name="Shock Deployment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d985-3821-4299-309a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Terminator or Gravis model only. In your Shooting phase, each time the bearer’s unit is selected to shoot, if it disembarked from a Transport this turn, until the end of the phase, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="81f0-f40e-c36c-5a30" shared="true" childName="Gravis" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" childName="Terminator" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Armoured Commander" hidden="false" id="c40f-cfc3-09a1-8204">
+              <profiles>
+                <profile name="Armoured Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2aa2-b93c-20a9-a740">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes model only. Once per turn, in your Movement phase, the bearer can use this
+Enhancement. If it does, select one friendly Adeptus Astartes Transport that is in Strategic Reserves. Until the end of the phase, for the purposes of setting up that Transport on the battlefield, treat the current battle round number as being one higher than it actually is.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f216-fba5-4d45-2434"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="5baa-c56d-c78e-0af3" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
