@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="101" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="102" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -10475,6 +10475,13 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
         <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cohort Commander [Crucible]" hidden="false" id="7d17-4620-8dbf-4ef6">
       <entryLinks>
@@ -10630,6 +10637,11 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
       <modifiers>
         <modifier type="append" value="Precision" field="893f-9000-ccf7-648e" join=", " affects="self.entries.profiles.Melee Weapons"/>
         <modifier type="replace" field="893f-9000-ccf7-648e" join=", " affects="self.entries.profiles.Melee Weapons" arg=", Precision"/>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ironstrider Alpha [Crucible]" hidden="false" id="6b3e-11ad-7a9d-ca5d">
@@ -10795,6 +10807,11 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
         <modifier type="add" value="You can only take one Ironstrider Alpha weapon" field="error">
           <conditions>
             <condition type="greaterThan" value="1" field="selections" scope="6b3e-11ad-7a9d-ca5d" childId="280c-ba6a-c523-2890" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="57cc-822a-1d43-be52" shared="true" includeChildSelections="true" includeChildForces="true" childName="Show Crucible Characters"/>
           </conditions>
         </modifier>
       </modifiers>
