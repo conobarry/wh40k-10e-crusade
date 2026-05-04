@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="207" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="208" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -18718,6 +18718,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="348f-4d21-84fe-205f" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="cee9-661c-4a30-eb85" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="57e2-0d04-cdb6-d79f" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -18839,6 +18840,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="1405-7932-aaf5-56c0" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="a4f2-020c-f0bf-0e8b" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="05da-6b2e-c207-1f3d" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="986e-cccb-c3ff-62a1" primary="true" name="Vehicle"/>
@@ -19031,6 +19033,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="ce17-337a-a95b-1108" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="db94-3575-afdc-b6fa" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="ac5e-4a83-a683-32ef" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <profiles>
         <profile name="Stalker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7124-7512-21f-48d">
@@ -19235,6 +19238,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="b6f5-db41-7c5c-2cb8" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="72d0-c7cc-99ff-5f41" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="7e6b-c8f1-fbc3-eee8" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="9717-2ae4-1a52-37eb" targetId="ee64-aaaf-75df-8da9"/>
@@ -19403,6 +19407,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="1e1f-5089-d2a2-274a" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="bc99-1d2b-b738-ae81" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="c494-792f-2056-851f" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="3808-cc68-8a46-5b24" targetId="ee64-aaaf-75df-8da9"/>
@@ -19636,6 +19641,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3afa-51d9-4121-588b" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="8995-015f-65dc-96d1" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="3d65-3050-f30a-c8c3" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="1194-f83-ad94-edce" targetId="ee64-aaaf-75df-8da9"/>
@@ -19881,6 +19887,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6415-531d-8eaa-d183" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="37ff-5cf1-d16f-02a7" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="e8c3-675e-b261-a1d1" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="68cf-389f-be21-37e" targetId="ee64-aaaf-75df-8da9"/>
@@ -20110,6 +20117,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="981a-804b-38bb-bbda" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="7a11-8c02-5f6c-4f75" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="f811-e9ee-f066-8df0" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="10e9-8293-c3df-a107" targetId="ee64-aaaf-75df-8da9"/>
@@ -20357,6 +20365,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6968-aff1-f344-6cd8" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="8bd6-192a-3975-9ec6" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="c517-d373-9409-090a" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="545b-ecf1-18a2-fe5" targetId="ee64-aaaf-75df-8da9"/>
@@ -20574,6 +20583,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="f756-2008-549c-23c8" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="4c92-b523-6ddd-2072" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="98e4-3406-49d5-8a31" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="4842-d907-ccbf-af5b"/>
@@ -20762,6 +20772,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5ab7-5348-9bb7-499a" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="74ce-88ba-c67f-982a" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="72a4-c90d-4914-6700" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="df21-20fd-dd4-9afe" targetId="b68a-5ded-65ac-98c">
@@ -20989,6 +21000,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="362c-8d25-ae5d-c189" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="c67d-54fc-3697-b514" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="3066-1eee-c57c-5348" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="fa9a-288a-378-a57d" primary="true" name="Vehicle"/>
@@ -21204,6 +21216,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3656-2ef9-4bcd-5ba2" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="4ae2-5679-9518-caba" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="78f3-fa2e-82b3-6461" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="d9ba-49a-522e-22b6" targetId="b68a-5ded-65ac-98c">
@@ -21453,6 +21466,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="d49f-59b3-c539-d7ca" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="b691-ce30-52c9-50bf" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="f200-8f09-da98-6037" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="6bde-c589-104e-1461" hidden="false" sortIndex="2">
@@ -21658,6 +21672,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="802e-4dfc-ac29-5eaf" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="68b0-5b90-7be7-6ebb" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="dd98-01a7-b1bf-4a38" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="cf74-f3ce-e18c-b83d" targetId="1aac-b083-4318-f750"/>
@@ -21965,6 +21980,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="29e4-1f83-97fc-2fb1" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="beac-050b-ccfb-b186" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="0bea-de66-033b-7c26" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="e550-944-8fcc-2f61" primary="false" name="Imperium"/>
@@ -22125,6 +22141,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="9eca-19fd-be53-4118" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="6710-9666-606b-fcfb" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="a1a5-81d6-cdbc-13c9" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="6e45-6bdb-999d-cdd" targetId="b68a-5ded-65ac-98c">
@@ -29803,6 +29820,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6273-bad5-14f1-df6d" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="057a-d668-0bfd-5d34" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="b76d-351d-600d-c7f8" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="f69d-9163-3e7-3d4f"/>
@@ -30340,6 +30358,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="2930-1b5a-7c9b-f3be" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="cf8e-df9e-b574-ca1c" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="a531-f254-4864-b5ba" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="78c3-ad1e-70d2-f674"/>
@@ -31499,6 +31518,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="eb1c-3c02-f996-17e1" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="5c2b-522e-58c8-0ed9" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="0f40-19e7-7c0c-01eb" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="453-1a2d-da3f-e133"/>
@@ -31999,6 +32019,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5e24-8612-5219-6764" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="a2e0-7a67-36c4-16d1" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="1f9a-809d-78b7-393e" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="221d-7cf2-8469-bf70"/>
@@ -32227,6 +32248,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="2d93-1e8e-4181-5712" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="953b-73b5-987b-c8e3" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="3faf-7918-6af0-8008" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="5ab1-96b4-e83a-9f8f"/>
@@ -32675,6 +32697,7 @@ You can attach this model to one of the above units even if one Character model
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="c198-eec0-12d2-3b57" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="bbce-3c19-8f47-22cb" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="1483-7fdc-b535-9784" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <profiles>
         <profile name="Assault Ramp" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="562a-7fc-f1a6-cc9a">
@@ -32919,6 +32942,7 @@ You can attach this model to one of the above units even if one Character model
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="c40c-ec80-0389-396a" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="9e0c-8bde-032b-52f2" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="0f0b-0753-e7dc-dfea" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="d986-f013-99f8-52dc" targetId="b68a-5ded-65ac-98c">
@@ -34820,6 +34844,7 @@ per turn.</characteristic>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="ed1f-f2f5-0eb1-604e" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
         <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="5096-1b3a-2537-92f3" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="4296-9f1f-5574-b9a0" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -38295,12 +38320,19 @@ the Hit roll.</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" includeChildSelections="true" includeChildForces="true" childName="Tank Ace Character"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8810-ebe3-94f2-8eab" shared="true" includeChildSelections="true" includeChildForces="true" childName="Tank Ace Character"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
