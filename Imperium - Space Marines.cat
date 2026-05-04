@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="206" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="207" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -147,6 +147,7 @@
     <categoryEntry name="Faction: Raptors" id="8ff0-ffd2-4e40-ee75" hidden="false"/>
     <categoryEntry name="Faction: Tome Keepers" id="04e6-516d-e0ad-1b57" hidden="false"/>
     <categoryEntry name="Heavy Transport" id="abee-1a02-8002-a13f" hidden="false"/>
+    <categoryEntry name="Tank Ace" id="b6a1-a3f9-16eb-2d31" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="e9ed-6763-ea0d-39fe" targetId="82cb-ba1-1aae-3b1d"/>
@@ -18716,6 +18717,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="348f-4d21-84fe-205f" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="cee9-661c-4a30-eb85" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -18784,6 +18786,18 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Hunter [Legends]" hidden="false" id="3ad-729-3235-4777">
       <costs>
@@ -18824,6 +18838,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="1405-7932-aaf5-56c0" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="a4f2-020c-f0bf-0e8b" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="986e-cccb-c3ff-62a1" primary="true" name="Vehicle"/>
@@ -18836,6 +18851,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="7880-e881-b5cd-1ff3" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19005,6 +19030,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="ce17-337a-a95b-1108" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="db94-3575-afdc-b6fa" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <profiles>
         <profile name="Stalker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7124-7512-21f-48d">
@@ -19034,6 +19060,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="aeec-2b0f-805d-4b20" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19198,6 +19234,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="b6f5-db41-7c5c-2cb8" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="72d0-c7cc-99ff-5f41" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="9717-2ae4-1a52-37eb" targetId="ee64-aaaf-75df-8da9"/>
@@ -19341,6 +19378,18 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Predator Destructor" hidden="false" id="d4c8-dd6a-cd7a-ccc3">
       <costs>
@@ -19353,6 +19402,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </costs>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="1e1f-5089-d2a2-274a" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="bc99-1d2b-b738-ae81" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="3808-cc68-8a46-5b24" targetId="ee64-aaaf-75df-8da9"/>
@@ -19554,6 +19604,18 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Predator Annihilator" hidden="false" id="31a-6c3e-5843-4023">
       <costs>
@@ -19573,6 +19635,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3afa-51d9-4121-588b" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="8995-015f-65dc-96d1" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="1194-f83-ad94-edce" targetId="ee64-aaaf-75df-8da9"/>
@@ -19777,6 +19840,18 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Gladiator Lancer" hidden="false" id="7814-107b-a498-96f6">
       <categoryLinks>
@@ -19805,6 +19880,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6415-531d-8eaa-d183" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="37ff-5cf1-d16f-02a7" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="68cf-389f-be21-37e" targetId="ee64-aaaf-75df-8da9"/>
@@ -19927,6 +20003,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -20023,6 +20109,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="981a-804b-38bb-bbda" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="7a11-8c02-5f6c-4f75" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="10e9-8293-c3df-a107" targetId="ee64-aaaf-75df-8da9"/>
@@ -20064,6 +20151,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -20259,6 +20356,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6968-aff1-f344-6cd8" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="8bd6-192a-3975-9ec6" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="545b-ecf1-18a2-fe5" targetId="ee64-aaaf-75df-8da9"/>
@@ -20279,6 +20377,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -20465,6 +20573,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="f756-2008-549c-23c8" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="4c92-b523-6ddd-2072" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="4842-d907-ccbf-af5b"/>
@@ -20600,6 +20709,18 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Land Raider" hidden="false" id="8cca-9318-3bec-d360">
       <categoryLinks>
@@ -20640,6 +20761,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5ab7-5348-9bb7-499a" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="74ce-88ba-c67f-982a" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="df21-20fd-dd4-9afe" targetId="b68a-5ded-65ac-98c">
@@ -20670,6 +20792,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="add" value="abee-1a02-8002-a13f" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="2d4e-4add-4e69-f412" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -20856,6 +20988,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="362c-8d25-ae5d-c189" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="c67d-54fc-3697-b514" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="fa9a-288a-378-a57d" primary="true" name="Vehicle"/>
@@ -20881,6 +21014,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="add" value="abee-1a02-8002-a13f" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="c8ad-027d-26e2-7423" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -21060,6 +21203,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3656-2ef9-4bcd-5ba2" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="4ae2-5679-9518-caba" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="d9ba-49a-522e-22b6" targetId="b68a-5ded-65ac-98c">
@@ -21081,6 +21225,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="add" value="abee-1a02-8002-a13f" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="5287-7335-a131-cd04" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -21298,6 +21452,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="d49f-59b3-c539-d7ca" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="b691-ce30-52c9-50bf" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="6bde-c589-104e-1461" hidden="false" sortIndex="2">
@@ -21387,6 +21542,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <modifier type="add" value="abee-1a02-8002-a13f" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="9b42-f7fc-407f-cd15" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -21492,6 +21657,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="802e-4dfc-ac29-5eaf" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="68b0-5b90-7be7-6ebb" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Damaged: 1-5 Wounds Remaining" hidden="false" type="profile" id="cf74-f3ce-e18c-b83d" targetId="1aac-b083-4318-f750"/>
@@ -21671,6 +21837,16 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="e2e7-6719-e277-a783" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -21788,6 +21964,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="29e4-1f83-97fc-2fb1" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="beac-050b-ccfb-b186" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="e550-944-8fcc-2f61" primary="false" name="Imperium"/>
@@ -21897,6 +22074,18 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Razorback" hidden="false" id="ed11-25b9-a0eb-89f4">
       <costs>
@@ -21935,6 +22124,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="9eca-19fd-be53-4118" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="6710-9666-606b-fcfb" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="6e45-6bdb-999d-cdd" targetId="b68a-5ded-65ac-98c">
@@ -22069,6 +22259,18 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Impulsor" hidden="false" id="bfb1-7512-e1a3-9fa2">
       <costs>
@@ -22119,6 +22321,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3d14-5c19-6397-8901" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="3237-d7a4-07fb-6ed4" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="cbe2-7302-9573-7f47" hidden="false" sortIndex="2">
@@ -28956,6 +29159,8 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="97ae-f8af-89ea-395d" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="8312-f6c3-cf2e-a273" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
+        <entryLink import="true" name="Tank Ace Character" hidden="false" id="2f67-ece7-a06e-1ace" type="selectionEntry" targetId="8810-ebe3-94f2-8eab"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="ee7e-ec7f-e1bc-53b3" targetId="b68a-5ded-65ac-98c">
@@ -29210,6 +29415,18 @@ You can attach this model to one of the above units even if one Captain, Chapte
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Thunderhawk Gunship" hidden="false" id="3416-dfee-84ee-e21d">
       <costs>
@@ -29585,6 +29802,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6273-bad5-14f1-df6d" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="057a-d668-0bfd-5d34" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="f69d-9163-3e7-3d4f"/>
@@ -29633,6 +29851,16 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <modifier type="add" value="abee-1a02-8002-a13f" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="6cd7-668d-fccf-fd0e" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -30111,6 +30339,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="2930-1b5a-7c9b-f3be" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="cf8e-df9e-b574-ca1c" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="78c3-ad1e-70d2-f674"/>
@@ -30337,6 +30566,16 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="bb-ef19-9618-d406" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -31259,6 +31498,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </costs>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="eb1c-3c02-f996-17e1" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="5c2b-522e-58c8-0ed9" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="453-1a2d-da3f-e133"/>
@@ -31315,6 +31555,16 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <modifier type="add" value="abee-1a02-8002-a13f" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="10d5-fb9e-e48c-2e43" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -31748,6 +31998,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
     <selectionEntry type="model" import="true" name="Rhino Primaris [Legends]" hidden="false" id="80d1-496f-40fd-c154">
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5e24-8612-5219-6764" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="a2e0-7a67-36c4-16d1" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="221d-7cf2-8469-bf70"/>
@@ -31806,6 +32057,16 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="e625-f0e-6ebb-5057" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -31965,6 +32226,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="2d93-1e8e-4181-5712" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="953b-73b5-987b-c8e3" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="5ab1-96b4-e83a-9f8f"/>
@@ -32019,6 +32281,16 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <modifier type="add" value="abee-1a02-8002-a13f" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="8940-aa1a-e524-b028" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -32402,6 +32674,7 @@ You can attach this model to one of the above units even if one Character model
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="c198-eec0-12d2-3b57" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="bbce-3c19-8f47-22cb" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <profiles>
         <profile name="Assault Ramp" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="562a-7fc-f1a6-cc9a">
@@ -32440,6 +32713,16 @@ You can attach this model to one of the above units even if one Character model
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="126b-3819-7adf-1be9" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -32635,6 +32918,7 @@ You can attach this model to one of the above units even if one Character model
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="c40c-ec80-0389-396a" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="9e0c-8bde-032b-52f2" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="d986-f013-99f8-52dc" targetId="b68a-5ded-65ac-98c">
@@ -32710,6 +32994,16 @@ You can attach this model to one of the above units even if one Character model
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="5f1-c8aa-5b44-4c64" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -34512,9 +34806,20 @@ per turn.</characteristic>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="88cd-35b9-41d9-55c9" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="b6a1-a3f9-16eb-2d31" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9cfd-1c32-585f-7d5c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" childName="Tank Ace Character" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="ed1f-f2f5-0eb1-604e" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Headhunter Task Force Enhancements" hidden="false" id="5096-1b3a-2537-92f3" type="selectionEntryGroup" targetId="f545-8ae0-b440-8407"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -37980,6 +38285,23 @@ the Hit roll.</characteristic>
         <categoryLink name="Pistol Weapon" hidden="false" id="ae7d-cde0-d00d-c6e9" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tank Ace Character" hidden="false" id="8810-ebe3-94f2-8eab">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b1e0-708a-7f65-249d" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c02-92d7-7ce4-b187" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="4641-f613-b77c-b519" type="selectionEntry" targetId="caa-f869-3cbd-b48e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8810-ebe3-94f2-8eab" shared="true" includeChildSelections="true" includeChildForces="true" childName="Tank Ace Character"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="90c7-c55c-21e2-2232" name="Rites of Battle" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -38753,6 +39075,22 @@ than the Toughness characteristic of your unit or your unit has the ^^**Titus^^
 
 
 Adeptus Astartes Transport units from your army (excluding Aircraft) that have a Wounds characteristic of 14+ have the Heavy Transport keyword.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Headhunter Task Force" hidden="false" id="cf4f-5c50-4a22-6960">
+          <rules>
+            <rule name="Target Sighted" id="6f1b-5e9c-ff8c-4704" hidden="false">
+              <description>Each time a Tank Ace unit from your army (see below) Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6&quot; to the Move characteristic of models in that unit. Each time a Tank Ace unit from your
+army shoots in your Shooting phase, if that unit did not Advance this turn, you can re‑roll the Damage roll.
+
+
+Adeptus Astartes Vehicle units from your army (excluding Fortifications, Drop Pods, Walkers and units that can Fly)
+have the Tank Ace keyword. In the Muster Armies step, you can select up to three Tank Ace units from your
+army to gain the Character keyword. 
+
+
+Designer’s Note: This means that the selected units can be given  enhancements, and one of them can be selected as your Warlord.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -43719,6 +44057,9 @@ that objective marker is greater than yours at the end of a phase.</characteris
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
                 <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4c41-19ca-e0c5-ee18" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tip of the Spear" hidden="false" id="189e-db08-cd33-9d34">
               <profiles>
@@ -43739,6 +44080,9 @@ has the Scouts 9&quot; ability</characteristic>
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
                 <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="674a-9da5-7062-40ac" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shock Deployment" hidden="false" id="9272-4e8e-58d4-eb86">
               <profiles>
@@ -43770,6 +44114,9 @@ has the Scouts 9&quot; ability</characteristic>
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
                 <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2c61-ed07-c3ae-10cd" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Armoured Commander" hidden="false" id="c40f-cfc3-09a1-8204">
               <profiles>
@@ -43790,6 +44137,9 @@ Enhancement. If it does, select one friendly Adeptus Astartes Transport that is
                 <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
                 <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="de89-1947-dab3-83ea" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -53323,6 +53673,129 @@ Until the end of the phase, this model&apos;s melee weapons have that ability.</
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13a4-9cf7-7eb9-d140" includeChildSelections="false"/>
       </constraints>
       <comment>Crucible content</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Headhunter Task Force Enhancements" id="f545-8ae0-b440-8407" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Redoubtable Machine Spirit" hidden="false" id="b020-26ca-302f-e615">
+          <profiles>
+            <profile name="Redoubtable Machine Spirit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eda6-9312-855e-7907">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Vehicle model only. The bearer has a 5+ invulnerable save and, at the end of your
+Command phase, the bearer regains 1 lost wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="25ad-f59d-8302-6765" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+            <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gunnery Honours" hidden="false" id="f974-1fb3-2619-6a3a">
+          <profiles>
+            <profile name="Gunnery Honours" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ebfd-81b0-50ba-d527">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Vehicle model only. Once per phase, you can re‑roll one Hit roll, one Wound roll
+and one Damage roll for the bearer.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0287-4f31-50c3-2450" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+            <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Firestorm Coordinators" hidden="false" id="3d5b-7c8c-764d-0a17">
+          <profiles>
+            <profile name="Firestorm Coordinators" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4192-f348-3a75-7d8d">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Vehicle model only. Ranged weapons equipped by the bearer have the
+[SUSTAINED HITS 1] ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6998-333e-60fd-fc58" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+            <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Astartes Tank Ace (Aura)" hidden="false" id="8bd7-102f-d6fa-a5d7">
+          <profiles>
+            <profile name="Astartes Tank Ace (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="43e9-b8ae-d055-e0ca">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Astartes Vehicle model only. In your Shooting phase, while a friendly Adeptus Astartes
+Vehicle unit is within 6&quot; of the bearer, ranged weapons equipped by models in that unit have the
+[ASSAULT] ability</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a445-1c22-452a-f3a2" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+            <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+            <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="-1" field="9050-04a4-e5ce-d7d7">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="cf4f-5c50-4a22-6960" shared="true" id="0b78-2bc2-27cd-827f" includeChildSelections="true" includeChildForces="true" childName="Headhunter Task Force"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" childName="Character"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9050-04a4-e5ce-d7d7" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="6f7b-3572-afab-21d6" includeChildSelections="true"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
