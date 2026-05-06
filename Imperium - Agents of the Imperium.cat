@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="135" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="b00-cd86-4b4c-97ba" name="Imperium - Agents of the Imperium" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="136" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Vindicare Assassin" hidden="false" id="efa3-2cf5-dcfb-b976">
       <categoryLinks>
@@ -22631,6 +22631,9 @@ For the purposes of interacting with terrain features, all models in units with 
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="1783-0962-700f-dd97" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="926a-f2ff-302f-5e0d">
               <constraints>
@@ -22649,6 +22652,9 @@ For the purposes of interacting with terrain features, all models in units with 
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="5ee7-9a27-30f0-e9e9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="dc8f-fccb-7793-9330">
               <constraints>
@@ -22667,6 +22673,9 @@ For the purposes of interacting with terrain features, all models in units with 
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="b06f-76b5-1073-62f2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Deathwatch weapon" hidden="false" id="191d-6edd-7d0f-367c">
               <constraints>
@@ -22695,6 +22704,9 @@ For the purposes of interacting with terrain features, all models in units with 
               <infoLinks>
                 <infoLink name="Devastating Wounds" id="b38a-e713-42c1-3079" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="5dfb-8b32-d001-30cc" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Eviscerator" hidden="false" id="78dc-f732-cf56-869a">
               <constraints>
@@ -22716,6 +22728,9 @@ For the purposes of interacting with terrain features, all models in units with 
               <infoLinks>
                 <infoLink name="Devastating Wounds" id="7ec6-e7e0-3312-3f5b" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="6ccf-83ab-f63b-668d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Excruciator maul" hidden="false" id="3102-a279-c7af-233d">
               <constraints>
@@ -22734,6 +22749,9 @@ For the purposes of interacting with terrain features, all models in units with 
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="87f7-9534-89c2-823f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Force weapon" hidden="false" id="22f1-da37-b6a0-19b8">
               <constraints>
@@ -22765,6 +22783,9 @@ For the purposes of interacting with terrain features, all models in units with 
                   </conditions>
                 </modifier>
               </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="e381-519a-80a1-5255" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="6a96-81ce-ea25-55fd">
               <constraints>
@@ -22783,6 +22804,9 @@ For the purposes of interacting with terrain features, all models in units with 
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="4d28-321d-a5e5-f897" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warp grasp" hidden="false" id="a21e-2015-e46d-6d59">
               <constraints>
@@ -22812,6 +22836,9 @@ For the purposes of interacting with terrain features, all models in units with 
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="5839-4d1a-04ab-bf52" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
