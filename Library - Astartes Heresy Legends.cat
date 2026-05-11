@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="20" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ac3b-689c-4ad4-70cb" name="Library - Astartes Heresy Legends" revision="27" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="39b9-56da-6787-1880" name="Kratos" hidden="false">
       <constraints>
@@ -11,7 +11,6 @@
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f15-a830-9a9e-a6c4" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="c97c-376-e2e0-1dd2" name="Dreadnought" hidden="false"/>
     <categoryEntry id="3847-7af4-207a-be61" name="Relic Contemptor Dreadnought" hidden="false">
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f15-a830-9a9e-a6c4" type="max"/>
@@ -187,6 +186,7 @@
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f15-a830-9a9e-a6c4" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Heavy Transport" id="15ec-7a21-5a2d-db3d" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="78aa-3f99-5fb7-7f83" name="Kratos [Legends]" hidden="false" collective="false" import="true" type="model">
@@ -2056,6 +2056,11 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="68be-7090-1fbc-9021" name="Deathstorm Drop Pod [Legends]" hidden="false" collective="false" import="true" type="model">
@@ -2310,6 +2315,11 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="3067-0388-fb64-1adf" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Land Raider Achilles [Legends]" hidden="false" id="3006-ffe-2b0c-6b1b">
@@ -2508,6 +2518,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="9a8a-354a-3a12-5dd5" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4011,6 +4026,11 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="4930-ab4e-adcb-0558" hidden="false">
@@ -4312,6 +4332,16 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="771d-cafc-0308-50a2" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="3fc0-1753-fefb-89b5" name="Armoured hull" hidden="false" collective="false" import="true" type="upgrade">
@@ -4515,6 +4545,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4982,6 +5017,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="a17c-3049-2fda-f257" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5510,6 +5550,11 @@
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="633b-4978-9e2b-ed49" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="add2-9d27-f808-dcc2" hidden="false">
@@ -5710,6 +5755,7 @@
         <categoryLink targetId="c619-2086-bbcf-69c9" id="4d86-35c3-70f5-ddf2" primary="false" name="Fly"/>
         <categoryLink targetId="75e8-57c4-40e3-1817" id="a410-85ca-141c-7fbf" primary="false" name="Transport"/>
         <categoryLink targetId="a3ba-39df-9ad1-abe4" id="5647-4c54-a0ed-b0d1" primary="false" name="Sokar-pattern Stormbird"/>
+        <categoryLink name="Aircraft" hidden="false" id="0fb2-01d2-38c8-bc0c" targetId="63f1-e6e8-f6f6-a4f0" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Damaged: 1-13 wounds remaining" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c54c-1d21-f4bf-a9c7">
@@ -5747,6 +5793,16 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="a225-cb8b-eb24-8b" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abee-1a02-8002-a13f" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="187b-6ef3-33dd-fe0d" shared="true" id="1a69-90d9-4791-f78f" includeChildSelections="true" includeChildForces="true" childName="Armoured Speartip"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6897,8 +6953,8 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Kharybdis storm launcher" hidden="false" id="5ad1-4925-b948-c452">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78ec-b3a9-68fe-55a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1b6-9551-bb40-53a4"/>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="78ec-b3a9-68fe-55a"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a1b6-9551-bb40-53a4"/>
               </constraints>
               <profiles>
                 <profile name="➤ Kharybdis storm launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6b35-af24-2b29-9048">
