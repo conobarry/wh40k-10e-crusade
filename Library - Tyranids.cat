@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="77" revision="18" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="374d-45f0-5832-001e" name="Library - Tyranids" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="77" revision="19" authorName="Dunamis55" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="fa68-fcb9-38c-cd0f" name="Winged Hive Tyrant" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -8559,21 +8559,6 @@ You can include up to one of the following unit:
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Rupture cannon" hidden="false" id="987e-fe97-f706-3182" type="selectionEntry" targetId="e4bc-cc82-fb71-3b6d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bfa-32f5-66cd-f71a" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="a276-18ad-af3d-f7c0" targetId="f715-a306-e448-9c1b" type="selectionEntryGroup"/>
-              </entryLinks>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="bf51-e0ef-737a-6d54" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink import="true" name="Stinger salvoes" hidden="false" id="9257-7e00-82ff-f06b" type="selectionEntry" targetId="5e02-c4ce-b7e6-d59">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e48-f3ff-3e46-f153" includeChildSelections="false"/>
@@ -9087,6 +9072,42 @@ You can include up to one of the following unit:
                 <modifier type="set" value="2" field="4fc4-aeac-9536-6bb0">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9d02-d413-f447-d005" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rupture cannon" hidden="false" id="6a8d-4e0d-46b8-cd3e">
+              <profiles>
+                <profile name="Rupture cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="26c3-c179-78e6-24c5">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2D6</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="fa20-eb58-2998-858e" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Ranged Weapon" hidden="false" id="fbd9-f06b-e8bc-4225" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="a466-2d26-0a05-6b12" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
+              <comment>Crucible variant</comment>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="a276-18ad-af3d-f7c0" targetId="f715-a306-e448-9c1b" type="selectionEntryGroup"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bfa-32f5-66cd-f71a" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="bf51-e0ef-737a-6d54" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
