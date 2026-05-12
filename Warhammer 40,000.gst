@@ -8573,7 +8573,7 @@ Grape Shot: This weapon has its range halved (rounding down) and its Strength c
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="5c0e-4c31-d51b-e470" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="5c0e-4c31-d51b-e470" shared="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="0c05-2ed1-9011-86ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
