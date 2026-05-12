@@ -5960,7 +5960,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -5998,7 +5998,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -6039,7 +6039,7 @@ Fogbound: This unit is placed into Reserves. Once per round in an opponent’s 
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -6077,7 +6077,7 @@ Fogbound: This unit is placed into Reserves. Once per round in an opponent’s 
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -6114,7 +6114,7 @@ Fogbound: This unit is placed into Reserves. Once per round in an opponent’s 
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -6160,7 +6160,7 @@ Grape Shot: This weapon has its range halved (rounding down) and its Strength c
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -8569,15 +8569,10 @@ Grape Shot: This weapon has its range halved (rounding down) and its Strength c
         <selectionEntryGroup name="Raid &amp; Ruin Spoils of War" id="991b-e44e-7ff1-a8c7" hidden="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="0c05-2ed1-9011-86ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
               <comment>Crusade content</comment>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="5c0e-4c31-d51b-e470" shared="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="0c05-2ed1-9011-86ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
